@@ -1,1 +1,1 @@
-export * from './posthog-provider'
+export * from "./posthog-provider"

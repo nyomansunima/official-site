@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import posthog from 'posthog-js'
-import { PostHogProvider, usePostHog } from 'posthog-js/react'
-import { config } from '@shared/libs'
-import { usePathname, useSearchParams } from 'next/navigation'
+import * as React from "react"
+import posthog from "posthog-js"
+import { PostHogProvider, usePostHog } from "posthog-js/react"
+import { config } from "@shared/libs"
+import { usePathname, useSearchParams } from "next/navigation"
 
 type PosthogProviderProps = {
   children: React.ReactNode
@@ -22,7 +22,7 @@ function PostHogPageView(): null {
         url = url + `?${searchParams.toString()}`
       }
 
-      posthog.capture('$pageview', { $current_url: url })
+      posthog.capture("$pageview", { $current_url: url })
     }
   }, [pathname, searchParams, posthog])
 
@@ -40,9 +40,9 @@ function SuspendedPostHogPageView() {
 export function PosthogProvider({ children }: PosthogProviderProps) {
   React.useEffect(() => {
     posthog.init(config.posthog.key, {
-      api_host: '/ingest',
-      ui_host: 'https://us.posthog.com',
-      person_profiles: 'identified_only',
+      api_host: "/ingest",
+      ui_host: "https://us.posthog.com",
+      person_profiles: "identified_only",
       capture_pageview: false,
     })
   }, [])

@@ -12,29 +12,13 @@ env:
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - main
 
 permissions:
   contents: write
 
 jobs:
-  release:
-    name: Release
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ github.ref_name }}
-          name: '${{ github.ref_name }}'
-          generate_release_notes: true
-          draft: false
-          prerelease: false
-
   publish:
     name: Publish Website
     runs-on: ubuntu-latest
@@ -58,18 +42,3 @@ jobs:
 
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
-
-  generate-changelog:
-    name: Generate Changelog
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Update changelog
-        uses: BobAnkh/auto-generate-changelog@v1.2.5
-        with:
-          ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          COMMIT_MESSAGE: '🔖 docs(CHANGELOG): update release notes'
-          TYPE: 'feat:Feature,fix:Bug Fixes,docs:Documentation,refactor:Refactor,perf:Performance Improvements'

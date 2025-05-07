@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { PageTransition } from '@shared/components'
+import * as React from "react"
+import { PageTransition } from "@shared/components"
 
 type RootTemplateProps = {
   children: React.ReactNode

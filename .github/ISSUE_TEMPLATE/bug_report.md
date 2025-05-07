@@ -1,8 +1,8 @@
 ---
 name: Bug report
 about: Create a report to help me improve to better one
-title: 'Bug: '
-labels: ':bug: bug'
+title: "Bug: "
+labels: ":bug: bug"
 assignees: nyomansunima
 ---
 

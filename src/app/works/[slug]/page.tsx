@@ -1,8 +1,11 @@
-import * as React from 'react'
-import { Metadata, ResolvingMetadata } from 'next'
-import { sharedMetadata } from '@shared/libs'
-import * as workService from '../work-service'
-import { WorkDetailContent } from '../work-detail-content'
+import * as React from "react"
+import { Metadata, ResolvingMetadata } from "next"
+import { sharedMetadata } from "@shared/libs"
+import {
+  getWorkMetadata,
+  getWorkPaths,
+  WorkDetailContent,
+} from "@features/works"
 
 type Params = {
   slug: string
@@ -17,7 +20,7 @@ export async function generateMetadata(
   parent: ResolvingMetadata,
 ): Promise<Metadata> {
   const { slug } = await params
-  const meta = await workService.getWorkMetadata(slug)
+  const meta = await getWorkMetadata(slug)
   const previousOgImages = (await parent).openGraph?.images || []
   const previousTwitterImages = (await parent).twitter?.images || []
 
@@ -40,7 +43,7 @@ export async function generateMetadata(
 }
 
 export async function generateStaticParams(): Promise<Params[]> {
-  const workPaths = await workService.getWorkPaths()
+  const workPaths = await getWorkPaths()
 
   return workPaths.map((slug) => ({ slug }))
 }

@@ -1,8 +1,8 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: 'Feature: '
-labels: ':broccoli: feature'
+title: "Feature: "
+labels: ":broccoli: feature"
 assignees: nyomansunima
 ---
 

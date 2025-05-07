@@ -1,25 +1,22 @@
-import * as React from 'react'
-import { Metadata } from 'next'
-import { sharedMetadata } from '@shared/libs'
-import { HeroSection } from './hero-section'
-import { CurrentStatusSection } from './current-status-section'
-import { BioSection } from './bio-section'
+import { Metadata } from "next"
+import { sharedMetadata } from "@shared/libs"
+import { BioSection, CurrentStatusSection, HeroSection } from "@features/home"
 
 export const metadata: Metadata = {
-  title: 'Product Designer, Software Developer & Creator | Nyoman Sunima',
+  title: "Product Designer, Software Developer & Creator | Nyoman Sunima",
   description:
-    'Focused on crafting digital products, website, web app, mobile app to help business.',
+    "Focused on crafting digital products, website, web app, mobile app to help business.",
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'Product Designer, Software Developer & Creator | Nyoman Sunima',
+    title: "Product Designer, Software Developer & Creator | Nyoman Sunima",
     description:
-      'Focused on crafting digital products, website, web app, mobile app to help business.',
+      "Focused on crafting digital products, website, web app, mobile app to help business.",
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'Product Designer, Software Developer & Creator | Nyoman Sunima',
+    title: "Product Designer, Software Developer & Creator | Nyoman Sunima",
     description:
-      'Focused on crafting digital products, website, web app, mobile app to help business.',
+      "Focused on crafting digital products, website, web app, mobile app to help business.",
   },
 }
 

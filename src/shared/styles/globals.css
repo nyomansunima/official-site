@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
@@ -80,16 +80,16 @@
   font-weight: var(--font-weight-normal);
 
   a {
-    text-decoration: 'none';
-    font-weight: '400 !important';
+    text-decoration: "none";
+    font-weight: "400 !important";
 
     &:hover {
-      text-decoration: 'underline';
+      text-decoration: "underline";
     }
   }
 
   em {
-    font-style: 'italic';
+    font-style: "italic";
     color: var(--color-accent);
   }
 
