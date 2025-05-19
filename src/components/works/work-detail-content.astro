@@ -1,0 +1,65 @@
+---
+import ArticleContent from "@components/article-content.astro"
+import { parseReadableDate } from "@libs/utils"
+import type { CollectionEntry } from "astro:content"
+import { render } from "astro:content"
+
+type Props = {
+  work: CollectionEntry<"works">
+}
+
+const { work } = Astro.props
+
+const { category, date, status, team, title, type } = work.data
+const parsedDate = parseReadableDate(date)
+const { Content } = await render(work)
+---
+
+<div class="flex flex-col">
+  <h1 class="text-xl font-medium text-balance">{title}</h1>
+
+  <div class="flex items-center gap-3 mt-3">
+    <span class="text-sm text-foreground/60">{parsedDate}</span>
+
+    {
+      team && (
+        <a
+          href={team.url}
+          target="_blank"
+          class="flex items-center gap-2 leading-none! text-sm text-link"
+        >
+          {team.name}
+        </a>
+      )
+    }
+  </div>
+
+  <div class="flex flex-wrap items-center gap-4 mt-6">
+    <span
+      class="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-link text-sm text-foreground/60"
+    >
+      <i class="fi fi-rr-circle-small"></i>
+      {status}
+    </span>
+
+    <span
+      class="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-link text-sm text-foreground/60"
+    >
+      <i class="fi fi-rr-circle-small"></i>
+      {type}
+    </span>
+
+    <span
+      class="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-link text-sm text-foreground/60"
+    >
+      <i class="fi fi-rr-circle-small"></i>
+      {category}
+    </span>
+  </div>
+
+  <ArticleContent
+    class="mt-10 prose-p:text-foreground/70 prose-ul:text-foreground/70"
+  >
+    <Content />
+  </ArticleContent>
+</div>

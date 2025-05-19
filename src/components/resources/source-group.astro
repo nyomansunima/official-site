@@ -1,0 +1,20 @@
+---
+import type { SourceData } from "./source-item.astro"
+import SourceItem from "./source-item.astro"
+
+type Props = {
+  group: { title: string; list: SourceData[] }
+}
+
+const {
+  group: { list, title },
+} = Astro.props
+---
+
+<div class="flex flex-col gap-4">
+  <h2 class="font-medium">{title}</h2>
+
+  <div class="grid grid-cols-1 tablet:grid-cols-2 gap-2 tablet:gap-3 w-full">
+    {list.map((sou) => <SourceItem source={sou} />)}
+  </div>
+</div>

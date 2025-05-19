@@ -1,0 +1,82 @@
+---
+import { parseReadableDate } from "@libs/utils"
+import { Image } from "astro:assets"
+import type { CollectionEntry } from "astro:content"
+
+type Props = {
+  work: CollectionEntry<"works">
+}
+const {
+  work: { id, data },
+} = Astro.props
+const { title, description, image, date, type, category, status } = data
+
+const readableTimeline = parseReadableDate(date)
+const link = `/works/${id}`
+---
+
+<a
+  href={link}
+  class="flex group rounded-2xl bg-surface p-2 transition-all duration-300 hover:-translate-y-1 relative"
+>
+  <div
+    class="flex flex-col p-3 border-2 border-border border-dashed rounded-xl transition-all duration-300 group-hover:border-link"
+  >
+    <div
+      class="flex flex-col tablet:flex-row tablet:items-center gap-2 justify-between"
+    >
+      <h3
+        class="flex items-center gap-2 text-sm font-medium flex-1 leading-tight!"
+      >
+        <i class="fi fi-br-circle-small text-foreground/60"></i>
+        {title}
+      </h3>
+
+      <span class="text-sm text-foreground/60">{readableTimeline}</span>
+    </div>
+
+    <p
+      class="text-foreground/60 text-sm line-clamp-2 text-pretty mt-3 leading-relaxed"
+    >
+      {description}
+    </p>
+
+    <div class="flex flex-wrap items-center gap-2 mt-4">
+      <span
+        class="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm"
+      >
+        <i class="fi fi-rr-circle-dashed text-xs"></i>
+        {status}
+      </span>
+
+      <span
+        class="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm"
+      >
+        <i class="fi fi-rr-circle-dashed text-xs"></i>
+        {type}
+      </span>
+
+      <span
+        class="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm"
+      >
+        <i class="fi fi-rr-circle-dashed text-xs"></i>
+        {category}
+      </span>
+    </div>
+
+    <div class="flex w-full mt-6">
+      <div
+        class="relative overflow-hidden w-full h-[180px] tablet:h-[300px] rounded-xl"
+      >
+        <Image
+          src={image}
+          alt={title}
+          inferSize
+          quality="low"
+          loading="lazy"
+          class="object-cover transition-all duration-300 group-hover:scale-105"
+        />
+      </div>
+    </div>
+  </div>
+</a>

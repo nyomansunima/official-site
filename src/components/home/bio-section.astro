@@ -1,0 +1,22 @@
+---
+import bios from "@contents/bio-data.json"
+import BioItem from "./bio-item.astro"
+---
+
+<section class="flex flex-col">
+  <div class="flex flex-col">
+    <span class="text-sm font-mono text-foreground/60 tracking-tight">
+      Links & resources.
+    </span>
+    <h2 class="py-2 text-lg font-medium">Explore good things.</h2>
+  </div>
+
+  <p class="mt-6 text-pretty leading-7 text-foreground/60">
+    Check something that make you feel better or see what's i have built for
+    you. Check it now.
+  </p>
+
+  <ul class="flex flex-col mt-6 gap-3">
+    {bios.map((data) => <BioItem bio={data} />)}
+  </ul>
+</section>

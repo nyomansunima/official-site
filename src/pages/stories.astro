@@ -1,0 +1,19 @@
+---
+import Head from "@components/head.astro"
+import PublicationSection from "@components/stories/publication-section.astro"
+import RecentSection from "@components/stories/recent-section.astro"
+import MainLayout from "@layouts/main-layout.astro"
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title="Stories | Nyoman Sunima"
+    description="Everyday i write, record, and create any resources to sharing into the social media and community platforms"
+  />
+
+  <main class="flex flex-col gap-20">
+    <PublicationSection />
+    <RecentSection />
+  </main>
+</MainLayout>

@@ -1,0 +1,25 @@
+---
+import { Picture } from "astro:assets"
+
+type Props = {
+  src: string
+  alt: string
+}
+
+const { alt, src: img } = Astro.props
+---
+
+<div
+  class="flex rounded-2xl p-1 border-2 border-border border-dashed bg-background cursor-pointer my-4"
+>
+  <div class="relative w-full overflow-hidden rounded-xl not-prose">
+    <Picture
+      src={img}
+      alt={alt}
+      inferSize
+      loading="lazy"
+      quality="low"
+      class="object-cover transition-all duration-300 hover:scale-105 not-prose"
+    />
+  </div>
+</div>

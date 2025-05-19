@@ -1,0 +1,28 @@
+---
+import ArticleContent from "@components/article-content.astro"
+import BenefitSection from "@components/collabs/benefit-section.astro"
+import CtaSection from "@components/collabs/cta-section.astro"
+import IntroSection from "@components/collabs/intro-section.astro"
+import ServiceSection from "@components/collabs/service-section.astro"
+import TeamSection from "@components/collabs/team-section.astro"
+import Head from "@components/head.astro"
+import MainLayout from "@layouts/main-layout.astro"
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title="Collabs | Nyoman Sunima"
+    description="Serving with love and crafting for better impacts"
+  />
+
+  <main class="flex flex-col gap-10">
+    <ArticleContent>
+      <IntroSection />
+      <ServiceSection />
+      <TeamSection />
+      <BenefitSection />
+      <CtaSection />
+    </ArticleContent>
+  </main>
+</MainLayout>

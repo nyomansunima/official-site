@@ -1,33 +1,19 @@
 {
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "strictNullChecks": true,
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "noImplicitAny": false,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "@shared/*": ["./src/shared/*"],
-      "@features/*": ["./src/features/*"],
-      "@app/*": ["./src/app/*"],
-      "~/*": ["./src/*"],
-      "@/*": ["./*"]
-    },
-    "target": "ES2017"
-  },
-  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@contents/*": ["./src/contents/*"],
+      "@libs/*": ["./src/libs/*"],
+      "@styles/*": ["./src/styles/*"],
+      "~/*": ["./src/*"]
+    }
+  }
 }

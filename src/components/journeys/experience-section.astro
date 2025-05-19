@@ -1,0 +1,25 @@
+---
+import experiences from "@contents/experience-data.json"
+import ExperienceItem from "./experience-item.astro"
+---
+
+<section class="flex flex-col">
+  <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-2">
+      <span class="text-sm text-foreground/60 font-mono tracking-tight">
+        Journeys.
+      </span>
+      <h2 class="text-lg font-medium">What's going on?</h2>
+    </div>
+
+    <div
+      class="flex bg-surface p-2 rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group/parent"
+    >
+      <div
+        class="flex flex-col h-full w-full gap-3 p-5 border-2 border-border border-dashed rounded-xl transition-all duration-300 group-hover/parent:border-link"
+      >
+        {experiences.map((exp) => <ExperienceItem experience={exp} />)}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+---
+import Head from "@components/head.astro"
+import BioSection from "@components/home/bio-section.astro"
+import HeroSection from "@components/home/hero-section.astro"
+import StatusSection from "@components/home/status-section.astro"
+import MainLayout from "@layouts/main-layout.astro"
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title="Product Designer, Software Developer & Creator | Nyoman Sunima"
+    description="Focused on crafting digital products, website, web app, mobile app to help business"
+  />
+
+  <main class="flex flex-col gap-20">
+    <HeroSection />
+    <StatusSection />
+    <BioSection />
+  </main>
+</MainLayout>

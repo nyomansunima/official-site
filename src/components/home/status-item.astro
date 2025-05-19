@@ -1,0 +1,25 @@
+---
+type Props = {
+  status: { url: string; title: string }
+}
+
+const {
+  status: { title, url },
+} = Astro.props
+const isValidURL = url.includes("https://") || url.includes("http://")
+---
+
+<li
+  class="flex items-center transition-all duration-300 ml-2 group hover:text-link"
+>
+  <a
+    href={url}
+    target={isValidURL ? "_blank" : "_self"}
+    class="flex items-center gap-2"
+  >
+    <i
+      class="fi fi-br-circle-small text-sm text-foreground/60 group-hover:text-link"
+    ></i>
+    <span>{title}</span>
+  </a>
+</li>

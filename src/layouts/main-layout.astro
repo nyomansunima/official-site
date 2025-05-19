@@ -1,0 +1,25 @@
+---
+import Footer from "@components/footer.astro"
+import Header from "@components/header.astro"
+import "@styles/global.css"
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <slot name="head" />
+  </head>
+  <body>
+    <div class="px-5 laptop:px-0 container mx-auto">
+      <div
+        class="mx-auto w-full tablet:w-11/12 laptop:w-9/12 desktop:w-7/12 laptop:px-20"
+      >
+        <Header />
+        <div class="min-h-screen pb-28 mt-5 tablet:mt-10 tablet:pb-56">
+          <slot />
+        </div>
+        <Footer />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+---
+type Props = {
+  recent: { title: string; timeline: string; url: string }
+}
+
+const {
+  recent: { title, url, timeline },
+} = Astro.props
+---
+
+<a
+  href={url}
+  target="_blank"
+  class="flex items-start tablet:items-center flex-col bg-surface tablet:flex-row p-1 rounded-2xl group transition-all duration-300 hover:-translate-y-1"
+>
+  <div
+    class="flex gap-2 h-full w-full border-2 border-border border-dashed rounded-xl transition-all duration-300 group-hover:border-link p-3"
+  >
+    <div class="flex items-center gap-2 grow">
+      <i class="fi fi-br-circle-small text-foreground/60"></i>
+
+      <h3
+        class="text-sm font-medium text-pretty leading-tight! line-clamp-1 grow"
+      >
+        {title}
+      </h3>
+    </div>
+    <div class="flex gap-2 text-sm text-foreground/60">
+      <span class="transition-all duration-300">{timeline}</span>
+    </div>
+  </div>
+</a>

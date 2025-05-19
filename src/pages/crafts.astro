@@ -1,0 +1,19 @@
+---
+import DomainSection from "@components/crafts/domain-section.astro"
+import ProductSection from "@components/crafts/product-section.astro"
+import Head from "@components/head.astro"
+import MainLayout from "@layouts/main-layout.astro"
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title="Crafts | Nyoman Sunima"
+    description="See all of my projects, business, products, side husltes and something that i built"
+  />
+
+  <main class="flex flex-col gap-20">
+    <DomainSection />
+    <ProductSection />
+  </main>
+</MainLayout>

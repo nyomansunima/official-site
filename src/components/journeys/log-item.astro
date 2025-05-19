@@ -1,0 +1,87 @@
+---
+import { Image } from "astro:assets"
+import { parseReadableDate } from "@libs/utils"
+
+export type LogData = {
+  title: string
+  description: string
+  date: string
+  category: string
+  image?: string
+  url?: string
+}
+
+type Props = {
+  log: LogData
+}
+
+const {
+  log: { title, description, category, date, image, url },
+} = Astro.props
+const readableDate = parseReadableDate(date)
+---
+
+<div
+  class="flex bg-surface p-2 rounded-2xl cursor-pointer group transition-all duration-300 hover:-translate-y-1 group"
+>
+  <div
+    class="flex flex-col border-2 border-border border-dashed rounded-xl p-3 h-full w-full transition-all duration-300 group-hover:border-link"
+  >
+    <div class="flex flex-col tablet:flex-row gap-2 tablet:items-center">
+      <h3
+        class="flex items-center gap-2 font-medium text-sm leading-tight! text-pretty grow flex-1"
+      >
+        <i class="fi fi-br-circle-small text-foreground/60"></i>
+        {title}
+      </h3>
+
+      <div class="flex items-center gap-2">
+        <span class="text-foreground/60 text-sm transition-all duration-300">
+          {readableDate}
+        </span>
+      </div>
+    </div>
+
+    <p class="text-sm mt-3 text-foreground/60 text-pretty leading-relaxed">
+      {description}
+    </p>
+
+    <div class="flex items-center gap-2 mt-4">
+      <span
+        class="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm"
+      >
+        <i class="fi fi-rr-circle-dashed text-xs"></i>
+        {category}
+      </span>
+
+      {
+        url && (
+          <a
+            href={url}
+            target="_blank"
+            class="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 py-1 hover:-translate-y-1 text-sm"
+          >
+            <i class="fi fi-rr-broken-chain-link-wrong" /> See detail
+          </a>
+        )
+      }
+    </div>
+
+    {
+      image && (
+        <div class="flex rounded-2xl p-1 border border-border border-dashed bg-surface cursor-pointer mt-6">
+          <div class="relative w-full h-[180px] tablet:h-[300px] overflow-hidden rounded-xl not-prose">
+            <Image
+              src={image}
+              alt={title}
+              inferSize
+              loading="lazy"
+              quality="low"
+              class="object-cover transition-all duration-300 hover:scale-105 not-prose"
+            />
+          </div>
+        </div>
+      )
+    }
+  </div>
+</div>

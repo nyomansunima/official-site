@@ -1,0 +1,19 @@
+---
+import Head from "@components/head.astro"
+import ExperienceSection from "@components/journeys/experience-section.astro"
+import LogSection from "@components/journeys/log-section.astro"
+import MainLayout from "@layouts/main-layout.astro"
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title="Journeys | Nyoman Sunima"
+    description="The whole story of me, nyoman sunima and all of the journey"
+  />
+
+  <main class="flex flex-col gap-20">
+    <ExperienceSection />
+    <LogSection />
+  </main>
+</MainLayout>

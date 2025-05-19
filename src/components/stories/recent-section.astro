@@ -1,0 +1,17 @@
+---
+import recents from "@contents/stories-data.json"
+import RecentItem from "./recent-item.astro"
+---
+
+<section class="flex flex-col gap-10">
+  <div class="flex flex-col gap-2">
+    <span class="text-sm text-foreground/60 font-mono tracking-tight">
+      Recents.
+    </span>
+    <h2 class="text-lg font-medium">Just now.</h2>
+  </div>
+
+  <div class="flex flex-col gap-2">
+    {recents.map((recent) => <RecentItem recent={recent} />)}
+  </div>
+</section>

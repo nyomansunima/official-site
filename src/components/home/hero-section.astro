@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets"
+import avatarImg from "@assets/images/avatar.png"
+---
+
+<section class="flex flex-col">
+  <div class="flex gap-3 items-center group">
+    <picture
+      class="p-1 flex justify-center items-center border-2 border-border group-hover:border-link border-dashed rounded-full cursor-pointer group transition-all duration-300 hover:-translate-y-1"
+    >
+      <Image
+        src={avatarImg}
+        height={60}
+        width={60}
+        densities={[3, 4]}
+        quality={"high"}
+        loading="lazy"
+        alt="Nyoman Sunima Profile"
+        class="object-cover rounded-full"
+      />
+    </picture>
+    <div class="flex flex-col gap-1">
+      <h2 class="text-lg font-medium">Nyoman Sunima</h2>
+      <span
+        class="text-sm text-foreground/60 font-mono tracking-tight transition-all duration-300 group-hover:text-link"
+      >
+        Product designer, software engineer & creator
+      </span>
+    </div>
+  </div>
+
+  <div
+    class="flex flex-col gap-6 text-base leading-7 text-pretty mt-6 text-foreground/60"
+  >
+    <p>
+      Hello, I loves to craft solutions for global audiences.{" "}
+      <span class="text-foreground">
+        Shipping great products or services with simplicity, better user
+        experience, and target specific
+      </span>
+      .
+    </p>
+
+    <p>
+      <span class="text-foreground">
+        Focus on crafting design, saas, goodies, sites, contents
+      </span>{" "}
+      to solve problems & help business grow.{" "}
+      <span class="text-foreground">
+        Talks about indie hacking, product shipping, productivity and business
+      </span>
+      .
+    </p>
+
+    <p>
+      <span class="text-foreground">
+        Currently craft a product, services and building the brands
+      </span>
+      . The next plans is building high value business that bring bigger impact to
+      the world .
+    </p>
+
+    <p>
+      Build {"->"} ship {"->"}{" "}
+      <span class="text-foreground">launch</span>.
+    </p>
+  </div>
+</section>

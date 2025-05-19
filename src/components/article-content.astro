@@ -1,0 +1,14 @@
+---
+import type { HTMLAttributes } from "astro/types"
+
+type Props = HTMLAttributes<"article"> & {}
+
+const { class: className, ...props } = Astro.props
+---
+
+<article
+  class={`prose prose-p:leading-7 prose-li:leading-7 prose-a:text-link ${className}`}
+  {...props}
+>
+  <slot />
+</article>

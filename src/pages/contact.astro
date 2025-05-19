@@ -1,0 +1,26 @@
+---
+import ContactSection from "@components/contact/contact-section.astro"
+import SocialSection from "@components/contact/social-section.astro"
+import Head from "@components/head.astro"
+import MainLayout from "@layouts/main-layout.astro"
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title="Contact | Nyoman Sunima"
+    description="Get in touch with me right now, start your idea"
+  />
+
+  <main class="flex flex-col">
+    <div class="flex flex-col gap-2 mb-10">
+      <span class="text-sm text-foreground/60 font-mono tracking-tight">
+        Contact.
+      </span>
+      <h2 class="text-lg font-medium">Connect & collabs.</h2>
+    </div>
+
+    <ContactSection />
+    <SocialSection />
+  </main>
+</MainLayout>

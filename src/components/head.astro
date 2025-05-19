@@ -1,0 +1,71 @@
+---
+import { Font } from "astro:assets"
+import { ClientRouter } from "astro:transitions"
+import Posthog from "./posthog.astro"
+
+type Props = {
+  title: string
+  description: string
+  keywords?: string
+  image?: string
+}
+
+const {
+  title,
+  description,
+  image = "https://cdn.hashnode.com/res/hashnode/image/upload/v1729709107977/6dabcb40-d18e-48cf-a86b-7b423efb6605.png",
+  keywords = "Product Designer, UI UX Designer, Web Designer, Shopify Developer, Web Developer, Webflow Expert, Framer Expert, Squarespace, Wix Developer, Fullstack, Mobile Developer, Indie Hacker",
+} = Astro.props
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="edge" content="IE=edge" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+<meta name="author" content="nyomansunima" />
+<meta name="publisher" content="nyomansunima" />
+<meta name="creator" content="nyomansunima" />
+<meta name="category" content="website" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.url)} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Font preload -->
+<Font cssVariable="--font-inter" preload />
+<Font cssVariable="--font-jetbrains-mono" preload />
+
+<!-- View Transition -->
+<ClientRouter />
+
+<!-- Trackings and analytics -->
+<meta
+  name="google-verification"
+  content="fTZZv4lCZ2_i8jo8FFKuXc6Acuy8jMClhwDzRX64NgE"
+/>
+<Posthog />

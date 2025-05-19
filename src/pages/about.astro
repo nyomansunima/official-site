@@ -1,0 +1,30 @@
+---
+import AchievementSection from "@components/about/achievement-section.astro"
+import ActivitySection from "@components/about/activity-section.astro"
+import DetailSection from "@components/about/detail-section.astro"
+import EndwordSection from "@components/about/endword-section.astro"
+import IndieSection from "@components/about/indie-section.astro"
+import SharingSection from "@components/about/sharing-section.astro"
+import ArticleContent from "@components/article-content.astro"
+import Head from "@components/head.astro"
+import MainLayout from "@layouts/main-layout.astro"
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title="About | Nyoman Sunima"
+    description="The whole story about me, nyoman sunima and all of the journey"
+  />
+
+  <main class="flex flex-col">
+    <ArticleContent>
+      <DetailSection />
+      <ActivitySection />
+      <SharingSection />
+      <IndieSection />
+      <AchievementSection />
+      <EndwordSection />
+    </ArticleContent>
+  </main>
+</MainLayout>

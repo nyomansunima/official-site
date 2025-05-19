@@ -1,0 +1,19 @@
+---
+import products from "@contents/products-data.json"
+import CraftItem from "./craft-item.astro"
+---
+
+<div class="flex flex-col">
+  <div class="flex flex-col gap-2">
+    <span class="text-sm text-foreground/60 font-mono tracking-tight">
+      Products.
+    </span>
+    <h2 class="text-lg font-medium">Things as results.</h2>
+  </div>
+
+  <div
+    class="grid grid-cols-1 tablet:grid-cols-2 w-full gap-2 tablet:gap-3 mt-10"
+  >
+    {products.map((craft) => <CraftItem craft={craft} />)}
+  </div>
+</div>

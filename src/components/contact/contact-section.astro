@@ -1,0 +1,10 @@
+---
+import { contacts } from "@contents/contact-data.json"
+import ContactItem from "./contact-item.astro"
+---
+
+<section class="flex flex-wrap items-center gap-2">
+  <ul class="flex flex-wrap items-center gap-2">
+    {contacts.map((con) => <ContactItem contact={con} />)}
+  </ul>
+</section>

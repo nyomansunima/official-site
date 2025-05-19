@@ -1,0 +1,25 @@
+---
+type Props = {
+  publication: {
+    title: string
+    url: string
+  }
+}
+
+const {
+  publication: { title, url },
+} = Astro.props
+---
+
+<a
+  href={url}
+  target="_blank"
+  class="flex bg-surface rounded-2xl col-span-1 p-1 transition-all duration-300 hover:-translate-y-1 group"
+>
+  <div
+    class="flex items-center rounded-xl h-full w-full gap-2 p-3 border-2 border-border border-dashed group-hover:border-link"
+  >
+    <i class="fi fi-br-circle-small text-foreground/60"></i>
+    <h3 class="text-sm font-medium">{title}</h3>
+  </div>
+</a>

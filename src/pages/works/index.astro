@@ -1,0 +1,17 @@
+---
+import Head from "@components/head.astro"
+import ListSection from "@components/works/list-section.astro"
+import MainLayout from "@layouts/main-layout.astro"
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title="Works | Nyoman Sunima"
+    description="See all of my works including projects, apps, products, case studies, idea and playground"
+  />
+
+  <main class="flex flex-col gap-20">
+    <ListSection />
+  </main>
+</MainLayout>

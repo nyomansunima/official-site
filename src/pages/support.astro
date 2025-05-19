@@ -1,0 +1,17 @@
+---
+import Head from "@components/head.astro"
+import SupportSection from "@components/support/support-section.astro"
+import MainLayout from "@layouts/main-layout.astro"
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title="Support | Nyoman Sunima"
+    description="Support me by donating for projects and contents or goodies"
+  />
+
+  <main class="flex flex-col gap-20">
+    <SupportSection />
+  </main>
+</MainLayout>

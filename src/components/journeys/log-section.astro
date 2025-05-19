@@ -1,0 +1,10 @@
+---
+import logGroups from "@contents/journeys-data.json"
+import LogGroup from "./log-group.astro"
+---
+
+<section class="flex flex-col">
+  <div class="flex flex-col gap-14">
+    {logGroups.map((group) => <LogGroup group={group} />)}
+  </div>
+</section>

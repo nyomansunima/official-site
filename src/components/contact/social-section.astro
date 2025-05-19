@@ -1,0 +1,10 @@
+---
+import { socials } from "@contents/contact-data.json"
+import SocialItem from "./social-item.astro"
+---
+
+<section class="flex mt-4 tablet:mt-6">
+  <ul class="flex flex-wrap items-center gap-2">
+    {socials.map((soc) => <SocialItem social={soc} />)}
+  </ul>
+</section>

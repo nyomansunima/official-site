@@ -1,0 +1,27 @@
+---
+import type { LogData } from "./log-item.astro"
+import LogItem from "./log-item.astro"
+
+type Props = {
+  group: {
+    title: string
+    list: LogData[]
+  }
+}
+
+const {
+  group: { title, list },
+} = Astro.props
+
+const reorderList = [...list].reverse()
+---
+
+<div class="flex flex-col gap-4">
+  <div class="flex items-center w-full gap-4">
+    <h2 class="font-medium">{title}</h2>
+  </div>
+
+  <div class="flex flex-col gap-2 tablet:gap-3">
+    {reorderList.map((log) => <LogItem log={log} />)}
+  </div>
+</div>

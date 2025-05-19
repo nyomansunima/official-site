@@ -1,0 +1,17 @@
+---
+import Head from "@components/head.astro"
+import SourceSection from "@components/resources/source-section.astro"
+import MainLayout from "@layouts/main-layout.astro"
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title="Resources | Nyoman Sunima"
+    description="Get free resources and things that help your works"
+  />
+
+  <main class="flex flex-col">
+    <SourceSection />
+  </main>
+</MainLayout>

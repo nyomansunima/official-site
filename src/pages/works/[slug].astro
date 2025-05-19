@@ -1,0 +1,36 @@
+---
+import Head from "@components/head.astro"
+import MainLayout from "@layouts/main-layout.astro"
+import WorkDetailContent from "@components/works/work-detail-content.astro"
+import { getCollection } from "astro:content"
+import type { CollectionEntry } from "astro:content"
+
+type Props = {
+  work: CollectionEntry<"works">
+}
+
+export async function getStaticPaths() {
+  const works = await getCollection("works")
+  return works.map((work) => {
+    return {
+      params: { slug: work.id },
+      props: { work },
+    }
+  })
+}
+
+const { work } = Astro.props
+const { title, description } = work.data
+---
+
+<MainLayout>
+  <Head
+    slot="head"
+    title={`${title} | Nyoman Sunima`}
+    description={description}
+  />
+
+  <main class="flex flex-col gap-20">
+    <WorkDetailContent work={work} />
+  </main>
+</MainLayout>
