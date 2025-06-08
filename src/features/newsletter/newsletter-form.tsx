@@ -13,6 +13,7 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { subscribeToNewsletter } from "./newsletter-service"
 import { SuccessNewsletterDialog } from "./success-dialog"
+import { useMutation } from "@tanstack/react-query"
 
 const formSchema = z.object({
   email: z
@@ -30,23 +31,26 @@ export function NewsletterForm() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    subscribeToNewsletter({ email: values.email })
-      .then(() => {
-        form.reset()
-        setIsOpenDialog(true)
-      })
-      .catch(() => {
-        form.setError("email", { message: "Opps, something happen" })
-      })
-  }
+  const subscribe = useMutation({
+    mutationKey: ["newsletter", "subscribe"],
+    mutationFn: subscribeToNewsletter,
+    onSuccess: () => {
+      form.reset()
+      setIsOpenDialog(true)
+    },
+    onError: () => {
+      form.setError("email", { message: "Opps, something happen" })
+    },
+  })
 
   return (
     <>
       <Form {...form}>
         <div className="w-full">
           <form
-            onSubmit={form.handleSubmit(onSubmit)}
+            onSubmit={form.handleSubmit((values) => {
+              subscribe.mutate({ email: values.email })
+            })}
             className="flex flex-col tablet:flex-row gap-3 w-full"
           >
             <FormField
@@ -61,7 +65,11 @@ export function NewsletterForm() {
                 </FormItem>
               )}
             />
-            <Button type="submit">Subscribe to newsletter</Button>
+            <Button type="submit">
+              {subscribe.isPending
+                ? "Subscribing ..."
+                : "Subscribe to newsletter"}
+            </Button>
           </form>
         </div>
       </Form>
