@@ -1,3 +1,4 @@
+import * as React from "react"
 import {
   isRouteErrorResponse,
   Link,
@@ -7,7 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router"
-import type { Route } from "./+types/root"
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import "@shared/globals.css"
 import { Button, CenteredLayout, Footer, Header } from "@shared/components"
 import { loadConfig, loadServerEnv } from "@shared/libs"
@@ -64,7 +65,7 @@ export function Layout({ children }: LayoutProps) {
   )
 }
 
-export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+export function ErrorBoundary({ error }) {
   let message = "Oops!"
   let details = "An unexpected error occurred."
   let stack: string | undefined
@@ -99,12 +100,15 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   )
 }
 
-export default function App({ loaderData }: Route.ComponentProps) {
+export default function App({ loaderData }) {
   const { ENV } = loaderData
+  const [queryClient] = React.useState(() => new QueryClient())
 
   return (
     <>
-      <Outlet />
+      <QueryClientProvider client={queryClient}>
+        <Outlet />
+      </QueryClientProvider>
       <script
         dangerouslySetInnerHTML={{
           __html: `window.__ENV__ = ${JSON.stringify(ENV)}`,
