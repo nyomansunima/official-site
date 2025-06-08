@@ -1,4 +1,3 @@
-import type { Route } from "./+types/works.$slug"
 import { generatedMetadata } from "@shared/libs"
 import {
   getWorkDetail,
@@ -6,14 +5,14 @@ import {
   type WorkDetail,
 } from "@features/works"
 
-export async function loader({ params }: Route.LoaderArgs) {
+export async function loader({ params }) {
   const { slug } = params
   const work = await getWorkDetail(slug)
 
   return { work }
 }
 
-export function meta({ data }: Route.MetaArgs) {
+export function meta({ data }) {
   const { work } = data
 
   return generatedMetadata({
@@ -23,7 +22,7 @@ export function meta({ data }: Route.MetaArgs) {
   })
 }
 
-export default function WorkDetailPage({ loaderData }: Route.ComponentProps) {
+export default function WorkDetailPage({ loaderData }) {
   const { work } = loaderData
   const parsedWork = work as WorkDetail
 

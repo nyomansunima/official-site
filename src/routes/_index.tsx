@@ -7,7 +7,6 @@ import {
 } from "@features/home"
 import { getFeaturedWorks } from "@features/works"
 import { generatedMetadata } from "@shared/libs"
-import type { Route } from "./+types/_index"
 
 export async function loader() {
   const featuredWorks = await getFeaturedWorks()
@@ -23,7 +22,7 @@ export function meta() {
   })
 }
 
-export default function HomePage({ loaderData }: Route.ComponentProps) {
+export default function HomePage({ loaderData }) {
   const { featuredWorks } = loaderData
 
   return (
