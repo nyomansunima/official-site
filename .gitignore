@@ -1,12 +1,18 @@
 .DS_Store
 node_modules/
+*.tsbuildinfo
 
 # React Router
 .react-router/
 build/
 
-# environment variables
+# Environment variables
 .env
 
 # vercel
 .vercel
+
+# Cloudflare
+.mf
+.wrangler
+.dev.vars*
