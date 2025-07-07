@@ -3,7 +3,13 @@ function isBrowser() {
 }
 
 export function loadServerEnv() {
-  const env = process.env
+  const env = {
+    APP_HOST: process.env.APP_HOST,
+    POSTHOG_KEY: process.env.POSTHOG_KEY,
+    GOOGLE_VERIFICATION: process.env.GOOGLE_VERIFICATION,
+    KIT_API_KEY: process.env.KIT_API_KEY,
+  }
+
   return env
 }
 
