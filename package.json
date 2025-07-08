@@ -8,7 +8,11 @@
     "build": "react-router build",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-    "format": "prettier ./ --write"
+    "format": "prettier ./ --write",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test --ui",
+    "test:e2e-report": "playwright show-report"
   },
   "dependencies": {
     "@flaticon/flaticon-uicons": "^3.3.1",
@@ -37,6 +41,7 @@
     "zod": "^3.25.75"
   },
   "devDependencies": {
+    "@playwright/test": "^1.53.2",
     "@react-router/dev": "^7.6.3",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/postcss": "^4.1.11",
@@ -45,13 +50,17 @@
     "@types/node": "^24",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
     "class-variance-authority": "^0.7.1",
+    "playwright": "^1.53.2",
     "prettier": "^3.6.2",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.11",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.8.3",
     "vite": "^7.0.2",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4"
   }
 }
