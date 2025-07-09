@@ -1,4 +1,6 @@
 import { type RouteConfig, index, route } from "@react-router/dev/routes"
 import { flatRoutes } from "@react-router/fs-routes"
 
-export default flatRoutes({}) satisfies RouteConfig
+export default flatRoutes({
+  rootDirectory: "./app",
+}) satisfies RouteConfig
