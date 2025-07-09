@@ -5,10 +5,7 @@ export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
-      coverage: {
-        reporter: ["text"],
-        reportOnFailure: true,
-      },
+      dir: "./src",
     },
   }),
 )
