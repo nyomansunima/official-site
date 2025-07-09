@@ -40,9 +40,6 @@ jobs:
       - name: Run the unit testing
         run: bun run test:unit
 
-      - name: Get the code coverage
-        run: bun run test:unit:coverage
-
       - name: Upload coverage report
         uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
