@@ -9,7 +9,7 @@ import {
   ScrollRestoration,
 } from "react-router"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import "@shared/globals.css"
+import "@shared/styles/globals.css"
 import { Button, CenteredLayout, Footer, Header } from "@shared/components"
 import { loadConfig, loadServerEnv } from "@shared/libs"
 
