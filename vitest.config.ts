@@ -6,6 +6,9 @@ export default mergeConfig(
   defineConfig({
     test: {
       dir: "./src",
+      coverage: {
+        enabled: true,
+      },
     },
   }),
 )
