@@ -9,10 +9,13 @@
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "format": "prettier ./ --write",
-    "test": "vitest",
-    "test:coverage": "vitest run --coverage",
-    "test:e2e": "playwright test --ui",
-    "test:e2e-report": "playwright show-report"
+    "test:unit": "vitest run",
+    "test:unit:ui": "vitest --ui",
+    "test:unit:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report",
+    "cleanup": "rm -rf bun.lock node_modules .react-router build test-results playwright-report"
   },
   "dependencies": {
     "@flaticon/flaticon-uicons": "^3.3.1",
