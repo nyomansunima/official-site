@@ -9,12 +9,16 @@ build/
 
 # Environment variables
 .env
+.env.local
 
 # Vercel
 .vercel
 
+# Vitest
+coverage
+
 # Playwright
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
