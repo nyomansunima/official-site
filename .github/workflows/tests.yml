@@ -31,7 +31,6 @@ jobs:
   unit:
     name: Unit testing
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
@@ -65,7 +64,6 @@ jobs:
     name: End to end testing
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
