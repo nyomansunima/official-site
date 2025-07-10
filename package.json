@@ -14,7 +14,7 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:report": "playwright show-report",
-    "cleanup": "rm -rf bun.lock node_modules .react-router build test-results playwright-report"
+    "cleanup": "rm -rf .react-router build test-results playwright-report reports coverage html"
   },
   "dependencies": {
     "@flaticon/flaticon-uicons": "^3.3.1",
