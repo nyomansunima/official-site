@@ -15,13 +15,7 @@
 
 name: Tests
 
-on:
-  workflow_run:
-    workflows: ["Beautify"]
-    types:
-      - completed
-  pull_request:
-  push:
+on: [push, pull_request]
 
 permissions:
   contents: write
