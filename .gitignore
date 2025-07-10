@@ -16,6 +16,8 @@ build/
 
 # Vitest
 coverage
+html
+reports
 
 # Playwright
 test-results/
