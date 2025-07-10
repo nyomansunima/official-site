@@ -5,9 +5,14 @@ export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
-      dir: "./src",
+      include: ["./src/**/*.{test,spec}.?(c|m)[jt]s?(x)"],
+      reporters: ["default", "json"],
+      outputFile: {
+        json: "./reports/report.json",
+      },
       coverage: {
         enabled: true,
+        reportsDirectory: "./reports/coverage",
       },
     },
   }),
