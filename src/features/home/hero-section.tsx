@@ -19,6 +19,11 @@ export function HeroSection() {
           <span className="text-sm font-mono tracking-tight transition-all duration-300 text-link">
             Product designer, software engineer & creator
           </span>
+          <div className="flex mt-2">
+            <span className="text-xs font-mono leading-tight bg-orange-200 text-orange-800 rounded-full px-2 py-1">
+              Open to work
+            </span>
+          </div>
         </div>
       </div>
 
