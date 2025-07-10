@@ -20,7 +20,7 @@ export function StatusItem({ status }: StatusItemProps) {
         target={isValidURL ? "_blank" : "_self"}
         className="flex items-center gap-2"
       >
-        <i className="fi fi-br-circle-small" />
+        <i className="fi fi-br-check-circle" />
         <span>{title}</span>
       </Link>
     </li>
