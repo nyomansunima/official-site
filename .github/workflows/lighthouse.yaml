@@ -1,3 +1,5 @@
+# ****** LIGHTHOUSE ******
+#
 # Check the web performace using
 # lighthouse ci
 # allow to show the page result for seo, performace, compatibility
@@ -14,8 +16,6 @@ on:
     types:
       - completed
   push:
-    branches: ["main"]
-  pull_request:
     branches: ["main"]
 
 permissions:
