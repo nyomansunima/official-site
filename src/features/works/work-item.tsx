@@ -23,7 +23,7 @@ export function WorkItem({ work }: Props) {
       <div className="flex flex-col p-3 border-2 border-border border-dashed rounded-xl transition-all duration-300 group-hover:border-link">
         <div className="flex flex-col tablet:flex-row tablet:items-center gap-2 justify-between">
           <h3 className="flex items-center gap-2 text-sm font-medium flex-1 leading-tight!">
-            <i className="fi fi-br-circle-small text-foreground/60 group-hover:text-link" />
+            <i className="fi fi-ss-circle-small text-foreground/60 group-hover:text-link" />
             {title}
           </h3>
 
@@ -54,7 +54,7 @@ export function WorkItem({ work }: Props) {
         </div>
 
         <div className="flex w-full mt-6">
-          <picture className="relative overflow-hidden w-full h-[180px] tablet:h-[300px] rounded-xl">
+          <picture className="relative overflow-hidden w-full h-[200px] tablet:h-[360px] rounded-xl">
             <img
               src={image}
               alt={title}

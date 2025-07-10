@@ -20,7 +20,7 @@ export function BioItem({ data }: BioItemProps) {
         target={isValidURL ? "_blank" : "_self"}
         className="flex items-center gap-2"
       >
-        <i className="fi fi-br-circle-small text-sm" />
+        <i className="fi fi-sr-add text-sm" />
         <span>{label}</span>
       </Link>
     </li>

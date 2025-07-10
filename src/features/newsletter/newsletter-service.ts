@@ -1,6 +1,4 @@
-import { loadConfig } from "@shared/libs"
-
-const config = loadConfig()
+import { kitClient, loadConfig } from "@shared/libs"
 
 type SubscribeInput = {
   email: string
@@ -13,17 +11,11 @@ export async function subscribeToNewsletter(
     email_address: input.email,
   }
 
-  const res = await fetch("https://api.kit.com/v4/subscribers", {
-    method: "POST",
-    body: JSON.stringify(payload),
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-      "X-Kit-Api-Key": config.kit.key,
-    },
+  const res = await kitClient.post("/subscribers", {
+    ...payload,
   })
 
-  if (!res.ok) {
+  if (!res.data) {
     throw new Error("Opps, something error when submit form")
   }
 

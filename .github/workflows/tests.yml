@@ -17,6 +17,9 @@ name: Tests
 
 on: [push, pull_request]
 
+env:
+  KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
+
 permissions:
   contents: write
   pull-requests: write

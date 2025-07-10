@@ -24,7 +24,7 @@ export function LogItem({ log }: Props) {
       <div className="flex flex-col border-2 border-border border-dashed rounded-xl p-3 h-full w-full transition-all duration-300 group-hover:border-link">
         <div className="flex flex-col tablet:flex-row gap-2 tablet:items-center">
           <h3 className="flex items-center gap-2 font-medium text-sm leading-tight! text-pretty grow flex-1">
-            <i className="fi fi-br-circle-small text-foreground/60 group-hover:text-link" />
+            <i className="fi fi-ss-circle-small text-foreground/60 group-hover:text-link" />
             {title}
           </h3>
 
@@ -58,7 +58,7 @@ export function LogItem({ log }: Props) {
 
         {image && (
           <div className="flex rounded-2xl p-1 border border-border bg-surface cursor-pointer mt-6">
-            <picture className="relative w-full h-[180px] tablet:h-[300px] overflow-hidden rounded-xl not-prose">
+            <picture className="relative w-full h-[200px] tablet:h-[360px] overflow-hidden rounded-xl not-prose">
               <img
                 src={image}
                 alt={title}

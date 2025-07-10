@@ -21,7 +21,7 @@ export function SourceItem({ source }: Props) {
     >
       <div className="flex flex-col w-full h-full border-2 border-border border-dashed transition-all duration-300 group-hover:border-link rounded-xl p-3">
         <div className="flex items-center gap-2">
-          <i className="fi fi-br-circle-small text-foreground/60 group-hover:text-link" />
+          <i className="fi fi-ss-circle-small text-foreground/60 group-hover:text-link" />
           <h3 className="text-sm font-medium">{title}</h3>
         </div>
 

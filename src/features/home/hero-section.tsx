@@ -1,4 +1,3 @@
-import { NewsletterForm } from "@features/newsletter"
 import avatarImg from "./avatar.png"
 
 export function HeroSection() {
@@ -44,9 +43,8 @@ export function HeroSection() {
           to solve problems & help business grow.{" "}
           <span className="text-foreground">
             Talks about indie hacking, product shipping, productivity and
-            business
+            business.
           </span>
-          .
         </p>
 
         <p>
@@ -54,25 +52,13 @@ export function HeroSection() {
             Currently craft a product, services and building the brands
           </span>
           . The next plans is building high value business that bring bigger
-          impact to the world .
+          impact to the world.
         </p>
 
         <p className="text-sm font-mono tracking-tight">
           Build {"->"} ship {"->"}{" "}
           <span className="text-foreground">launch</span>.
         </p>
-
-        <div className="flex flex-col gap-5">
-          <p>
-            Ohh,{" "}
-            <span className="text-foreground">
-              you can join my weekly newsletter
-            </span>{" "}
-            about online business, indie hacking and solopreneur.{" "}
-            <span className="text-foreground">No spam and shit.</span>
-          </p>
-          <NewsletterForm />
-        </div>
       </div>
     </section>
   )

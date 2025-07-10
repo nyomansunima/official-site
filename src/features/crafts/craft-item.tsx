@@ -21,7 +21,7 @@ export function CraftItem({ craft }: Props) {
     >
       <div className="flex flex-col h-full w-full p-3 rounded-xl border-2 border-border border-dashed transition-all duration-300 hover:border-link">
         <div className="flex gap-2">
-          <i className="fi fi-br-circle-small text-foreground/60 group-hover:text-link" />
+          <i className="fi fi-ss-circle-small text-foreground/60 group-hover:text-link" />
           <h3 className="text-sm font-medium">{title}</h3>
         </div>
 
