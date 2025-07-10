@@ -1,5 +1,5 @@
 import type { WorkData } from "@features/works"
-import { WorkItem } from "./work-item"
+import { WorkItem } from "@features/works"
 
 type Props = {
   works: WorkData[]
@@ -16,7 +16,7 @@ export function WorkSection({ works }: Props) {
       </div>
 
       <div className="flex mt-10 w-full">
-        <div className="grid grid-cols-1 tablet:grid-cols-3 gap-2 w-full">
+        <div className="grid grid-cols-1 gap-2 w-full">
           {works.map((work, i) => (
             <WorkItem work={work} key={i} />
           ))}
