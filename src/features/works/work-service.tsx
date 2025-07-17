@@ -45,14 +45,12 @@ export async function getWorkDetail(slug: string): Promise<WorkDetail> {
 export async function getWorkPaths(): Promise<string[]> {
   const workDirPath = path.join(process.cwd(), WORK_CONTENT_PATH)
   const files = await fs.readdir(workDirPath)
-
   const slugs = files
-    .filter((file) => file.endsWith(".md") || file.endsWith(".mdx"))
+    .filter((file) => file.endsWith(".md"))
     .map((file) => {
-      const slug = file.replace(/\.(mdx|md)$/, "")
-      return slug
+      const slug = file.replace(/\.(md)$/, "")
+      return `/works/${slug}`
     }) as string[]
-
   return slugs
 }
 
