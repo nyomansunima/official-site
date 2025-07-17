@@ -7,6 +7,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from "react-router"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import "@shared/styles/globals.css"
@@ -42,6 +43,9 @@ export function links() {
 }
 
 export function Layout({ children }: LayoutProps) {
+  const { ENV } = useLoaderData<typeof loader>()
+  const [queryClient] = React.useState(() => new QueryClient())
+
   return (
     <html lang="en">
       <head>
@@ -51,15 +55,22 @@ export function Layout({ children }: LayoutProps) {
         <Links />
       </head>
       <body>
-        <CenteredLayout>
-          <Header />
-          <div className="min-h-screen pb-28 mt-5 tablet:mt-10 tablet:pb-56">
-            {children}
-          </div>
-          <Footer />
-        </CenteredLayout>
+        <QueryClientProvider client={queryClient}>
+          <CenteredLayout>
+            <Header />
+            <div className="min-h-screen pb-28 mt-5 tablet:mt-10 tablet:pb-56">
+              {children}
+            </div>
+            <Footer />
+          </CenteredLayout>
+        </QueryClientProvider>
         <ScrollRestoration />
         <Scripts />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.__ENV__ = ${JSON.stringify(ENV)}`,
+          }}
+        />
       </body>
     </html>
   )
@@ -100,20 +111,6 @@ export function ErrorBoundary({ error }) {
   )
 }
 
-export default function App({ loaderData }) {
-  const { ENV } = loaderData
-  const [queryClient] = React.useState(() => new QueryClient())
-
-  return (
-    <>
-      <QueryClientProvider client={queryClient}>
-        <Outlet />
-      </QueryClientProvider>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `window.__ENV__ = ${JSON.stringify(ENV)}`,
-        }}
-      />
-    </>
-  )
+export default function App() {
+  return <Outlet />
 }
