@@ -58,13 +58,13 @@ export function LogItem({ log }: Props) {
         </div>
 
         {image && (
-          <div className="flex rounded-2xl p-1 border border-border bg-surface cursor-pointer mt-6">
+          <div className="flex cursor-pointer mt-6">
             <picture className="relative w-full h-[200px] tablet:h-[360px] overflow-hidden rounded-xl not-prose">
               <img
                 src={image}
                 alt={title}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover transition-all duration-300 hover:scale-105 not-prose"
+                className="object-cover transition-all duration-300 hover:scale-105 not-prose h-full w-full"
               />
             </picture>
           </div>

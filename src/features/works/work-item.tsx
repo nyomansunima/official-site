@@ -53,7 +53,7 @@ export function WorkItem({ work }: Props) {
             <img
               src={image}
               alt={title}
-              className="object-cover transition-all duration-300 group-hover:scale-105"
+              className="object-cover transition-all duration-300 group-hover:scale-105 h-full w-full"
               sizes="(min-width: 1024px) 2048px, 100vw"
             />
           </picture>
