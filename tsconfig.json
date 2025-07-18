@@ -18,8 +18,8 @@
       "@shared/*": ["./src/shared/*"],
       "@features/*": ["./src/features/*"],
       "@app/*": ["./src/app/*"],
-      "~/*": ["./src/*"],
-      "@/*": ["./*"]
+      "@/*": ["./src/*"],
+      "~/*": ["./*"]
     },
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
