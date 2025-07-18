@@ -1,4 +1,5 @@
-import { BioItem, type BioItemData } from "./bio-item"
+import { BioItem } from "./bio-item"
+import type { BioItemData } from "./bio-item"
 import bioData from "./bio-data.json"
 
 const bios = bioData as BioItemData[]

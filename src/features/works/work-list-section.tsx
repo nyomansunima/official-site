@@ -1,7 +1,7 @@
 import { WorkItem } from "./work-item"
 import type { WorkData } from "./work-service"
 
-type Props = {
+interface Props {
   works: WorkData[]
 }
 

@@ -1,4 +1,4 @@
-type CenteredLayoutProps = {
+interface CenteredLayoutProps {
   children: React.ReactNode
 }
 

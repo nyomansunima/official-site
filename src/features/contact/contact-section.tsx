@@ -1,4 +1,4 @@
-import { ContactItem, type ContactData } from "./contact-item"
+import { ContactItem } from "./contact-item"
 import contact from "./contact-data.json"
 
 export function ContactSection() {

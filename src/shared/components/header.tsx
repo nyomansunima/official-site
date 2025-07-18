@@ -5,9 +5,9 @@ export function Brand() {
   return (
     <Link
       to={"/"}
-      className="flex items-center text-sm transition-all duration-300 hover:text-link"
+      className="flex items-center text-sm transition-all duration-300 hover:text-link font-medium"
     >
-      nyomansunima.one
+      @nyomansunima
     </Link>
   )
 }

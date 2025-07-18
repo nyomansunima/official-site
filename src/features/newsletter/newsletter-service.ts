@@ -1,6 +1,6 @@
-import { kitClient, loadConfig } from "@shared/libs"
+import { kitClient } from "@shared/libs"
 
-type SubscribeInput = {
+interface SubscribeInput {
   email: string
 }
 
@@ -18,6 +18,4 @@ export async function subscribeToNewsletter(
   if (!res.data) {
     throw new Error("Opps, something error when submit form")
   }
-
-  return
 }

@@ -6,7 +6,7 @@ import {
 } from "@shared/components"
 import { Link } from "react-router"
 
-export type ExperienceItemData = {
+export interface ExperienceItemData {
   team: string
   teamLabel?: string
   position: string
@@ -14,7 +14,7 @@ export type ExperienceItemData = {
   teamUrl: string
 }
 
-type ExperienceItemProps = {
+interface ExperienceItemProps {
   experience: ExperienceItemData
 }
 

@@ -8,14 +8,14 @@ import {
 import { mergeClass } from "@shared/libs"
 import { Link } from "react-router"
 
-export type SocialData = {
+export interface SocialData {
   label: string
   href: string
   icon: string
   className?: string
 }
 
-type Props = {
+interface Props {
   social: SocialData
 }
 

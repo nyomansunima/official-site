@@ -1,9 +1,8 @@
 import * as React from "react"
-import { Link } from "react-router"
+import { Link, useLocation } from "react-router"
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
-import { useLocation } from "react-router"
 
-type NavMenuItemProps = {
+interface NavMenuItemProps {
   children: React.ReactNode
   href: string
 }
@@ -38,7 +37,7 @@ export function Menu() {
         <span className="h-10 w-10 flex justify-center items-center border-2 border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 -translate-x-1 -rotate-6 group-hover:-rotate-12 group-hover:-translate-x-2 group-hover:border-link"></span>
         <span className="h-10 w-10 flex justify-center items-center border-2 border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 translate-x-1 rotate-6 group-hover:rotate-12 group-hover:translate-x-2 group-hover:border-link"></span>
         <span className="h-10 w-10 flex justify-center items-center border-2 border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 group-hover:translate-y-2 group-hover:border-link">
-          <i className="fi text-xs fi-sr-flame"></i>
+          <i className="fi fi-sc-fire-flame-curved"></i>
         </span>
       </PopoverTrigger>
       <PopoverContent>

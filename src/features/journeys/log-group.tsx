@@ -1,11 +1,12 @@
-import { LogItem, type LogItemData } from "./log-item"
+import { LogItem } from "./log-item"
+import type { LogItemData } from "./log-item"
 
-export type LogGroupData = {
+export interface LogGroupData {
   title: string
   list: LogItemData[]
 }
 
-type LogGroupProps = {
+interface LogGroupProps {
   group: LogGroupData
 }
 

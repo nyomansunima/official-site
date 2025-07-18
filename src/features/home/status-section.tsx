@@ -1,4 +1,4 @@
-import { StatusItem, type StatusData } from "./status-item"
+import { StatusItem } from "./status-item"
 import status from "./status-data.json"
 
 export function StatusSection() {

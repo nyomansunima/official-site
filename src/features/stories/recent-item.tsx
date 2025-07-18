@@ -1,12 +1,12 @@
 import { Link } from "react-router"
 
-export type RecentData = {
+export interface RecentData {
   title: string
   timeline: string
   url: string
 }
 
-type RecentItemProps = {
+interface RecentItemProps {
   recent: RecentData
 }
 
@@ -22,7 +22,7 @@ export function RecentItem({ recent }: RecentItemProps) {
     >
       <div className="flex items-start tablet:items-center flex-col tablet:flex-row border-2 border-border border-dashed p-3 rounded-xl h-full w-full transition-all duration-300 group-hover:border-link">
         <div className="flex items-center gap-2 grow">
-          <i className="fi fi-ss-circle-small text-foreground/60 group-hover:text-link" />
+          <i className="fi fi-sc-check-circle group-hover:text-link text-sm" />
 
           <h3 className="text-sm font-medium text-pretty leading-tight! line-clamp-1 grow">
             {title}

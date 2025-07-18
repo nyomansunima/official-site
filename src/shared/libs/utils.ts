@@ -1,7 +1,9 @@
 import dayjs from "dayjs"
-import { type ClassValue, clsx } from "clsx"
+import { clsx } from "clsx"
+import type { ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
-import matter, { type GrayMatterFile } from "gray-matter"
+import matter from "gray-matter"
+import type { GrayMatterFile } from "gray-matter"
 
 export function mergeClass(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))

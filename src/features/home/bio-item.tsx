@@ -1,11 +1,11 @@
 import { Link } from "react-router"
 
-export type BioItemData = {
+export interface BioItemData {
   url: string
   label: string
 }
 
-type BioItemProps = {
+interface BioItemProps {
   data: BioItemData
 }
 
@@ -20,7 +20,7 @@ export function BioItem({ data }: BioItemProps) {
         target={isValidURL ? "_blank" : "_self"}
         className="flex items-center gap-2"
       >
-        <i className="fi fi-sr-add text-sm" />
+        <i className="fi fi-sc-check-circle" />
         <span>{label}</span>
       </Link>
     </li>

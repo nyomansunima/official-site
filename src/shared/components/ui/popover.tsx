@@ -5,10 +5,18 @@ import { mergeClass } from "@shared/libs"
 const Popover = PopoverPrimitive.Root
 const PopoverTrigger = PopoverPrimitive.Trigger
 
-const PopoverContent = React.forwardRef<
-  React.ComponentRef<typeof PopoverPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content>
->(({ className, align = "end", sideOffset = 4, children, ...props }, ref) => (
+const PopoverContent = ({
+  ref,
+  className,
+  align = "end",
+  sideOffset = 4,
+  children,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content> & {
+  ref?: React.RefObject<React.ComponentRef<
+    typeof PopoverPrimitive.Content
+  > | null>
+}) => (
   <PopoverPrimitive.Portal>
     <PopoverPrimitive.Content
       ref={ref}
@@ -25,7 +33,7 @@ const PopoverContent = React.forwardRef<
       </div>
     </PopoverPrimitive.Content>
   </PopoverPrimitive.Portal>
-))
+)
 PopoverContent.displayName = PopoverPrimitive.Content.displayName
 
 export { Popover, PopoverTrigger, PopoverContent }

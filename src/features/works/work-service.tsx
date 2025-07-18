@@ -2,9 +2,9 @@ import fs from "fs/promises"
 import path from "path"
 import { parseMarkdown } from "@shared/libs"
 
-const WORK_CONTENT_PATH = "./src/features/works/contents"
+const WORK_CONTENT_PATH = "src/contents/works"
 
-export type WorkFrontMatter = {
+export interface WorkFrontMatter {
   title: string
   description: string
   image: string
@@ -19,7 +19,7 @@ export type WorkFrontMatter = {
   }
 }
 
-export type WorkDetail = {
+export interface WorkDetail {
   meta: WorkFrontMatter
   content: any
 }
@@ -30,7 +30,7 @@ export type WorkData = WorkFrontMatter & {
 
 export async function getWorkDetail(slug: string): Promise<WorkDetail> {
   const filePath = path.join(process.cwd(), WORK_CONTENT_PATH, `${slug}.md`)
-  const file = await fs.readFile(filePath, "utf-8").catch((e) => {
+  const file = await fs.readFile(filePath, "utf-8").catch(() => {
     throw new Response("No work found", {
       status: 404,
       statusText:
@@ -39,21 +39,7 @@ export async function getWorkDetail(slug: string): Promise<WorkDetail> {
   })
   const { content, data } = parseMarkdown(file)
 
-  return { meta: data as WorkFrontMatter, content: content }
-}
-
-export async function getWorkPaths(): Promise<string[]> {
-  const workDirPath = path.join(process.cwd(), WORK_CONTENT_PATH)
-  const files = await fs.readdir(workDirPath)
-
-  const slugs = files
-    .filter((file) => file.endsWith(".md") || file.endsWith(".mdx"))
-    .map((file) => {
-      const slug = file.replace(/\.(mdx|md)$/, "")
-      return slug
-    }) as string[]
-
-  return slugs
+  return { meta: data as WorkFrontMatter, content }
 }
 
 export async function getWorks(): Promise<WorkData[]> {

@@ -1,4 +1,4 @@
-import avatarImg from "./avatar.png"
+import avatarImg from "./Avatar.webp"
 
 export function HeroSection() {
   return (

@@ -10,7 +10,7 @@ import { parseReadableDate } from "@shared/libs"
 import { Link } from "react-router"
 import type { WorkDetail } from "./work-service"
 
-type WorkDetailContentProps = {
+interface WorkDetailContentProps {
   work: WorkDetail
 }
 

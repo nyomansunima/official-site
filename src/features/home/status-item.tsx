@@ -1,11 +1,11 @@
 import { Link } from "react-router"
 
-export type StatusData = {
+export interface StatusData {
   title: string
   url: string
 }
 
-type StatusItemProps = {
+interface StatusItemProps {
   status: StatusData
 }
 
@@ -20,7 +20,7 @@ export function StatusItem({ status }: StatusItemProps) {
         target={isValidURL ? "_blank" : "_self"}
         className="flex items-center gap-2"
       >
-        <i className="fi fi-sr-add text-sm" />
+        <i className="fi fi-sc-check-circle" />
         <span>{title}</span>
       </Link>
     </li>

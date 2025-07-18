@@ -1,12 +1,12 @@
 import { Button } from "@shared/components"
 import { Link } from "react-router"
 
-export type ContactData = {
+export interface ContactData {
   href: string
   label: string
 }
 
-type Props = {
+interface Props {
   contact: ContactData
 }
 

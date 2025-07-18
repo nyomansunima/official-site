@@ -1,4 +1,4 @@
-import { type SocialData, SocialItem } from "./social-item"
+import { SocialItem } from "./social-item"
 import contact from "./contact-data.json"
 
 export function SocialSection() {

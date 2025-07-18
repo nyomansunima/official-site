@@ -1,7 +1,7 @@
 import { parseReadableDate } from "@shared/libs"
 import { Link } from "react-router"
 
-export type LogItemData = {
+export interface LogItemData {
   title: string
   description: string
   date: string
@@ -10,7 +10,7 @@ export type LogItemData = {
   url?: string
 }
 
-type Props = {
+interface Props {
   log: LogItemData
 }
 
@@ -24,7 +24,7 @@ export function LogItem({ log }: Props) {
       <div className="flex flex-col border-2 border-border border-dashed rounded-xl p-3 h-full w-full transition-all duration-300 group-hover:border-link">
         <div className="flex flex-col tablet:flex-row gap-2 tablet:items-center">
           <h3 className="flex items-center gap-2 font-medium text-sm leading-tight! text-pretty grow flex-1">
-            <i className="fi fi-ss-circle-small text-foreground/60 group-hover:text-link" />
+            <i className="fi fi-sc-check-circle  group-hover:text-link" />
             {title}
           </h3>
 
@@ -40,8 +40,8 @@ export function LogItem({ log }: Props) {
         </p>
 
         <div className="flex items-center gap-2 mt-4">
-          <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
-            <i className="fi fi-rr-circle-dashed text-xs" />
+          <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 py-1 hover:-translate-y-1 text-sm">
+            <i className="fi fi-sc-circle-dashed text-xs" />
             {category}
           </span>
 
@@ -49,9 +49,10 @@ export function LogItem({ log }: Props) {
             <Link
               to={url}
               target="_blank"
-              className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 py-1 hover:-translate-y-1 text-sm"
+              className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 py-1 hover:-translate-y-1 text-sm"
             >
-              <i className="fi fi-rr-broken-chain-link-wrong" /> See detail
+              <i className="fi fi-sr-broken-chain-link-wrong text-xs" />
+              Launch
             </Link>
           )}
         </div>

@@ -1,4 +1,4 @@
-import { type SupportData, SupportItem } from "./support-item"
+import { SupportItem } from "./support-item"
 import supports from "./support-data.json"
 
 export function SupportSection() {

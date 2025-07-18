@@ -3,12 +3,12 @@ import type { WorkData } from "./work-service"
 import { mergeClass, parseReadableDate } from "@shared/libs"
 import { Link } from "react-router"
 
-type Props = {
+interface Props {
   work: WorkData
 }
 
 export function WorkItem({ work }: Props) {
-  const { slug, title, description, image, date, type, category, status } = work
+  const { slug, title, description, image, date, type, status } = work
 
   const readableTimeline = parseReadableDate(date)
   const link = `/works/${slug}`
@@ -23,7 +23,7 @@ export function WorkItem({ work }: Props) {
       <div className="flex flex-col p-3 border-2 border-border border-dashed rounded-xl transition-all duration-300 group-hover:border-link">
         <div className="flex flex-col tablet:flex-row tablet:items-center gap-2 justify-between">
           <h3 className="flex items-center gap-2 text-sm font-medium flex-1 leading-tight!">
-            <i className="fi fi-ss-circle-small text-foreground/60 group-hover:text-link" />
+            <i className="fi fi-sc-check-circle group-hover:text-link" />
             {title}
           </h3>
 
@@ -37,19 +37,14 @@ export function WorkItem({ work }: Props) {
         </p>
 
         <div className="flex flex-wrap items-center gap-2 mt-4">
-          <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
-            <i className="fi fi-rr-circle-dashed text-xs" />
+          <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
+            <i className="fi fi-sc-circle-dashed text-xs" />
             {status}
           </span>
 
-          <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
-            <i className="fi fi-rr-circle-dashed text-xs" />
+          <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
+            <i className="fi fi-sc-circle-dashed text-xs" />
             {type}
-          </span>
-
-          <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
-            <i className="fi fi-rr-circle-dashed text-xs" />
-            {category}
           </span>
         </div>
 
