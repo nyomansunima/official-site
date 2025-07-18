@@ -12,9 +12,9 @@ import {
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import "@shared/styles/globals.css"
 import { Button, CenteredLayout, Footer, Header } from "@shared/components"
-import { loadConfig, loadServerEnv } from "@shared/libs"
+import { loadServerEnv } from "@shared/libs"
 
-type LayoutProps = {
+interface LayoutProps {
   children: React.ReactNode
 }
 
@@ -22,24 +22,6 @@ export function loader() {
   const ENV = loadServerEnv()
 
   return { ENV }
-}
-
-export function links() {
-  const config = loadConfig()
-
-  return [
-    { rel: "canonical", href: config.app.host },
-    { rel: "preconnect", href: "https://fonts.googleapis.com" },
-    {
-      rel: "preconnect",
-      href: "https://fonts.gstatic.com",
-      crossOrigin: "anonymous",
-    },
-    {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap",
-    },
-  ]
 }
 
 export function Layout({ children }: LayoutProps) {

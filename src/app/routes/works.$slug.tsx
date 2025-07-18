@@ -1,9 +1,6 @@
 import { generatedMetadata } from "@shared/libs"
-import {
-  getWorkDetail,
-  WorkDetailContent,
-  type WorkDetail,
-} from "@features/works"
+import { getWorkDetail, WorkDetailContent } from "@features/works"
+import type { WorkDetail } from "@features/works"
 
 export async function loader({ params }) {
   const { slug } = params
