@@ -16,6 +16,7 @@ export function WorkItem({ work }: Props) {
   return (
     <Link
       to={link}
+      viewTransition
       className={mergeClass(
         "flex group rounded-2xl bg-surface p-1 transition-all duration-300 hover:-translate-y-1 relative",
       )}
