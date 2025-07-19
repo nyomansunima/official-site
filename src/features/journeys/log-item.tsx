@@ -20,7 +20,11 @@ export function LogItem({ log }: Props) {
   const readableDate = parseReadableDate(date)
 
   return (
-    <div className="flex bg-surface p-1 rounded-2xl cursor-pointer group transition-all duration-300 hover:-translate-y-1">
+    <Link
+      to={url || "/"}
+      target="_blank"
+      className="flex bg-surface p-1 rounded-2xl cursor-pointer group transition-all duration-300 hover:-translate-y-1"
+    >
       <div className="flex flex-col border-2 border-border border-dashed rounded-xl p-3 h-full w-full transition-all duration-300 group-hover:border-link">
         <div className="flex flex-col tablet:flex-row gap-2 tablet:items-center">
           <h3 className="flex items-center gap-2 font-medium text-sm leading-tight! text-pretty grow flex-1">
@@ -41,20 +45,8 @@ export function LogItem({ log }: Props) {
 
         <div className="flex items-center gap-2 mt-4">
           <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 py-1 hover:-translate-y-1 text-sm">
-            <i className="fi fi-sc-circle-dashed text-xs" />
             {category}
           </span>
-
-          {url && (
-            <Link
-              to={url}
-              target="_blank"
-              className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 py-1 hover:-translate-y-1 text-sm"
-            >
-              <i className="fi fi-sr-broken-chain-link-wrong text-xs" />
-              Launch
-            </Link>
-          )}
         </div>
 
         {image && (
@@ -70,6 +62,6 @@ export function LogItem({ log }: Props) {
           </div>
         )}
       </div>
-    </div>
+    </Link>
   )
 }
