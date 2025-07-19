@@ -5,9 +5,9 @@ export function Brand() {
   return (
     <Link
       to={"/"}
-      className="flex items-center text-sm transition-all duration-300 hover:text-link font-medium"
+      className="flex justify-center items-center rounded-2xl text-sm transition-all duration-300 hover:text-link font-medium h-10 w-10 border-2 border-border border-dashed hover:border-link"
     >
-      @nyomansunima
+      <i className="fi fi-sc-bookmark" />
     </Link>
   )
 }
