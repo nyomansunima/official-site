@@ -38,13 +38,11 @@ export function WorkItem({ work }: Props) {
         </p>
 
         <div className="flex flex-wrap items-center gap-2 mt-4">
-          <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
-            <i className="fi fi-sc-circle-dashed text-xs" />
+          <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 py-1 hover:-translate-y-1 text-sm">
             {status}
           </span>
 
-          <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
-            <i className="fi fi-sc-circle-dashed text-xs" />
+          <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 py-1 hover:-translate-y-1 text-sm">
             {type}
           </span>
         </div>
