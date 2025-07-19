@@ -12,6 +12,7 @@ export function NavMenuItem({ children, href }: NavMenuItemProps) {
     <li className="flex w-full col-span-1">
       <Link
         to={href}
+        viewTransition
         className="flex justify-center items-center text-sm transition-all duration-300 text-foreground hover:-translate-x-1 hover:text-link"
       >
         {children}
