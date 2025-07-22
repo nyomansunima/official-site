@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section className="flex flex-col">
       <div className="flex gap-3 items-center group">
-        <div className="p-1 flex justify-center items-center border-2 border-border group-hover:border-link border-dashed rounded-full cursor-pointer group transition-all duration-300 hover:-translate-y-1">
+        <div className="p-1 flex justify-center items-center border-2 border-border border-dashed rounded-full cursor-pointer group transition-all duration-300 hover:-translate-y-1">
           <img
             src={avatarImg}
             height={60}
@@ -15,7 +15,7 @@ export function HeroSection() {
         </div>
         <div className="flex flex-col gap-1">
           <h2 className="text-lg font-medium">Nyoman Sunima</h2>
-          <span className="text-sm font-mono tracking-tight transition-all duration-300 text-link">
+          <span className="text-sm font-mono tracking-tight transition-all duration-300 text-foreground/60">
             Product designer, software engineer & creator
           </span>
           <div className="flex mt-2">
