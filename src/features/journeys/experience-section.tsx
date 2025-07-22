@@ -14,12 +14,10 @@ export function ExperienceSection() {
           <h2 className="text-lg font-medium">What's going on?</h2>
         </div>
 
-        <div className="flex bg-surface p-1 rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group/parent">
-          <div className="flex flex-col h-full w-full gap-3 p-5 border-2 border-border border-dashed rounded-xl transition-all duration-300 group-hover/parent:border-link">
-            {experiences.map((exp, index) => (
-              <ExperienceItem experience={exp} key={index} />
-            ))}
-          </div>
+        <div className="flex flex-col gap-3 bg-surface rounded-2xl p-5 border-2 border-border border-dashed transition-all duration-300 hover:border-link hover:-translate-y-1 cursor-pointer">
+          {experiences.map((exp, index) => (
+            <ExperienceItem experience={exp} key={index} />
+          ))}
         </div>
       </div>
     </section>
