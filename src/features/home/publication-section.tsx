@@ -12,7 +12,7 @@ export function PublicationSection() {
         <h2 className="py-2 text-lg font-medium">Read more.</h2>
       </div>
 
-      <div className="flex flex-col mt-10">
+      <div className="flex flex-col mt-10 gap-2">
         {filteredContents.map((st, i) => (
           <RecentItem recent={st} key={i} />
         ))}
