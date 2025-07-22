@@ -1,4 +1,4 @@
-import { DomainSection, ProductSection } from "@features/crafts"
+import { ProductSection } from "@features/crafts"
 import { generatedMetadata } from "@shared/libs"
 
 export function meta() {
@@ -12,7 +12,6 @@ export function meta() {
 export default function CraftsPage() {
   return (
     <main className="flex flex-col gap-20">
-      <DomainSection />
       <ProductSection />
     </main>
   )
