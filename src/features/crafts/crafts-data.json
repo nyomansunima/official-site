@@ -1,5 +1,5 @@
 {
-  "domains": [
+  "products": [
     {
       "title": "Weebo",
       "description": "Unlimited web design for startups, agency, and enterprises",
@@ -19,9 +19,7 @@
       "title": "Sonibble",
       "description": "Productize web design for small businesses",
       "link": "https://www.usesonibble.site/?ref=nyomansunima"
-    }
-  ],
-  "products": [
+    },
     {
       "title": "Creevoo",
       "description": "A collections of crafted web design templates for multiple platforms",
