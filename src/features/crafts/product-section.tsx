@@ -6,7 +6,7 @@ export function ProductSection() {
     <div className="flex flex-col">
       <div className="flex flex-col gap-2">
         <span className="text-sm text-link font-mono tracking-tight">
-          Products.
+          Crafts.
         </span>
         <h2 className="text-lg font-medium">Things as results.</h2>
       </div>
