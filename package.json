@@ -8,7 +8,7 @@
     "build": "react-router build",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-    "format": "prettier . --write",
+    "format": "prettier . --write --list-different",
     "lint": "eslint . --fix",
     "clean": "rm -rf .react-router build"
   },
