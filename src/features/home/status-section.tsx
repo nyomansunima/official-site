@@ -16,7 +16,7 @@ export function StatusSection() {
         exciting. That's including saas, products or services.
       </p>
 
-      <ul className="flex flex-col mt-6 gap-3">
+      <ul className="flex flex-col mt-6 gap-3 pl-2">
         {status.map((status, i) => (
           <StatusItem key={i} status={status} />
         ))}

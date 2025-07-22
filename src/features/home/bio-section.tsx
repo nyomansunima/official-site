@@ -19,7 +19,7 @@ export function BioSection() {
         you. Check it now.
       </p>
 
-      <ul className="flex flex-col mt-6 gap-3">
+      <ul className="flex flex-col mt-6 gap-3 pl-2">
         {bios.map((data, index) => (
           <BioItem data={data} key={index} />
         ))}
