@@ -7,7 +7,7 @@ export function Brand() {
       to={"/"}
       className="flex justify-center items-center rounded-2xl text-sm transition-all duration-300 font-medium h-10 w-10 border-2 border-border border-dashed hover:border-link hover:translate-y-1"
     >
-      <i className="fi fi-sc-bookmark" />
+      <i className="fi fi-sr-bookmark" />
     </Link>
   )
 }
