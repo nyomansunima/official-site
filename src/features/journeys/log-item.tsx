@@ -26,8 +26,8 @@ export function LogItem({ log }: Props) {
       className="flex flex-col bg-surface p-3 rounded-2xl border-2 border-border border-dashed cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:border-link"
     >
       <div className="flex flex-col tablet:flex-row gap-2 tablet:items-center">
-        <h3 className="flex items-center gap-2 font-medium text-sm leading-tight! text-pretty grow flex-1">
-          <i className="fi fi-sc-check-circle" />
+        <h3 className="flex items-center gap-1 font-medium text-sm leading-tight! text-pretty grow flex-1">
+          <i className="fi fi-sr-bullet" />
           {title}
         </h3>
 
