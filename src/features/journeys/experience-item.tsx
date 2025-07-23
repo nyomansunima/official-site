@@ -28,7 +28,7 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
       className="flex flex-col tablet:flex-row items-start tablet:items-center text-sm gap-2 py-1 group"
     >
       <div className="flex items-center font-medium grow gap-2">
-        <i className="fi fi-sc-check-circle" />
+        <i className="fi fi-sr-badge-check" />
 
         <TooltipProvider>
           <Tooltip>
