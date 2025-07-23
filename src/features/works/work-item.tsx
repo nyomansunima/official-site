@@ -21,8 +21,8 @@ export function WorkItem({ work }: Props) {
       )}
     >
       <div className="flex flex-col tablet:flex-row tablet:items-center gap-2 justify-between">
-        <h3 className="flex items-center gap-2 text-sm font-medium flex-1 leading-tight!">
-          <i className="fi fi-sc-check-circle" />
+        <h3 className="flex items-center gap-1 text-sm font-medium flex-1 leading-tight!">
+          <i className="fi fi-sr-bullet" />
           {title}
         </h3>
 
