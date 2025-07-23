@@ -28,7 +28,7 @@
     {
       "label": "See on Threads",
       "href": "https://threads.net/@bynyomansunima?ref=nyomansunima",
-      "icon": "fi fi-sc-comment-dots",
+      "icon": "fi fi-sr-comment-dots",
       "className": "tablet:w-28"
     },
     {
@@ -49,7 +49,7 @@
     {
       "label": "Design tweets",
       "href": "https://layers.to/nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-sc-folder",
+      "icon": "fi fi-sr-folder",
       "className": "tablet:w-28"
     },
     {
@@ -72,12 +72,12 @@
     {
       "label": "Connect on Peerlist",
       "href": "https://peerlist.io/nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-sc-circle-p"
+      "icon": "fi fi-sr-circle-p"
     },
     {
       "label": "Find on algora",
       "href": "https://algora.io/nyomansunima",
-      "icon": "fi fi-sc-bug"
+      "icon": "fi fi-sr-bug"
     }
   ]
 }
