@@ -19,8 +19,8 @@ export function SupportItem({ support }: Props) {
       target="_blank"
       className="flex flex-col bg-surface p-3 rounded-2xl border-2 border-border border-dashed transition-all duration-300 hover:-translate-y-1 hover:border-link cursor-pointer"
     >
-      <div className="flex items-center gap-2">
-        <i className="fi fi-sc-check-circle text-sm" />
+      <div className="flex items-center gap-1">
+        <i className="fi fi-sr-bullet text-sm" />
         <h3 className="text-sm font-medium text-wrap">{title}</h3>
       </div>
 
