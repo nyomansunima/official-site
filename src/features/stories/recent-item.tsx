@@ -19,8 +19,8 @@ export function RecentItem({ recent }: RecentItemProps) {
       target="_blank"
       className="flex items-start tablet:items-center flex-col tablet:flex-row border-2 border-border border-dashed p-3 rounded-2xl transition-all duration-300 hover:border-link hover:-translate-y-1"
     >
-      <div className="flex items-center gap-2 grow">
-        <i className="fi fi-sc-check-circle text-sm" />
+      <div className="flex items-center gap-1 grow">
+        <i className="fi fi-sr-bullet text-sm" />
 
         <h3 className="text-sm font-medium text-pretty leading-tight! line-clamp-1 grow">
           {title}
