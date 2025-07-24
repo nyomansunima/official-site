@@ -10,7 +10,11 @@ import {
 export default combine(
   ignores(["node_modules/**", "build/**", ".react-router/**"]),
   javascript(),
-  imports(),
+  imports({
+    overrides: {
+      "import/consistent-type-specifier-style": "off",
+    },
+  }),
   typescript(),
   react(),
   {
