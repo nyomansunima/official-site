@@ -14,13 +14,13 @@ export function BioItem({ data }: BioItemProps) {
   const isValidURL = url.includes("https://") || url.includes("http://")
 
   return (
-    <li className="flex items-center group">
+    <li className="flex items-center transition-all duration-300 hover:-translate-x-1">
       <Link
         to={url}
         target={isValidURL ? "_blank" : "_self"}
         className="flex items-center gap-2"
       >
-        <i className="fi fi-sr-bullet text-sm transition-all duration-300 group-hover:scale-125" />
+        <i className="fi fi-sr-bullet text-sm" />
         <span>{label}</span>
       </Link>
     </li>
