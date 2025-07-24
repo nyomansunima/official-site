@@ -1,4 +1,4 @@
-import { CraftItem } from "./craft-item"
+import { CraftGroup } from "./craft-group"
 import crafts from "./crafts-data.json"
 
 export function ProductSection() {
@@ -11,9 +11,14 @@ export function ProductSection() {
         <h2 className="text-lg font-medium">Things as results.</h2>
       </div>
 
-      <div className="grid grid-cols-1 tablet:grid-cols-2 w-full gap-2 tablet:gap-3 mt-10">
-        {crafts.products.map((craft, i) => (
-          <CraftItem craft={craft} key={i} />
+      <p className="mt-6 text-pretty leading-7">
+        This is what currently i am building, craft and ship. Including my saas,
+        products, business and streams.
+      </p>
+
+      <div className="flex flex-col gap-20 mt-10">
+        {crafts.map((group, i) => (
+          <CraftGroup group={group} key={i} />
         ))}
       </div>
     </div>
