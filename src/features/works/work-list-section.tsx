@@ -15,6 +15,11 @@ export function WorksListSection({ works }: Props) {
         <h2 className="text-lg font-medium">Top built & hacking.</h2>
       </div>
 
+      <p className="mt-6 text-pretty leading-7">
+        I’ve developed commercial projects as well as hobby projects. All
+        projects are included (business, works, case studies).
+      </p>
+
       <div className="flex flex-col gap-3 mt-10">
         {works.map((work, i) => (
           <WorkItem work={work} key={i} />
