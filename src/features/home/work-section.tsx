@@ -21,7 +21,7 @@ export function WorkSection({ works }: Props) {
       </p>
 
       <div className="flex mt-10 w-full">
-        <div className="grid grid-cols-1 gap-2 w-full">
+        <div className="grid grid-cols-1 gap-3 w-full">
           {works.map((work, i) => (
             <WorkItem work={work} key={i} />
           ))}
