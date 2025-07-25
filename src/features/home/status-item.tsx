@@ -14,7 +14,7 @@ export function StatusItem({ status }: StatusItemProps) {
   const isValidURL = url.includes("https://") || url.includes("http://")
 
   return (
-    <li className="flex items-center transition-all duration-300 hover:-translate-x-1">
+    <li className="flex items-center">
       <Link
         to={url}
         target={isValidURL ? "_blank" : "_self"}
