@@ -17,7 +17,7 @@ export function RecentItem({ recent }: RecentItemProps) {
     <Link
       to={url}
       target="_blank"
-      className="flex items-start tablet:items-center flex-col tablet:flex-row border-2 border-border border-dashed p-3 rounded-2xl transition-all duration-300 hover:border-link hover:-translate-y-1"
+      className="flex items-start tablet:items-center flex-col tablet:flex-row border-2 border-border border-dashed p-3 rounded-2xl transition-all duration-300 hover:border-link"
     >
       <div className="flex items-center gap-1 grow">
         <i className="fi fi-sr-bullet text-sm" />

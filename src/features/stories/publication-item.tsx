@@ -16,7 +16,7 @@ export function PublicationItem({ publication }: Props) {
     <Link
       to={url}
       target="_blank"
-      className="flex items-center bg-surface p-3 gap-1 rounded-2xl col-span-1 transition-all duration-300 hover:-translate-y-1 border-2 border-border border-dashed hover:border-link"
+      className="flex items-center bg-surface p-3 gap-1 rounded-2xl col-span-1 transition-all duration-300 border-2 border-border border-dashed hover:border-link"
     >
       <i className="fi fi-sr-bullet text-sm" />
       <h3 className="text-sm font-medium">{title}</h3>

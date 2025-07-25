@@ -17,7 +17,7 @@ export function WorkItem({ work }: Props) {
       to={link}
       viewTransition
       className={mergeClass(
-        "flex flex-col p-3 border-2 border-border border-dashed rounded-2xl transition-all duration-300 hover:border-link hover:-translate-y-1",
+        "flex flex-col p-3 border-2 border-border border-dashed rounded-2xl transition-all duration-300 hover:border-link",
       )}
     >
       <div className="flex flex-col tablet:flex-row tablet:items-center gap-2 justify-between">
@@ -34,11 +34,11 @@ export function WorkItem({ work }: Props) {
       </p>
 
       <div className="flex flex-wrap items-center gap-2 mt-4">
-        <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 py-1 hover:-translate-y-1 text-sm">
+        <span className="flex items-center gap-1 bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-sm">
           {status}
         </span>
 
-        <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 py-1 hover:-translate-y-1 text-sm">
+        <span className="flex items-center gap-1 bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-sm">
           {type}
         </span>
       </div>
