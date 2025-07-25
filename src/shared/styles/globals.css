@@ -86,6 +86,7 @@
   --tw-prose-td-borders: var(--color-border);
 
   font-size: var(--text-base);
+  line-height: calc(var(--spacing) * 7) !important;
   font-weight: var(--font-weight-normal);
 
   a {
