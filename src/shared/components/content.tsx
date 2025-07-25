@@ -33,9 +33,7 @@ export function MarkdownContent({
 
 export function ArticleContent({ children, className }: ArticleContentProps) {
   return (
-    <article
-      className={`${mergeClass("prose prose-p:leading-7 prose-li:leading-7 prose-a:text-link", className)}`}
-    >
+    <article className={`${mergeClass("prose", className)}`}>
       {children}
     </article>
   )
@@ -50,21 +48,14 @@ export function ContentImage({
   ...props
 }: ContentImageProps) {
   return (
-    <span
-      className={`${mergeClass(
-        "flex rounded-2xl p-1 border border-border bg-surface cursor-pointer my-4",
-        className,
-      )}`}
-    >
-      <div className="relative w-full overflow-hidden rounded-xl not-prose">
-        <img
-          src={src}
-          alt={alt}
-          {...props}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition-all duration-300 hover:scale-105 not-prose"
-        />
-      </div>
-    </span>
+    <div className="relative w-full overflow-hidden rounded-xl not-prose my-4 cursor-pointer">
+      <img
+        src={src}
+        alt={alt}
+        {...props}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        className="object-cover transition-all duration-300 hover:scale-105 not-prose"
+      />
+    </div>
   )
 }
