@@ -13,7 +13,7 @@ export function NavMenuItem({ children, href }: NavMenuItemProps) {
       <Link
         to={href}
         viewTransition
-        className="flex justify-center items-center text-sm transition-all duration-300 text-foreground hover:-translate-x-1 hover:text-link"
+        className="flex justify-center items-center text-sm transition-all duration-300 text-foreground hover:text-link"
       >
         {children}
       </Link>
@@ -32,14 +32,10 @@ export function Menu() {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
-        className="flex justify-center items-center cursor-pointer group relative h-10 w-10"
+        className="flex justify-center items-center cursor-pointer group relative h-10 w-10 rounded-2xl text-sm border-2 border-border border-dashed transition-all duration-300 hover:border-link"
         aria-label="Menu Button"
       >
-        <span className="h-10 w-10 flex justify-center items-center border-2 border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 -translate-x-1 -rotate-6 group-hover:-rotate-12 group-hover:-translate-x-2 group-hover:border-link"></span>
-        <span className="h-10 w-10 flex justify-center items-center border-2 border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 translate-x-1 rotate-6 group-hover:rotate-12 group-hover:translate-x-2 group-hover:border-link"></span>
-        <span className="h-10 w-10 flex justify-center items-center border-2 border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 group-hover:translate-y-2 group-hover:border-link">
-          <i className="fi fi-sr-add"></i>
-        </span>
+        <i className="fi fi-sr-add"></i>
       </PopoverTrigger>
       <PopoverContent>
         <ul className="grid grid-cols-2 w-full gap-x-4 gap-y-4">
