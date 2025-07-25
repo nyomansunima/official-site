@@ -17,8 +17,8 @@ export default function StoriesPage() {
   return (
     <main className="flex flex-col gap-20">
       <PublicationSection />
-      <NewsletterSection />
       <RecentlySection />
+      <NewsletterSection />
     </main>
   )
 }
