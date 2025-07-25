@@ -41,7 +41,7 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
-        <span className="text-foreground/60 transition-all duration-300 group-hover:text-foreground font-mono tracking-tight text-xs">
+        <span className="text-foreground/60 transition-all duration-300 group-hover:text-foreground text-sm">
           {team} ({timeline})
         </span>
       </div>
