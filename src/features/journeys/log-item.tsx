@@ -23,7 +23,7 @@ export function LogItem({ log }: Props) {
     <Link
       to={url || "/"}
       target="_blank"
-      className="flex flex-col bg-surface p-3 rounded-2xl border-2 border-border border-dashed transition-all duration-300 hover:-translate-y-1 hover:border-link"
+      className="flex flex-col bg-surface p-3 rounded-2xl border-2 border-border border-dashed transition-all duration-300 hover:border-link"
     >
       <div className="flex flex-col tablet:flex-row gap-2 tablet:items-center">
         <h3 className="flex items-center gap-1 font-medium text-sm leading-tight! text-pretty grow flex-1">
@@ -43,7 +43,7 @@ export function LogItem({ log }: Props) {
       </p>
 
       <div className="flex items-center gap-2 mt-4">
-        <span className="flex items-center gap-1 bg-secondary text-secondary-foreground transition-all duration-300 rounded-full px-3 py-1 hover:-translate-y-1 text-sm">
+        <span className="flex items-center gap-1 bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-sm">
           {category}
         </span>
       </div>
