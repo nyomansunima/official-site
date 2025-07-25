@@ -1,17 +1,13 @@
 {
   "contacts": [
-    { "label": "Send Me Email", "href": "mailto:nyomansunima@gmail.com" },
+    { "label": "Send me email", "href": "mailto:nyomansunima@gmail.com" },
     {
-      "label": "Schedule Meeting",
+      "label": "Schedule meeting",
       "href": "https://cal.com/nyomansunima/build-opportunity?ref=nyomansunima"
     },
     {
-      "label": "Chat on WhatsApp",
+      "label": "Chat on whatsApp",
       "href": "https://api.whatsapp.com/send?phone=6281330990903&ref=nyomansunima"
-    },
-    {
-      "label": "Read My CV",
-      "href": "https://read.cv/nyomansunima?ref=nyomansunima"
     }
   ],
   "socials": [
