@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section className="flex flex-col">
       <div className="flex gap-3 items-center group">
-        <div className="p-1 flex justify-center items-center border-2 border-border border-dashed rounded-full cursor-pointer group transition-all duration-300 hover:-translate-y-1">
+        <div className="p-1 flex justify-center items-center border-2 border-border border-dashed rounded-full cursor-pointer">
           <img
             src={avatarImg}
             height={60}
