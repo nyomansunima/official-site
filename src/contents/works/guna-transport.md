@@ -1,5 +1,5 @@
 ---
-title: "Guna Transport"
+title: "Guna transport"
 description: "Create website for transportation business that allow to generate more client and convert up to 30% audiences"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1733393555028/63b0c290-955c-4b73-8466-314758b61182.png"
 

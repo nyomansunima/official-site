@@ -1,5 +1,5 @@
 ---
-title: "Automatic Nation"
+title: "Automatic nation"
 description: "Led the design and developement of a brand new website for Automatic Nation that convert visitors into audiences and bring them to the newsletter integrations"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1736426452167/8f446f34-d892-4c6a-ba66-02e6d323c90f.png"
 
@@ -119,5 +119,3 @@ This project highlighted the importance of:
 ## Conclusion
 
 The success of this project is a testament to the power of collaboration, user-centric design, and modern development techniques. Acme Corp now has an e-commerce platform that not only meets but exceeds user expectations.
-
-_Interested in a similar transformation for your platform? Let’s work together!_

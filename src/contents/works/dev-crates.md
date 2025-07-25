@@ -1,5 +1,5 @@
 ---
-title: "Dev Crates"
+title: "Dev crates"
 description: "Helping developers to find the best resources, sites, and tools to build their projects. Also featuring a curated list of the best resources for developers to learn and grow"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1733990991229/49886a53-896d-4b9c-9146-dad03454f1dd.png"
 

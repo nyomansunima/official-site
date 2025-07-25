@@ -1,5 +1,5 @@
 ---
-title: "One Thing Theme"
+title: "One thing theme"
 description: "The best simple and elegant code editor theme with minimal looks and simple styles code editor themes for light & dark environments for perfect developer productivity"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1733491606862/875c0d92-370d-4dd2-84e4-dbe2f6a89d1b.png"
 
