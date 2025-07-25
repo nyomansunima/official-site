@@ -32,7 +32,7 @@ export function WorkDetailContent({ work }: WorkDetailContentProps) {
                 <Link
                   to={team.url}
                   target="_blank"
-                  className="flex items-center gap-2 leading-none! text-sm text-link font-mono tracking-tight"
+                  className="flex items-center gap-2 leading-none text-sm text-link"
                 >
                   {team.name}
                 </Link>
@@ -43,24 +43,24 @@ export function WorkDetailContent({ work }: WorkDetailContentProps) {
         )}
       </div>
 
-      <div className="flex flex-wrap items-center gap-4 mt-6">
-        <span className="flex items-center gap-1 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 text-sm font-mono tracking-tight">
+      <div className="flex flex-wrap items-center gap-4 mt-8 pb-10 border-b-2 border-border border-dashed">
+        <span className="flex items-center gap-1 leading-none! cursor-pointer text-sm font-mono tracking-tight">
           <i className="fi fi-sr-bullet" />
           {status}
         </span>
 
-        <span className="flex items-center gap-1 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 text-sm font-mono tracking-tight">
+        <span className="flex items-center gap-1 leading-none! cursor-pointer text-sm font-mono tracking-tight">
           <i className="fi fi-sr-bullet" />
           {type}
         </span>
 
-        <span className="flex items-center gap-1 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 text-sm font-mono tracking-tight">
+        <span className="flex items-center gap-1 leading-none! cursor-pointer text-sm font-mono tracking-tight">
           <i className="fi fi-sr-bullet" />
           {category}
         </span>
       </div>
 
-      <ArticleContent className="mt-10 prose-p:text-foreground/70 prose-ul:text-foreground/70">
+      <ArticleContent className="mt-10">
         <MarkdownContent content={work.content} />
       </ArticleContent>
     </div>
