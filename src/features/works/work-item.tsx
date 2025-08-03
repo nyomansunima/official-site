@@ -7,52 +7,28 @@ interface Props {
 }
 
 export function WorkItem({ work }: Props) {
-  const { slug, title, description, image, date, type, status } = work
+  const { slug, title, description, image, date } = work
 
   const readableTimeline = parseReadableDate(date)
   const link = `/works/${slug}`
 
   return (
-    <Link
-      to={link}
-      viewTransition
-      className={mergeClass(
-        "flex flex-col p-3 border-2 border-border border-dashed rounded-2xl transition-all duration-300 hover:border-link",
-      )}
-    >
-      <div className="flex flex-col tablet:flex-row tablet:items-center gap-2 justify-between">
-        <h3 className="flex items-center gap-1 text-sm font-medium flex-1 leading-tight!">
-          <i className="fi fi-sr-bullet" />
-          {title}
-        </h3>
-
-        <span className="text-sm text-foreground/60">{readableTimeline}</span>
+    <Link to={link} viewTransition className={mergeClass("flex flex-col")}>
+      <div className="flex w-full relative overflow-hidden h-[200px] tablet:h-[360px] rounded-2xl">
+        <img
+          src={image}
+          alt={title}
+          className="object-cover h-full w-full"
+          sizes="(min-width: 1024px) 2048px, 100vw"
+        />
       </div>
 
-      <p className="text-foreground/60 text-sm line-clamp-2 text-pretty mt-3 leading-relaxed">
-        {description}
-      </p>
-
-      <div className="flex flex-wrap items-center gap-2 mt-4">
-        <span className="flex items-center gap-1 bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-sm">
-          {status}
-        </span>
-
-        <span className="flex items-center gap-1 bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-sm">
-          {type}
-        </span>
+      <div className="flex items-center gap-4 mt-6">
+        <h3 className="font-medium">{title}</h3>
+        <span className="text-foreground/40 text-sm">{readableTimeline}</span>
       </div>
 
-      <div className="flex w-full mt-6">
-        <picture className="relative overflow-hidden w-full h-[200px] tablet:h-[360px] rounded-xl">
-          <img
-            src={image}
-            alt={title}
-            className="object-cover transition-all duration-300 group-hover:scale-105 h-full w-full"
-            sizes="(min-width: 1024px) 2048px, 100vw"
-          />
-        </picture>
-      </div>
+      <p className="line-clamp-2 text-pretty mt-3 leading-7">{description}</p>
     </Link>
   )
 }
