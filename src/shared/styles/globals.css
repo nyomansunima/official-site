@@ -28,14 +28,14 @@
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 80rem;
 
-  --color-background: hsl(0 0 98%);
-  --color-foreground: hsl(0 0 0%);
-  --color-surface: hsl(0 0 98%);
+  --color-background: hsl(0 0 100%);
+  --color-foreground: hsl(0 0 10%);
+  --color-surface: hsl(0 0 100%);
   --color-border: hsl(0 0 92%);
   --color-input: hsl(0 0 96%);
   --color-primary: hsl(0 0 0%);
   --color-primary-foreground: hsl(0 0 98%);
-  --color-secondary: hsl(0 0 93%);
+  --color-secondary: hsl(0 0 96%);
   --color-secondary-foreground: hsl(0 0 10%);
   --color-link: hsl(221 83 50%);
   --color-accent: hsl(0 0 40%);
@@ -71,7 +71,7 @@
 @utility prose {
   --tw-prose-headings: var(--color-foreground);
   --tw-prose-body: var(--color-foreground);
-  --tw-prose-links: var(--color-link);
+  --tw-prose-links: var(--color-foreground);
   --tw-prose-bold: var(--color-foreground);
   --tw-prose-counters: var(--color-foreground);
   --tw-prose-bullets: var(--color-foreground);
