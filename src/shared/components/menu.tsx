@@ -13,7 +13,7 @@ export function NavMenuItem({ children, href }: NavMenuItemProps) {
       <Link
         to={href}
         viewTransition
-        className="flex justify-center items-center text-sm transition-all duration-300 text-foreground hover:text-link"
+        className="flex justify-center items-center text-sm transition-all duration-300 text-foreground hover:text-foreground/40"
       >
         {children}
       </Link>
@@ -32,7 +32,7 @@ export function Menu() {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
-        className="flex justify-center items-center cursor-pointer group relative h-10 w-10 rounded-2xl text-sm border-2 border-border border-dashed transition-all duration-300 hover:border-link"
+        className="flex justify-center items-center cursor-pointer group relative h-10 w-10 rounded-2xl text-sm bg-secondary text-secondary-foreground"
         aria-label="Menu Button"
       >
         <i className="fi fi-sr-add"></i>
