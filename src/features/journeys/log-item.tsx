@@ -5,7 +5,6 @@ export interface LogItemData {
   title: string
   description: string
   date: string
-  category: string
   image?: string
   url?: string
 }
@@ -15,51 +14,28 @@ interface Props {
 }
 
 export function LogItem({ log }: Props) {
-  const { title, description, date, category, image, url } = log
-
+  const { title, description, date, image, url } = log
   const readableDate = parseReadableDate(date)
 
   return (
-    <Link
-      to={url || "/"}
-      target="_blank"
-      className="flex flex-col bg-surface p-3 rounded-2xl border-2 border-border border-dashed transition-all duration-300 hover:border-link"
-    >
-      <div className="flex flex-col tablet:flex-row gap-2 tablet:items-center">
-        <h3 className="flex items-center gap-1 font-medium text-sm leading-tight! text-pretty grow flex-1">
-          <i className="fi fi-sr-bullet" />
-          {title}
-        </h3>
-
-        <div className="flex items-center gap-2">
-          <span className="text-foreground/60 text-sm transition-all duration-300">
-            {readableDate}
-          </span>
-        </div>
-      </div>
-
-      <p className="text-sm mt-3 text-foreground/60 text-pretty leading-relaxed">
-        {description}
-      </p>
-
-      <div className="flex items-center gap-2 mt-4">
-        <span className="flex items-center gap-1 bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-sm">
-          {category}
-        </span>
-      </div>
-
+    <Link to={url || "/"} target="_blank" className="flex flex-col">
       {image && (
-        <div className="flex cursor-pointer mt-6">
-          <picture className="relative w-full h-[200px] tablet:h-[360px] overflow-hidden rounded-xl not-prose">
-            <img
-              src={image}
-              alt={title}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover transition-all duration-300 hover:scale-105 not-prose h-full w-full"
-            />
-          </picture>
+        <div className="mb-6 relative w-full h-[200px] tablet:h-[360px] overflow-hidden rounded-2xl">
+          <img
+            src={image}
+            alt={title}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover h-full w-full"
+          />
         </div>
       )}
+
+      <div className="flex items-center gap-4">
+        <h3 className="font-medium">{title}</h3>
+        <span className="text-foreground/40 text-sm">{readableDate}</span>
+      </div>
+
+      <p className="mt-3 text-pretty leading-7">{description}</p>
     </Link>
   )
 }

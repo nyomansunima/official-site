@@ -4,62 +4,50 @@
     "list": [
       {
         "title": "1.1.1.1 Warp",
-        "description": "Best free vpn and proxy services for the internet. Allow to use the 1.1.1.1 dns for free.",
         "url": "https://one.one.one.one?ref=nyomansunima"
       },
       {
         "title": "Zed",
-        "description": "My favorite code editor for building apps, websites, and more.",
         "url": "https://zed.dev?ref=nyomansunima"
       },
       {
         "title": "Helix",
-        "description": "Other favorite terminal code editor that ilove to use.",
         "url": "https://helix-editor.com?ref=nyomansunima"
       },
       {
         "title": "Notion",
-        "description": "Notion is a workspace where you can create, organize, and share anything you want.",
         "url": "https://notion.so/signup?ref=nyomansunima"
       },
       {
         "title": "Figma",
-        "description": "Figma is a collaborative web application for type design.",
         "url": "https://figma.com/signup?ref=nyomansunima"
       },
       {
         "title": "ChatGPT",
-        "description": "ChatGPT is a chatbot that can answer questions and generate text.",
         "url": "https://chat.openai.com/signup?ref=nyomansunima"
       },
       {
         "title": "Notion Calendar",
-        "description": "Notion Calendar is a calendar for Notion.",
         "url": "https://notion.so/signup?ref=nyomansunima"
       },
       {
         "title": "Spark Email",
-        "description": "Spark Email is a fast and beautiful email client.",
         "url": "https://sparkmailapp.com/signup?ref=nyomansunima"
       },
       {
         "title": "Brave",
-        "description": "Main browser to explore, code and doing all of the works.",
         "url": "https://brave.com?ref=nyomansunignup?ref=nyomansunima"
       },
       {
         "title": "Ghostty",
-        "description": "My favorite terminal apps for daily driver as developer.",
         "url": "https://ghostty.org?ref=nyomansunima"
       },
       {
         "title": "Bitwarden",
-        "description": "Open source password manager to save password for free.",
         "url": "https://bitwarden.com?ref=nyomansunima"
       },
       {
         "title": "Github",
-        "description": "Best for manage the code and collaborate with team.",
         "url": "https://.com?ref=nyomansunima"
       }
     ]
@@ -69,87 +57,70 @@
     "list": [
       {
         "title": "React router",
-        "description": "My favorite react framework to build sites and apps.",
         "url": "https://reactrouter.com?ref=nyomansunima"
       },
       {
         "title": "Expo.dev",
-        "description": "Expo is a framework for building React Native applications.",
         "url": "https://expo.dev?ref=nyomansunima"
       },
       {
         "title": "Electron Forge",
-        "description": "Electron Forge is a tool for building Electron applications.",
         "url": "https://www.electronforge.io?ref=nyomansunima"
       },
       {
         "title": "Vite",
-        "description": "Vite is a build tool for modern web projects.",
         "url": "https://vitejs.dev/guide/?ref=nyomansunima"
       },
       {
         "title": "Shadcn UI",
-        "description": "Shadcn UI is a library of React components.",
         "url": "https://ui.shadcn.com/docs/installation?ref=nyomansunima"
       },
       {
         "title": "Tailwind CSS",
-        "description": "Tailwind CSS is a utility-first CSS framework.",
         "url": "https://tailwindcss.com/docs/installation?ref=nyomansunima"
       },
       {
         "title": "Hoppscotch",
-        "description": "Hoppscotch is a free, fast and beautiful API request builder.",
         "url": "https://hoppscotch.com?ref=nyomansunima"
       },
       {
         "title": "Vercel",
-        "description": "Favorite platform to deploy my website and also the other business sites.",
         "url": "https://vercel.com?ref=nyomansunima"
       },
       {
         "title": "Waitlist",
-        "description": "I love this stacks, useful when building waiting list for product that embed in a beta sites.",
         "url": "https://getwaitlist.com?ref=nyomansunima"
       },
       {
         "title": "Airtable",
-        "description": "Help me to manage the simple database for the projects.",
         "url": "https://airtable.com?ref=nyomansunima"
       },
       {
         "title": "Cloudflare",
-        "description": "Best for deploy and manage projects like website, api, and more.",
         "url": "https://cloudflare.com?ref=nyomansunima"
       },
       {
         "title": "Godaddy",
-        "description": "My favorite to find unique and worth domain name.",
         "url": "https://godaddy.com?ref=nyomansunima"
       },
       {
         "title": "Posthog",
-        "description": "My favorite tool to track the user behavior, analytics and manage project feature.",
         "url": "https://posthog.com?ref=nyomansunima"
       },
       {
         "title": "Loops",
-        "description": "Best if you need and email for startups, saas products",
         "url": "https://loops.so?ref=nyomansunima"
       },
       {
         "title": "Resend",
-        "description": "Most approachable email for developers",
         "url": "https://resend.com?ref=nyomansunima"
       },
       {
         "title": "React Email",
-        "description": "Best custom email template using react for startups",
         "url": "https://react.email?ref=nyomansunima"
       },
       {
         "title": "Danet",
-        "description": "Custom backend framework for scale work on deno",
         "url": "https://danet.land?ref=nyomansunima"
       }
     ]
@@ -159,42 +130,34 @@
     "list": [
       {
         "title": "Dribbble",
-        "description": "Best for designers, i love use this for inspirations and concept design.",
         "url": "https://dribbble.com?ref=nyomansunima"
       },
       {
         "title": "Godly Website",
-        "description": "My favorite website for inspiration when working with website design.",
         "url": "https://godly.website?ref=nyomansunima"
       },
       {
         "title": "Awwwards",
-        "description": "When i design a website, i always check the awards on this website.",
         "url": "https://www.awwwards.com?ref=nyomansunima"
       },
       {
         "title": "Mobbin",
-        "description": "Best for designers, i love use this for inspirations and concept design.",
         "url": "https://mobbin.design?ref=nyomansunima"
       },
       {
         "title": "Curated.design",
-        "description": "Most minimal and clean design inspiration for websites, apps, and saas",
         "url": "https://curated.design?ref=nyomansunima"
       },
       {
         "title": "Landings.dev",
-        "description": "Best for designers, i love use this for inspirations and concept design.",
         "url": "https://landings.dev?ref=nyomansunima"
       },
       {
         "title": "Minimal.gallery",
-        "description": "For minimal purpose style websites. Best for looking simple inspirations",
         "url": "https://minimal.gallery?ref=nyomansunima"
       },
       {
         "title": "Ecomm.design",
-        "description": "Curated eccommerce website design inspirations that combine with different styles",
         "url": "https://ecomm.design?ref=nyomansunima"
       }
     ]
@@ -204,32 +167,26 @@
     "list": [
       {
         "title": "Tailark",
-        "description": "Another pre-built ui blocks designed using shadcn ui for marketing sites.",
         "url": "https://tailark.com?ref=nyomansunima"
       },
       {
         "title": "Shadcn UI",
-        "description": "Best for developers when start create ui for the web app",
         "url": "https://ui.shadcn.com?ref=nyomansunima"
       },
       {
         "title": "Magic UI",
-        "description": "Best animation website that used to create animation for the web app",
         "url": "https://magicui.design?ref=nyomansunima"
       },
       {
         "title": "Motion",
-        "description": "My favorite animation library for the web app",
         "url": "https://motion.dev?ref=nyomansunima"
       },
       {
         "title": "Flaticon Interface Icon",
-        "description": "My favorite free icons for start website and design projects.",
         "url": "https://www.flaticon.com/uicons/type-icons?ref=nyomansunima="
       },
       {
         "title": "Lazygit",
-        "description": "My favorite git client to working on terminal.",
         "url": "https://github.com/jesseduffield/lazygit?ref=nyomansunima"
       }
     ]
@@ -239,47 +196,38 @@
     "list": [
       {
         "title": "React router",
-        "description": "My favorite react framework to build sites and apps.",
         "url": "https://reactrouter.com?ref=nyomansunima"
       },
       {
         "title": "Next.js",
-        "description": "Most used framework to work on custom websites.",
         "url": "https://nextjs.org?ref=nyomansunima"
       },
       {
         "title": "Framer",
-        "description": "To create simple design webiste and client needs.",
         "url": "https://framer.com?ref=nyomansunima"
       },
       {
         "title": "Wix Studio",
-        "description": "Better for create custom and collaborative websites across teams.",
         "url": "https://framer.com?ref=nyomansunima"
       },
       {
         "title": "Shopify",
-        "description": "Help me to use the templates and API to create marketplace store",
         "url": "https://shopify.com?ref=nyomansunima"
       },
       {
         "title": "Prismic",
-        "description": "Help me create a custom website with teams collaboration feature.",
         "url": "https://prismic.io?ref=nyomansunima"
       },
       {
         "title": "Sanity",
-        "description": "Best way to start website with custom CMS.",
         "url": "https://sanity.io?ref=nyomansunima"
       },
       {
         "title": "Astro",
-        "description": "Good framework to build marketing sites",
         "url": "https://astro.build?ref=nyomansunima"
       },
       {
         "title": "Webflow",
-        "description": "Another tool to create stunning websites",
         "url": "https://webflow.com?ref=nyomansunima"
       }
     ]
@@ -289,12 +237,10 @@
     "list": [
       {
         "title": "Cal.com",
-        "description": "Best for create and manage your business calendar.",
         "url": "https://cal.com?ref=nyomansunima"
       },
       {
         "title": "Loom",
-        "description": "Create a video for the project and share with the team.",
         "url": "https://loom.com?ref=nyomansunima"
       }
     ]
@@ -304,27 +250,22 @@
     "list": [
       {
         "title": "Lemon Squeezy",
-        "description": "Useful when create digital goods and products.",
         "url": "https://lemonsqueezy.com?ref=nyomansunima"
       },
       {
         "title": "Polar",
-        "description": "Easy to access and use the payment gateway.",
         "url": "https://polar.sh?ref=nyomansunima"
       },
       {
         "title": "Paddle",
-        "description": "Best for create and manage the subscriptions.",
         "url": "https://paddle.com?ref=nyomansunima"
       },
       {
         "title": "Paypal",
-        "description": "Another payment gateway for the business.",
         "url": "https://paypal.com?ref=nyomansunima"
       },
       {
         "title": "Stripe",
-        "description": "Best for create and manage the subscriptions.",
         "url": "https://stripe.com?ref=nyomansunima"
       }
     ]
@@ -334,32 +275,26 @@
     "list": [
       {
         "title": "Hashnode",
-        "description": "Best for dev content blog, articles with wide global dev audiences",
         "url": "https://hashnode.com?ref=nyomansunima"
       },
       {
         "title": "Medium",
-        "description": "Best for general purpose publication with wide audiences",
         "url": "https://medium.com?ref=nyomansunima"
       },
       {
         "title": "Dev.to",
-        "description": "Another one of developer community content",
         "url": "https://dev.to?ref=nyomansunima"
       },
       {
         "title": "Hackernoon",
-        "description": "Another payment gateway for the business",
         "url": "https://hackernoon.com?ref=nyomansunima"
       },
       {
         "title": "Substack",
-        "description": "Best for community driven content with newsletter, post feature",
         "url": "https://substack.com?ref=nyomansunima"
       },
       {
         "title": "Kit",
-        "description": "Best creator tools for publication, newsletter, emails and paid content",
         "url": "https://kit.com?ref=nyomansunima"
       }
     ]
@@ -369,32 +304,26 @@
     "list": [
       {
         "title": "Vercel",
-        "description": "Good for deploy sites, web apps and another marketing sites.",
         "url": "https://vercel.com?ref=nyomansunima"
       },
       {
         "title": "Cloudflare",
-        "description": "Complete all in one solutions for backend, database and computing.",
         "url": "https://cloudflare.com?ref=nyomansunima"
       },
       {
         "title": "Netlify",
-        "description": "Another hosting to deploy sites wih also good tier.",
         "url": "https://netlify.com?ref=nyomansunima"
       },
       {
         "title": "Railway",
-        "description": "Best place to deploy your own backend and custom server.",
         "url": "https://railway.com?ref=nyomansunima"
       },
       {
         "title": "Sevalla",
-        "description": "Another server and cloud computing solutions to start.",
         "url": "https://sevalla.com?ref=nyomansunima"
       },
       {
         "title": "Digital ocean",
-        "description": "Another interesting cloud with multiple offer included.",
         "url": "https://digitalocean.com?ref=nyomansunima"
       }
     ]

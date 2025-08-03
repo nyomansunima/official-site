@@ -1,3 +1,4 @@
+import { parseReadableDate } from "@shared/libs"
 import { Link } from "react-router"
 
 export interface RecentData {
@@ -12,23 +13,16 @@ interface RecentItemProps {
 
 export function RecentItem({ recent }: RecentItemProps) {
   const { title, timeline, url } = recent
+  const parsedDate = parseReadableDate(timeline)
 
   return (
-    <Link
-      to={url}
-      target="_blank"
-      className="flex items-start tablet:items-center flex-col tablet:flex-row border-2 border-border border-dashed p-3 rounded-2xl transition-all duration-300 hover:border-link"
-    >
-      <div className="flex items-center gap-1 grow">
-        <i className="fi fi-sr-bullet text-sm" />
+    <Link to={url} target="_blank" className="flex items-center py-2">
+      <div className="flex items-center gap-2 grow">
+        <i className="fi fi-sr-bullet text-sm text-foreground/40" />
+        <span className="text-pretty line-clamp-1">{title}</span>
+      </div>
 
-        <h3 className="text-sm font-medium text-pretty leading-tight! line-clamp-1 grow">
-          {title}
-        </h3>
-      </div>
-      <div className="flex gap-2 text-sm text-foreground/60">
-        <span className="transition-all duration-300">{timeline}</span>
-      </div>
+      <span className="text-sm text-foreground/40">{parsedDate}</span>
     </Link>
   )
 }

@@ -1,4 +1,3 @@
-import { Button } from "@shared/components"
 import { Link } from "react-router"
 
 export interface ContactData {
@@ -14,15 +13,9 @@ export function ContactItem({ contact }: Props) {
   const { href, label } = contact
 
   return (
-    <Button
-      variant={"outline"}
-      size={"base"}
-      className="h-12 transition-all duration-300 bg-surface text-[.8125rem] border-2 border-dashed hover:border-link"
-      asChild
-    >
-      <Link to={href} target="_blank">
-        {label}
-      </Link>
-    </Button>
+    <Link to={href} target="_blank" className="flex items-center gap-2 py-2">
+      <i className="fi fi-sr-bullet text-sm text-foreground/40" />
+      <span>{label}</span>
+    </Link>
   )
 }

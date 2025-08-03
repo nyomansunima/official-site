@@ -5,21 +5,18 @@
       {
         "title": "Learn basic html, css, javascript to create blog",
         "description": "Learn the basic of html, css, javascript to create blog, then start learning web design, create template and others.",
-        "date": "June 2019",
-        "category": "Growth"
+        "date": "June 2019"
       },
       {
         "title": "Fresh graduated as a computer & networking engineer",
         "description": "After 3 years of hard work, learning and practicing, I finally graduated from vocational high school of Negeri Bali Mandara. I was so proud of myself.",
         "date": "July 2019",
-        "category": "Growth",
         "url": "https://smknbalimandara.sch.id?ref=nyomansunima"
       },
       {
         "title": "Become junior software engineer @dimata",
         "description": "After graduated, joining the awesome team to create and maintain software for business and goverment at Dimata. Responsible to maintain the sites, codebase, create new apps, redesign apps.",
         "date": "Sep 2019",
-        "category": "Career",
         "url": "https://dimata.com?ref=nyomansunima"
       }
     ]
@@ -30,8 +27,7 @@
       {
         "title": "Promoted as a senior software engineer",
         "description": "After 2 years of hard work, time to promoted as a senior software engineer. Responsible to redesign the apps, create microservices, integrate api, collab with designers, and create a design system for the company.",
-        "date": "June 2021",
-        "category": "Career"
+        "date": "June 2021"
       }
     ]
   },
@@ -43,7 +39,6 @@
         "description": "It's my turn time to start all of my career as freelancer. I resign to @dimata and start the journey.",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1731664511585/84f9bbb3-ab3b-4247-88c4-98f877fcc7a0.png",
         "date": "Jan 2023",
-        "category": "Career",
         "url": "https://www.upwork.com/freelancers/~0173a3d4a34995e572"
       }
     ]
@@ -56,7 +51,6 @@
         "description": "With all of the experience and knowledge, I create a web design business at Weebo. I'm so excited to start this new journey.",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1731664486541/5c428e9e-211e-4f21-8ee0-c2d4c306bce6.png",
         "date": "Jan 2024",
-        "category": "Business",
         "url": "https://tryweebo.one?ref=nyomansunima"
       },
       {
@@ -64,7 +58,6 @@
         "description": "A collection tools, library, or resources for developers that i have created to support the workflows and development process. Also a place to create another librray, ui, types and so on. Explore your utils at Weecraft.",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1731664500548/71978cc6-c770-4700-8f98-76540702e1af.png",
         "date": "Oct 2024",
-        "category": "Work",
         "url": "https://weecraft.club?ref=nyomansunima"
       },
       {
@@ -72,7 +65,6 @@
         "description": "Tried to explore, and start create my own software business. This is my first step to create my own software business.",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1731664507145/678aea7c-f17a-4e50-ba44-328435aa5702.png",
         "date": "Oct 2024",
-        "category": "Work",
         "url": "https://moono.space?ref=nyomansunima"
       },
       {
@@ -80,7 +72,6 @@
         "description": "Create simple and elegant code editor theme that support vscode, zed and others, comes with simplicity for developers.",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1733491606862/875c0d92-370d-4dd2-84e4-dbe2f6a89d1b.png",
         "date": "Nov 2024",
-        "category": "Work",
         "url": "https://brookcodetheme.vercel.app"
       },
       {
@@ -88,21 +79,18 @@
         "description": "Creat official website for Guna Transport, a new transportation company that is going to be launched in 2025.",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1733393555028/63b0c290-955c-4b73-8466-314758b61182.png",
         "date": "Dec, 5 2024",
-        "category": "Work",
         "url": "https://www.gunatransport.com"
       },
       {
         "title": "Redesign Weebo Website",
         "description": "Redesign the weebo website with new clean and simple look website concept. Allow the audiences and clients focus on the main goal of the website.",
         "date": "Dec, 8 2024",
-        "category": "Work",
         "url": "https://tryweebo.one"
       },
       {
         "title": "Lauch Dev Crates",
         "description": "Craft a better developer resources website with new clean and simple look website concept. Allow the audiences and clients focus on the main goal of the website.",
         "date": "Dec, 12 2024",
-        "category": "Work",
         "url": "https://www.devcrates.site?ref=nyomansunima",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1733990991229/49886a53-896d-4b9c-9146-dad03454f1dd.png"
       }
@@ -115,14 +103,12 @@
         "title": "Launch Creevoo",
         "description": "Launch new website templates products for multiple platform including nextjs, astro, shopify, webflow or framer",
         "date": "Jan, 12 2025",
-        "category": "Hacking",
         "url": "https://www.creevoo.store?ref=nyomansunima"
       },
       {
         "title": "Launch Roastto.site",
         "description": "Launch the roasting website business to handle the audit services for all of my web design business",
         "date": "Apr, 10 2025",
-        "category": "Hacking",
         "url": "https://www.roastto.site?ref=nyomansunima",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1744529758315/069c8128-dbe3-4338-aa4e-8abe383e5248.png"
       }

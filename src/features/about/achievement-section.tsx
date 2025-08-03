@@ -4,7 +4,7 @@ export function AchievementSection() {
       <br />
 
       <div className="flex flex-col gap-2 not-prose mt-10">
-        <span className="text-sm text-link font-mono tracking-tight">
+        <span className="text-sm text-foreground/40 font-mono tracking-tight">
           Achievements.
         </span>
         <h2>Best moment, journey and milestones of hard time</h2>
