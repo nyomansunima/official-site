@@ -10,7 +10,7 @@ export function mergeClass(...inputs: ClassValue[]) {
 }
 
 export function parseReadableDate(date: string) {
-  return dayjs(date).format("MMM, DD YYYY")
+  return dayjs(date).format("MMM, YYYY")
 }
 
 export function parseMarkdown(rawFile: any): GrayMatterFile<any> {

@@ -5,7 +5,7 @@ export function EndWordSection() {
     <section>
       <br />
       <div className="flex flex-col gap-2 not-prose mt-10">
-        <span className="text-sm text-link font-mono tracking-tight">
+        <span className="text-sm text-foreground/40 font-mono tracking-tight">
           Endword.
         </span>
         <h2>Last word to say, thanks</h2>
@@ -38,8 +38,8 @@ export function EndWordSection() {
       <p>Thanks for all of your support and attention.</p>
 
       <div className="flex flex-col not-prose mt-16 gap-3">
-        <p className="font-medium">Nyoman Sunima</p>
-        <span className="text-sm text-link font-mono tracking-tight">
+        <p>Nyoman Sunima</p>
+        <span className="text-sm text-foreground/40 font-mono tracking-tight">
           Your business & work best partner.
         </span>
       </div>

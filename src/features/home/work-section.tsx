@@ -9,23 +9,21 @@ export function WorkSection({ works }: Props) {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col">
-        <span className="text-sm font-mono text-link tracking-tight">
+        <span className="text-sm font-mono text-foreground/40 tracking-tight">
           Featured works.
         </span>
-        <h2 className="py-2 text-lg font-medium">Recent work.</h2>
+        <h2 className="text-lg font-medium mt-2">Recent work.</h2>
+
+        <p className="mt-6 text-pretty leading-7">
+          See my recent works around design, development, hacking, saas, and my
+          business.
+        </p>
       </div>
 
-      <p className="mt-6 text-pretty leading-7">
-        See my recent works around design, development, hacking, saas, and my
-        business.
-      </p>
-
-      <div className="flex mt-10 w-full">
-        <div className="grid grid-cols-1 gap-3 w-full">
-          {works.map((work, i) => (
-            <WorkItem work={work} key={i} />
-          ))}
-        </div>
+      <div className="flex flex-col mt-10 gap-16">
+        {works.map((work, i) => (
+          <WorkItem work={work} key={i} />
+        ))}
       </div>
     </section>
   )

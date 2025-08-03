@@ -4,18 +4,14 @@ description: "Led the design and developement of a brand new website for Automat
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1736426452167/8f446f34-d892-4c6a-ba66-02e6d323c90f.png"
 
 date: "2023-07-12"
-status: "In Progress"
 isFeatured: false
-
-type: "Work"
-category: "Branding"
 
 team:
   name: "Weebo"
   url: "https://www.tryweebo.one"
 ---
 
-Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user type. They needed a complet=e redesign to improve usability and enhance their customer experience.
+Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user type. They needed a complete redesign to improve usability and enhance their customer experience.
 
 <span className="text-foreground/60">Good to know:</span>
 

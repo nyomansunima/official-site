@@ -1,51 +1,44 @@
 [
   {
     "team": "Dimata",
-    "teamLabel": "Software house in Bali",
     "position": "Frontend Developer",
     "timeline": "Jul 2019 - Feb 2020",
-    "teamUrl": "https://dimata.com?ref=nyomansunima"
+    "url": "https://dimata.com?ref=nyomansunima"
   },
   {
     "team": "Dimata",
-    "teamLabel": "Software house in Bali",
     "position": "Full-stack Engineer",
     "timeline": "Feb 2020 - Apr 2022",
-    "teamUrl": "https://dimata.com?ref=nyomansunima"
+    "url": "https://dimata.com?ref=nyomansunima"
   },
   {
     "team": "Dimata",
-    "teamLabel": "Software house in Bali",
     "position": "Senior Software Engineer",
     "timeline": "Apr 2022 - Feb 2023",
-    "teamUrl": "https://dimata.com?ref=nyomansunima"
+    "url": "https://dimata.com?ref=nyomansunima"
   },
   {
     "team": "Engaging enterprises",
-    "teamLabel": "Creative & marketing agency in singapore",
     "position": "Full-stack Developer",
     "timeline": "Apr 2023 - May 2023",
-    "teamUrl": "https://engagingenterprises.co/?ref=nyomansunima"
+    "url": "https://engagingenterprises.co/?ref=nyomansunima"
   },
   {
     "team": "Weebo",
-    "teamLabel": "Web design agency",
     "position": "Founder & CEO",
     "timeline": "Feb 2024 - Present",
-    "teamUrl": "https://tryweebo.one/?ref=nyomansunima"
+    "url": "https://tryweebo.one/?ref=nyomansunima"
   },
   {
     "team": "Weecraft",
-    "teamLabel": "Open source teams",
     "position": "Founder & Creative",
     "timeline": "Mar 2024 - Present",
-    "teamUrl": "https://weecraft.club/?ref=nyomansunima"
+    "url": "https://weecraft.club/?ref=nyomansunima"
   },
   {
     "team": "Moono",
-    "teamLabel": "Indie hacking for saas",
     "position": "Founder & Solo Creative",
     "timeline": "Nov 2024 - Present",
-    "teamUrl": "https://moono.space/?ref=nyomansunima"
+    "url": "https://moono.space/?ref=nyomansunima"
   }
 ]

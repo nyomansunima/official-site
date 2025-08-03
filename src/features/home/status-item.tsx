@@ -14,15 +14,13 @@ export function StatusItem({ status }: StatusItemProps) {
   const isValidURL = url.includes("https://") || url.includes("http://")
 
   return (
-    <li className="flex items-center">
-      <Link
-        to={url}
-        target={isValidURL ? "_blank" : "_self"}
-        className="flex items-center gap-2"
-      >
-        <i className="fi fi-sr-bullet text-sm" />
-        <span>{title}</span>
-      </Link>
-    </li>
+    <Link
+      to={url}
+      target={isValidURL ? "_blank" : "_self"}
+      className="flex items-center gap-2 py-2"
+    >
+      <i className="fi fi-sr-bullet text-sm text-foreground/40" />
+      <span>{title}</span>
+    </Link>
   )
 }

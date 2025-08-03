@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import avatarImg from "./Avatar.webp"
 
 export function HeroSection() {
@@ -19,45 +20,96 @@ export function HeroSection() {
             Product designer, software engineer & creator
           </span>
           <div className="flex mt-2">
-            <span className="text-xs font-mono leading-tight bg-orange-200 text-orange-800 rounded-full px-2 py-1">
+            <span className="text-xs font-mono leading-tight bg-secondary rounded-full px-2 py-1">
               Open to work
             </span>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 text-base leading-7 text-pretty mt-6 text-foreground/60">
+      <div className="flex flex-col gap-6 text-base leading-7 text-pretty mt-10">
         <p>
-          Hello, I loves to craft solutions for global audiences.{" "}
-          <span className="text-foreground">
-            Shipping great products or services with simplicity, better user
-            experience, and target specific
-          </span>
+          Hello, I'am a product designer, software engineer & creator. Building
+          apps, saas, sites and tools. I'am currently working as freelance and
+          building my own saas at{" "}
+          <Link
+            to={"https://moono.space"}
+            target="_blank"
+            className="underline"
+          >
+            Moono
+          </Link>
           .
         </p>
 
         <p>
-          <span className="text-foreground">
-            Focus on crafting design, saas, goodies, sites, contents
-          </span>{" "}
-          to solve problems & help business grow.{" "}
-          <span className="text-foreground">
-            Talks about indie hacking, product shipping, productivity and
-            business.
-          </span>
+          Founded{" "}
+          <Link
+            to={"https://tryweebo.one"}
+            target="_blank"
+            className="underline"
+          >
+            Weebo
+          </Link>{" "}
+          the web design partner for business and{" "}
+          <Link
+            to={"https://usesonibble.site"}
+            target="_blank"
+            className="underline"
+          >
+            Sonibble
+          </Link>{" "}
+          the all in one solutions for business growth. Also actively shipping
+          open source project at{" "}
+          <Link
+            to={"https://weecraft.club"}
+            target="_blank"
+            className="underline"
+          >
+            Weecraft
+          </Link>
+          .
         </p>
 
         <p>
-          <span className="text-foreground">
-            Currently craft a product, services and building the brands
-          </span>
-          . The next plans is building high value business that bring bigger
-          impact to the world.
+          Before that, I was a senior software engineer at{" "}
+          <Link to={"https://dimata.com"} target="_blank" className="underline">
+            Dimata
+          </Link>
+          , an software company that building enterprise app for business and
+          management. Then doing alot of freelance jobs for design a websites,
+          building apps, and designing apps.
         </p>
 
-        <p className="text-sm font-mono tracking-tight">
-          Build {"->"} ship {"->"}{" "}
-          <span className="text-foreground">launch</span>.
+        <p>
+          I was actively creating content about business, indie hacking and
+          productivity. Then help web designers to grows at{" "}
+          <Link
+            to={"https://thegridline.site"}
+            target="_blank"
+            className="underline"
+          >
+            The Gridline
+          </Link>
+          , and share devs tips at{" "}
+          <Link
+            to={"https://thescolon.site"}
+            target="_blank"
+            className="underline"
+          >
+            The Scolon
+          </Link>
+          .
+        </p>
+
+        <p>
+          Now, my focus is join a good teams to collaborate and building digital
+          solutions. Still actively maintain the projects on side, and
+          contribute to open source projects.
+        </p>
+
+        <p className="text-sm font-mono tracking-tight text-foreground/40">
+          Build {"->"} ship {"->"} launch.
         </p>
       </div>
     </section>

@@ -48,13 +48,13 @@ export function ContentImage({
   ...props
 }: ContentImageProps) {
   return (
-    <div className="relative w-full overflow-hidden rounded-xl not-prose my-4 cursor-pointer">
+    <div className="relative w-full overflow-hidden rounded-2xl not-prose my-4">
       <img
         src={src}
         alt={alt}
         {...props}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className="object-cover transition-all duration-300 hover:scale-105 not-prose"
+        className="object-cover"
       />
     </div>
   )

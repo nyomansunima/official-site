@@ -12,68 +12,52 @@
   ],
   "socials": [
     {
-      "label": "Subscribe",
-      "href": "https://youtube.com/@nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-brands-youtube"
+      "label": "Subscribe on youtube",
+      "href": "https://youtube.com/@nyomansunima?ref=nyomansunima"
     },
     {
       "label": "Follow on twitter",
-      "href": "https://twitter.com/nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-brands-twitter"
+      "href": "https://twitter.com/nyomansunima?ref=nyomansunima"
     },
     {
-      "label": "See on Threads",
-      "href": "https://threads.net/@bynyomansunima?ref=nyomansunima",
-      "icon": "fi fi-sr-comment-dots",
-      "className": "tablet:w-28"
+      "label": "See on threads",
+      "href": "https://threads.net/@bynyomansunima?ref=nyomansunima"
     },
     {
       "label": "Connect now",
-      "href": "https://linkedin.com/in/nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-brands-linkedin"
+      "href": "https://linkedin.com/in/nyomansunima?ref=nyomansunima"
     },
     {
       "label": "See story",
-      "href": "https://facebook.com/nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-brands-facebook"
+      "href": "https://facebook.com/nyomansunima?ref=nyomansunima"
     },
     {
       "label": "See the gallery",
-      "href": "https://instagram.com/itsnyomansunima?ref=nyomansunima",
-      "icon": "fi fi-brands-instagram"
+      "href": "https://instagram.com/itsnyomansunima?ref=nyomansunima"
     },
     {
       "label": "Design tweets",
-      "href": "https://layers.to/nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-sr-folder",
-      "className": "tablet:w-28"
+      "href": "https://layers.to/nyomansunima?ref=nyomansunima"
     },
     {
       "label": "Coding projects",
-      "href": "https://github.com/nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-brands-github",
-      "className": "tablet:w-28"
+      "href": "https://github.com/nyomansunima?ref=nyomansunima"
     },
     {
       "label": "Design projects",
-      "href": "https://dribbble.com/nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-brands-dribbble"
+      "href": "https://dribbble.com/nyomansunima?ref=nyomansunima"
     },
     {
-      "label": "Past Coding projects",
-      "href": "https://gitlab.com/nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-brands-gitlab",
-      "className": "laptop:w-36"
+      "label": "Past coding projects",
+      "href": "https://gitlab.com/nyomansunima?ref=nyomansunima"
     },
     {
-      "label": "Connect on Peerlist",
-      "href": "https://peerlist.io/nyomansunima?ref=nyomansunima",
-      "icon": "fi fi-sr-circle-p"
+      "label": "Connect on peerlist",
+      "href": "https://peerlist.io/nyomansunima?ref=nyomansunima"
     },
     {
       "label": "Find on algora",
-      "href": "https://algora.io/nyomansunima",
-      "icon": "fi fi-sr-bug"
+      "href": "https://algora.io/nyomansunima"
     }
   ]
 }

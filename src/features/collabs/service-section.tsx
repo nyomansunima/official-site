@@ -2,7 +2,7 @@ export function ServiceSection() {
   return (
     <section className="mt-24">
       <div className="flex flex-col not-prose">
-        <span className="text-sm font-mono text-link tracking-tight">
+        <span className="text-sm font-mono text-foreground/40 tracking-tight">
           Services.
         </span>
         <h2 className="py-2">Finding your own way.</h2>

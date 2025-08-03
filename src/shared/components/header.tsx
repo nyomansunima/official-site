@@ -5,7 +5,7 @@ export function Brand() {
   return (
     <Link
       to={"/"}
-      className="flex justify-center items-center rounded-2xl text-sm transition-all duration-300 font-medium h-10 w-10 border-2 border-border border-dashed hover:border-link"
+      className="flex justify-center items-center rounded-2xl text-sm transition-all duration-300 font-medium h-10 w-10 bg-secondary text-secondary-foreground"
     >
       <i className="fi fi-sr-folder" />
     </Link>

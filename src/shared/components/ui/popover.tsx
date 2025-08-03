@@ -28,7 +28,7 @@ const PopoverContent = ({
       )}
       {...props}
     >
-      <div className="flex h-full p-5 w-full border-2 border-border border-dashed transition-all duration-300 group-hover:border-link rounded-xl">
+      <div className="flex h-full p-5 w-full border-2 border-border border-dashed transition-all duration-300 rounded-xl">
         {children}
       </div>
     </PopoverPrimitive.Content>

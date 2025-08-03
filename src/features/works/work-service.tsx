@@ -9,10 +9,7 @@ export interface WorkFrontMatter {
   description: string
   image: string
   date: string
-  status: "Completed" | "In Progress"
   isFeatured?: boolean
-  type: "Hacking" | "Work"
-  category: string
   team: {
     name: string
     url: string

@@ -5,10 +5,10 @@ export function DetailSection() {
   return (
     <section>
       <div className="flex flex-col gap-2 not-prose">
-        <span className="text-sm text-link font-mono tracking-tight">
+        <span className="text-sm text-foreground/40 font-mono tracking-tight">
           Hello.
         </span>
-        <h1>Hey, we're good friends</h1>
+        <h2>Hey, we're good friends</h2>
       </div>
 
       <p>
