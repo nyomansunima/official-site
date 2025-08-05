@@ -82,16 +82,17 @@ export function HeroSection() {
         </p>
 
         <p>
-          I was actively creating content about business, indie hacking and
-          productivity. Then help web designers to grows at{" "}
+          I was actively documenting my journeys and share tips about design,
+          development, business, money and productivity. Also help web designers
+          to grows at{" "}
           <Link
             to={"https://thegridline.site"}
             target="_blank"
             className="underline"
           >
             The Gridline
-          </Link>
-          , and share devs tips at{" "}
+          </Link>{" "}
+          and help developers to grow at{" "}
           <Link
             to={"https://thescolon.site"}
             target="_blank"
@@ -103,9 +104,9 @@ export function HeroSection() {
         </p>
 
         <p>
-          Now, my focus is join a good teams to collaborate and building digital
-          solutions. Still actively maintain the projects on side, and
-          contribute to open source projects.
+          Now, my focus is finding & join a good teams to building products.
+          Still actively maintain the projects on side, and contribute to open
+          source projects. Then crafting something new on the side.
         </p>
 
         <p className="text-sm font-mono tracking-tight text-foreground/40">
