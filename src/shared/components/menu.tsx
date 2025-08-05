@@ -9,15 +9,13 @@ interface NavMenuItemProps {
 
 export function NavMenuItem({ children, href }: NavMenuItemProps) {
   return (
-    <li className="flex w-full col-span-1">
-      <Link
-        to={href}
-        viewTransition
-        className="flex justify-center items-center text-sm transition-all duration-300 text-foreground hover:text-foreground/40"
-      >
-        {children}
-      </Link>
-    </li>
+    <Link
+      to={href}
+      viewTransition
+      className="flex col-span-1 items-center text-sm transition-all duration-300 text-foreground hover:text-foreground/40"
+    >
+      {children}
+    </Link>
   )
 }
 
@@ -38,7 +36,7 @@ export function Menu() {
         <i className="fi fi-sr-add"></i>
       </PopoverTrigger>
       <PopoverContent>
-        <ul className="grid grid-cols-2 w-full gap-x-4 gap-y-4">
+        <div className="grid grid-cols-2 w-full gap-x-4 gap-y-4">
           <NavMenuItem href="/works">Works</NavMenuItem>
           <NavMenuItem href="/collabs">Collabs</NavMenuItem>
           <NavMenuItem href="/crafts">Crafts</NavMenuItem>
@@ -48,7 +46,7 @@ export function Menu() {
           <NavMenuItem href="/about">About</NavMenuItem>
           <NavMenuItem href="/contact">Contact</NavMenuItem>
           <NavMenuItem href="/support">Support</NavMenuItem>
-        </ul>
+        </div>
       </PopoverContent>
     </Popover>
   )
