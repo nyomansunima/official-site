@@ -59,7 +59,7 @@
   }
 
   body {
-    @apply text-base font-normal leading-normal! text-foreground bg-background font-sans subpixel-antialiased selection:bg-blue-100/90 selection:text-blue-950;
+    @apply text-base font-normal leading-normal! text-foreground bg-background font-sans antialiased selection:bg-blue-100/90 selection:text-blue-950;
     font-style: normal;
   }
 
