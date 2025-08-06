@@ -30,14 +30,22 @@ export function HeroSection() {
       <div className="flex flex-col gap-6 text-base leading-7 text-pretty mt-10">
         <p>
           Hello, I'am a product designer, software engineer & creator. Building
-          apps, saas, sites and tools. I'am currently working as freelance and
-          building my own saas at{" "}
+          apps, saas, sites and tools. Currently working as freelance, building
+          my own saas at{" "}
           <Link
             to={"https://moono.space"}
             target="_blank"
             className="underline"
           >
             Moono
+          </Link>{" "}
+          and create site templates at{" "}
+          <Link
+            to={"https://creevoo.store"}
+            target="_blank"
+            className="underline"
+          >
+            Creevoo
           </Link>
           .
         </p>
@@ -51,7 +59,7 @@ export function HeroSection() {
           >
             Weebo
           </Link>{" "}
-          the web design partner for business and{" "}
+          a web design partner for business and{" "}
           <Link
             to={"https://usesonibble.site"}
             target="_blank"
@@ -59,7 +67,7 @@ export function HeroSection() {
           >
             Sonibble
           </Link>{" "}
-          the all in one solutions for business growth. Also actively shipping
+          an all in one solutions for business growth. Also actively shipping
           open source project at{" "}
           <Link
             to={"https://weecraft.club"}
@@ -76,9 +84,9 @@ export function HeroSection() {
           <Link to={"https://dimata.com"} target="_blank" className="underline">
             Dimata
           </Link>
-          , an software company that building enterprise app for business and
-          management. Then doing alot of freelance jobs for design a websites,
-          building apps, and designing apps.
+          , a software company that building enterprise app for business and
+          management. Then doing alot of freelance jobs for building a websites
+          and shipping apps.
         </p>
 
         <p>
@@ -104,9 +112,9 @@ export function HeroSection() {
         </p>
 
         <p>
-          Now, my focus is finding & join a good teams to building products.
-          Still actively maintain the projects on side, and contribute to open
-          source projects. Then crafting something new on the side.
+          Now, focus on finding & join a good teams to building products. Still
+          actively maintain the projects on side, and contribute to open source
+          projects. Then crafting something new on the side.
         </p>
 
         <p className="text-sm font-mono tracking-tight text-foreground/40">
