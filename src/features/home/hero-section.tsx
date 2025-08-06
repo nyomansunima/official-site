@@ -39,7 +39,7 @@ export function HeroSection() {
           >
             Moono
           </Link>{" "}
-          and create site templates at{" "}
+          and create website templates at{" "}
           <Link
             to={"https://creevoo.store"}
             target="_blank"
@@ -91,8 +91,8 @@ export function HeroSection() {
 
         <p>
           I was actively documenting my journeys and share tips about design,
-          development, business, money and productivity. Also help web designers
-          to grows at{" "}
+          development, business, money and productivity. Also helping web
+          designers to grows at{" "}
           <Link
             to={"https://thegridline.site"}
             target="_blank"
@@ -100,7 +100,7 @@ export function HeroSection() {
           >
             The Gridline
           </Link>{" "}
-          and help developers to grow at{" "}
+          and developers to grow at{" "}
           <Link
             to={"https://thescolon.site"}
             target="_blank"
@@ -113,8 +113,8 @@ export function HeroSection() {
 
         <p>
           Now, focus on finding & join a good teams to building products. Still
-          actively maintain the projects on side, and contribute to open source
-          projects. Then crafting something new on the side.
+          actively maintain the projects, contribute to open source projects and
+          crafting something new on the side.
         </p>
 
         <p className="text-sm font-mono tracking-tight text-foreground/40">
