@@ -21,7 +21,7 @@
     ]
   },
   {
-    "title": "Utilities",
+    "title": "Goodies",
     "list": [
       {
         "title": "Dev crates",
@@ -51,6 +51,27 @@
       {
         "title": "The scolon",
         "link": "https://thescolon.site/?ref=nyomansunima"
+      }
+    ]
+  },
+  {
+    "title": "Starter kit",
+    "list": [
+      {
+        "title": "Nextjs site starter",
+        "link": "https://github.com/nyomansunima/nextjs-site-starter"
+      },
+      {
+        "title": "React router site starter",
+        "link": "https://github.com/nyomansunima/react-router-site-starter"
+      },
+      {
+        "title": "Astro site starter",
+        "link": "https://github.com/nyomansunima/astro-site-starter"
+      },
+      {
+        "title": "Typescript package starter",
+        "link": "https://github.com/nyomansunima/ts-package-starter"
       }
     ]
   }
