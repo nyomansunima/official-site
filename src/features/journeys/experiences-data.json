@@ -1,44 +1,50 @@
 [
   {
     "team": "Dimata",
-    "position": "Frontend Developer",
+    "position": "Frontend developer",
     "timeline": "Jul 2019 - Feb 2020",
     "url": "https://dimata.com?ref=nyomansunima"
   },
   {
     "team": "Dimata",
-    "position": "Full-stack Engineer",
+    "position": "Full-stack engineer",
     "timeline": "Feb 2020 - Apr 2022",
     "url": "https://dimata.com?ref=nyomansunima"
   },
   {
     "team": "Dimata",
-    "position": "Senior Software Engineer",
+    "position": "Senior software engineer",
     "timeline": "Apr 2022 - Feb 2023",
     "url": "https://dimata.com?ref=nyomansunima"
   },
   {
     "team": "Engaging enterprises",
-    "position": "Full-stack Developer",
+    "position": "Full-stack developer",
     "timeline": "Apr 2023 - May 2023",
     "url": "https://engagingenterprises.co/?ref=nyomansunima"
   },
   {
     "team": "Weebo",
-    "position": "Founder & CEO",
+    "position": "Founder",
     "timeline": "Feb 2024 - Present",
     "url": "https://tryweebo.one/?ref=nyomansunima"
   },
   {
     "team": "Weecraft",
-    "position": "Founder & Creative",
+    "position": "Founder",
     "timeline": "Mar 2024 - Present",
     "url": "https://weecraft.club/?ref=nyomansunima"
   },
   {
     "team": "Moono",
-    "position": "Founder & Solo Creative",
+    "position": "Founder",
     "timeline": "Nov 2024 - Present",
     "url": "https://moono.space/?ref=nyomansunima"
+  },
+  {
+    "team": "Sonibble",
+    "position": "Founder",
+    "timeline": "Jan 2025 - Present",
+    "url": "https://usesonibble.site/?ref=nyomansunima"
   }
 ]
