@@ -112,7 +112,7 @@ export function HeroSection() {
         </p>
 
         <p>
-          Now, focus on finding & join a good teams to building products. Still
+          Now, focus on finding & join a good team to building products. Still
           actively maintain the projects, contribute to open source projects and
           crafting something new on the side.
         </p>
