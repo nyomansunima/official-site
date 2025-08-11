@@ -17,7 +17,7 @@ export function CTASection() {
       </p>
 
       <div className="not-prose flex gap-3 mt-10">
-        <Button asChild variant={"outline"}>
+        <Button asChild variant={"secondary"}>
           <Link
             to={"https://cal.com/nyomansunima/build-opportunity"}
             target="_blank"
