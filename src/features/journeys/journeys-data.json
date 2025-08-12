@@ -130,7 +130,15 @@
         "title": "Create ts package starter",
         "description": "Create a starter kit template to create full typescript package library for nodejs. Minimize the configurations and production ready.",
         "date": "Aug, 07 2025",
+        "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1754979092944/e7b3249d-cccc-4324-aa7e-c9cf9514b182.webp",
         "url": "https://github.com/nyomansunima/ts-package-starter"
+      },
+      {
+        "title": "Create react router themes package",
+        "description": "Create and launch the themes package to help manage the theme switching in react router that support the latest, ssr and client side.",
+        "date": "Aug, 12 2025",
+        "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1754979078514/50e84f5e-8780-4579-aca1-cbeb6428616b.webp",
+        "url": "https://github.com/weecraft/react-router-themes"
       }
     ]
   }
