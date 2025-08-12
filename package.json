@@ -14,11 +14,9 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
-    "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-popover": "^1.1.14",
     "@radix-ui/react-slot": "^1.2.3",
-    "@radix-ui/react-tooltip": "^1.2.7",
     "@react-router/fs-routes": "^7.8.0",
     "@react-router/node": "^7.8.0",
     "@react-router/serve": "^7.8.0",
@@ -46,7 +44,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.11",
     "@types/node": "^24",
-    "@types/react": "^19.1.9",
+    "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "class-variance-authority": "^0.7.1",
     "eslint": "^9.33.0",
@@ -57,7 +55,7 @@
     "tailwindcss": "^4.1.11",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.9.2",
-    "vite": "^7.1.1",
+    "vite": "^7.1.2",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
