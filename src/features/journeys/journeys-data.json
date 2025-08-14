@@ -139,6 +139,13 @@
         "date": "Aug, 12 2025",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1754979078514/50e84f5e-8780-4579-aca1-cbeb6428616b.webp",
         "url": "https://github.com/weecraft/react-router-themes"
+      },
+      {
+        "title": "Create saas starter kit",
+        "description": "Create and launch the saas starter kit, a all in one saas product starter template. Built for backend, web, landing, mobile and desktop app.",
+        "date": "Aug, 14 2025",
+        "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1755170428245/ae42a1df-9fa9-4588-b0fc-d400af52a5a4.webp",
+        "url": "https://github.com/nyomansunima/saas-starter"
       }
     ]
   }
