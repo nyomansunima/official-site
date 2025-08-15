@@ -13,6 +13,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import "@shared/styles/globals.css"
 import { Button, CenteredLayout, Footer, Header } from "@shared/components"
 import { loadServerEnv } from "@shared/libs"
+import { ThemeProvider } from "next-themes"
 
 interface LayoutProps {
   children: React.ReactNode
@@ -29,7 +30,7 @@ export function Layout({ children }: LayoutProps) {
   const [queryClient] = React.useState(() => new QueryClient())
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,13 +39,19 @@ export function Layout({ children }: LayoutProps) {
       </head>
       <body>
         <QueryClientProvider client={queryClient}>
-          <CenteredLayout>
-            <Header />
-            <div className="min-h-screen pb-28 mt-5 tablet:mt-10 tablet:pb-56">
-              {children}
-            </div>
-            <Footer />
-          </CenteredLayout>
+          <ThemeProvider
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <CenteredLayout>
+              <Header />
+              <div className="min-h-screen pb-28 mt-5 tablet:mt-10 tablet:pb-56">
+                {children}
+              </div>
+              <Footer />
+            </CenteredLayout>
+          </ThemeProvider>
         </QueryClientProvider>
         <ScrollRestoration />
         <Scripts />
