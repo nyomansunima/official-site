@@ -13,6 +13,34 @@
 @plugin '@tailwindcss/typography';
 @plugin 'tailwindcss-animate';
 
+:root {
+  --background-color: hsl(0 0 100%);
+  --foreground-color: hsl(0 0 10%);
+  --surface-color: hsl(0 0 100%);
+  --border-color: hsl(0 0 92%);
+  --input-color: hsl(0 0 96%);
+  --primary-color: hsl(0 0 0%);
+  --primary-foreground-color: hsl(0 0 98%);
+  --secondary-color: hsl(0 0 96%);
+  --secondary-foreground-color: hsl(0 0 10%);
+  --link-color: hsl(221 83 50%);
+  --accent-color: hsl(0 0 40%);
+}
+
+[data-theme="dark"] {
+  --background-color: hsl(0 0 0%);
+  --foreground-color: hsl(0 0 75%);
+  --surface-color: hsl(0 0 0%);
+  --border-color: hsl(0 0 10%);
+  --input-color: hsl(0 0 8%);
+  --primary-color: hsl(0 0 90%);
+  --primary-foreground-color: hsl(0 0 0%);
+  --secondary-color: hsl(0 0 10%);
+  --secondary-foreground-color: hsl(0 0 75%);
+  --link-color: hsl(221 83 50%);
+  --accent-color: hsl(0 0 40%);
+}
+
 @theme {
   --font-*: initial;
   --font-sans: "Inter", sans-serif;
@@ -28,17 +56,17 @@
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 80rem;
 
-  --color-background: hsl(0 0 100%);
-  --color-foreground: hsl(0 0 10%);
-  --color-surface: hsl(0 0 100%);
-  --color-border: hsl(0 0 92%);
-  --color-input: hsl(0 0 96%);
-  --color-primary: hsl(0 0 0%);
-  --color-primary-foreground: hsl(0 0 98%);
-  --color-secondary: hsl(0 0 96%);
-  --color-secondary-foreground: hsl(0 0 10%);
-  --color-link: hsl(221 83 50%);
-  --color-accent: hsl(0 0 40%);
+  --color-background: var(--background-color);
+  --color-foreground: var(--foreground-color);
+  --color-surface: var(--surface-color);
+  --color-border: var(--border-color);
+  --color-input: var(--input-color);
+  --color-primary: var(--primary-color);
+  --color-primary-foreground: var(--primary-foreground-color);
+  --color-secondary: var(--secondary-color);
+  --color-secondary-foreground: var(--secondary-foreground-color);
+  --color-link: var(--link-color);
+  --color-accent: var(--accent-color);
 }
 
 @layer base {
