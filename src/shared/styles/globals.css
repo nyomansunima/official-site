@@ -28,14 +28,14 @@
 }
 
 [data-theme="dark"] {
-  --background-color: hsl(0 0 0%);
+  --background-color: hsl(0 0 8%);
   --foreground-color: hsl(0 0 75%);
-  --surface-color: hsl(0 0 0%);
+  --surface-color: hsl(0 0 8%);
   --border-color: hsl(0 0 10%);
-  --input-color: hsl(0 0 8%);
+  --input-color: hsl(0 0 10%);
   --primary-color: hsl(0 0 90%);
   --primary-foreground-color: hsl(0 0 0%);
-  --secondary-color: hsl(0 0 10%);
+  --secondary-color: hsl(0 0 12%);
   --secondary-foreground-color: hsl(0 0 75%);
   --link-color: hsl(221 83 50%);
   --accent-color: hsl(0 0 40%);
