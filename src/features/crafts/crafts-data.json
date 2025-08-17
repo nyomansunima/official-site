@@ -4,40 +4,19 @@
     "list": [
       {
         "title": "Weebo",
-        "link": "https://tryweebo.one?ref=nyomansunima"
+        "link": "https://tryweebo.one"
       },
       {
         "title": "Moono",
-        "link": "https://moono.space?ref=nyomansunima"
+        "link": "https://moono.space"
       },
       {
         "title": "Weecraft",
-        "link": "https://weecraft.club?ref=nyomansunima"
+        "link": "https://weecraft.club"
       },
       {
         "title": "Sonibble",
-        "link": "https://www.usesonibble.site/?ref=nyomansunima"
-      }
-    ]
-  },
-  {
-    "title": "Goodies",
-    "list": [
-      {
-        "title": "Dev crates",
-        "link": "https://devcrates.site?ref=nyomansunima"
-      },
-      {
-        "title": "One thing theme",
-        "link": "https://onethingtheme.vercel.app/?ref=nyomansunima"
-      },
-      {
-        "title": "Creevoo",
-        "link": "https://www.creevoo.store/?ref=nyomansunima"
-      },
-      {
-        "title": "Roast to site",
-        "link": "https://roastto.site?ref=nyomansunima"
+        "link": "https://www.usesonibble.site"
       }
     ]
   },
@@ -46,11 +25,49 @@
     "list": [
       {
         "title": "The gridline",
-        "link": "https://thegridline.site?ref=nyomansunima"
+        "link": "https://thegridline.site"
       },
       {
         "title": "The scolon",
-        "link": "https://thescolon.site/?ref=nyomansunima"
+        "link": "https://thescolon.site/"
+      }
+    ]
+  },
+  {
+    "title": "Goodies",
+    "list": [
+      {
+        "title": "Dev crates",
+        "link": "https://devcrates.site"
+      },
+      {
+        "title": "Creevoo",
+        "link": "https://www.creevoo.store"
+      },
+      {
+        "title": "Roast to site",
+        "link": "https://roastto.site"
+      },
+      {
+        "title": "Heroico",
+        "link": "https://heroico.site"
+      }
+    ]
+  },
+  {
+    "title": "Themes",
+    "list": [
+      {
+        "title": "One thing theme",
+        "link": "https://onethingtheme.vercel.app/"
+      },
+      {
+        "title": "Blaze theme",
+        "link": "https://github.com/weecraft/blaze-theme"
+      },
+      {
+        "title": "Boola theme",
+        "link": "https://github.com/weecraft/boola"
       }
     ]
   },
@@ -76,6 +93,27 @@
       {
         "title": "Saas starter",
         "link": "https://github.com/nyomansunima/saas-starter"
+      }
+    ]
+  },
+  {
+    "title": "Utilities",
+    "list": [
+      {
+        "title": "React router themes",
+        "link": "https://github.com/weecraft/react-router-themes"
+      },
+      {
+        "title": "Hono helper",
+        "link": "https://github.com/weecraft/hono-helper"
+      },
+      {
+        "title": "Nestjs fauna",
+        "link": "https://github.com/weecraft/nestjs-fauna"
+      },
+      {
+        "title": "Nestjs resend",
+        "link": "https://github.com/weecraft/nestjs-resend"
       }
     ]
   }
