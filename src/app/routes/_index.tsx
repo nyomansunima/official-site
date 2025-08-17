@@ -17,7 +17,7 @@ export async function loader() {
 
 export function meta() {
   return generatedMetadata({
-    title: "Product Designer, Software Developer & Creator | Nyoman Sunima",
+    title: "Product designer, software engineer & creator | Nyoman Sunima",
     description:
       "Focused on crafting digital products, website, web app, mobile app to help business",
   })
