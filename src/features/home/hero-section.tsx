@@ -32,11 +32,7 @@ export function HeroSection() {
           Hello, I'am a product designer, software engineer & creator. Building
           apps, saas, sites and tools. Currently working as freelance, building
           my own saas at{" "}
-          <Link
-            to={"https://moono.space"}
-            target="_blank"
-            className="underline"
-          >
+          <Link to={"https://moono.site"} target="_blank" className="underline">
             Moono
           </Link>{" "}
           and create website templates at{" "}
@@ -70,7 +66,7 @@ export function HeroSection() {
           an all in one solutions for business growth. Also actively shipping
           open source project at{" "}
           <Link
-            to={"https://weecraft.club"}
+            to={"https://weecraft.site"}
             target="_blank"
             className="underline"
           >
