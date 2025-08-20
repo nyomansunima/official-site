@@ -13,8 +13,8 @@ export function SocialSection() {
         </h2>
 
         <p className="mt-6 text-pretty leading-7">
-          Or, you may need to chat and talks with me via social media, community
-          or another platform about anything.
+          You may need to chat and talks with me via social media, community or
+          another platform about anything.
         </p>
       </div>
 
