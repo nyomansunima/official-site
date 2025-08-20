@@ -18,33 +18,31 @@ export function TeamSection() {
 
       <ul>
         <li>
-          <Link
-            to="https://tryweebo.one"
-            target="_blank"
-            className="text-foreground !font-normal no-underline"
-          >
-            Weebo.
+          <Link to="https://tryweebo.one" target="_blank">
+            Weebo
           </Link>
         </li>
         <li>
-          <Link
-            to="https://usesonibble.site"
-            target="_blank"
-            className="text-foreground !font-normal no-underline"
-          >
-            Sonibble.
+          <Link to="https://usesonibble.site" target="_blank">
+            Sonibble
           </Link>
         </li>
         <li>
-          <Link
-            to="https://roastto.site"
-            target="_blank"
-            className="text-foreground !font-normal no-underline"
-          >
+          <Link to="https://weecraft.site" target="_blank">
+            Weecraft
+          </Link>
+        </li>
+        <li>
+          <Link to="https://moono.site" target="_blank">
+            Moono
+          </Link>
+        </li>
+        <li>
+          <Link to="https://roastto.site" target="_blank">
             Roast to site.
           </Link>
         </li>
-        <li>Coming more.</li>
+        <li>Coming more</li>
       </ul>
     </section>
   )
