@@ -53,7 +53,48 @@
     ]
   },
   {
-    "title": "Indie hacking stacks",
+    "title": "Indie tools",
+    "list": [
+      {
+        "title": "Tailwind CSS",
+        "url": "https://tailwindcss.com/docs/installation?ref=nyomansunima"
+      },
+      {
+        "title": "Hoppscotch",
+        "url": "https://hoppscotch.com?ref=nyomansunima"
+      },
+      {
+        "title": "Vercel",
+        "url": "https://vercel.com?ref=nyomansunima"
+      },
+      {
+        "title": "Airtable",
+        "url": "https://airtable.com?ref=nyomansunima"
+      },
+      {
+        "title": "Godaddy",
+        "url": "https://godaddy.com?ref=nyomansunima"
+      },
+      {
+        "title": "Posthog",
+        "url": "https://posthog.com?ref=nyomansunima"
+      },
+      {
+        "title": "Loops",
+        "url": "https://loops.so?ref=nyomansunima"
+      },
+      {
+        "title": "Resend",
+        "url": "https://resend.com?ref=nyomansunima"
+      },
+      {
+        "title": "React Email",
+        "url": "https://react.email?ref=nyomansunima"
+      }
+    ]
+  },
+  {
+    "title": "Dev tools",
     "list": [
       {
         "title": "React router",
@@ -76,52 +117,36 @@
         "url": "https://ui.shadcn.com/docs/installation?ref=nyomansunima"
       },
       {
-        "title": "Tailwind CSS",
-        "url": "https://tailwindcss.com/docs/installation?ref=nyomansunima"
+        "title": "Plausible",
+        "url": "https://plausible.io?ref=nyomansunima"
       },
       {
-        "title": "Hoppscotch",
-        "url": "https://hoppscotch.com?ref=nyomansunima"
+        "title": "Sentry",
+        "url": "https://sentry.io?ref=nyomansunima"
       },
       {
-        "title": "Vercel",
-        "url": "https://vercel.com?ref=nyomansunima"
+        "title": "Tauri",
+        "url": "https://tauri.app?ref=nyomansunima"
+      },
+      {
+        "title": "Danet",
+        "url": "https://danet.land?ref=nyomansunima"
+      },
+      {
+        "title": "Convex",
+        "url": "https://convex.dev?ref=nyomansunima"
       },
       {
         "title": "Waitlist",
         "url": "https://getwaitlist.com?ref=nyomansunima"
       },
       {
-        "title": "Airtable",
-        "url": "https://airtable.com?ref=nyomansunima"
+        "title": "Clerk",
+        "url": "https://clerk.com?ref=nyomansunima"
       },
       {
-        "title": "Cloudflare",
-        "url": "https://cloudflare.com?ref=nyomansunima"
-      },
-      {
-        "title": "Godaddy",
-        "url": "https://godaddy.com?ref=nyomansunima"
-      },
-      {
-        "title": "Posthog",
-        "url": "https://posthog.com?ref=nyomansunima"
-      },
-      {
-        "title": "Loops",
-        "url": "https://loops.so?ref=nyomansunima"
-      },
-      {
-        "title": "Resend",
-        "url": "https://resend.com?ref=nyomansunima"
-      },
-      {
-        "title": "React Email",
-        "url": "https://react.email?ref=nyomansunima"
-      },
-      {
-        "title": "Danet",
-        "url": "https://danet.land?ref=nyomansunima"
+        "title": "Revenue Cat",
+        "url": "https://www.revenuecat.com?ref=nyomansunima"
       }
     ]
   },
@@ -329,6 +354,31 @@
       {
         "title": "Digital ocean",
         "url": "https://digitalocean.com?ref=nyomansunima"
+      }
+    ]
+  },
+  {
+    "title": "Database",
+    "list": [
+      {
+        "title": "Upstash",
+        "url": "https://upstash.com?ref=nyomansunima"
+      },
+      {
+        "title": "Xata",
+        "url": "https://xata.io?ref=nyomansunima"
+      },
+      {
+        "title": "Neon",
+        "url": "https://neon.tech?ref=nyomansunima"
+      },
+      {
+        "title": "Turso",
+        "url": "https://turso.tech?ref=nyomansunima"
+      },
+      {
+        "title": "Planetscale",
+        "url": "https://planetscale.com?ref=nyomansunima"
       }
     ]
   }
