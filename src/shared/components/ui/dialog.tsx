@@ -50,7 +50,7 @@ const DialogContent = ({
       )}
       {...props}
     >
-      <div className="flex flex-col gap-6 h-full w-full p-6 rounded-2xl border-2 border-border border-dashed transition-all duration-300 group-hover:border-link">
+      <div className="flex flex-col gap-6 h-full w-full p-6 rounded-2xl border-2 border-border border-dashed transition-all duration-300">
         {children}
         <DialogPrimitive.Close className="absolute right-4 top-4 text-sm bg-secondary ring-0 outline-none px-3 py-1.5 rounded-full transition-all duration-300 hover:-translate-y-1 cursor-pointer">
           Close
