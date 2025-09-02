@@ -381,5 +381,22 @@
         "url": "https://planetscale.com?ref=nyomansunima"
       }
     ]
+  },
+  {
+    "title": "Authentication",
+    "list": [
+      {
+        "title": "Clerk",
+        "url": "https://clerk.com?ref=nyomansunima"
+      },
+      {
+        "title": "WorkOS",
+        "url": "https://workos.com?ref=nyomansunima"
+      },
+      {
+        "title": "Kinde",
+        "url": "https://kinde.com?ref=nyomansunima"
+      }
+    ]
   }
 ]
