@@ -5,13 +5,12 @@ _"My personal website to connect and share something with client and audience"_
 This project is contain my personal site apps, including the backend and the frontend.
 The concept of this site is simple, powerful, creative, and clean.
 
-- Project Showcase
-- Target and Status
+- Project showcase
+- Target and status
 - Explorations into stack and project
 - Service to offer with client
 - Personal bio link profile
 - About me
-- FAQs
 - Newsletter
 - Many other includeds
 - Changelog history and works
@@ -20,12 +19,11 @@ The concept of this site is simple, powerful, creative, and clean.
 
 Since building this project here are list about stack, site, tech and any library in this project
 
-- [Next.js](https://nextjs.org)
+- [React router](https://reactrouter.com)
 - [Tailwincss](https://tailwindcss.com)
-- [Lenis Scroll Smoother](https://lenis.studiofreight.com)
 - [Vercel](https://vercel.com)
 - [Shadcn UI](https://ui.shadcn.com)
-- [Radix UI](https://radix-ui.com)
+- [Kit](https://kit.com)
 
 ## License
 
