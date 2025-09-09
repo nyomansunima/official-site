@@ -1,5 +1,7 @@
 import { loadConfig } from "./config"
 
+const config = loadConfig()
+
 interface GeneratedMetadataInput {
   title: string
   description: string
@@ -10,9 +12,15 @@ export function generatedMetadata({
   title,
   description,
   image,
-}: GeneratedMetadataInput) {
-  const config = loadConfig()
-
+}: GeneratedMetadataInput):
+  | (
+      | React.DetailedHTMLProps<
+          React.MetaHTMLAttributes<HTMLMetaElement>,
+          HTMLMetaElement
+        >
+      | undefined
+    )[]
+  | undefined {
   return [
     { title },
     {
