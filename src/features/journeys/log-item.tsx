@@ -1,5 +1,4 @@
 import { parseReadableDate } from "@shared/libs"
-import { Link } from "react-router"
 
 export interface LogItemData {
   title: string
@@ -18,7 +17,7 @@ export function LogItem({ log }: Props) {
   const readableDate = parseReadableDate(date)
 
   return (
-    <Link to={url || "/"} target="_blank" className="flex flex-col">
+    <a href={url || "/"} target="_blank" className="flex flex-col">
       {image && (
         <div className="mb-6 relative w-full h-[200px] tablet:h-[360px] overflow-hidden rounded-2xl">
           <img
@@ -36,6 +35,6 @@ export function LogItem({ log }: Props) {
       </div>
 
       <p className="mt-3 text-pretty leading-7">{description}</p>
-    </Link>
+    </a>
   )
 }

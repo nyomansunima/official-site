@@ -16,10 +16,7 @@ import { SuccessNewsletterDialog } from "./success-dialog"
 import { useMutation } from "@tanstack/react-query"
 
 const formSchema = z.object({
-  email: z
-    .string()
-    .min(5, "Please add your email address")
-    .email("Opps, your email looks weird"),
+  email: z.email("Opps, your email looks weird"),
 })
 
 export function NewsletterForm() {
@@ -49,7 +46,7 @@ export function NewsletterForm() {
         <div className="w-full">
           <form
             onSubmit={form.handleSubmit((values) => {
-              subscribe.mutate({ email: values.email })
+              subscribe.mutate({ data: { email: values.email } })
             })}
             className="flex flex-col tablet:flex-row gap-3 w-full"
           >

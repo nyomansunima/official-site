@@ -1,6 +1,5 @@
 import { ArticleContent, MarkdownContent } from "@shared/components"
 import { parseReadableDate } from "@shared/libs"
-import { Link } from "react-router"
 import type { WorkDetail } from "./work-service"
 
 interface WorkDetailContentProps {
@@ -21,13 +20,13 @@ export function WorkDetailContent({ work }: WorkDetailContentProps) {
         </span>
 
         {team && (
-          <Link
-            to={team.url}
+          <a
+            href={team.url}
             target="_blank"
             className="text-sm text-foreground/40 transition-all duration-300 hover:text-foreground"
           >
             {team.name}
-          </Link>
+          </a>
         )}
       </div>
 

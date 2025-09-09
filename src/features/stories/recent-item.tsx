@@ -1,5 +1,4 @@
 import { parseReadableDate } from "@shared/libs"
-import { Link } from "react-router"
 
 export interface RecentData {
   title: string
@@ -16,13 +15,13 @@ export function RecentItem({ recent }: RecentItemProps) {
   const parsedDate = parseReadableDate(timeline)
 
   return (
-    <Link to={url} target="_blank" className="flex items-center py-2">
+    <a href={url} target="_blank" className="flex items-center py-2">
       <div className="flex items-center gap-2 grow">
         <i className="fi fi-sr-bullet text-sm text-foreground/40" />
         <span className="text-pretty line-clamp-1">{title}</span>
       </div>
 
       <span className="text-sm text-foreground/40">{parsedDate}</span>
-    </Link>
+    </a>
   )
 }

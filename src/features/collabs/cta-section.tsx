@@ -1,5 +1,4 @@
 import { Button } from "@shared/components"
-import { Link } from "react-router"
 
 export function CTASection() {
   return (
@@ -18,16 +17,16 @@ export function CTASection() {
 
       <div className="not-prose flex gap-3 mt-10">
         <Button asChild variant={"secondary"}>
-          <Link
-            to={"https://cal.com/nyomansunima/build-opportunity"}
+          <a
+            href={"https://cal.com/nyomansunima/build-opportunity"}
             target="_blank"
           >
             Book a Call
-          </Link>
+          </a>
         </Button>
 
         <Button asChild variant={"text"}>
-          <Link to={"/contact"}>Connect</Link>
+          <a href={"/contact"}>Connect</a>
         </Button>
       </div>
     </section>

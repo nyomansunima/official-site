@@ -1,5 +1,3 @@
-import { Link } from "react-router"
-
 export function TeamSection() {
   return (
     <section className="mt-24">
@@ -18,29 +16,29 @@ export function TeamSection() {
 
       <ul>
         <li>
-          <Link to="https://tryweebo.one" target="_blank">
+          <a href="https://tryweebo.one" target="_blank">
             Weebo
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="https://usesonibble.site" target="_blank">
+          <a href="https://usesonibble.site" target="_blank">
             Sonibble
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="https://weecraft.site" target="_blank">
+          <a href="https://weecraft.site" target="_blank">
             Weecraft
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="https://moono.site" target="_blank">
+          <a href="https://moono.site" target="_blank">
             Moono
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="https://roastto.site" target="_blank">
+          <a href="https://roastto.site" target="_blank">
             Roast to site.
-          </Link>
+          </a>
         </li>
         <li>Coming more</li>
       </ul>

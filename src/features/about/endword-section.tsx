@@ -1,5 +1,3 @@
-import { Link } from "react-router"
-
 export function EndWordSection() {
   return (
     <section>
@@ -27,11 +25,9 @@ export function EndWordSection() {
       </p>
 
       <p>
-        Check my <Link to={"/works"}>works</Link>,{" "}
-        <Link to={"/crafts"}>handmade</Link>,{" "}
-        <Link to={"/journeys"}>journeys</Link> and{" "}
-        <Link to={"/stories"}>stories</Link>. Then{" "}
-        <Link to={"/contact"}>contact me</Link> if you want to collaborate and
+        Check my <a href={"/works"}>works</a>, <a href={"/crafts"}>handmade</a>,{" "}
+        <a href={"/journeys"}>journeys</a> and <a href={"/stories"}>stories</a>.
+        Then <a href={"/contact"}>contact me</a> if you want to collaborate and
         make something awesome together.
       </p>
 

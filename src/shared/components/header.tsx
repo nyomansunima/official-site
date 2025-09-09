@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { Link } from "@tanstack/react-router"
 import { Menu } from "./menu"
 import { Button } from "./ui/button"
 import { useTheme } from "next-themes"

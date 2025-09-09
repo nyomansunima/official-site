@@ -1,4 +1,3 @@
-import { Link } from "react-router"
 import avatarImg from "./Avatar.webp"
 
 export function HeroSection() {
@@ -32,54 +31,54 @@ export function HeroSection() {
           Hello, I'am a product designer, software engineer & creator. Building
           apps, saas, sites and tools. Currently working as freelance, building
           my own saas at{" "}
-          <Link to={"https://moono.site"} target="_blank" className="underline">
+          <a href={"https://moono.site"} target="_blank" className="underline">
             Moono
-          </Link>{" "}
+          </a>{" "}
           and create website templates at{" "}
-          <Link
-            to={"https://creevoo.store"}
+          <a
+            href={"https://creevoo.store"}
             target="_blank"
             className="underline"
           >
             Creevoo
-          </Link>
+          </a>
           .
         </p>
 
         <p>
           Founded{" "}
-          <Link
-            to={"https://tryweebo.one"}
+          <a
+            href={"https://tryweebo.one"}
             target="_blank"
             className="underline"
           >
             Weebo
-          </Link>{" "}
+          </a>{" "}
           a web design partner for business and{" "}
-          <Link
-            to={"https://usesonibble.site"}
+          <a
+            href={"https://usesonibble.site"}
             target="_blank"
             className="underline"
           >
             Sonibble
-          </Link>{" "}
+          </a>{" "}
           an all in one solutions for business growth. Also actively shipping
           open source project at{" "}
-          <Link
-            to={"https://weecraft.site"}
+          <a
+            href={"https://weecraft.site"}
             target="_blank"
             className="underline"
           >
             Weecraft
-          </Link>
+          </a>
           .
         </p>
 
         <p>
           Before that, I was a senior software engineer at{" "}
-          <Link to={"https://dimata.com"} target="_blank" className="underline">
+          <a href={"https://dimata.com"} target="_blank" className="underline">
             Dimata
-          </Link>
+          </a>
           , a software company that building enterprise app for business and
           management. Then doing alot of freelance jobs for building a websites
           and shipping apps.
@@ -89,21 +88,21 @@ export function HeroSection() {
           I was actively documenting my journeys and share tips about design,
           development, business, money and productivity. Also helping web
           designers to grows at{" "}
-          <Link
-            to={"https://thegridline.site"}
+          <a
+            href={"https://thegridline.site"}
             target="_blank"
             className="underline"
           >
             The Gridline
-          </Link>{" "}
+          </a>{" "}
           and developers to grow at{" "}
-          <Link
-            to={"https://thescolon.site"}
+          <a
+            href={"https://thescolon.site"}
             target="_blank"
             className="underline"
           >
             The Scolon
-          </Link>
+          </a>
           .
         </p>
 
