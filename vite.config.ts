@@ -12,6 +12,7 @@ export default defineConfig({
     viteTsConfigPaths(),
     tailwindcss(),
     tanstackStart({
+      target: "vercel",
       customViteReactPlugin: true,
       tsr: {
         srcDirectory: "src/app",
