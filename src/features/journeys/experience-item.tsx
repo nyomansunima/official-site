@@ -1,5 +1,3 @@
-import { Link } from "react-router"
-
 export interface ExperienceItemData {
   team: string
   position: string
@@ -15,8 +13,8 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
   const { team, position, timeline, url } = experience
 
   return (
-    <Link
-      to={url}
+    <a
+      href={url}
       target="_blank"
       className="flex flex-col tablet:flex-row items-start tablet:items-center gap-2 py-2"
     >
@@ -28,6 +26,6 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
       </div>
 
       <span className="text-foreground/40 text-sm">{timeline}</span>
-    </Link>
+    </a>
   )
 }

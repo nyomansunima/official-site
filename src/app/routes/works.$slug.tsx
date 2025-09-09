@@ -1,28 +1,30 @@
-import { generatedMetadata } from "@shared/libs"
+import { createFileRoute } from "@tanstack/react-router"
 import { getWorkDetail, WorkDetailContent } from "@features/works"
-import type { Route } from "./+types/works.$slug"
+import { generatedMetadata } from "@shared/libs"
 
-export async function loader({ params }: Route.LoaderArgs) {
-  const { slug } = params
-  const work = await getWorkDetail(slug)
+export const Route = createFileRoute("/works/$slug")({
+  head: async ({ loaderData }) => {
+    const { work } = loaderData as any
 
-  return { work }
-}
+    return {
+      meta: generatedMetadata({
+        title: `${work.meta.title} | Nyoman Sunima`,
+        description: work.meta.description,
+        image: work.meta.image,
+      }),
+    }
+  },
+  loader: async ({ params }) => {
+    const { slug } = params
+    const work = await getWorkDetail({ data: { slug } })
 
-export function meta({ data }: Route.MetaArgs) {
-  if (data) {
-    const { work } = data
+    return { work }
+  },
+  component: PageComponent,
+})
 
-    return generatedMetadata({
-      title: `${work.meta.title} | Nyoman Sunima`,
-      description: work.meta.description,
-      image: work.meta.image,
-    })
-  }
-}
-
-export default function WorkDetailPage({ loaderData }: Route.ComponentProps) {
-  const { work } = loaderData
+function PageComponent() {
+  const { work } = Route.useLoaderData<any>()
 
   return (
     <main className="flex flex-col gap-20 tablet:gap-36">

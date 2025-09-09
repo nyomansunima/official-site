@@ -1,6 +1,7 @@
 import fs from "fs/promises"
 import path from "path"
 import { parseMarkdown } from "@shared/libs"
+import { createServerFn } from "@tanstack/react-start"
 
 const WORK_CONTENT_PATH = "src/contents/works"
 
@@ -25,21 +26,24 @@ export type WorkData = WorkFrontMatter & {
   slug: string
 }
 
-export async function getWorkDetail(slug: string): Promise<WorkDetail> {
-  const filePath = path.join(process.cwd(), WORK_CONTENT_PATH, `${slug}.md`)
-  const file = await fs.readFile(filePath, "utf-8").catch(() => {
-    throw new Response("No work found", {
-      status: 404,
-      statusText:
-        "Opps, the work that you looking is not found. You can find another else",
+export const getWorkDetail = createServerFn({ method: "GET" })
+  .validator((data: { slug: string }) => data)
+  .handler(async (ctx) => {
+    const slug = ctx.data.slug
+    const filePath = path.join(process.cwd(), WORK_CONTENT_PATH, `${slug}.md`)
+    const file = await fs.readFile(filePath, "utf-8").catch(() => {
+      throw new Response("No work found", {
+        status: 404,
+        statusText:
+          "Opps, the work that you looking is not found. You can find another else",
+      })
     })
+    const { content, data } = parseMarkdown(file)
+
+    return { meta: data as WorkFrontMatter, content }
   })
-  const { content, data } = parseMarkdown(file)
 
-  return { meta: data as WorkFrontMatter, content }
-}
-
-export async function getWorks(): Promise<WorkData[]> {
+export const getWorks = createServerFn({ method: "GET" }).handler(async () => {
   const workDirPath = path.join(process.cwd(), WORK_CONTENT_PATH)
   const files = await fs.readdir(workDirPath)
 
@@ -63,10 +67,12 @@ export async function getWorks(): Promise<WorkData[]> {
   )
 
   return works ?? []
-}
+})
 
-export async function getFeaturedWorks(): Promise<WorkData[]> {
-  const works = await getWorks()
-  const featuredWorks = works.filter((work) => work.isFeatured)
-  return featuredWorks ?? []
-}
+export const getFeaturedWorks = createServerFn({ method: "GET" }).handler(
+  async () => {
+    const works = await getWorks()
+    const featuredWorks = works.filter((work) => work.isFeatured)
+    return featuredWorks ?? []
+  },
+)

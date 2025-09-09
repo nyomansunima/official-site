@@ -1,14 +1,18 @@
+import { createFileRoute } from "@tanstack/react-router"
 import { SourceSection } from "@features/resources"
 import { generatedMetadata } from "@shared/libs"
 
-export function meta() {
-  return generatedMetadata({
-    title: "Resources | Nyoman Sunima",
-    description: "Get free resources and things that help your works",
-  })
-}
+export const Route = createFileRoute("/resources")({
+  head: () => ({
+    meta: generatedMetadata({
+      title: "Resources | Nyoman Sunima",
+      description: "Get free resources and things that help your works",
+    }),
+  }),
+  component: PageComponent,
+})
 
-export default function ResourcesPage() {
+function PageComponent() {
   return (
     <main className="flex flex-col">
       <SourceSection />
