@@ -8,7 +8,7 @@ import {
 } from "@antfu/eslint-config"
 
 export default combine(
-  ignores(["node_modules/**", "build/**", ".react-router/**"]),
+  ignores([".nitro/**", ".output/**", ".tanstack/**", "**/*.gen.ts"]),
   javascript(),
   imports({
     overrides: {
@@ -24,6 +24,7 @@ export default combine(
       "react-dom/no-dangerously-set-innerhtml": "off",
       "react-hooks-extra/no-direct-set-state-in-use-effect": "off",
       "react/no-unstable-context-value": "off",
+      "react-dom/no-unsafe-target-blank": "off",
     },
   },
 )
