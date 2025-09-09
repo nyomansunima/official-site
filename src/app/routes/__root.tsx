@@ -29,7 +29,7 @@ export const Route = createRootRouteWithContext<RouteWithContextProps>()({
       },
     ],
     links: [
-      { rel: "icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       { rel: "sitemap", type: "application/xml", href: "/sitemap.xml" },
       {
         rel: "stylesheet",
