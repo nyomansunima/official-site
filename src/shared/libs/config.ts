@@ -1,30 +1,16 @@
-function isBrowser() {
-  return typeof window !== "undefined"
-}
-
-export function loadServerEnv() {
-  const env = {
-    APP_HOST: process.env.APP_HOST,
-    GOOGLE_VERIFICATION: process.env.GOOGLE_VERIFICATION,
-    KIT_API_KEY: process.env.KIT_API_KEY,
-  }
-
-  return env
-}
-
 export function loadConfig() {
-  const isOnBrowser = isBrowser()
-  const ENV = isOnBrowser ? window.__ENV__ : process.env
+  const isOnBrowser = typeof window !== "undefined"
+  const env = isOnBrowser ? (import.meta.env as any) : process.env
 
   return {
     app: {
-      host: ENV.APP_HOST || "http://localhost:5173",
+      host: env.VITE_APP_HOST || "http://localhost:5173",
     },
     verification: {
-      google: ENV.GOOGLE_VERIFICATION,
+      google: env.VITE_GOOGLE_VERIFICATION,
     },
     kit: {
-      key: ENV.KIT_API_KEY,
+      key: env.KIT_API_KEY,
     },
   } as const
 }
