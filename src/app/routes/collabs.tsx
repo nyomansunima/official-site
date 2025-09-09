@@ -7,15 +7,19 @@ import {
 } from "@features/collabs"
 import { ArticleContent } from "@shared/components"
 import { generatedMetadata } from "@shared/libs"
+import { createFileRoute } from "@tanstack/react-router"
 
-export function meta() {
-  return generatedMetadata({
-    title: "Collabs | Nyoman Sunima",
-    description: "Serving with love and crafting for better impawcts",
-  })
-}
+export const Route = createFileRoute("/collabs")({
+  head: () => ({
+    meta: generatedMetadata({
+      title: "Collabs | Nyoman Sunima",
+      description: "Serving with love and crafting for better impawcts",
+    }),
+  }),
+  component: PageComponent,
+})
 
-export default function CollabsPage() {
+function PageComponent() {
   return (
     <div className="flex flex-col gap-10">
       <ArticleContent>

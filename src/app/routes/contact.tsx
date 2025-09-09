@@ -1,14 +1,18 @@
 import { ContactSection, SocialSection } from "@features/contact"
 import { generatedMetadata } from "@shared/libs"
+import { createFileRoute } from "@tanstack/react-router"
 
-export function meta() {
-  return generatedMetadata({
-    title: "Contact | Nyoman Sunima",
-    description: "Get in touch with me right now, start your idea",
-  })
-}
+export const Route = createFileRoute("/contact")({
+  head: () => ({
+    meta: generatedMetadata({
+      title: "Contact | Nyoman Sunima",
+      description: "Get in touch with me right now, start your idea",
+    }),
+  }),
+  component: PageComponent,
+})
 
-export default function ContactPage() {
+function PageComponent() {
   return (
     <main className="flex flex-col gap-20">
       <ContactSection />

@@ -1,3 +1,4 @@
+import { createFileRoute } from "@tanstack/react-router"
 import {
   AchievementSection,
   ActivitySection,
@@ -9,15 +10,18 @@ import {
 import { ArticleContent } from "@shared/components"
 import { generatedMetadata } from "@shared/libs"
 
-export function meta() {
-  return generatedMetadata({
-    title: "About | Nyoman Sunima",
-    description:
-      "The whole story about me, nyoman sunima and all of the journey",
-  })
-}
+export const Route = createFileRoute("/about")({
+  head: () => ({
+    meta: generatedMetadata({
+      title: "About | Nyoman Sunima",
+      description:
+        "The whole story about me, nyoman sunima and all of the journey",
+    }),
+  }),
+  component: PageComponent,
+})
 
-export default function AboutPage() {
+function PageComponent() {
   return (
     <main className="flex flex-col">
       <ArticleContent>
