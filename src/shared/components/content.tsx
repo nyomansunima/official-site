@@ -17,15 +17,7 @@ export function MarkdownContent({
   content,
 }: MarkdownContentProps): React.ReactNode {
   return (
-    <ReactMarkdown
-      remarkPlugins={[remarkGfm]}
-      rehypePlugins={[rehypeRaw]}
-      components={{
-        img: ({ ...props }) => {
-          return <ContentImage {...props} />
-        },
-      }}
-    >
+    <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
       {content}
     </ReactMarkdown>
   )
