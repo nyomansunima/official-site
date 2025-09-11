@@ -32,8 +32,10 @@ async function loadWorksDir(): Promise<string[]> {
     const files = await fs.readdir(dirPath)
     const contentFiles = files.filter((file) => file.endsWith(".md"))
     return contentFiles
-  } catch {
-    throw new Error("Opps, something happen when load the works directory")
+  } catch (e) {
+    throw new Error(
+      `Opps, cannot load the works directory in ${path.join(WORK_DIR_PATH)} caused: ${JSON.stringify(e)}`,
+    )
   }
 }
 
@@ -45,20 +47,25 @@ async function loadWorkFile(filePath: string): Promise<string> {
     )
     return file
   } catch {
-    throw new Error("Opps, no file found")
+    throw new Error(
+      `Opps, no file found for ${path.join(process.cwd(), WORK_DIR_PATH, filePath)}`,
+    )
   }
 }
 
-export const getWorkDetail = createServerFn({ method: "GET" })
+export const getWorkDetail = createServerFn({ method: "GET", type: "static" })
   .validator((data: { slug: string }) => data)
-  .handler(async (ctx) => {
+  .handler(async (ctx): Promise<WorkDetail> => {
     const filePath = `${ctx.data.slug}.md`
     const file = await loadWorkFile(filePath)
     const { content, data } = parseMarkdown(file)
     return { meta: data as WorkFrontMatter, content }
   })
 
-export const getWorks = createServerFn({ method: "GET" }).handler(async () => {
+export const getWorks = createServerFn({
+  method: "GET",
+  type: "static",
+}).handler(async (): Promise<WorkData[]> => {
   const files = await loadWorksDir()
   const works = await Promise.all(
     files.map(async (filePath) => {
@@ -75,10 +82,11 @@ export const getWorks = createServerFn({ method: "GET" }).handler(async () => {
   return works ?? []
 })
 
-export const getFeaturedWorks = createServerFn({ method: "GET" }).handler(
-  async () => {
-    const works = await getWorks()
-    const featuredWorks = works.filter((work) => work.isFeatured)
-    return featuredWorks ?? []
-  },
-)
+export const getFeaturedWorks = createServerFn({
+  method: "GET",
+  type: "static",
+}).handler(async (): Promise<WorkData[]> => {
+  const works = await getWorks()
+  const featuredWorks = works.filter((work) => work.isFeatured)
+  return featuredWorks ?? []
+})
