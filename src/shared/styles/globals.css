@@ -149,4 +149,8 @@
     font-size: var(--text-base);
     font-weight: var(--font-weight-medium);
   }
+
+  img {
+    @apply rounded-2xl;
+  }
 }
