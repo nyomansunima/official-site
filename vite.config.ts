@@ -12,26 +12,25 @@ export default defineConfig({
     viteTsConfigPaths(),
     tailwindcss(),
     tanstackStart({
-      target: "vercel",
       customViteReactPlugin: true,
       tsr: {
         srcDirectory: "src/app",
       },
-      prerender: {
-        enabled: true,
-        crawlLinks: true,
-      },
+      // prerender: {
+      //   enabled: true,
+      //   crawlLinks: true,
+      // },
       sitemap: {
         enabled: true,
         host: "https://www.nyomansunima.com",
       },
-      pages: [
-        { path: "/works", prerender: { enabled: true } },
-        { path: "/resources", prerender: { enabled: true } },
-        { path: "/stories", prerender: { enabled: true } },
-        { path: "/journeys", prerender: { enabled: true } },
-        { path: "/support", prerender: { enabled: true } },
-      ],
+      // pages: [
+      //   { path: "/works", prerender: { enabled: true } },
+      //   { path: "/resources", prerender: { enabled: true } },
+      //   { path: "/stories", prerender: { enabled: true } },
+      //   { path: "/journeys", prerender: { enabled: true } },
+      //   { path: "/support", prerender: { enabled: true } },
+      // ],
     }),
     viteReact(),
   ],
