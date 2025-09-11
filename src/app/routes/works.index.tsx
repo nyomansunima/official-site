@@ -2,14 +2,6 @@ import { createFileRoute } from "@tanstack/react-router"
 import { getWorks, WorksListSection } from "@features/works"
 import { generatedMetadata } from "@shared/libs"
 
-export function meta() {
-  return generatedMetadata({
-    title: "Works | Nyoman Sunima",
-    description:
-      "See all of my works including projects, apps, products, case studies, idea and playground",
-  })
-}
-
 export const Route = createFileRoute("/works/")({
   head: () => ({
     meta: generatedMetadata({
