@@ -1,5 +1,3 @@
-import { ContentImage } from "@shared/components"
-
 export function SharingSection() {
   return (
     <section>
@@ -20,7 +18,7 @@ export function SharingSection() {
         empower others to achieve their goals.
       </p>
 
-      <ContentImage
+      <img
         src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709291876/a59a6504-a98b-4818-955f-efba3364d5b6.jpeg"
         alt="Read, write and share"
       />

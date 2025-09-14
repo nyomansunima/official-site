@@ -1,5 +1,3 @@
-import { ContentImage } from "@shared/components"
-
 export function ActivitySection() {
   return (
     <section>
@@ -29,12 +27,12 @@ export function ActivitySection() {
         successful product development process.
       </p>
 
-      <ContentImage
+      <img
         src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709277676/dd474a4c-a2fd-4b98-bcf2-3002c6c4aab5.jpeg"
         alt="Research"
       />
 
-      <ContentImage
+      <img
         src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709284152/96cae4e7-4066-4ee4-b569-ccda13574a0f.jpeg"
         alt="Design"
       />

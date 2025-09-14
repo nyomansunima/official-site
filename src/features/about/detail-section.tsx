@@ -1,5 +1,3 @@
-import { ContentImage } from "@shared/components"
-
 export function DetailSection() {
   return (
     <section>
@@ -26,7 +24,7 @@ export function DetailSection() {
         tech industries.
       </p>
 
-      <ContentImage
+      <img
         src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709241070/2aa95ebc-0bfd-4362-90cb-3b238cc4ef46.jpeg"
         alt="Activity"
       />
