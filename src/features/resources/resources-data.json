@@ -4,51 +4,51 @@
     "list": [
       {
         "title": "1.1.1.1 Warp",
-        "url": "https://one.one.one.one?ref=nyomansunima"
+        "url": "https://one.one.one.one"
       },
       {
         "title": "Zed",
-        "url": "https://zed.dev?ref=nyomansunima"
+        "url": "https://zed.dev"
       },
       {
         "title": "Helix",
-        "url": "https://helix-editor.com?ref=nyomansunima"
+        "url": "https://helix-editor.com"
       },
       {
         "title": "Notion",
-        "url": "https://notion.so/signup?ref=nyomansunima"
+        "url": "https://notion.so/signup"
       },
       {
         "title": "Figma",
-        "url": "https://figma.com/signup?ref=nyomansunima"
+        "url": "https://figma.com/signup"
       },
       {
         "title": "ChatGPT",
-        "url": "https://chat.openai.com/signup?ref=nyomansunima"
+        "url": "https://chat.openai.com/signup"
       },
       {
         "title": "Notion Calendar",
-        "url": "https://notion.so/signup?ref=nyomansunima"
+        "url": "https://notion.so/signup"
       },
       {
         "title": "Spark Email",
-        "url": "https://sparkmailapp.com/signup?ref=nyomansunima"
+        "url": "https://sparkmailapp.com/signup"
       },
       {
         "title": "Brave",
-        "url": "https://brave.com?ref=nyomansunignup?ref=nyomansunima"
+        "url": "https://brave.com"
       },
       {
         "title": "Ghostty",
-        "url": "https://ghostty.org?ref=nyomansunima"
+        "url": "https://ghostty.org"
       },
       {
         "title": "Bitwarden",
-        "url": "https://bitwarden.com?ref=nyomansunima"
+        "url": "https://bitwarden.com"
       },
       {
         "title": "Github",
-        "url": "https://.com?ref=nyomansunima"
+        "url": "https://.com"
       }
     ]
   },
@@ -57,39 +57,39 @@
     "list": [
       {
         "title": "Tailwind CSS",
-        "url": "https://tailwindcss.com/docs/installation?ref=nyomansunima"
+        "url": "https://tailwindcss.com/docs/installation"
       },
       {
         "title": "Hoppscotch",
-        "url": "https://hoppscotch.com?ref=nyomansunima"
+        "url": "https://hoppscotch.com"
       },
       {
         "title": "Vercel",
-        "url": "https://vercel.com?ref=nyomansunima"
+        "url": "https://vercel.com"
       },
       {
         "title": "Airtable",
-        "url": "https://airtable.com?ref=nyomansunima"
+        "url": "https://airtable.com"
       },
       {
         "title": "Godaddy",
-        "url": "https://godaddy.com?ref=nyomansunima"
+        "url": "https://godaddy.com"
       },
       {
         "title": "Posthog",
-        "url": "https://posthog.com?ref=nyomansunima"
+        "url": "https://posthog.com"
       },
       {
         "title": "Loops",
-        "url": "https://loops.so?ref=nyomansunima"
+        "url": "https://loops.so"
       },
       {
         "title": "Resend",
-        "url": "https://resend.com?ref=nyomansunima"
+        "url": "https://resend.com"
       },
       {
         "title": "React Email",
-        "url": "https://react.email?ref=nyomansunima"
+        "url": "https://react.email"
       }
     ]
   },
@@ -97,56 +97,60 @@
     "title": "Dev tools",
     "list": [
       {
-        "title": "React router",
-        "url": "https://reactrouter.com?ref=nyomansunima"
+        "title": "Astro",
+        "url": "https://astro.build"
+      },
+      {
+        "title": "Tanstack Start",
+        "url": "https://tanstack.com/start"
       },
       {
         "title": "Expo.dev",
-        "url": "https://expo.dev?ref=nyomansunima"
+        "url": "https://expo.dev"
       },
       {
         "title": "Electron Forge",
-        "url": "https://www.electronforge.io?ref=nyomansunima"
+        "url": "https://www.electronforge.io"
       },
       {
         "title": "Vite",
-        "url": "https://vitejs.dev/guide/?ref=nyomansunima"
+        "url": "https://vitejs.dev/guide/"
       },
       {
         "title": "Shadcn UI",
-        "url": "https://ui.shadcn.com/docs/installation?ref=nyomansunima"
+        "url": "https://ui.shadcn.com/docs/installation"
       },
       {
         "title": "Plausible",
-        "url": "https://plausible.io?ref=nyomansunima"
+        "url": "https://plausible.io"
       },
       {
         "title": "Sentry",
-        "url": "https://sentry.io?ref=nyomansunima"
+        "url": "https://sentry.io"
       },
       {
         "title": "Tauri",
-        "url": "https://tauri.app?ref=nyomansunima"
+        "url": "https://tauri.app"
       },
       {
         "title": "Danet",
-        "url": "https://danet.land?ref=nyomansunima"
+        "url": "https://danet.land"
       },
       {
         "title": "Convex",
-        "url": "https://convex.dev?ref=nyomansunima"
+        "url": "https://convex.dev"
       },
       {
         "title": "Waitlist",
-        "url": "https://getwaitlist.com?ref=nyomansunima"
+        "url": "https://getwaitlist.com"
       },
       {
         "title": "Clerk",
-        "url": "https://clerk.com?ref=nyomansunima"
+        "url": "https://clerk.com"
       },
       {
         "title": "Revenue Cat",
-        "url": "https://www.revenuecat.com?ref=nyomansunima"
+        "url": "https://www.revenuecat.com"
       }
     ]
   },
@@ -155,39 +159,39 @@
     "list": [
       {
         "title": "Heroico",
-        "url": "https://heroico.site?ref=nyomansunima"
+        "url": "https://heroico.site"
       },
       {
         "title": "Dribbble",
-        "url": "https://dribbble.com?ref=nyomansunima"
+        "url": "https://dribbble.com"
       },
       {
         "title": "Godly Website",
-        "url": "https://godly.website?ref=nyomansunima"
+        "url": "https://godly.website"
       },
       {
         "title": "Awwwards",
-        "url": "https://www.awwwards.com?ref=nyomansunima"
+        "url": "https://www.awwwards.com"
       },
       {
         "title": "Mobbin",
-        "url": "https://mobbin.design?ref=nyomansunima"
+        "url": "https://mobbin.design"
       },
       {
         "title": "Curated.design",
-        "url": "https://curated.design?ref=nyomansunima"
+        "url": "https://curated.design"
       },
       {
         "title": "Landings.dev",
-        "url": "https://landings.dev?ref=nyomansunima"
+        "url": "https://landings.dev"
       },
       {
         "title": "Minimal.gallery",
-        "url": "https://minimal.gallery?ref=nyomansunima"
+        "url": "https://minimal.gallery"
       },
       {
         "title": "Ecomm.design",
-        "url": "https://ecomm.design?ref=nyomansunima"
+        "url": "https://ecomm.design"
       }
     ]
   },
@@ -196,27 +200,27 @@
     "list": [
       {
         "title": "Tailark",
-        "url": "https://tailark.com?ref=nyomansunima"
+        "url": "https://tailark.com"
       },
       {
         "title": "Shadcn UI",
-        "url": "https://ui.shadcn.com?ref=nyomansunima"
+        "url": "https://ui.shadcn.com"
       },
       {
         "title": "Magic UI",
-        "url": "https://magicui.design?ref=nyomansunima"
+        "url": "https://magicui.design"
       },
       {
         "title": "Motion",
-        "url": "https://motion.dev?ref=nyomansunima"
+        "url": "https://motion.dev"
       },
       {
         "title": "Flaticon Interface Icon",
-        "url": "https://www.flaticon.com/uicons/type-icons?ref=nyomansunima="
+        "url": "https://www.flaticon.com/uicons/type-icons"
       },
       {
         "title": "Lazygit",
-        "url": "https://github.com/jesseduffield/lazygit?ref=nyomansunima"
+        "url": "https://github.com/jesseduffield/lazygit"
       }
     ]
   },
@@ -225,39 +229,35 @@
     "list": [
       {
         "title": "React router",
-        "url": "https://reactrouter.com?ref=nyomansunima"
+        "url": "https://reactrouter.com"
       },
       {
         "title": "Next.js",
-        "url": "https://nextjs.org?ref=nyomansunima"
+        "url": "https://nextjs.org"
       },
       {
         "title": "Framer",
-        "url": "https://framer.com?ref=nyomansunima"
+        "url": "https://framer.com"
       },
       {
         "title": "Wix Studio",
-        "url": "https://framer.com?ref=nyomansunima"
+        "url": "https://framer.com"
       },
       {
         "title": "Shopify",
-        "url": "https://shopify.com?ref=nyomansunima"
+        "url": "https://shopify.com"
       },
       {
         "title": "Prismic",
-        "url": "https://prismic.io?ref=nyomansunima"
+        "url": "https://prismic.io"
       },
       {
         "title": "Sanity",
-        "url": "https://sanity.io?ref=nyomansunima"
-      },
-      {
-        "title": "Astro",
-        "url": "https://astro.build?ref=nyomansunima"
+        "url": "https://sanity.io"
       },
       {
         "title": "Webflow",
-        "url": "https://webflow.com?ref=nyomansunima"
+        "url": "https://webflow.com"
       }
     ]
   },
@@ -266,11 +266,11 @@
     "list": [
       {
         "title": "Cal.com",
-        "url": "https://cal.com?ref=nyomansunima"
+        "url": "https://cal.com"
       },
       {
         "title": "Loom",
-        "url": "https://loom.com?ref=nyomansunima"
+        "url": "https://loom.com"
       }
     ]
   },
@@ -279,23 +279,23 @@
     "list": [
       {
         "title": "Lemon Squeezy",
-        "url": "https://lemonsqueezy.com?ref=nyomansunima"
+        "url": "https://lemonsqueezy.com"
       },
       {
         "title": "Polar",
-        "url": "https://polar.sh?ref=nyomansunima"
+        "url": "https://polar.sh"
       },
       {
         "title": "Paddle",
-        "url": "https://paddle.com?ref=nyomansunima"
+        "url": "https://paddle.com"
       },
       {
         "title": "Paypal",
-        "url": "https://paypal.com?ref=nyomansunima"
+        "url": "https://paypal.com"
       },
       {
         "title": "Stripe",
-        "url": "https://stripe.com?ref=nyomansunima"
+        "url": "https://stripe.com"
       }
     ]
   },
@@ -304,27 +304,27 @@
     "list": [
       {
         "title": "Hashnode",
-        "url": "https://hashnode.com?ref=nyomansunima"
+        "url": "https://hashnode.com"
       },
       {
         "title": "Medium",
-        "url": "https://medium.com?ref=nyomansunima"
+        "url": "https://medium.com"
       },
       {
         "title": "Dev.to",
-        "url": "https://dev.to?ref=nyomansunima"
+        "url": "https://dev.to"
       },
       {
         "title": "Hackernoon",
-        "url": "https://hackernoon.com?ref=nyomansunima"
+        "url": "https://hackernoon.com"
       },
       {
         "title": "Substack",
-        "url": "https://substack.com?ref=nyomansunima"
+        "url": "https://substack.com"
       },
       {
         "title": "Kit",
-        "url": "https://kit.com?ref=nyomansunima"
+        "url": "https://kit.com"
       }
     ]
   },
@@ -333,27 +333,27 @@
     "list": [
       {
         "title": "Vercel",
-        "url": "https://vercel.com?ref=nyomansunima"
+        "url": "https://vercel.com"
       },
       {
         "title": "Cloudflare",
-        "url": "https://cloudflare.com?ref=nyomansunima"
+        "url": "https://cloudflare.com"
       },
       {
         "title": "Netlify",
-        "url": "https://netlify.com?ref=nyomansunima"
+        "url": "https://netlify.com"
       },
       {
         "title": "Railway",
-        "url": "https://railway.com?ref=nyomansunima"
+        "url": "https://railway.com"
       },
       {
         "title": "Sevalla",
-        "url": "https://sevalla.com?ref=nyomansunima"
+        "url": "https://sevalla.com"
       },
       {
         "title": "Digital ocean",
-        "url": "https://digitalocean.com?ref=nyomansunima"
+        "url": "https://digitalocean.com"
       }
     ]
   },
@@ -362,23 +362,23 @@
     "list": [
       {
         "title": "Upstash",
-        "url": "https://upstash.com?ref=nyomansunima"
+        "url": "https://upstash.com"
       },
       {
         "title": "Xata",
-        "url": "https://xata.io?ref=nyomansunima"
+        "url": "https://xata.io"
       },
       {
         "title": "Neon",
-        "url": "https://neon.tech?ref=nyomansunima"
+        "url": "https://neon.tech"
       },
       {
         "title": "Turso",
-        "url": "https://turso.tech?ref=nyomansunima"
+        "url": "https://turso.tech"
       },
       {
         "title": "Planetscale",
-        "url": "https://planetscale.com?ref=nyomansunima"
+        "url": "https://planetscale.com"
       }
     ]
   },
@@ -387,15 +387,15 @@
     "list": [
       {
         "title": "Clerk",
-        "url": "https://clerk.com?ref=nyomansunima"
+        "url": "https://clerk.com"
       },
       {
         "title": "WorkOS",
-        "url": "https://workos.com?ref=nyomansunima"
+        "url": "https://workos.com"
       },
       {
         "title": "Kinde",
-        "url": "https://kinde.com?ref=nyomansunima"
+        "url": "https://kinde.com"
       }
     ]
   }

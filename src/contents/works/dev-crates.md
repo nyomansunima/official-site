@@ -19,7 +19,7 @@ responsibilities:
 
 Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user type. They needed a complet=e redesign to improve usability and enhance their customer experience.
 
-[Repository](https://github.com/weecraft/boola?ref=nyomansunima)
+[Repository](https://github.com/weecraft/boola)
 [Launch](https://marketplace.visualstudio.com/items?itemName=nyomansunima.boola)
 
 <br/>

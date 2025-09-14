@@ -17,7 +17,7 @@ Acme Corp faced challenges with their outdated e-commerce platform. Key issues i
 
 You can find the project on GitHub:
 
-- [Repository](https://github.com/weecraft/boola?ref=nyomansunima)
+- [Repository](https://github.com/weecraft/boola)
 - [Launch](https://marketplace.visualstudio.com/items?itemName=nyomansunima.boola)
 
 <br/>
