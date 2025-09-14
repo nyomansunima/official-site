@@ -15,7 +15,7 @@ interface MarkdownContentProps {
 
 export function MarkdownContent({
   content,
-}: MarkdownContentProps): React.ReactNode {
+}: MarkdownContentProps): React.ReactElement {
   return (
     <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
       {content}
@@ -23,31 +23,13 @@ export function MarkdownContent({
   )
 }
 
-export function ArticleContent({ children, className }: ArticleContentProps) {
+export function ArticleContent({
+  children,
+  className,
+}: ArticleContentProps): React.ReactElement {
   return (
     <article className={`${mergeClass("prose", className)}`}>
       {children}
     </article>
-  )
-}
-
-type ContentImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {}
-
-export function ContentImage({
-  src,
-  alt,
-  className,
-  ...props
-}: ContentImageProps) {
-  return (
-    <div className="relative w-full overflow-hidden rounded-2xl not-prose my-4">
-      <img
-        src={src}
-        alt={alt}
-        {...props}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className="object-cover"
-      />
-    </div>
   )
 }
