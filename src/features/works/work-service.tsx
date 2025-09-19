@@ -24,7 +24,7 @@ export type WorkData = WorkFrontMatter & {
   slug: string
 }
 
-const WORK_DIR_PATH = "src/contents/works"
+const WORK_DIR_PATH = "src/features/works/contents"
 
 async function loadWorksDir(): Promise<string[]> {
   try {
