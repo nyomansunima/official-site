@@ -5,7 +5,6 @@ import {
   createRootRouteWithContext,
 } from "@tanstack/react-router"
 import styles from "@shared/styles/globals.css?url"
-import { ThemeProvider } from "next-themes"
 import { CenteredLayout, Footer, Header } from "@shared/components"
 import type { QueryClient } from "@tanstack/react-query"
 
@@ -47,19 +46,13 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
         <HeadContent />
       </head>
       <body>
-        <ThemeProvider
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <CenteredLayout>
-            <Header />
-            <div className="min-h-screen pb-28 mt-5 tablet:mt-10 tablet:pb-56">
-              {children}
-            </div>
-            <Footer />
-          </CenteredLayout>
-        </ThemeProvider>
+        <CenteredLayout>
+          <Header />
+          <div className="min-h-screen pb-28 mt-5 tablet:mt-10 tablet:pb-56">
+            {children}
+          </div>
+          <Footer />
+        </CenteredLayout>
         <Scripts />
       </body>
     </html>
