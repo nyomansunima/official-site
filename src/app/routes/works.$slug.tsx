@@ -1,11 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router"
-import { getWorkDetail, WorkDetailContent } from "@features/works"
+import {
+  getWorkDetail,
+  type WorkDetail,
+  WorkDetailContent,
+} from "@features/works"
 import { generatedMetadata } from "@shared/libs"
 
 export const Route = createFileRoute("/works/$slug")({
-  head: async ({ loaderData }) => {
-    const { work } = loaderData as any
-
+  head: (ctx) => {
+    const work = (ctx.loaderData! as any).work as WorkDetail
     return {
       meta: generatedMetadata({
         title: `${work.meta.title} | Nyoman Sunima`,
@@ -14,8 +17,9 @@ export const Route = createFileRoute("/works/$slug")({
       }),
     }
   },
-  loader: async ({ params }) => {
-    const { slug } = params
+  // @ts-expect-error Just checking error for the return value
+  loader: async (ctx) => {
+    const slug = ctx.params.slug
     const work = await getWorkDetail({ data: { slug } })
 
     return { work }
@@ -24,7 +28,7 @@ export const Route = createFileRoute("/works/$slug")({
 })
 
 function PageComponent() {
-  const { work } = Route.useLoaderData<any>()
+  const { work } = Route.useLoaderData() as any
 
   return (
     <main className="flex flex-col gap-20 tablet:gap-36">
