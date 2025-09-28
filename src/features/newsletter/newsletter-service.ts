@@ -1,12 +1,13 @@
 import { kitClient } from "@shared/libs"
 import { createServerFn } from "@tanstack/react-start"
-
-interface SubscribeInput {
-  email: string
-}
+import z from "zod"
 
 export const subscribeToNewsletter = createServerFn({ method: "POST" })
-  .validator((data: SubscribeInput) => data)
+  .inputValidator(
+    z.object({
+      email: z.string(),
+    }),
+  )
   .handler(async (ctx) => {
     const input = ctx.data
     const payload = {

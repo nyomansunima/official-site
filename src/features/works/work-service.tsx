@@ -2,6 +2,7 @@ import fs from "fs/promises"
 import path from "path"
 import { parseMarkdown } from "@shared/libs"
 import { createServerFn } from "@tanstack/react-start"
+import z from "zod"
 
 export interface WorkFrontMatter {
   title: string
@@ -53,8 +54,14 @@ async function loadWorkFile(filePath: string): Promise<string> {
   }
 }
 
-export const getWorkDetail = createServerFn({ method: "GET", type: "static" })
-  .validator((data: { slug: string }) => data)
+export const getWorkDetail = createServerFn({
+  method: "GET",
+})
+  .inputValidator(
+    z.object({
+      slug: z.string(),
+    }),
+  )
   .handler(async (ctx): Promise<WorkDetail> => {
     const filePath = `${ctx.data.slug}.md`
     const file = await loadWorkFile(filePath)
@@ -64,7 +71,6 @@ export const getWorkDetail = createServerFn({ method: "GET", type: "static" })
 
 export const getWorks = createServerFn({
   method: "GET",
-  type: "static",
 }).handler(async (): Promise<WorkData[]> => {
   const files = await loadWorksDir()
   const works = await Promise.all(
@@ -84,7 +90,6 @@ export const getWorks = createServerFn({
 
 export const getFeaturedWorks = createServerFn({
   method: "GET",
-  type: "static",
 }).handler(async (): Promise<WorkData[]> => {
   const works = await getWorks()
   const featuredWorks = works.filter((work) => work.isFeatured)
