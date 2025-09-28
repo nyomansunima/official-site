@@ -8,155 +8,155 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from "./routes/__root"
-import { Route as SupportRouteImport } from "./routes/support"
-import { Route as StoriesRouteImport } from "./routes/stories"
-import { Route as ResourcesRouteImport } from "./routes/resources"
-import { Route as JourneysRouteImport } from "./routes/journeys"
-import { Route as CraftsRouteImport } from "./routes/crafts"
-import { Route as ContactRouteImport } from "./routes/contact"
-import { Route as CollabsRouteImport } from "./routes/collabs"
-import { Route as AboutRouteImport } from "./routes/about"
-import { Route as IndexRouteImport } from "./routes/index"
-import { Route as WorksIndexRouteImport } from "./routes/works.index"
-import { Route as WorksSlugRouteImport } from "./routes/works.$slug"
+import { Route as rootRouteImport } from './routes/__root'
+import { Route as SupportRouteImport } from './routes/support'
+import { Route as StoriesRouteImport } from './routes/stories'
+import { Route as ResourcesRouteImport } from './routes/resources'
+import { Route as JourneysRouteImport } from './routes/journeys'
+import { Route as CraftsRouteImport } from './routes/crafts'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CollabsRouteImport } from './routes/collabs'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as IndexRouteImport } from './routes/index'
+import { Route as WorksIndexRouteImport } from './routes/works.index'
+import { Route as WorksSlugRouteImport } from './routes/works.$slug'
 
 const SupportRoute = SupportRouteImport.update({
-  id: "/support",
-  path: "/support",
+  id: '/support',
+  path: '/support',
   getParentRoute: () => rootRouteImport,
 } as any)
 const StoriesRoute = StoriesRouteImport.update({
-  id: "/stories",
-  path: "/stories",
+  id: '/stories',
+  path: '/stories',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ResourcesRoute = ResourcesRouteImport.update({
-  id: "/resources",
-  path: "/resources",
+  id: '/resources',
+  path: '/resources',
   getParentRoute: () => rootRouteImport,
 } as any)
 const JourneysRoute = JourneysRouteImport.update({
-  id: "/journeys",
-  path: "/journeys",
+  id: '/journeys',
+  path: '/journeys',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CraftsRoute = CraftsRouteImport.update({
-  id: "/crafts",
-  path: "/crafts",
+  id: '/crafts',
+  path: '/crafts',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
-  id: "/contact",
-  path: "/contact",
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CollabsRoute = CollabsRouteImport.update({
-  id: "/collabs",
-  path: "/collabs",
+  id: '/collabs',
+  path: '/collabs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
-  id: "/about",
-  path: "/about",
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
-  id: "/",
-  path: "/",
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WorksIndexRoute = WorksIndexRouteImport.update({
-  id: "/works/",
-  path: "/works/",
+  id: '/works/',
+  path: '/works/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WorksSlugRoute = WorksSlugRouteImport.update({
-  id: "/works/$slug",
-  path: "/works/$slug",
+  id: '/works/$slug',
+  path: '/works/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
-  "/": typeof IndexRoute
-  "/about": typeof AboutRoute
-  "/collabs": typeof CollabsRoute
-  "/contact": typeof ContactRoute
-  "/crafts": typeof CraftsRoute
-  "/journeys": typeof JourneysRoute
-  "/resources": typeof ResourcesRoute
-  "/stories": typeof StoriesRoute
-  "/support": typeof SupportRoute
-  "/works/$slug": typeof WorksSlugRoute
-  "/works": typeof WorksIndexRoute
+  '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/collabs': typeof CollabsRoute
+  '/contact': typeof ContactRoute
+  '/crafts': typeof CraftsRoute
+  '/journeys': typeof JourneysRoute
+  '/resources': typeof ResourcesRoute
+  '/stories': typeof StoriesRoute
+  '/support': typeof SupportRoute
+  '/works/$slug': typeof WorksSlugRoute
+  '/works': typeof WorksIndexRoute
 }
 export interface FileRoutesByTo {
-  "/": typeof IndexRoute
-  "/about": typeof AboutRoute
-  "/collabs": typeof CollabsRoute
-  "/contact": typeof ContactRoute
-  "/crafts": typeof CraftsRoute
-  "/journeys": typeof JourneysRoute
-  "/resources": typeof ResourcesRoute
-  "/stories": typeof StoriesRoute
-  "/support": typeof SupportRoute
-  "/works/$slug": typeof WorksSlugRoute
-  "/works": typeof WorksIndexRoute
+  '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/collabs': typeof CollabsRoute
+  '/contact': typeof ContactRoute
+  '/crafts': typeof CraftsRoute
+  '/journeys': typeof JourneysRoute
+  '/resources': typeof ResourcesRoute
+  '/stories': typeof StoriesRoute
+  '/support': typeof SupportRoute
+  '/works/$slug': typeof WorksSlugRoute
+  '/works': typeof WorksIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  "/": typeof IndexRoute
-  "/about": typeof AboutRoute
-  "/collabs": typeof CollabsRoute
-  "/contact": typeof ContactRoute
-  "/crafts": typeof CraftsRoute
-  "/journeys": typeof JourneysRoute
-  "/resources": typeof ResourcesRoute
-  "/stories": typeof StoriesRoute
-  "/support": typeof SupportRoute
-  "/works/$slug": typeof WorksSlugRoute
-  "/works/": typeof WorksIndexRoute
+  '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/collabs': typeof CollabsRoute
+  '/contact': typeof ContactRoute
+  '/crafts': typeof CraftsRoute
+  '/journeys': typeof JourneysRoute
+  '/resources': typeof ResourcesRoute
+  '/stories': typeof StoriesRoute
+  '/support': typeof SupportRoute
+  '/works/$slug': typeof WorksSlugRoute
+  '/works/': typeof WorksIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    | "/"
-    | "/about"
-    | "/collabs"
-    | "/contact"
-    | "/crafts"
-    | "/journeys"
-    | "/resources"
-    | "/stories"
-    | "/support"
-    | "/works/$slug"
-    | "/works"
+    | '/'
+    | '/about'
+    | '/collabs'
+    | '/contact'
+    | '/crafts'
+    | '/journeys'
+    | '/resources'
+    | '/stories'
+    | '/support'
+    | '/works/$slug'
+    | '/works'
   fileRoutesByTo: FileRoutesByTo
   to:
-    | "/"
-    | "/about"
-    | "/collabs"
-    | "/contact"
-    | "/crafts"
-    | "/journeys"
-    | "/resources"
-    | "/stories"
-    | "/support"
-    | "/works/$slug"
-    | "/works"
+    | '/'
+    | '/about'
+    | '/collabs'
+    | '/contact'
+    | '/crafts'
+    | '/journeys'
+    | '/resources'
+    | '/stories'
+    | '/support'
+    | '/works/$slug'
+    | '/works'
   id:
-    | "__root__"
-    | "/"
-    | "/about"
-    | "/collabs"
-    | "/contact"
-    | "/crafts"
-    | "/journeys"
-    | "/resources"
-    | "/stories"
-    | "/support"
-    | "/works/$slug"
-    | "/works/"
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/collabs'
+    | '/contact'
+    | '/crafts'
+    | '/journeys'
+    | '/resources'
+    | '/stories'
+    | '/support'
+    | '/works/$slug'
+    | '/works/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -173,82 +173,82 @@ export interface RootRouteChildren {
   WorksIndexRoute: typeof WorksIndexRoute
 }
 
-declare module "@tanstack/react-router" {
+declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    "/support": {
-      id: "/support"
-      path: "/support"
-      fullPath: "/support"
+    '/support': {
+      id: '/support'
+      path: '/support'
+      fullPath: '/support'
       preLoaderRoute: typeof SupportRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/stories": {
-      id: "/stories"
-      path: "/stories"
-      fullPath: "/stories"
+    '/stories': {
+      id: '/stories'
+      path: '/stories'
+      fullPath: '/stories'
       preLoaderRoute: typeof StoriesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/resources": {
-      id: "/resources"
-      path: "/resources"
-      fullPath: "/resources"
+    '/resources': {
+      id: '/resources'
+      path: '/resources'
+      fullPath: '/resources'
       preLoaderRoute: typeof ResourcesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/journeys": {
-      id: "/journeys"
-      path: "/journeys"
-      fullPath: "/journeys"
+    '/journeys': {
+      id: '/journeys'
+      path: '/journeys'
+      fullPath: '/journeys'
       preLoaderRoute: typeof JourneysRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/crafts": {
-      id: "/crafts"
-      path: "/crafts"
-      fullPath: "/crafts"
+    '/crafts': {
+      id: '/crafts'
+      path: '/crafts'
+      fullPath: '/crafts'
       preLoaderRoute: typeof CraftsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/contact": {
-      id: "/contact"
-      path: "/contact"
-      fullPath: "/contact"
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/collabs": {
-      id: "/collabs"
-      path: "/collabs"
-      fullPath: "/collabs"
+    '/collabs': {
+      id: '/collabs'
+      path: '/collabs'
+      fullPath: '/collabs'
       preLoaderRoute: typeof CollabsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/about": {
-      id: "/about"
-      path: "/about"
-      fullPath: "/about"
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/": {
-      id: "/"
-      path: "/"
-      fullPath: "/"
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/works/": {
-      id: "/works/"
-      path: "/works"
-      fullPath: "/works"
+    '/works/': {
+      id: '/works/'
+      path: '/works'
+      fullPath: '/works'
       preLoaderRoute: typeof WorksIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/works/$slug": {
-      id: "/works/$slug"
-      path: "/works/$slug"
-      fullPath: "/works/$slug"
+    '/works/$slug': {
+      id: '/works/$slug'
+      path: '/works/$slug'
+      fullPath: '/works/$slug'
       preLoaderRoute: typeof WorksSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
@@ -272,9 +272,9 @@ export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
 
-import type { getRouter } from "./router.tsx"
-import type { createStart } from "@tanstack/react-start"
-declare module "@tanstack/react-start" {
+import type { getRouter } from './router.tsx'
+import type { createStart } from '@tanstack/react-start'
+declare module '@tanstack/react-start' {
   interface Register {
     ssr: true
     router: Awaited<ReturnType<typeof getRouter>>
