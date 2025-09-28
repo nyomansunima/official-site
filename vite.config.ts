@@ -3,6 +3,7 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite"
 import viteReact from "@vitejs/plugin-react"
 import viteTsConfigPaths from "vite-tsconfig-paths"
 import tailwindcss from "@tailwindcss/vite"
+import { nitro } from "nitro/vite"
 
 export default defineConfig({
   server: {
@@ -12,11 +13,6 @@ export default defineConfig({
     viteTsConfigPaths(),
     tailwindcss(),
     tanstackStart({
-      target: "vercel",
-      customViteReactPlugin: true,
-      tsr: {
-        srcDirectory: "src/app",
-      },
       prerender: {
         enabled: true,
         crawlLinks: true,
@@ -35,7 +31,9 @@ export default defineConfig({
         { path: "/journeys", prerender: { enabled: true } },
         { path: "/support", prerender: { enabled: true } },
       ],
+      srcDirectory: "src/app",
     }),
+    nitro(),
     viteReact(),
   ],
 })
