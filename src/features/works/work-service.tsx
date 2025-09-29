@@ -54,9 +54,7 @@ async function loadWorkFile(filePath: string): Promise<string> {
   }
 }
 
-export const getWorkDetail = createServerFn({
-  method: "GET",
-})
+export const getWorkDetail = createServerFn()
   .inputValidator(
     z.object({
       slug: z.string(),
@@ -69,29 +67,29 @@ export const getWorkDetail = createServerFn({
     return { meta: data as WorkFrontMatter, content }
   })
 
-export const getWorks = createServerFn({
-  method: "GET",
-}).handler(async (): Promise<WorkData[]> => {
-  const files = await loadWorksDir()
-  const works = await Promise.all(
-    files.map(async (filePath) => {
-      const slug = filePath.replace(/\.(md)$/, "")
-      const file = await loadWorkFile(filePath)
-      const { data } = parseMarkdown(file)
-      return {
-        slug,
-        ...data,
-      } as any
-    }),
-  )
+export const getWorks = createServerFn().handler(
+  async (): Promise<WorkData[]> => {
+    const files = await loadWorksDir()
+    const works = await Promise.all(
+      files.map(async (filePath) => {
+        const slug = filePath.replace(/\.(md)$/, "")
+        const file = await loadWorkFile(filePath)
+        const { data } = parseMarkdown(file)
+        return {
+          slug,
+          ...data,
+        } as any
+      }),
+    )
 
-  return works ?? []
-})
+    return works ?? []
+  },
+)
 
-export const getFeaturedWorks = createServerFn({
-  method: "GET",
-}).handler(async (): Promise<WorkData[]> => {
-  const works = await getWorks()
-  const featuredWorks = works.filter((work) => work.isFeatured)
-  return featuredWorks ?? []
-})
+export const getFeaturedWorks = createServerFn().handler(
+  async (): Promise<WorkData[]> => {
+    const works = await getWorks()
+    const featuredWorks = works.filter((work) => work.isFeatured)
+    return featuredWorks ?? []
+  },
+)
