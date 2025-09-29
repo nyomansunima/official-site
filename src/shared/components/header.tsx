@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
-import { Link, useLocation } from "@tanstack/react-router"
+import { useLocation } from "@tanstack/react-router"
 
 interface NavMenuItemProps {
   children: React.ReactNode
@@ -9,24 +9,23 @@ interface NavMenuItemProps {
 
 function Brand() {
   return (
-    <Link
-      to={"/"}
+    <a
+      href="/"
       className="flex justify-center items-center rounded-2xl text-sm transition-all duration-300 font-medium h-10 w-10 bg-secondary text-secondary-foreground"
     >
       <i className="fi fi-sr-folder" />
-    </Link>
+    </a>
   )
 }
 
 export function NavMenuItem({ children, href }: NavMenuItemProps) {
   return (
-    <Link
-      to={href}
-      viewTransition
+    <a
+      href={href}
       className="flex col-span-1 items-center text-sm transition-all duration-300 text-foreground hover:text-foreground/40"
     >
       {children}
-    </Link>
+    </a>
   )
 }
 

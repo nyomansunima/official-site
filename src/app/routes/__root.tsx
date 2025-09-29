@@ -1,7 +1,6 @@
 import * as React from "react"
 import {
   HeadContent,
-  Link,
   Scripts,
   createRootRouteWithContext,
 } from "@tanstack/react-router"
@@ -80,10 +79,10 @@ function NotFondComponent(): React.ReactElement {
 
         <div className="flex mt-10">
           <Button asChild variant={"secondary"}>
-            <Link to="/">
+            <a href="/">
               <i className="fi fi-sr-arrow-alt-circle-left" />
               Bring me back
-            </Link>
+            </a>
           </Button>
         </div>
       </section>
@@ -109,10 +108,10 @@ function ErrorComponent(): React.ReactElement {
 
         <div className="flex mt-10">
           <Button asChild variant={"secondary"}>
-            <Link to="/">
+            <a href="/">
               <i className="fi fi-sr-arrow-alt-circle-left" />
               Bring me back
-            </Link>
+            </a>
           </Button>
         </div>
       </section>
