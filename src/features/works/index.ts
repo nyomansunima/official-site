@@ -1,4 +1,5 @@
-export * from "./work-detail-content"
+export * from "./work-detail-section"
 export * from "./work-list-section"
 export * from "./work-service"
 export * from "./work-item"
+export * from "./related-work-section"

@@ -93,3 +93,14 @@ export const getFeaturedWorks = createServerFn().handler(
     return featuredWorks ?? []
   },
 )
+
+export const getRelatedWorks = createServerFn()
+  .inputValidator(z.object({ slug: z.string() }))
+  .handler(async (ctx): Promise<WorkData[]> => {
+    const allWorks = await getWorks()
+    const filteredWorks = allWorks
+      .filter((f) => f.slug !== ctx.data.slug)
+      .slice(0, 5)
+
+    return filteredWorks || []
+  })

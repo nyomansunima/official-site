@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router"
 import {
+  getRelatedWorks,
   getWorkDetail,
+  RelatedWorkSection,
+  WorkDetailSection,
   type WorkDetail,
-  WorkDetailContent,
 } from "@features/works"
 import { generatedMetadata } from "@shared/libs"
 
@@ -21,18 +23,20 @@ export const Route = createFileRoute("/works/$slug")({
   loader: async (ctx) => {
     const slug = ctx.params.slug
     const work = await getWorkDetail({ data: { slug } })
+    const relatedWorks = await getRelatedWorks({ data: { slug } })
 
-    return { work }
+    return { work, relatedWorks }
   },
   component: PageComponent,
 })
 
 function PageComponent() {
-  const { work } = Route.useLoaderData() as any
+  const { work, relatedWorks } = Route.useLoaderData() as any
 
   return (
-    <main className="flex flex-col gap-20 tablet:gap-36">
-      <WorkDetailContent work={work} />
+    <main className="flex flex-col">
+      <WorkDetailSection work={work} />
+      <RelatedWorkSection relatedWorks={relatedWorks} />
     </main>
   )
 }
