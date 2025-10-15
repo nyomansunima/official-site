@@ -1,24 +1,20 @@
-import {
-  combine,
-  ignores,
-  imports,
-  javascript,
-  react,
-  typescript,
-} from "@antfu/eslint-config"
+import config from "@antfu/eslint-config"
 
-export default combine(
-  ignores([".nitro/**", ".output/**", ".tanstack/**", "**/*.gen.ts"]),
-  javascript(),
-  imports({
+export default config({
+  stylistic: false,
+  imports: {
     overrides: {
       "import/consistent-type-specifier-style": "off",
     },
-  }),
-  typescript(),
-  react(),
-  {
-    rules: {
+  },
+  typescript: {
+    overrides: {
+      "node/prefer-global/process": "off",
+      "eslint-comments/no-unlimited-disable": "off",
+    },
+  },
+  react: {
+    overrides: {
       "react-refresh/only-export-components": "off",
       "react/no-array-index-key": "off",
       "react-dom/no-dangerously-set-innerhtml": "off",
@@ -27,4 +23,4 @@ export default combine(
       "react-dom/no-unsafe-target-blank": "off",
     },
   },
-)
+})

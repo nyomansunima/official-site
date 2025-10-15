@@ -16,7 +16,7 @@ export function TeamSection() {
 
       <ul>
         <li>
-          <a href="https://tryweebo.one" target="_blank">
+          <a href="https://tryweebo.site" target="_blank">
             Weebo
           </a>
         </li>

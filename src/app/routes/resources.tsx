@@ -1,6 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router"
 import { SourceSection } from "@features/resources"
 import { generatedMetadata } from "@shared/libs"
+import { createFileRoute } from "@tanstack/react-router"
 
 export const Route = createFileRoute("/resources")({
   head: () => ({

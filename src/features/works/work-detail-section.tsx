@@ -1,6 +1,6 @@
+import type { WorkDetail } from "./work-service"
 import { ArticleContent, Button, MarkdownContent } from "@shared/components"
 import { parseReadableDate } from "@shared/libs"
-import type { WorkDetail } from "./work-service"
 import { useLocation } from "@tanstack/react-router"
 
 interface WorkDetailSectionProps {

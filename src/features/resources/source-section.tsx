@@ -1,5 +1,5 @@
-import { SourceGroup } from "./source-group"
 import resources from "./resources-data.json"
+import { SourceGroup } from "./source-group"
 
 export function SourceSection() {
   return (

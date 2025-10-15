@@ -1,5 +1,5 @@
-import { SupportItem } from "./support-item"
 import supports from "./support-data.json"
+import { SupportItem } from "./support-item"
 
 export function SupportSection() {
   return (

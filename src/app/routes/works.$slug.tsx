@@ -1,12 +1,12 @@
-import { createFileRoute } from "@tanstack/react-router"
+import type { WorkDetail } from "@features/works"
 import {
   getRelatedWorks,
   getWorkDetail,
   RelatedWorkSection,
   WorkDetailSection,
-  type WorkDetail,
 } from "@features/works"
 import { generatedMetadata } from "@shared/libs"
+import { createFileRoute } from "@tanstack/react-router"
 
 export const Route = createFileRoute("/works/$slug")({
   head: (ctx) => {

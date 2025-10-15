@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router"
 import {
   AchievementSection,
   ActivitySection,
@@ -9,6 +8,7 @@ import {
 } from "@features/about"
 import { ArticleContent } from "@shared/components"
 import { generatedMetadata } from "@shared/libs"
+import { createFileRoute } from "@tanstack/react-router"
 
 export const Route = createFileRoute("/about")({
   head: () => ({

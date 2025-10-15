@@ -1,12 +1,12 @@
-import * as React from "react"
+import type { QueryClient } from "@tanstack/react-query"
+import { Button, CenteredLayout, Footer, Header } from "@shared/components"
+import styles from "@shared/styles/globals.css?url"
 import {
+  createRootRouteWithContext,
   HeadContent,
   Scripts,
-  createRootRouteWithContext,
 } from "@tanstack/react-router"
-import styles from "@shared/styles/globals.css?url"
-import { Button, CenteredLayout, Footer, Header } from "@shared/components"
-import type { QueryClient } from "@tanstack/react-query"
+import * as React from "react"
 
 interface RootDocumentProps {
   children: React.ReactNode

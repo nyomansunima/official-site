@@ -1,6 +1,6 @@
+import { useLocation } from "@tanstack/react-router"
 import * as React from "react"
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
-import { useLocation } from "@tanstack/react-router"
 
 interface NavMenuItemProps {
   children: React.ReactNode

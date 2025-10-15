@@ -1,5 +1,5 @@
-import { ContactItem } from "./contact-item"
 import contact from "./contact-data.json"
+import { ContactItem } from "./contact-item"
 
 export function ContactSection() {
   return (

@@ -1,6 +1,6 @@
-import * as React from "react"
 import * as PopoverPrimitive from "@radix-ui/react-popover"
 import { mergeClass } from "@shared/libs"
+import * as React from "react"
 
 const Popover = PopoverPrimitive.Root
 const PopoverTrigger = PopoverPrimitive.Trigger
@@ -34,4 +34,4 @@ const PopoverContent = ({
 )
 PopoverContent.displayName = PopoverPrimitive.Content.displayName
 
-export { Popover, PopoverTrigger, PopoverContent }
+export { Popover, PopoverContent, PopoverTrigger }

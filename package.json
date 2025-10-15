@@ -1,7 +1,7 @@
 {
   "name": "personal-site",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",

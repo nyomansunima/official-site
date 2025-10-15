@@ -1,5 +1,5 @@
-import { PublicationItem } from "./publication-item"
 import publications from "./publication-data.json"
+import { PublicationItem } from "./publication-item"
 
 export function PublicationSection() {
   return (

@@ -1,5 +1,5 @@
-import { LogGroup } from "./log-group"
 import journeysData from "./journeys-data.json"
+import { LogGroup } from "./log-group"
 
 const logGroups = [...journeysData].reverse()
 

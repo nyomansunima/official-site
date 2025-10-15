@@ -1,6 +1,6 @@
-import { BioItem } from "./bio-item"
 import type { BioItemData } from "./bio-item"
 import bioData from "./bio-data.json"
+import { BioItem } from "./bio-item"
 
 const bios = bioData as BioItemData[]
 

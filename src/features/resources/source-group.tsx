@@ -1,5 +1,5 @@
-import { SourceItem } from "./source-item"
 import type { SourceData } from "./source-item"
+import { SourceItem } from "./source-item"
 
 export interface SourceGroupData {
   title: string

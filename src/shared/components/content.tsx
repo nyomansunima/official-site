@@ -1,8 +1,8 @@
-import * as React from "react"
 import { mergeClass } from "@shared/libs"
+import * as React from "react"
 import ReactMarkdown from "react-markdown"
-import remarkGfm from "remark-gfm"
 import rehypeRaw from "rehype-raw"
+import remarkGfm from "remark-gfm"
 
 interface ArticleContentProps {
   children: React.ReactNode

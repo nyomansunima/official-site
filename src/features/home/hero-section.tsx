@@ -48,7 +48,7 @@ export function HeroSection() {
         <p>
           Founded{" "}
           <a
-            href={"https://tryweebo.one"}
+            href={"https://tryweebo.site"}
             target="_blank"
             className="underline"
           >

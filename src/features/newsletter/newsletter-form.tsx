@@ -1,4 +1,4 @@
-import * as React from "react"
+import { zodResolver } from "@hookform/resolvers/zod"
 import {
   Button,
   Form,
@@ -8,12 +8,12 @@ import {
   FormMessage,
   Input,
 } from "@shared/components"
-import { zodResolver } from "@hookform/resolvers/zod"
+import { useMutation } from "@tanstack/react-query"
+import * as React from "react"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { subscribeToNewsletter } from "./newsletter-service"
 import { SuccessNewsletterDialog } from "./success-dialog"
-import { useMutation } from "@tanstack/react-query"
 
 const formSchema = z.object({
   email: z.email("Opps, your email looks weird"),

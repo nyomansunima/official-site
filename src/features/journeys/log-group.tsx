@@ -1,5 +1,5 @@
-import { LogItem } from "./log-item"
 import type { LogItemData } from "./log-item"
+import { LogItem } from "./log-item"
 
 export interface LogGroupData {
   title: string

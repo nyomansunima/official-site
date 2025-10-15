@@ -1,6 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router"
 import { SupportSection } from "@features/support"
 import { generatedMetadata } from "@shared/libs"
+import { createFileRoute } from "@tanstack/react-router"
 
 export const Route = createFileRoute("/support")({
   head: () => ({

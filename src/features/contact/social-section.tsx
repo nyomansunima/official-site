@@ -1,5 +1,5 @@
-import { SocialItem } from "./social-item"
 import contact from "./contact-data.json"
+import { SocialItem } from "./social-item"
 
 export function SocialSection() {
   return (

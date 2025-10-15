@@ -1,4 +1,5 @@
-import { CraftItem, type CraftData } from "./craft-item"
+import type { CraftData } from "./craft-item"
+import { CraftItem } from "./craft-item"
 
 export interface CraftGroupData {
   title: string
