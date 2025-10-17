@@ -5,8 +5,6 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "baseUrl": ".",
     "module": "ESNext",
-
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "paths": {
       "@features/*": ["./src/features/*"],
@@ -22,10 +20,9 @@
     "noUnusedParameters": true,
     "noEmit": true,
     "verbatimModuleSyntax": false,
-
-    /* Linting */
     "skipLibCheck": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "strictNullChecks": true
   },
   "include": [
     "**/*.ts",
