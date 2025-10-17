@@ -1,1 +1,1 @@
-export * from "./support-section"
+export * from "./support-section";

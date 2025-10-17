@@ -1,20 +1,20 @@
-import type { QueryClient } from "@tanstack/react-query"
-import { Button, CenteredLayout, Footer, Header } from "@shared/components"
-import styles from "@shared/styles/globals.css?url"
+import { Button, CenteredLayout, Footer, Header } from "@shared/components";
+import styles from "@shared/styles/globals.css?url";
+import type { QueryClient } from "@tanstack/react-query";
 import {
   createRootRouteWithContext,
   HeadContent,
   Scripts,
-} from "@tanstack/react-router"
-import * as React from "react"
+} from "@tanstack/react-router";
+import type * as React from "react";
 
-interface RootDocumentProps {
-  children: React.ReactNode
-}
+type RootDocumentProps = {
+  children: React.ReactNode;
+};
 
-interface RouteWithContextProps {
-  queryClient: QueryClient
-}
+type RouteWithContextProps = {
+  queryClient: QueryClient;
+};
 
 export const Route = createRootRouteWithContext<RouteWithContextProps>()({
   head: () => ({
@@ -39,7 +39,7 @@ export const Route = createRootRouteWithContext<RouteWithContextProps>()({
   shellComponent: RootDocument,
   notFoundComponent: NotFondComponent,
   errorComponent: ErrorComponent,
-})
+});
 
 function RootDocument({ children }: RootDocumentProps): React.ReactElement {
   return (
@@ -50,7 +50,7 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
       <body>
         <CenteredLayout>
           <Header />
-          <div className="min-h-screen pb-28 mt-5 tablet:mt-10 tablet:pb-56">
+          <div className="mt-5 tablet:mt-10 min-h-screen pb-28 tablet:pb-56">
             {children}
           </div>
           <Footer />
@@ -58,7 +58,7 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
         <Scripts />
       </body>
     </html>
-  )
+  );
 }
 
 function NotFondComponent(): React.ReactElement {
@@ -66,10 +66,10 @@ function NotFondComponent(): React.ReactElement {
     <main className="flex flex-col">
       <section className="flex flex-col">
         <div className="flex flex-col">
-          <span className="text-sm text-foreground/40 font-mono tracking-tight">
+          <span className="font-mono text-foreground/40 text-sm tracking-tight">
             404.
           </span>
-          <h2 className="text-lg font-medium mt-2">Not found.</h2>
+          <h2 className="mt-2 font-medium text-lg">Not found.</h2>
 
           <p className="mt-6 text-pretty leading-7">
             Sorry, we couldn’t find the page you’re looking for. It might have
@@ -77,7 +77,7 @@ function NotFondComponent(): React.ReactElement {
           </p>
         </div>
 
-        <div className="flex mt-10">
+        <div className="mt-10 flex">
           <Button asChild variant={"secondary"}>
             <a href="/">
               <i className="fi fi-sr-arrow-alt-circle-left" />
@@ -87,7 +87,7 @@ function NotFondComponent(): React.ReactElement {
         </div>
       </section>
     </main>
-  )
+  );
 }
 
 function ErrorComponent(): React.ReactElement {
@@ -95,10 +95,10 @@ function ErrorComponent(): React.ReactElement {
     <main className="flex flex-col">
       <section className="flex flex-col">
         <div className="flex flex-col">
-          <span className="text-sm text-foreground/40 font-mono tracking-tight">
+          <span className="font-mono text-foreground/40 text-sm tracking-tight">
             500.
           </span>
-          <h2 className="text-lg font-medium mt-2">Error found.</h2>
+          <h2 className="mt-2 font-medium text-lg">Error found.</h2>
 
           <p className="mt-6 text-pretty leading-7">
             It seems like something went wrong on our end. Please try again
@@ -106,7 +106,7 @@ function ErrorComponent(): React.ReactElement {
           </p>
         </div>
 
-        <div className="flex mt-10">
+        <div className="mt-10 flex">
           <Button asChild variant={"secondary"}>
             <a href="/">
               <i className="fi fi-sr-arrow-alt-circle-left" />
@@ -116,5 +116,5 @@ function ErrorComponent(): React.ReactElement {
         </div>
       </section>
     </main>
-  )
+  );
 }

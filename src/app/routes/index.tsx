@@ -5,10 +5,10 @@ import {
   PublicationSection,
   StatusSection,
   WorkSection,
-} from "@features/home"
-import { getFeaturedWorks } from "@features/works"
-import { generatedMetadata } from "@shared/libs"
-import { createFileRoute } from "@tanstack/react-router"
+} from "@features/home";
+import { getFeaturedWorks } from "@features/works";
+import { generatedMetadata } from "@shared/libs";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,14 +19,14 @@ export const Route = createFileRoute("/")({
     }),
   }),
   loader: async () => {
-    const featuredWorks = await getFeaturedWorks()
-    return { featuredWorks }
+    const featuredWorks = await getFeaturedWorks();
+    return { featuredWorks };
   },
   component: PageComponent,
-})
+});
 
 function PageComponent() {
-  const { featuredWorks } = Route.useLoaderData()
+  const { featuredWorks } = Route.useLoaderData();
 
   return (
     <main className="flex flex-col gap-20">
@@ -37,5 +37,5 @@ function PageComponent() {
       <BioSection />
       <NewsletterSection />
     </main>
-  )
+  );
 }

@@ -1,19 +1,19 @@
-export interface CraftData {
-  title: string
-  link: string
-}
+export type CraftData = {
+  title: string;
+  link: string;
+};
 
-interface Props {
-  craft: CraftData
-}
+type Props = {
+  craft: CraftData;
+};
 
 export function CraftItem({ craft }: Props) {
-  const { title, link } = craft
+  const { title, link } = craft;
 
   return (
-    <a href={link} target="_blank" className="flex items-center gap-2 py-2">
-      <i className="fi fi-sr-bullet text-sm text-foreground/40" />
+    <a className="flex items-center gap-2 py-2" href={link} target="_blank">
+      <i className="fi fi-sr-bullet text-foreground/40 text-sm" />
       <span>{title}</span>
     </a>
-  )
+  );
 }

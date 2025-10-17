@@ -1,26 +1,26 @@
-import { mergeClass } from "@shared/libs"
-import * as React from "react"
-import ReactMarkdown from "react-markdown"
-import rehypeRaw from "rehype-raw"
-import remarkGfm from "remark-gfm"
+import { mergeClass } from "@shared/libs";
+import type * as React from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 
-interface ArticleContentProps {
-  children: React.ReactNode
-  className?: string
-}
+type ArticleContentProps = {
+  children: React.ReactNode;
+  className?: string;
+};
 
-interface MarkdownContentProps {
-  content: any
-}
+type MarkdownContentProps = {
+  content: any;
+};
 
 export function MarkdownContent({
   content,
 }: MarkdownContentProps): React.ReactElement {
   return (
-    <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+    <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
       {content}
     </ReactMarkdown>
-  )
+  );
 }
 
 export function ArticleContent({
@@ -31,5 +31,5 @@ export function ArticleContent({
     <article className={`${mergeClass("prose", className)}`}>
       {children}
     </article>
-  )
+  );
 }

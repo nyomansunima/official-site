@@ -1,4 +1,4 @@
-import { zodResolver } from "@hookform/resolvers/zod"
+import { zodResolver } from "@hookform/resolvers/zod";
 import {
   Button,
   Form,
@@ -7,48 +7,48 @@ import {
   FormItem,
   FormMessage,
   Input,
-} from "@shared/components"
-import { useMutation } from "@tanstack/react-query"
-import * as React from "react"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
-import { subscribeToNewsletter } from "./newsletter-service"
-import { SuccessNewsletterDialog } from "./success-dialog"
+} from "@shared/components";
+import { useMutation } from "@tanstack/react-query";
+import * as React from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { subscribeToNewsletter } from "./newsletter-service";
+import { SuccessNewsletterDialog } from "./success-dialog";
 
 const formSchema = z.object({
   email: z.email("Opps, your email looks weird"),
-})
+});
 
 export function NewsletterForm() {
-  const [isOpenDialog, setIsOpenDialog] = React.useState(false)
+  const [isOpenDialog, setIsOpenDialog] = React.useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       email: "",
     },
-  })
+  });
 
   const subscribe = useMutation({
     mutationKey: ["newsletter", "subscribe"],
     mutationFn: subscribeToNewsletter,
     onSuccess: () => {
-      form.reset()
-      setIsOpenDialog(true)
+      form.reset();
+      setIsOpenDialog(true);
     },
     onError: () => {
-      form.setError("email", { message: "Opps, something happen" })
+      form.setError("email", { message: "Opps, something happen" });
     },
-  })
+  });
 
   return (
     <>
       <Form {...form}>
         <div className="w-full">
           <form
+            className="flex w-full tablet:flex-row flex-col gap-3"
             onSubmit={form.handleSubmit((values) => {
-              subscribe.mutate({ data: { email: values.email } })
+              subscribe.mutate({ data: { email: values.email } });
             })}
-            className="flex flex-col tablet:flex-row gap-3 w-full"
           >
             <FormField
               control={form.control}
@@ -72,9 +72,9 @@ export function NewsletterForm() {
       </Form>
 
       <SuccessNewsletterDialog
-        open={isOpenDialog}
         onOpenChange={setIsOpenDialog}
+        open={isOpenDialog}
       />
     </>
-  )
+  );
 }

@@ -1,8 +1,8 @@
 export function IntroSection() {
   return (
     <section>
-      <div className="flex flex-col not-prose">
-        <span className="text-sm font-mono text-foreground/40 tracking-tight">
+      <div className="not-prose flex flex-col">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Collabs & crafting.
         </span>
         <h2 className="py-2">Crafting for better impact.</h2>
@@ -30,12 +30,12 @@ export function IntroSection() {
         bigger impact for the global audiences.
       </p>
 
-      <div className="flex flex-col not-prose">
+      <div className="not-prose flex flex-col">
         <h4 className="py-2">Nyoman Sunima</h4>
-        <span className="text-sm font-mono text-foreground/40">
+        <span className="font-mono text-foreground/40 text-sm">
           Trusted business & work partner.
         </span>
       </div>
     </section>
-  )
+  );
 }

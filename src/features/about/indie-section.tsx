@@ -3,8 +3,8 @@ export function IndieSection() {
     <section>
       <br />
 
-      <div className="flex flex-col gap-2 not-prose mt-10">
-        <span className="text-sm text-foreground/40 font-mono tracking-tight">
+      <div className="not-prose mt-10 flex flex-col gap-2">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Indie hacking.
         </span>
         <h2>
@@ -43,5 +43,5 @@ export function IndieSection() {
         and keep moving.
       </p>
     </section>
-  )
+  );
 }

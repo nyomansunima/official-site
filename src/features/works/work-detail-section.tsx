@@ -1,46 +1,46 @@
-import type { WorkDetail } from "./work-service"
-import { ArticleContent, Button, MarkdownContent } from "@shared/components"
-import { parseReadableDate } from "@shared/libs"
-import { useLocation } from "@tanstack/react-router"
+import { ArticleContent, Button, MarkdownContent } from "@shared/components";
+import { parseReadableDate } from "@shared/libs";
+import { useLocation } from "@tanstack/react-router";
+import type { WorkDetail } from "./work-service";
 
-interface WorkDetailSectionProps {
-  work: WorkDetail
-}
+type WorkDetailSectionProps = {
+  work: WorkDetail;
+};
 
 export function WorkDetailSection({ work }: WorkDetailSectionProps) {
-  const { date, team, title } = work.meta
-  const location = useLocation()
-  const parsedDate = parseReadableDate(date)
+  const { date, team, title } = work.meta;
+  const location = useLocation();
+  const parsedDate = parseReadableDate(date);
 
   function copyWorkLink() {
     if (location) {
-      const url = location.url
-      navigator.clipboard.writeText(url)
+      const url = location.url;
+      navigator.clipboard.writeText(url);
     }
   }
 
   return (
     <section className="flex flex-col">
       <div className="flex items-center gap-5">
-        <Button variant={"secondary"} size={"icon"} asChild>
+        <Button asChild size={"icon"} variant={"secondary"}>
           <a href="/works">
             <i className="fi fi-sr-arrow-circle-left" />
           </a>
         </Button>
 
-        <div className="flex flex-col flex-1">
-          <h1 className="text-lg font-medium text-balance">{title}</h1>
+        <div className="flex flex-1 flex-col">
+          <h1 className="text-balance font-medium text-lg">{title}</h1>
 
-          <div className="flex items-center gap-3 mt-2">
-            <span className="text-sm text-foreground/40 transition-all duration-300 hover:text-foreground">
+          <div className="mt-2 flex items-center gap-3">
+            <span className="text-foreground/40 text-sm transition-all duration-300 hover:text-foreground">
               {parsedDate}
             </span>
 
             {team && (
               <a
+                className="text-foreground/40 text-sm transition-all duration-300 hover:text-foreground"
                 href={team.url}
                 target="_blank"
-                className="text-sm text-foreground/40 transition-all duration-300 hover:text-foreground"
               >
                 {team.name}
               </a>
@@ -48,7 +48,7 @@ export function WorkDetailSection({ work }: WorkDetailSectionProps) {
           </div>
         </div>
 
-        <Button variant={"secondary"} size={"icon"} onClick={copyWorkLink}>
+        <Button onClick={copyWorkLink} size={"icon"} variant={"secondary"}>
           <i className="fi fi-br-broken-chain-link-wrong" />
         </Button>
       </div>
@@ -57,5 +57,5 @@ export function WorkDetailSection({ work }: WorkDetailSectionProps) {
         <MarkdownContent content={work.content} />
       </ArticleContent>
     </section>
-  )
+  );
 }

@@ -1,25 +1,25 @@
-export interface ExperienceItemData {
-  team: string
-  position: string
-  timeline: string
-  url: string
-}
+export type ExperienceItemData = {
+  team: string;
+  position: string;
+  timeline: string;
+  url: string;
+};
 
-interface ExperienceItemProps {
-  experience: ExperienceItemData
-}
+type ExperienceItemProps = {
+  experience: ExperienceItemData;
+};
 
 export function ExperienceItem({ experience }: ExperienceItemProps) {
-  const { team, position, timeline, url } = experience
+  const { team, position, timeline, url } = experience;
 
   return (
     <a
+      className="flex tablet:flex-row flex-col items-start tablet:items-center gap-2 py-2"
       href={url}
       target="_blank"
-      className="flex flex-col tablet:flex-row items-start tablet:items-center gap-2 py-2"
     >
-      <div className="flex items-center grow gap-2">
-        <i className="fi fi-sr-bullet text-sm text-foreground/40" />
+      <div className="flex grow items-center gap-2">
+        <i className="fi fi-sr-bullet text-foreground/40 text-sm" />
         <span>
           {team} ({position})
         </span>
@@ -27,5 +27,5 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
 
       <span className="text-foreground/40 text-sm">{timeline}</span>
     </a>
-  )
+  );
 }

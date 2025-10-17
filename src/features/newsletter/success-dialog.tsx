@@ -3,16 +3,16 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@shared/components"
+} from "@shared/components";
 
-interface Props {
-  open: boolean
-  onOpenChange: (open: boolean) => void
-}
+type Props = {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+};
 
 export function SuccessNewsletterDialog({ open, onOpenChange }: Props) {
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
+    <Dialog onOpenChange={onOpenChange} open={open}>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>🎉 Now you're subscribe to newsletter</DialogTitle>
@@ -27,10 +27,10 @@ export function SuccessNewsletterDialog({ open, onOpenChange }: Props) {
             </span>{" "}
             every week.
           </p>
-          <p className="font-mono tracking-tight text-link text-sm">
+          <p className="font-mono text-link text-sm tracking-tight">
             No shit, no spam
           </p>
-          <p className="text-foreground font-mono tracking-tight text-sm mt-5 leading-loose">
+          <p className="mt-5 font-mono text-foreground text-sm leading-loose tracking-tight">
             Huge thanks,
             <br />
             Nyoman Sunima (Your friends)
@@ -38,5 +38,5 @@ export function SuccessNewsletterDialog({ open, onOpenChange }: Props) {
         </div>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

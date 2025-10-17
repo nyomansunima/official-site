@@ -1,6 +1,6 @@
 export function loadConfig() {
-  const isOnBrowser = typeof window !== "undefined"
-  const env = isOnBrowser ? (import.meta.env as any) : process.env
+  const isOnBrowser = typeof window !== "undefined";
+  const env = isOnBrowser ? (import.meta.env as any) : process.env;
 
   return {
     app: {
@@ -12,11 +12,11 @@ export function loadConfig() {
     kit: {
       key: env.KIT_API_KEY,
     },
-  } as const
+  } as const;
 }
 
 declare global {
-  interface Window {
-    __ENV__: any
-  }
+  type Window = {
+    __ENV__: any;
+  };
 }

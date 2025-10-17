@@ -3,8 +3,8 @@ export function ActivitySection() {
     <section>
       <br />
 
-      <div className="flex flex-col gap-2 not-prose mt-10">
-        <span className="text-sm text-foreground/40 font-mono tracking-tight">
+      <div className="not-prose mt-10 flex flex-col gap-2">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Activities.
         </span>
         <h2>
@@ -28,13 +28,13 @@ export function ActivitySection() {
       </p>
 
       <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709277676/dd474a4c-a2fd-4b98-bcf2-3002c6c4aab5.jpeg"
         alt="Research"
+        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709277676/dd474a4c-a2fd-4b98-bcf2-3002c6c4aab5.jpeg"
       />
 
       <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709284152/96cae4e7-4066-4ee4-b569-ccda13574a0f.jpeg"
         alt="Design"
+        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709284152/96cae4e7-4066-4ee4-b569-ccda13574a0f.jpeg"
       />
 
       <p>
@@ -69,5 +69,5 @@ export function ActivitySection() {
         forms the backbone of the final product.
       </p>
     </section>
-  )
+  );
 }

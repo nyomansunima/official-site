@@ -5,10 +5,10 @@ import {
   EndWordSection,
   IndieSection,
   SharingSection,
-} from "@features/about"
-import { ArticleContent } from "@shared/components"
-import { generatedMetadata } from "@shared/libs"
-import { createFileRoute } from "@tanstack/react-router"
+} from "@features/about";
+import { ArticleContent } from "@shared/components";
+import { generatedMetadata } from "@shared/libs";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/about")({
     }),
   }),
   component: PageComponent,
-})
+});
 
 function PageComponent() {
   return (
@@ -33,5 +33,5 @@ function PageComponent() {
         <EndWordSection />
       </ArticleContent>
     </main>
-  )
+  );
 }

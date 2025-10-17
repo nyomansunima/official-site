@@ -1,11 +1,11 @@
-import type { VariantProps } from "class-variance-authority"
-import { Slot } from "@radix-ui/react-slot"
-import { mergeClass } from "@shared/libs"
-import { cva } from "class-variance-authority"
-import * as React from "react"
+import { Slot } from "@radix-ui/react-slot";
+import { mergeClass } from "@shared/libs";
+import type { VariantProps } from "class-variance-authority";
+import { cva } from "class-variance-authority";
+import type * as React from "react";
 
 const buttonVariants = cva(
-  "flex items-center justify-center font-medium whitespace-nowrap text-sm leading-none! transition-all duration-300 gap-2 group relative cursor-pointer select-none",
+  "group relative flex cursor-pointer select-none items-center justify-center gap-2 whitespace-nowrap font-medium text-sm leading-none! transition-all duration-300",
   {
     variants: {
       variant: {
@@ -16,9 +16,9 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/60",
       },
       size: {
-        base: "h-10 px-4 rounded-xl text-sm",
-        sm: "h-9 px-3 rounded-full",
-        lg: "h-14 px-5 rounded-2xl",
+        base: "h-10 rounded-xl px-4 text-sm",
+        sm: "h-9 rounded-full px-3",
+        lg: "h-14 rounded-2xl px-5",
         icon: "h-10 w-10 rounded-2xl text-sm",
       },
     },
@@ -26,13 +26,13 @@ const buttonVariants = cva(
       variant: "primary",
       size: "base",
     },
-  },
-)
+  }
+);
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
   VariantProps<typeof buttonVariants> & {
-    asChild?: boolean
-  }
+    asChild?: boolean;
+  };
 
 const Button = ({
   ref,
@@ -42,16 +42,16 @@ const Button = ({
   asChild = false,
   ...props
 }: ButtonProps & { ref?: React.RefObject<HTMLButtonElement | null> }) => {
-  const Comp = asChild ? Slot : "button"
+  const Comp = asChild ? Slot : "button";
   return (
     <Comp
       className={mergeClass(buttonVariants({ variant, size, className }))}
       ref={ref}
       {...props}
     />
-  )
-}
+  );
+};
 
-Button.displayName = "Button"
+Button.displayName = "Button";
 
-export { Button, buttonVariants }
+export { Button, buttonVariants };

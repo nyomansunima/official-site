@@ -1,6 +1,6 @@
-import { ExperienceSection, LogSection } from "@features/journeys"
-import { generatedMetadata } from "@shared/libs"
-import { createFileRoute } from "@tanstack/react-router"
+import { ExperienceSection, LogSection } from "@features/journeys";
+import { generatedMetadata } from "@shared/libs";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/journeys")({
   head: () => ({
@@ -11,7 +11,7 @@ export const Route = createFileRoute("/journeys")({
     }),
   }),
   component: PageComponent,
-})
+});
 
 function PageComponent() {
   return (
@@ -19,5 +19,5 @@ function PageComponent() {
       <ExperienceSection />
       <LogSection />
     </main>
-  )
+  );
 }

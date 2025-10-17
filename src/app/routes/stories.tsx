@@ -2,9 +2,9 @@ import {
   NewsletterSection,
   PublicationSection,
   RecentlySection,
-} from "@features/stories"
-import { generatedMetadata } from "@shared/libs"
-import { createFileRoute } from "@tanstack/react-router"
+} from "@features/stories";
+import { generatedMetadata } from "@shared/libs";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/stories")({
   head: () => ({
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/stories")({
     }),
   }),
   component: PageComponent,
-})
+});
 
 function PageComponent() {
   return (
@@ -24,5 +24,5 @@ function PageComponent() {
       <RecentlySection />
       <NewsletterSection />
     </main>
-  )
+  );
 }

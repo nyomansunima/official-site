@@ -1,18 +1,18 @@
-import type { LogItemData } from "./log-item"
-import { LogItem } from "./log-item"
+import type { LogItemData } from "./log-item";
+import { LogItem } from "./log-item";
 
-export interface LogGroupData {
-  title: string
-  list: LogItemData[]
-}
+export type LogGroupData = {
+  title: string;
+  list: LogItemData[];
+};
 
-interface LogGroupProps {
-  group: LogGroupData
-}
+type LogGroupProps = {
+  group: LogGroupData;
+};
 
 export function LogGroup({ group }: LogGroupProps) {
-  const { title, list } = group
-  const reorderList = [...list].reverse()
+  const { title, list } = group;
+  const reorderList = [...list].reverse();
 
   return (
     <div className="flex flex-col gap-4">
@@ -20,9 +20,9 @@ export function LogGroup({ group }: LogGroupProps) {
 
       <div className="flex flex-col gap-16">
         {reorderList.map((log, i) => (
-          <LogItem log={log} key={i} />
+          <LogItem key={i} log={log} />
         ))}
       </div>
     </div>
-  )
+  );
 }

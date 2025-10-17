@@ -3,8 +3,8 @@ export function SharingSection() {
     <section>
       <br />
 
-      <div className="flex flex-col gap-2 not-prose mt-10">
-        <span className="text-sm text-foreground/40 font-mono tracking-tight">
+      <div className="not-prose mt-10 flex flex-col gap-2">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Sharing.
         </span>
         <h2>I love to read, write, and share the toughts</h2>
@@ -19,8 +19,8 @@ export function SharingSection() {
       </p>
 
       <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709291876/a59a6504-a98b-4818-955f-efba3364d5b6.jpeg"
         alt="Read, write and share"
+        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709291876/a59a6504-a98b-4818-955f-efba3364d5b6.jpeg"
       />
 
       <p>
@@ -44,5 +44,5 @@ export function SharingSection() {
         to pursue their dreams and make a difference in the world.
       </p>
     </section>
-  )
+  );
 }

@@ -3,8 +3,8 @@ export function AchievementSection() {
     <section>
       <br />
 
-      <div className="flex flex-col gap-2 not-prose mt-10">
-        <span className="text-sm text-foreground/40 font-mono tracking-tight">
+      <div className="not-prose mt-10 flex flex-col gap-2">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Achievements.
         </span>
         <h2>Best moment, journey and milestones of hard time</h2>
@@ -45,5 +45,5 @@ export function AchievementSection() {
         into memorable milestones.
       </p>
     </section>
-  )
+  );
 }

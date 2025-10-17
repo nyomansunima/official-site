@@ -1,2 +1,2 @@
-export * from "./newsletter-form"
-export * from "./newsletter-service"
+export * from "./newsletter-form";
+export * from "./newsletter-service";

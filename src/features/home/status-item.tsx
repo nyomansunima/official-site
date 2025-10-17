@@ -1,24 +1,24 @@
-export interface StatusData {
-  title: string
-  url: string
-}
+export type StatusData = {
+  title: string;
+  url: string;
+};
 
-interface StatusItemProps {
-  status: StatusData
-}
+type StatusItemProps = {
+  status: StatusData;
+};
 
 export function StatusItem({ status }: StatusItemProps) {
-  const { title, url } = status
-  const isValidURL = url.includes("https://") || url.includes("http://")
+  const { title, url } = status;
+  const isValidURL = url.includes("https://") || url.includes("http://");
 
   return (
     <a
+      className="flex items-center gap-2 py-2"
       href={url}
       target={isValidURL ? "_blank" : "_self"}
-      className="flex items-center gap-2 py-2"
     >
-      <i className="fi fi-sr-bullet text-sm text-foreground/40" />
+      <i className="fi fi-sr-bullet text-foreground/40 text-sm" />
       <span>{title}</span>
     </a>
-  )
+  );
 }

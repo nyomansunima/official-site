@@ -1,17 +1,17 @@
-import type { CraftData } from "./craft-item"
-import { CraftItem } from "./craft-item"
+import type { CraftData } from "./craft-item";
+import { CraftItem } from "./craft-item";
 
-export interface CraftGroupData {
-  title: string
-  list: CraftData[]
-}
+export type CraftGroupData = {
+  title: string;
+  list: CraftData[];
+};
 
-interface CraftGroupProps {
-  group: CraftGroupData
-}
+type CraftGroupProps = {
+  group: CraftGroupData;
+};
 
 export function CraftGroup({ group }: CraftGroupProps) {
-  const { title, list } = group
+  const { title, list } = group;
 
   return (
     <div className="flex flex-col gap-4">
@@ -23,5 +23,5 @@ export function CraftGroup({ group }: CraftGroupProps) {
         ))}
       </div>
     </div>
-  )
+  );
 }

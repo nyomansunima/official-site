@@ -1,39 +1,39 @@
-import type { WorkData } from "./work-service"
+import type { WorkData } from "./work-service";
 
-interface RelatedWorksSectionProps {
-  relatedWorks: WorkData[]
-}
+type RelatedWorksSectionProps = {
+  relatedWorks: WorkData[];
+};
 
-interface ItemProps {
-  work: WorkData
-}
+type ItemProps = {
+  work: WorkData;
+};
 
 function Item({ work }: ItemProps) {
-  const { title, slug } = work
+  const { title, slug } = work;
 
   return (
-    <a href={`/works/${slug}`} className="flex items-center gap-2 py-2">
-      <i className="fi fi-sr-bullet text-sm text-foreground/40" />
+    <a className="flex items-center gap-2 py-2" href={`/works/${slug}`}>
+      <i className="fi fi-sr-bullet text-foreground/40 text-sm" />
       <span>{title}</span>
     </a>
-  )
+  );
 }
 
 export function RelatedWorkSection({ relatedWorks }: RelatedWorksSectionProps) {
   return (
-    <section className="flex flex-col mt-20">
+    <section className="mt-20 flex flex-col">
       <div className="flex flex-col">
-        <span className="text-sm text-foreground/40 font-mono tracking-tight">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Read more.
         </span>
-        <h2 className="text-lg font-medium mt-2">Another works.</h2>
+        <h2 className="mt-2 font-medium text-lg">Another works.</h2>
       </div>
 
-      <ul className="flex flex-col gap-2 mt-6">
+      <ul className="mt-6 flex flex-col gap-2">
         {relatedWorks.map((work, i) => (
-          <Item work={work} key={i} />
+          <Item key={i} work={work} />
         ))}
       </ul>
     </section>
-  )
+  );
 }

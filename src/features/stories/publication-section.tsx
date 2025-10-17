@@ -1,14 +1,14 @@
-import publications from "./publication-data.json"
-import { PublicationItem } from "./publication-item"
+import publications from "./publication-data.json" with { type: "json" };
+import { PublicationItem } from "./publication-item";
 
 export function PublicationSection() {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col">
-        <span className="text-sm text-foreground/40 font-mono tracking-tight">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Publications.
         </span>
-        <h2 className="text-lg font-medium mt-2">Where's the stories?</h2>
+        <h2 className="mt-2 font-medium text-lg">Where's the stories?</h2>
 
         <p className="mt-6 text-pretty leading-7">
           My favorite place to share and publicly updates about news, tips and
@@ -16,11 +16,11 @@ export function PublicationSection() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-1 mt-10">
+      <div className="mt-10 flex flex-col gap-1">
         {publications.map((pub, index) => (
-          <PublicationItem publication={pub} key={index} />
+          <PublicationItem key={index} publication={pub} />
         ))}
       </div>
     </section>
-  )
+  );
 }

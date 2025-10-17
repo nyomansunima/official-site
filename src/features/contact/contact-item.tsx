@@ -1,19 +1,19 @@
-export interface ContactData {
-  href: string
-  label: string
-}
+export type ContactData = {
+  href: string;
+  label: string;
+};
 
-interface Props {
-  contact: ContactData
-}
+type Props = {
+  contact: ContactData;
+};
 
 export function ContactItem({ contact }: Props) {
-  const { href, label } = contact
+  const { href, label } = contact;
 
   return (
-    <a href={href} target="_blank" className="flex items-center gap-2 py-2">
-      <i className="fi fi-sr-bullet text-sm text-foreground/40" />
+    <a className="flex items-center gap-2 py-2" href={href} target="_blank">
+      <i className="fi fi-sr-bullet text-foreground/40 text-sm" />
       <span>{label}</span>
     </a>
-  )
+  );
 }

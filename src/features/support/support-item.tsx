@@ -1,19 +1,19 @@
-export interface SupportData {
-  title: string
-  url: string
-}
+export type SupportData = {
+  title: string;
+  url: string;
+};
 
-interface Props {
-  support: SupportData
-}
+type Props = {
+  support: SupportData;
+};
 
 export function SupportItem({ support }: Props) {
-  const { title, url } = support
+  const { title, url } = support;
 
   return (
-    <a href={url} target="_blank" className="flex items-center py-2 gap-2">
-      <i className="fi fi-sr-bullet text-sm text-foreground/40" />
+    <a className="flex items-center gap-2 py-2" href={url} target="_blank">
+      <i className="fi fi-sr-bullet text-foreground/40 text-sm" />
       <span>{title}</span>
     </a>
-  )
+  );
 }

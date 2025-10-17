@@ -1,6 +1,6 @@
-import { SourceSection } from "@features/resources"
-import { generatedMetadata } from "@shared/libs"
-import { createFileRoute } from "@tanstack/react-router"
+import { SourceSection } from "@features/resources";
+import { generatedMetadata } from "@shared/libs";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/resources")({
   head: () => ({
@@ -10,12 +10,12 @@ export const Route = createFileRoute("/resources")({
     }),
   }),
   component: PageComponent,
-})
+});
 
 function PageComponent() {
   return (
     <main className="flex flex-col">
       <SourceSection />
     </main>
-  )
+  );
 }

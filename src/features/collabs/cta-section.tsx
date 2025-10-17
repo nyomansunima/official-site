@@ -1,10 +1,10 @@
-import { Button } from "@shared/components"
+import { Button } from "@shared/components";
 
 export function CTASection() {
   return (
     <section className="mt-24">
-      <div className="flex flex-col not-prose">
-        <span className="text-sm font-mono text-foreground/40 tracking-tight">
+      <div className="not-prose flex flex-col">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Get Started.
         </span>
         <h2 className="py-2">What you're waiting for?</h2>
@@ -15,10 +15,11 @@ export function CTASection() {
         spots and with the right person.
       </p>
 
-      <div className="not-prose flex gap-3 mt-10">
+      <div className="not-prose mt-10 flex gap-3">
         <Button asChild variant={"secondary"}>
           <a
             href={"https://cal.com/nyomansunima/build-opportunity"}
+            rel="noopener"
             target="_blank"
           >
             Book a Call
@@ -30,5 +31,5 @@ export function CTASection() {
         </Button>
       </div>
     </section>
-  )
+  );
 }

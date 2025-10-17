@@ -2,8 +2,8 @@ export function EndWordSection() {
   return (
     <section>
       <br />
-      <div className="flex flex-col gap-2 not-prose mt-10">
-        <span className="text-sm text-foreground/40 font-mono tracking-tight">
+      <div className="not-prose mt-10 flex flex-col gap-2">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Endword.
         </span>
         <h2>Last word to say, thanks</h2>
@@ -33,12 +33,12 @@ export function EndWordSection() {
 
       <p>Thanks for all of your support and attention.</p>
 
-      <div className="flex flex-col not-prose mt-16 gap-3">
+      <div className="not-prose mt-16 flex flex-col gap-3">
         <p>Nyoman Sunima</p>
-        <span className="text-sm text-foreground/40 font-mono tracking-tight">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Your business & work best partner.
         </span>
       </div>
     </section>
-  )
+  );
 }

@@ -4,10 +4,10 @@ import {
   IntroSection,
   ServiceSection,
   TeamSection,
-} from "@features/collabs"
-import { ArticleContent } from "@shared/components"
-import { generatedMetadata } from "@shared/libs"
-import { createFileRoute } from "@tanstack/react-router"
+} from "@features/collabs";
+import { ArticleContent } from "@shared/components";
+import { generatedMetadata } from "@shared/libs";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/collabs")({
   head: () => ({
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/collabs")({
     }),
   }),
   component: PageComponent,
-})
+});
 
 function PageComponent() {
   return (
@@ -30,5 +30,5 @@ function PageComponent() {
         <CTASection />
       </ArticleContent>
     </div>
-  )
+  );
 }

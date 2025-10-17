@@ -1,6 +1,6 @@
-import { ContactSection, SocialSection } from "@features/contact"
-import { generatedMetadata } from "@shared/libs"
-import { createFileRoute } from "@tanstack/react-router"
+import { ContactSection, SocialSection } from "@features/contact";
+import { generatedMetadata } from "@shared/libs";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -10,7 +10,7 @@ export const Route = createFileRoute("/contact")({
     }),
   }),
   component: PageComponent,
-})
+});
 
 function PageComponent() {
   return (
@@ -18,5 +18,5 @@ function PageComponent() {
       <ContactSection />
       <SocialSection />
     </main>
-  )
+  );
 }

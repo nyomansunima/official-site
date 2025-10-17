@@ -1,14 +1,14 @@
-import contact from "./contact-data.json"
-import { SocialItem } from "./social-item"
+import contact from "./contact-data.json" with { type: "json" };
+import { SocialItem } from "./social-item";
 
 export function SocialSection() {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col">
-        <span className="text-sm text-foreground/40 font-mono tracking-tight">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Socials.
         </span>
-        <h2 className="text-lg font-medium mt-2">
+        <h2 className="mt-2 font-medium text-lg">
           Follow & send me a message.
         </h2>
 
@@ -18,11 +18,11 @@ export function SocialSection() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-1 mt-10">
+      <div className="mt-10 flex flex-col gap-1">
         {contact.socials.map((soc, index) => (
-          <SocialItem social={soc} key={index} />
+          <SocialItem key={index} social={soc} />
         ))}
       </div>
     </section>
-  )
+  );
 }

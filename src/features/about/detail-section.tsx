@@ -1,8 +1,8 @@
 export function DetailSection() {
   return (
     <section>
-      <div className="flex flex-col gap-2 not-prose">
-        <span className="text-sm text-foreground/40 font-mono tracking-tight">
+      <div className="not-prose flex flex-col gap-2">
+        <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Hello.
         </span>
         <h2>Hey, we're good friends</h2>
@@ -25,8 +25,8 @@ export function DetailSection() {
       </p>
 
       <img
-        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709241070/2aa95ebc-0bfd-4362-90cb-3b238cc4ef46.jpeg"
         alt="Activity"
+        src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709241070/2aa95ebc-0bfd-4362-90cb-3b238cc4ef46.jpeg"
       />
 
       <p>
@@ -61,5 +61,5 @@ export function DetailSection() {
         resonate with audiences.
       </p>
     </section>
-  )
+  );
 }
