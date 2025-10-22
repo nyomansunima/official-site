@@ -14,9 +14,3 @@ export function loadConfig() {
     },
   } as const;
 }
-
-declare global {
-  type Window = {
-    __ENV__: any;
-  };
-}
