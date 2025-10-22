@@ -1,5 +1,3 @@
-import { useLocation } from "@tanstack/react-router";
-import * as React from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 
 type NavMenuItemProps = {
@@ -13,7 +11,7 @@ function Brand() {
       className="flex h-10 w-10 items-center justify-center rounded-2xl bg-secondary font-medium text-secondary-foreground text-sm transition-all duration-300"
       href="/"
     >
-      <i className="fi fi-sr-folder" />
+      <i className="fi fi-sr-leaf-oak text-lg" />
     </a>
   );
 }
@@ -30,20 +28,13 @@ export function NavMenuItem({ children, href }: NavMenuItemProps) {
 }
 
 function Menu() {
-  const [open, setOpen] = React.useState(false);
-  const _location = useLocation();
-
-  React.useEffect(() => {
-    setOpen(false);
-  }, []);
-
   return (
-    <Popover onOpenChange={setOpen} open={open}>
+    <Popover>
       <PopoverTrigger
         aria-label="Menu Button"
         className="group relative flex h-10 w-10 cursor-pointer items-center justify-center rounded-2xl bg-secondary text-secondary-foreground text-sm"
       >
-        <i className="fi fi-sr-add" />
+        <i className="fi fi-sr-folder" />
       </PopoverTrigger>
       <PopoverContent>
         <div className="grid w-full grid-cols-2 gap-x-4 gap-y-4">
