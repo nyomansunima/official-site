@@ -1,6 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { parseMarkdown } from "@shared/libs";
+import { parseMarkdown } from "@shared/libs/utils";
 import { createServerFn } from "@tanstack/react-start";
 import z from "zod";
 
@@ -25,7 +25,7 @@ export type WorkData = WorkFrontMatter & {
   slug: string;
 };
 
-const WORK_DIR_PATH = "src/features/works/contents";
+const WORK_DIR_PATH = "src/contents/works";
 
 async function loadWorksDir(): Promise<string[]> {
   try {

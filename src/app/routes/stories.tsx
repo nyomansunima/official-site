@@ -3,7 +3,7 @@ import {
   PublicationSection,
   RecentlySection,
 } from "@features/stories";
-import { generatedMetadata } from "@shared/libs";
+import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/stories")({

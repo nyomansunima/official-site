@@ -1,4 +1,4 @@
-import { mergeClass, parseReadableDate } from "@shared/libs";
+import { mergeClass, parseReadableDate } from "@shared/libs/utils";
 import type { WorkData } from "./work-service";
 
 type Props = {

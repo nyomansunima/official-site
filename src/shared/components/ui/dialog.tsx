@@ -1,5 +1,5 @@
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { mergeClass } from "@shared/libs";
+import { mergeClass } from "@shared/libs/utils";
 import type * as React from "react";
 
 const Dialog = DialogPrimitive.Root;

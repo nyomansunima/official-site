@@ -33,7 +33,7 @@ export default defineConfig({
       ],
       srcDirectory: "src/app",
     }),
-    nitro(),
     react(),
+    nitro(),
   ],
 });

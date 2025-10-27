@@ -1,4 +1,4 @@
-import { parseReadableDate } from "@shared/libs";
+import { parseReadableDate } from "@shared/libs/utils";
 
 export type LogItemData = {
   title: string;

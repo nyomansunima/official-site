@@ -1,5 +1,5 @@
 import { ContactSection, SocialSection } from "@features/contact";
-import { generatedMetadata } from "@shared/libs";
+import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/contact")({

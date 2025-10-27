@@ -1,5 +1,5 @@
 import { ArticleContent, Button, MarkdownContent } from "@shared/components";
-import { parseReadableDate } from "@shared/libs";
+import { parseReadableDate } from "@shared/libs/utils";
 import { useLocation } from "@tanstack/react-router";
 import type { WorkDetail } from "./work-service";
 

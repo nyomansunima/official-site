@@ -1,4 +1,4 @@
-import { kitClient } from "@shared/libs";
+import { kitClient } from "@shared/libs/connections";
 import { createServerFn } from "@tanstack/react-start";
 import z from "zod";
 

@@ -7,7 +7,7 @@ import {
   SharingSection,
 } from "@features/about";
 import { ArticleContent } from "@shared/components";
-import { generatedMetadata } from "@shared/libs";
+import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/about")({

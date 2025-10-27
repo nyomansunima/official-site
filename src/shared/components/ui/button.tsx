@@ -1,5 +1,5 @@
 import { Slot } from "@radix-ui/react-slot";
-import { mergeClass } from "@shared/libs";
+import { mergeClass } from "@shared/libs/utils";
 import type { VariantProps } from "class-variance-authority";
 import { cva } from "class-variance-authority";
 import type * as React from "react";

@@ -6,7 +6,7 @@ import {
   TeamSection,
 } from "@features/collabs";
 import { ArticleContent } from "@shared/components";
-import { generatedMetadata } from "@shared/libs";
+import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/collabs")({
