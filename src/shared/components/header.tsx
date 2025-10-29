@@ -39,14 +39,12 @@ function Menu() {
       <PopoverContent>
         <div className="grid w-full grid-cols-2 gap-x-4 gap-y-4">
           <NavMenuItem href="/works">Works</NavMenuItem>
-          <NavMenuItem href="/collabs">Collabs</NavMenuItem>
           <NavMenuItem href="/crafts">Crafts</NavMenuItem>
           <NavMenuItem href="/stories">Stories</NavMenuItem>
           <NavMenuItem href="/journeys">Journeys</NavMenuItem>
           <NavMenuItem href="/resources">Resources</NavMenuItem>
           <NavMenuItem href="/about">About</NavMenuItem>
           <NavMenuItem href="/contact">Contact</NavMenuItem>
-          <NavMenuItem href="/support">Support</NavMenuItem>
         </div>
       </PopoverContent>
     </Popover>
