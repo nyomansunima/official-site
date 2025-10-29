@@ -9,23 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SupportRouteImport } from './routes/support'
 import { Route as StoriesRouteImport } from './routes/stories'
 import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as JourneysRouteImport } from './routes/journeys'
 import { Route as CraftsRouteImport } from './routes/crafts'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CollabsRouteImport } from './routes/collabs'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorksIndexRouteImport } from './routes/works.index'
 import { Route as WorksSlugRouteImport } from './routes/works.$slug'
 
-const SupportRoute = SupportRouteImport.update({
-  id: '/support',
-  path: '/support',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const StoriesRoute = StoriesRouteImport.update({
   id: '/stories',
   path: '/stories',
@@ -49,11 +42,6 @@ const CraftsRoute = CraftsRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CollabsRoute = CollabsRouteImport.update({
-  id: '/collabs',
-  path: '/collabs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -80,26 +68,22 @@ const WorksSlugRoute = WorksSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/collabs': typeof CollabsRoute
   '/contact': typeof ContactRoute
   '/crafts': typeof CraftsRoute
   '/journeys': typeof JourneysRoute
   '/resources': typeof ResourcesRoute
   '/stories': typeof StoriesRoute
-  '/support': typeof SupportRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/collabs': typeof CollabsRoute
   '/contact': typeof ContactRoute
   '/crafts': typeof CraftsRoute
   '/journeys': typeof JourneysRoute
   '/resources': typeof ResourcesRoute
   '/stories': typeof StoriesRoute
-  '/support': typeof SupportRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
 }
@@ -107,13 +91,11 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/collabs': typeof CollabsRoute
   '/contact': typeof ContactRoute
   '/crafts': typeof CraftsRoute
   '/journeys': typeof JourneysRoute
   '/resources': typeof ResourcesRoute
   '/stories': typeof StoriesRoute
-  '/support': typeof SupportRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works/': typeof WorksIndexRoute
 }
@@ -122,39 +104,33 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
-    | '/collabs'
     | '/contact'
     | '/crafts'
     | '/journeys'
     | '/resources'
     | '/stories'
-    | '/support'
     | '/works/$slug'
     | '/works'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/collabs'
     | '/contact'
     | '/crafts'
     | '/journeys'
     | '/resources'
     | '/stories'
-    | '/support'
     | '/works/$slug'
     | '/works'
   id:
     | '__root__'
     | '/'
     | '/about'
-    | '/collabs'
     | '/contact'
     | '/crafts'
     | '/journeys'
     | '/resources'
     | '/stories'
-    | '/support'
     | '/works/$slug'
     | '/works/'
   fileRoutesById: FileRoutesById
@@ -162,26 +138,17 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  CollabsRoute: typeof CollabsRoute
   ContactRoute: typeof ContactRoute
   CraftsRoute: typeof CraftsRoute
   JourneysRoute: typeof JourneysRoute
   ResourcesRoute: typeof ResourcesRoute
   StoriesRoute: typeof StoriesRoute
-  SupportRoute: typeof SupportRoute
   WorksSlugRoute: typeof WorksSlugRoute
   WorksIndexRoute: typeof WorksIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/support': {
-      id: '/support'
-      path: '/support'
-      fullPath: '/support'
-      preLoaderRoute: typeof SupportRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/stories': {
       id: '/stories'
       path: '/stories'
@@ -215,13 +182,6 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/collabs': {
-      id: '/collabs'
-      path: '/collabs'
-      fullPath: '/collabs'
-      preLoaderRoute: typeof CollabsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -258,13 +218,11 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  CollabsRoute: CollabsRoute,
   ContactRoute: ContactRoute,
   CraftsRoute: CraftsRoute,
   JourneysRoute: JourneysRoute,
   ResourcesRoute: ResourcesRoute,
   StoriesRoute: StoriesRoute,
-  SupportRoute: SupportRoute,
   WorksSlugRoute: WorksSlugRoute,
   WorksIndexRoute: WorksIndexRoute,
 }
