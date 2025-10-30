@@ -29,8 +29,8 @@ export function HeroSection() {
       <div className="mt-10 flex flex-col gap-6 text-pretty text-base leading-7">
         <p>
           Hello, I'am a product designer, software engineer & creator. Building
-          apps, saas, sites and tools. Currently working as freelance, building
-          my own saas at{" "}
+          saas, sites and tools. Currently working as freelance, building my own
+          saas at{" "}
           <a
             className="underline"
             href={"https://moono.site"}
