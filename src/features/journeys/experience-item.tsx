@@ -20,12 +20,17 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
     >
       <div className="flex grow items-center gap-2">
         <i className="fi fi-sr-bullet text-foreground/40 text-sm" />
-        <span>
-          {team} ({position})
-        </span>
+        <div className="flex items-center gap-2">
+          {team}
+          <span className="font-mono text-foreground/40 text-sm tracking-tighter">
+            ({position})
+          </span>
+        </div>
       </div>
 
-      <span className="text-foreground/40 text-sm">{timeline}</span>
+      <span className="ml-5 tablet:ml-0 text-foreground/40 text-sm">
+        {timeline}
+      </span>
     </a>
   );
 }
