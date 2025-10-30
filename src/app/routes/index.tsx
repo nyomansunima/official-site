@@ -3,7 +3,6 @@ import {
   HeroSection,
   NewsletterSection,
   PublicationSection,
-  StatusSection,
   WorkSection,
 } from "@features/home";
 import { getFeaturedWorks } from "@features/works";
@@ -31,7 +30,6 @@ function PageComponent() {
   return (
     <main className="flex flex-col gap-20">
       <HeroSection />
-      <StatusSection />
       <WorkSection works={featuredWorks} />
       <PublicationSection />
       <BioSection />
