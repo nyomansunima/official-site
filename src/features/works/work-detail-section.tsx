@@ -1,14 +1,15 @@
-import { ArticleContent, Button, MarkdownContent } from "@shared/components";
+import { MDXContent } from "@content-collections/mdx/react";
+import { ArticleContent, Button } from "@shared/components";
 import { parseReadableDate } from "@shared/libs/utils";
 import { useLocation } from "@tanstack/react-router";
-import type { WorkDetail } from "./work-service";
+import type { Work } from "content-collections";
 
 type WorkDetailSectionProps = {
-  work: WorkDetail;
+  work: Work;
 };
 
 export function WorkDetailSection({ work }: WorkDetailSectionProps) {
-  const { date, team, title } = work.meta;
+  const { date, team, title, mdx } = work;
   const location = useLocation();
   const parsedDate = parseReadableDate(date);
 
@@ -54,7 +55,7 @@ export function WorkDetailSection({ work }: WorkDetailSectionProps) {
       </div>
 
       <ArticleContent className="mt-10">
-        <MarkdownContent content={work.content} />
+        <MDXContent code={mdx} />
       </ArticleContent>
     </section>
   );

@@ -10,6 +10,7 @@
       "@features/*": ["./src/features/*"],
       "@shared/*": ["./src/shared/*"],
       "@app/*": ["./src/app/*"],
+      "content-collections": ["./.content-collections/generated"],
       "~/*": ["./src/*"]
     },
     "types": ["vite/client"],

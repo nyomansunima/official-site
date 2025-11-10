@@ -1,3 +1,4 @@
+import contentCollections from "@content-collections/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import react from "@vitejs/plugin-react";
@@ -10,15 +11,14 @@ export default defineConfig({
     port: 3000,
   },
   plugins: [
+    contentCollections(),
     tsconfigPaths(),
     tailwindcss(),
     tanstackStart({
       prerender: {
         enabled: true,
         crawlLinks: true,
-        concurrency: 14,
-        autoSubfolderIndex: true,
-        retryCount: 7,
+        autoStaticPathsDiscovery: true,
       },
       sitemap: {
         enabled: true,

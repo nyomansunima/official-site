@@ -1,18 +1,18 @@
-import type { WorkData } from "./work-service";
+import type { Work } from "content-collections";
 
 type RelatedWorksSectionProps = {
-  relatedWorks: WorkData[];
+  relatedWorks: Work[];
 };
 
 type ItemProps = {
-  work: WorkData;
+  work: Work;
 };
 
 function Item({ work }: ItemProps) {
-  const { title, slug } = work;
+  const { title, _meta } = work;
 
   return (
-    <a className="flex items-center gap-2 py-2" href={`/works/${slug}`}>
+    <a className="flex items-center gap-2 py-2" href={`/works/${_meta.path}`}>
       <i className="fi fi-sr-bullet text-foreground/40 text-sm" />
       <span>{title}</span>
     </a>

@@ -1,15 +1,15 @@
 import { mergeClass, parseReadableDate } from "@shared/libs/utils";
-import type { WorkData } from "./work-service";
+import type { Work } from "content-collections";
 
 type Props = {
-  work: WorkData;
+  work: Work;
 };
 
 export function WorkItem({ work }: Props) {
-  const { slug, title, description, image, date } = work;
+  const { title, description, image, _meta, date } = work;
 
   const readableTimeline = parseReadableDate(date);
-  const link = `/works/${slug}`;
+  const link = `/works/${_meta.path}`;
 
   return (
     <a className={mergeClass("flex flex-col")} href={link}>

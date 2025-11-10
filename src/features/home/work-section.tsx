@@ -1,8 +1,8 @@
-import type { WorkData } from "@features/works";
 import { WorkItem } from "@features/works";
+import type { Work } from "content-collections";
 
 type Props = {
-  works: WorkData[];
+  works: Work[];
 };
 
 export function WorkSection({ works }: Props) {

@@ -1,4 +1,3 @@
-import type { WorkDetail } from "@features/works";
 import {
   getRelatedWorks,
   getWorkDetail,
@@ -10,15 +9,16 @@ import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/works/$slug")({
   head: (ctx) => {
-    const work = (ctx.loaderData as any).work as WorkDetail;
+    const work = (ctx.loaderData as any).work;
     return {
       meta: generatedMetadata({
-        title: `${work.meta.title} | Nyoman Sunima`,
-        description: work.meta.description,
-        image: work.meta.image,
+        title: `${work.title} | Nyoman Sunima`,
+        description: work.description,
+        image: work.image,
       }),
     };
   },
+
   // @ts-expect-error Just checking error for the return value
   loader: async (ctx) => {
     const slug = ctx.params.slug;

@@ -37,6 +37,14 @@
     "title": "Goodies",
     "list": [
       {
+        "title": "Oneday",
+        "link": "https://onedayui.vercel.app"
+      },
+      {
+        "title": "Picosecond",
+        "link": "https://picosecond.vercel.app"
+      },
+      {
         "title": "Dev crates",
         "link": "https://devcrates.site"
       },

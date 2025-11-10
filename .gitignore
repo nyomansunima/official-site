@@ -26,3 +26,6 @@ playwright/.cache/
 .output
 build
 dist
+
+# content collections
+.content-collections
