@@ -45,7 +45,7 @@
     "tailwindcss": "^4.1.17",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.9.3",
-    "ultracite": "6.1.0",
+    "ultracite": "6.3.2",
     "vite": "^7.2.2",
     "vite-tsconfig-paths": "^5.1.4",
     "web-vitals": "^5.1.0"
