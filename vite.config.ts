@@ -24,13 +24,6 @@ export default defineConfig({
         enabled: true,
         host: "https://www.nyomansunima.com",
       },
-      pages: [
-        { path: "/works", prerender: { enabled: true } },
-        { path: "/resources", prerender: { enabled: true } },
-        { path: "/stories", prerender: { enabled: true } },
-        { path: "/journeys", prerender: { enabled: true } },
-        { path: "/support", prerender: { enabled: true } },
-      ],
       srcDirectory: "src/app",
     }),
     react(),
