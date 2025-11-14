@@ -6,7 +6,7 @@ export const getWorkDetail = createServerFn()
   .inputValidator(
     z.object({
       slug: z.string(),
-    }),
+    })
   )
   .handler((ctx) => {
     const works = allWorks;

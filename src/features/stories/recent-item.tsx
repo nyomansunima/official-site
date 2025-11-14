@@ -21,7 +21,15 @@ export function RecentItem({ recent }: RecentItemProps) {
       target="_blank"
     >
       <div className="flex grow items-center gap-2">
-        <i className="fi fi-sr-bullet text-foreground/40 text-sm" />
+        <svg
+          className="fill-foreground/40"
+          height="14"
+          viewBox="0 0 24 24"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z" />
+        </svg>
         <span className="line-clamp-1 text-pretty">{title}</span>
       </div>
 

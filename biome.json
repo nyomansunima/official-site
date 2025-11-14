@@ -3,6 +3,9 @@
   "extends": ["ultracite/core", "ultracite/react"],
   "linter": {
     "rules": {
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
       "suspicious": {
         "noArrayIndexKey": "off",
         "noExplicitAny": "off"
