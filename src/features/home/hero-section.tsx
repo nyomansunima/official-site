@@ -123,13 +123,31 @@ export function HeroSection() {
         </p>
 
         <p>
+          Recently, building open source projects,{" "}
+          <a
+            className="underline"
+            href={"https://picosecond.vercel.app"}
+            rel="noopener"
+            target="_blank"
+          >
+            Picosecond
+          </a>{" "}
+          an ui blocks for fast software development and{" "}
+          <a
+            className="underline"
+            href={"https://onedayui.vercel.app"}
+            rel="noopener"
+            target="_blank"
+          >
+            Oneday
+          </a>{" "}
+          an ui blocks for building sites.
+        </p>
+
+        <p>
           Now, focus on finding & join a good team to building products. Still
           actively maintain the projects, contribute to open source projects and
           crafting something new on the side.
-        </p>
-
-        <p className="font-mono text-foreground/40 text-sm tracking-tight">
-          Build {"->"} ship {"->"} launch.
         </p>
       </div>
     </section>
