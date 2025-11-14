@@ -1,8 +1,4 @@
-import {
-  NewsletterSection,
-  PublicationSection,
-  RecentlySection,
-} from "@features/stories";
+import { PublicationSection, RecentlySection } from "@features/stories";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -22,7 +18,6 @@ function PageComponent() {
     <main className="flex flex-col gap-20">
       <PublicationSection />
       <RecentlySection />
-      <NewsletterSection />
     </main>
   );
 }

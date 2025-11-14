@@ -14,7 +14,7 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
 
   return (
     <a
-      className="flex tablet:flex-row flex-col items-start tablet:items-center gap-2 py-2"
+      className="flex tablet:flex-row flex-col items-start tablet:items-center gap-2 py-2 transition-all duration-300 hover:text-foreground/40"
       href={url}
       target="_blank"
     >

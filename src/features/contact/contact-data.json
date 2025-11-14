@@ -1,63 +1,47 @@
-{
-  "contacts": [
-    { "label": "Send me email", "href": "mailto:nyomansunima@gmail.com" },
-    {
-      "label": "Schedule meeting",
-      "href": "https://cal.com/nyomansunima/build-opportunity"
-    },
-    {
-      "label": "Chat on whatsapp",
-      "href": "https://api.whatsapp.com/send?phone=6281330990903&ref=nyomansunima"
-    }
-  ],
-  "socials": [
-    {
-      "label": "Youtube",
-      "href": "https://youtube.com/@nyomansunima"
-    },
-    {
-      "label": "Twitter",
-      "href": "https://twitter.com/nyomansunima"
-    },
-    {
-      "label": "Threads",
-      "href": "https://threads.net/@bynyomansunima"
-    },
-    {
-      "label": "Linkedin",
-      "href": "https://linkedin.com/in/nyomansunima"
-    },
-    {
-      "label": "Facebook",
-      "href": "https://facebook.com/nyomansunima"
-    },
-    {
-      "label": "Instagram",
-      "href": "https://instagram.com/itsnyomansunima"
-    },
-    {
-      "label": "Layers",
-      "href": "https://layers.to/nyomansunima"
-    },
-    {
-      "label": "Github",
-      "href": "https://github.com/nyomansunima"
-    },
-    {
-      "label": "Dribbble",
-      "href": "https://dribbble.com/nyomansunima"
-    },
-    {
-      "label": "Gitlab",
-      "href": "https://gitlab.com/nyomansunima"
-    },
-    {
-      "label": "Peerlist",
-      "href": "https://peerlist.io/nyomansunima"
-    },
-    {
-      "label": "Algora",
-      "href": "https://algora.io/nyomansunima"
-    }
-  ]
-}
+[
+  { "label": "Send me email", "href": "mailto:nyomansunima@gmail.com" },
+  {
+    "label": "Schedule meeting",
+    "href": "https://cal.com/nyomansunima/build-opportunity"
+  },
+  {
+    "label": "Chat on whatsapp",
+    "href": "https://api.whatsapp.com/send?phone=6281330990903&ref=nyomansunima"
+  },
+  {
+    "label": "Subscribe on youtube",
+    "href": "https://youtube.com/@nyomansunima"
+  },
+  {
+    "label": "Send dm on twitter",
+    "href": "https://twitter.com/nyomansunima"
+  },
+  {
+    "label": "Connect on threads",
+    "href": "https://threads.net/@bynyomansunima"
+  },
+  {
+    "label": "Connect on linkedin",
+    "href": "https://linkedin.com/in/nyomansunima"
+  },
+  {
+    "label": "See on facebook",
+    "href": "https://facebook.com/nyomansunima"
+  },
+  {
+    "label": "DM me on instagram",
+    "href": "https://instagram.com/itsnyomansunima"
+  },
+  {
+    "label": "Check my github",
+    "href": "https://github.com/nyomansunima"
+  },
+  {
+    "label": "Chat on peerlist",
+    "href": "https://peerlist.io/nyomansunima"
+  },
+  {
+    "label": "Collaborate on algora",
+    "href": "https://algora.io/nyomansunima"
+  }
+]

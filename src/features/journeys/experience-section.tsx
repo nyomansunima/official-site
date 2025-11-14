@@ -5,20 +5,10 @@ const experiences = [...experienceData].reverse();
 
 export function ExperienceSection() {
   return (
-    <section className="flex flex-col">
-      <div className="flex flex-col">
-        <span className="font-mono text-foreground/40 text-sm tracking-tight">
-          Experiences.
-        </span>
-        <h2 className="mt-2 font-medium text-lg">My careers and journeys.</h2>
+    <section className="flex flex-col gap-4">
+      <h2 className="text-foreground/60">Experiences :</h2>
 
-        <p className="mt-6 text-pretty leading-7">
-          My overall contributions, leading and participants to create and ship
-          a good products.
-        </p>
-      </div>
-
-      <div className="mt-10 flex flex-col gap-1">
+      <div className="flex flex-col gap-1">
         {experiences.map((exp, index) => (
           <ExperienceItem experience={exp} key={index} />
         ))}

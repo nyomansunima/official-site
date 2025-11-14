@@ -1,22 +1,12 @@
 import { Button, CenteredLayout, Header } from "@shared/components";
 import styles from "@shared/styles/globals.css?url";
-import type { QueryClient } from "@tanstack/react-query";
-import {
-  createRootRouteWithContext,
-  HeadContent,
-  Scripts,
-} from "@tanstack/react-router";
+import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import type * as React from "react";
 
 type RootDocumentProps = {
   children: React.ReactNode;
 };
-
-type RouteWithContextProps = {
-  queryClient: QueryClient;
-};
-
-export const Route = createRootRouteWithContext<RouteWithContextProps>()({
+export const Route = createRootRoute({
   head: () => ({
     meta: [
       {
