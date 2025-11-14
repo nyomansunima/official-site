@@ -29,7 +29,7 @@ function Item({ work }: ItemProps) {
 
 export function RelatedWorkSection({ relatedWorks }: RelatedWorksSectionProps) {
   return (
-    <section className="mt-20 flex flex-col">
+    <section className="mt-20 flex flex-col border-border border-t border-dashed pt-16">
       <div className="flex flex-col">
         <span className="font-mono text-foreground/40 text-sm tracking-tight">
           Read more.
