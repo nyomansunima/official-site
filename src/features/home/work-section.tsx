@@ -1,9 +1,21 @@
-import { WorkItem } from "@features/works";
 import type { Work } from "content-collections";
 
 type Props = {
   works: Work[];
 };
+
+type WorkItemProps = {
+  work: Work;
+};
+
+function WorkItem({ work }: WorkItemProps) {
+  return (
+    <a className="flex items-center gap-2" href={`/works/${work._meta.path}`}>
+      <i className="fi fi-sr-bullet text-foreground/40 text-sm" />
+      {work.title}
+    </a>
+  );
+}
 
 export function WorkSection({ works }: Props) {
   return (
@@ -20,7 +32,7 @@ export function WorkSection({ works }: Props) {
         </p>
       </div>
 
-      <div className="mt-10 flex flex-col gap-16">
+      <div className="mt-10 flex flex-col gap-5">
         {works.map((work, i) => (
           <WorkItem key={i} work={work} />
         ))}

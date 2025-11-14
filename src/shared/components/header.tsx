@@ -1,25 +1,12 @@
-import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
-
-type NavMenuItemProps = {
-  children: React.ReactNode;
+type LinkProps = {
   href: string;
+  children: React.ReactNode;
 };
 
-function Brand() {
+function Link({ href, children }: LinkProps) {
   return (
     <a
-      className="flex h-10 w-10 items-center justify-center rounded-2xl bg-secondary font-medium text-secondary-foreground text-sm transition-all duration-300"
-      href="/"
-    >
-      <i className="fi fi-sr-leaf-oak text-lg" />
-    </a>
-  );
-}
-
-export function NavMenuItem({ children, href }: NavMenuItemProps) {
-  return (
-    <a
-      className="col-span-1 flex items-center text-foreground text-sm transition-all duration-300 hover:text-foreground/40"
+      className="flex text-foreground/60 text-sm leading-tight transition-all duration-300 hover:text-foreground"
       href={href}
     >
       {children}
@@ -27,38 +14,16 @@ export function NavMenuItem({ children, href }: NavMenuItemProps) {
   );
 }
 
-function Menu() {
-  return (
-    <Popover>
-      <PopoverTrigger
-        aria-label="Menu Button"
-        className="group relative flex h-10 w-10 cursor-pointer items-center justify-center rounded-2xl bg-secondary text-secondary-foreground text-sm"
-      >
-        <i className="fi fi-sr-folder" />
-      </PopoverTrigger>
-      <PopoverContent>
-        <div className="grid w-full grid-cols-2 gap-x-4 gap-y-4">
-          <NavMenuItem href="/works">Works</NavMenuItem>
-          <NavMenuItem href="/crafts">Crafts</NavMenuItem>
-          <NavMenuItem href="/stories">Stories</NavMenuItem>
-          <NavMenuItem href="/journeys">Journeys</NavMenuItem>
-          <NavMenuItem href="/resources">Resources</NavMenuItem>
-          <NavMenuItem href="/about">About</NavMenuItem>
-          <NavMenuItem href="/contact">Contact</NavMenuItem>
-        </div>
-      </PopoverContent>
-    </Popover>
-  );
-}
-
 export function Header() {
   return (
-    <header className="flex h-24 tablet:h-28 items-center justify-between">
-      <Brand />
-
-      <div className="flex items-center gap-2">
-        <Menu />
-      </div>
+    <header className="flex flex-wrap items-center gap-7 border-border border-b border-dashed py-6 pt-10">
+      <Link href="/">Home</Link>
+      <Link href="/works">Works</Link>
+      <Link href="/crafts">Crafts</Link>
+      <Link href="/journeys">Journeys</Link>
+      <Link href="/stories">Stories</Link>
+      <Link href="/contact">Contact</Link>
+      <Link href="/about">About</Link>
     </header>
   );
 }

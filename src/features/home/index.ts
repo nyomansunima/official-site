@@ -1,4 +1,3 @@
-export * from "./bio-section";
 export * from "./hero-section";
 export * from "./newsletter-section";
 export * from "./publication-section";

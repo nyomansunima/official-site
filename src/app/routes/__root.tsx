@@ -1,4 +1,4 @@
-import { Button, CenteredLayout, Footer, Header } from "@shared/components";
+import { Button, CenteredLayout, Header } from "@shared/components";
 import styles from "@shared/styles/globals.css?url";
 import type { QueryClient } from "@tanstack/react-query";
 import {
@@ -50,10 +50,9 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
       <body>
         <CenteredLayout>
           <Header />
-          <div className="mt-5 tablet:mt-10 min-h-screen pb-28 tablet:pb-56">
+          <div className="mt-5 tablet:mt-10 min-h-screen pt-6 pb-28 tablet:pb-56">
             {children}
           </div>
-          <Footer />
         </CenteredLayout>
         <Scripts />
       </body>

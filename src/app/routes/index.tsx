@@ -1,5 +1,4 @@
 import {
-  BioSection,
   HeroSection,
   NewsletterSection,
   PublicationSection,
@@ -32,7 +31,6 @@ function PageComponent() {
       <HeroSection />
       <WorkSection works={featuredWorks} />
       <PublicationSection />
-      <BioSection />
       <NewsletterSection />
     </main>
   );

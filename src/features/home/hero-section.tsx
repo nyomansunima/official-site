@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section className="flex flex-col">
       <div className="group flex items-center gap-3">
-        <div className="flex cursor-pointer items-center justify-center rounded-full border-2 border-border border-dashed p-1">
+        <div className="flex cursor-pointer items-center justify-center rounded-full border border-border border-dashed p-1">
           <img
             alt="Nyoman Sunima Profile"
             className="rounded-full object-cover"
@@ -19,7 +19,7 @@ export function HeroSection() {
             Product designer, software engineer & creator
           </span>
           <div className="mt-2 flex">
-            <span className="rounded-full bg-secondary px-2 py-1 font-mono text-xs leading-tight">
+            <span className="rounded-full bg-fuchsia-100 px-2 py-1 font-medium font-mono text-fuchsia-600 text-xs tracking-tight">
               Open to work
             </span>
           </div>

@@ -1,5 +1,5 @@
 import { MDXContent } from "@content-collections/mdx/react";
-import { ArticleContent, Button } from "@shared/components";
+import { ArticleContent } from "@shared/components";
 import { parseReadableDate } from "@shared/libs/utils";
 import { useLocation } from "@tanstack/react-router";
 import type { Work } from "content-collections";
@@ -23,23 +23,24 @@ export function WorkDetailSection({ work }: WorkDetailSectionProps) {
   return (
     <section className="flex flex-col">
       <div className="flex items-center gap-5">
-        <Button asChild size={"icon"} variant={"secondary"}>
-          <a href="/works">
-            <i className="fi fi-sr-arrow-circle-left" />
-          </a>
-        </Button>
+        <a
+          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-2xl text-foreground/60 transition-all duration-300 hover:text-foreground"
+          href="/works"
+        >
+          <i className="fi fi-rr-turn-left" />
+        </a>
 
         <div className="flex flex-1 flex-col">
           <h1 className="text-balance font-medium text-lg">{title}</h1>
 
           <div className="mt-2 flex items-center gap-3">
-            <span className="text-foreground/40 text-sm transition-all duration-300 hover:text-foreground">
+            <span className="font-mono text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground">
               {parsedDate}
             </span>
 
             {team && (
               <a
-                className="text-foreground/40 text-sm transition-all duration-300 hover:text-foreground"
+                className="font-mono text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground"
                 href={team.url}
                 target="_blank"
               >
@@ -49,9 +50,13 @@ export function WorkDetailSection({ work }: WorkDetailSectionProps) {
           </div>
         </div>
 
-        <Button onClick={copyWorkLink} size={"icon"} variant={"secondary"}>
-          <i className="fi fi-br-broken-chain-link-wrong" />
-        </Button>
+        <button
+          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-2xl text-foreground/60 transition-all duration-300 hover:text-foreground"
+          onClick={copyWorkLink}
+          type="button"
+        >
+          <i className="fi fi-rr-broken-chain-link-wrong" />
+        </button>
       </div>
 
       <ArticleContent className="mt-10">
