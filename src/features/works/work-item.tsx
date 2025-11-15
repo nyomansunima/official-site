@@ -6,7 +6,7 @@ type Props = {
 };
 
 export function WorkItem({ work }: Props) {
-  const { title, description, image, _meta, date } = work;
+  const { title, description, image, _meta, date, status } = work;
 
   const readableTimeline = parseReadableDate(date);
   const link = `/works/${_meta.path}`;
@@ -24,7 +24,12 @@ export function WorkItem({ work }: Props) {
 
       <div className="mt-6 flex items-center gap-4">
         <h3 className="font-medium">{title}</h3>
-        <span className="text-foreground/40 text-sm">{readableTimeline}</span>
+        <span className="text-foreground/40 text-sm leading-none">
+          {readableTimeline}
+        </span>
+        <span className="text-foreground/40 text-sm leading-none">
+          {status}
+        </span>
       </div>
 
       <p className="mt-3 line-clamp-2 text-pretty leading-7">{description}</p>

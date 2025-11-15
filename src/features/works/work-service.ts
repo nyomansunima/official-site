@@ -1,5 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { allWorks } from "content-collections";
+import dayjs from "dayjs";
 import z from "zod";
 
 export const getWorkDetail = createServerFn()
@@ -18,7 +19,8 @@ export const getWorkDetail = createServerFn()
 
 export const getWorks = createServerFn().handler(() => {
   const works = allWorks;
-  return works;
+  const sortedWorks = works.sort((a, b) => dayjs(b.date).diff(dayjs(a.date)));
+  return sortedWorks;
 });
 
 export const getFeaturedWorks = createServerFn().handler(() => {
