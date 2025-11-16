@@ -28,9 +28,9 @@ export function HeroSection() {
 
       <div className="mt-10 flex flex-col gap-6 text-pretty text-base leading-7">
         <p>
-          Hello, I'am a product designer, software engineer & creator. Building
-          saas, sites and tools. Currently working as freelance, building my own
-          saas at{" "}
+          Hello, I am a product designer, software engineer & creator. Building
+          saas, sites, and tools. Currently working as a freelancer, building my
+          own saas at{" "}
           <a
             className="underline"
             href={"https://moono.site"}
@@ -39,7 +39,7 @@ export function HeroSection() {
           >
             Moono
           </a>{" "}
-          and create website templates at{" "}
+          and creating website templates at{" "}
           <a
             className="underline"
             href={"https://creevoo.store"}
@@ -60,8 +60,8 @@ export function HeroSection() {
             target="_blank"
           >
             Weebo
-          </a>{" "}
-          a web design partner for business and{" "}
+          </a>
+          , a web design partner for business and{" "}
           <a
             className="underline"
             href={"https://usesonibble.site"}
@@ -69,9 +69,9 @@ export function HeroSection() {
             target="_blank"
           >
             Sonibble
-          </a>{" "}
-          an all in one solutions for business growth. Also actively shipping
-          open source project at{" "}
+          </a>
+          , a business growth solutions. Also actively shipping open-source
+          projects at{" "}
           <a
             className="underline"
             href={"https://weecraft.site"}
@@ -84,7 +84,7 @@ export function HeroSection() {
         </p>
 
         <p>
-          Before that, I was a senior software engineer at{" "}
+          Before that, I was a software engineer at{" "}
           <a
             className="underline"
             href={"https://dimata.com"}
@@ -93,15 +93,40 @@ export function HeroSection() {
           >
             Dimata
           </a>
-          , a software company that building enterprise app for business and
-          management. Then doing alot of freelance jobs for building a websites
+          , a software company that builds enterprise apps for business and
+          management. Then doing a lot of freelance jobs for building websites
           and shipping apps.
         </p>
 
         <p>
-          I was actively documenting my journeys and share tips about design,
-          development, business, money and productivity. Also helping web
-          designers to grows at{" "}
+          Recently, building ui components at{" "}
+          <a
+            className="underline"
+            href={"https://picosecond.vercel.app"}
+            rel="noopener"
+            target="_blank"
+          >
+            Picosecond
+          </a>
+          , crafting websites blocks at{" "}
+          <a
+            className="underline"
+            href={"https://onedayui.vercel.app"}
+            rel="noopener"
+            target="_blank"
+          >
+            Oneday
+          </a>{" "}
+          and email templates at{" "}
+          <a
+            className="underline"
+            href={"https://trymailo.vercel.app"}
+            rel="noopener"
+            target="_blank"
+          >
+            Mailo
+          </a>
+          . Also helping web designers to grow at{" "}
           <a
             className="underline"
             href={"https://thegridline.site"}
@@ -110,7 +135,7 @@ export function HeroSection() {
           >
             The Gridline
           </a>{" "}
-          and developers to grow at{" "}
+          and creating contents at{" "}
           <a
             className="underline"
             href={"https://thescolon.site"}
@@ -123,31 +148,9 @@ export function HeroSection() {
         </p>
 
         <p>
-          Recently, building open source projects,{" "}
-          <a
-            className="underline"
-            href={"https://picosecond.vercel.app"}
-            rel="noopener"
-            target="_blank"
-          >
-            Picosecond
-          </a>{" "}
-          an ui blocks for fast software development and{" "}
-          <a
-            className="underline"
-            href={"https://onedayui.vercel.app"}
-            rel="noopener"
-            target="_blank"
-          >
-            Oneday
-          </a>{" "}
-          an ui blocks for building sites.
-        </p>
-
-        <p>
-          Now, focus on finding & join a good team to building products. Still
-          actively maintain the projects, contribute to open source projects and
-          crafting something new on the side.
+          Now, focus on finding & joining a good team to build products. Still
+          actively maintain the projects, contribute to open-source projects,
+          and craft something new on the side.
         </p>
       </div>
     </section>
