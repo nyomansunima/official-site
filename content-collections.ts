@@ -4,7 +4,7 @@ import { z } from "zod";
 
 const works = defineCollection({
   name: "works",
-  directory: "src/contents/works",
+  directory: "src/features/works/contents",
   include: "**/*.mdx",
   schema: z.object({
     title: z.string(),

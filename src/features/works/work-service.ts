@@ -13,7 +13,7 @@ export const getWorkDetail = createServerFn()
     const works = allWorks;
     const slug = ctx.data.slug;
 
-    const work = works.filter((w) => w._meta.path === slug)[0];
+    const work = works.find((w) => w._meta.path === slug);
     return work;
   });
 
