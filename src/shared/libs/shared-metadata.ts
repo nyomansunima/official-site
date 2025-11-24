@@ -1,7 +1,3 @@
-import { loadConfig } from "./config";
-
-const config = loadConfig();
-
 type GeneratedMetadataInput = {
   title: string;
   description: string;
@@ -35,7 +31,7 @@ export function generatedMetadata({
     { name: "creator", content: "nyomansunima" },
     { name: "publisher", content: "nyomansunima" },
     { name: "application-name", content: "Nyoman Sunima" },
-    { name: "google-site-verification", content: config.verification.google },
+    { name: "google-site-verification", content: "" },
     { name: "category", content: "Websites" },
     { name: "generator", content: "React Router" },
     { name: "pinterest-rich-pin", content: "true" },

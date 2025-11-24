@@ -46,7 +46,7 @@ function CraftGroup({ group }: CraftGroupProps) {
 
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="text-foreground/60">{title} :</h2>
+      <h2 className="text-foreground/60">{title}:</h2>
 
       <div className="flex flex-col gap-1">
         {list.map((craft, index) => (
@@ -57,7 +57,7 @@ function CraftGroup({ group }: CraftGroupProps) {
   );
 }
 
-export function ProductSection() {
+export function CraftSection() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col gap-16">

@@ -50,7 +50,7 @@ function ExperienceItem({ experience }: ExperienceItemProps) {
 export function ExperienceSection() {
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-foreground/60">Experiences :</h2>
+      <h2 className="text-foreground/60">Experiences:</h2>
 
       <div className="flex flex-col gap-1">
         {experiences.map((exp, index) => (

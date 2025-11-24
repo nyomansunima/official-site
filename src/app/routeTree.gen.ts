@@ -10,8 +10,8 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as StoriesRouteImport } from './routes/stories'
-import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as JourneysRouteImport } from './routes/journeys'
+import { Route as GoodiesRouteImport } from './routes/goodies'
 import { Route as CraftsRouteImport } from './routes/crafts'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
@@ -24,14 +24,14 @@ const StoriesRoute = StoriesRouteImport.update({
   path: '/stories',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ResourcesRoute = ResourcesRouteImport.update({
-  id: '/resources',
-  path: '/resources',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const JourneysRoute = JourneysRouteImport.update({
   id: '/journeys',
   path: '/journeys',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoodiesRoute = GoodiesRouteImport.update({
+  id: '/goodies',
+  path: '/goodies',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CraftsRoute = CraftsRouteImport.update({
@@ -70,8 +70,8 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/crafts': typeof CraftsRoute
+  '/goodies': typeof GoodiesRoute
   '/journeys': typeof JourneysRoute
-  '/resources': typeof ResourcesRoute
   '/stories': typeof StoriesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
@@ -81,8 +81,8 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/crafts': typeof CraftsRoute
+  '/goodies': typeof GoodiesRoute
   '/journeys': typeof JourneysRoute
-  '/resources': typeof ResourcesRoute
   '/stories': typeof StoriesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
@@ -93,8 +93,8 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/crafts': typeof CraftsRoute
+  '/goodies': typeof GoodiesRoute
   '/journeys': typeof JourneysRoute
-  '/resources': typeof ResourcesRoute
   '/stories': typeof StoriesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works/': typeof WorksIndexRoute
@@ -106,8 +106,8 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/crafts'
+    | '/goodies'
     | '/journeys'
-    | '/resources'
     | '/stories'
     | '/works/$slug'
     | '/works'
@@ -117,8 +117,8 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/crafts'
+    | '/goodies'
     | '/journeys'
-    | '/resources'
     | '/stories'
     | '/works/$slug'
     | '/works'
@@ -128,8 +128,8 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/crafts'
+    | '/goodies'
     | '/journeys'
-    | '/resources'
     | '/stories'
     | '/works/$slug'
     | '/works/'
@@ -140,8 +140,8 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   CraftsRoute: typeof CraftsRoute
+  GoodiesRoute: typeof GoodiesRoute
   JourneysRoute: typeof JourneysRoute
-  ResourcesRoute: typeof ResourcesRoute
   StoriesRoute: typeof StoriesRoute
   WorksSlugRoute: typeof WorksSlugRoute
   WorksIndexRoute: typeof WorksIndexRoute
@@ -156,18 +156,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StoriesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/resources': {
-      id: '/resources'
-      path: '/resources'
-      fullPath: '/resources'
-      preLoaderRoute: typeof ResourcesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/journeys': {
       id: '/journeys'
       path: '/journeys'
       fullPath: '/journeys'
       preLoaderRoute: typeof JourneysRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/goodies': {
+      id: '/goodies'
+      path: '/goodies'
+      fullPath: '/goodies'
+      preLoaderRoute: typeof GoodiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/crafts': {
@@ -220,8 +220,8 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   CraftsRoute: CraftsRoute,
+  GoodiesRoute: GoodiesRoute,
   JourneysRoute: JourneysRoute,
-  ResourcesRoute: ResourcesRoute,
   StoriesRoute: StoriesRoute,
   WorksSlugRoute: WorksSlugRoute,
   WorksIndexRoute: WorksIndexRoute,

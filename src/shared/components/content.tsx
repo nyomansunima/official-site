@@ -1,5 +1,4 @@
 import { mergeClass } from "@shared/libs/utils";
-import type * as React from "react";
 
 type ArticleContentProps = {
   children: React.ReactNode;

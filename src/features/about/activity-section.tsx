@@ -1,18 +1,11 @@
 export function ActivitySection() {
   return (
-    <section>
-      <br />
-
-      <div className="not-prose mt-10 flex flex-col gap-2">
-        <span className="font-mono text-foreground/40 text-sm tracking-tight">
-          Activities.
-        </span>
-        <h2>
-          From ideation, research, planning, design, code
-          <br />
-          to ship the best product
-        </h2>
-      </div>
+    <>
+      <h2>
+        Involve ideation, research, planning, design, code
+        <br />
+        to ship the best product
+      </h2>
 
       <p>
         My daily activities revolve around the exciting process of transforming
@@ -68,6 +61,6 @@ export function ActivitySection() {
         build applications from scratch, crafting clean and efficient code that
         forms the backbone of the final product.
       </p>
-    </section>
+    </>
   );
 }

@@ -1,18 +1,11 @@
 export function IndieSection() {
   return (
-    <section>
-      <br />
-
-      <div className="not-prose mt-10 flex flex-col gap-2">
-        <span className="font-mono text-foreground/40 text-sm tracking-tight">
-          Indie hacking.
-        </span>
-        <h2>
-          Playing with concept and bring into a real
-          <br />
-          product or proven business
-        </h2>
-      </div>
+    <>
+      <h2>
+        Playing with concept and bring into a real
+        <br />
+        product or proven business
+      </h2>
 
       <p>
         As an indie maker, I embrace the entrepreneurial spirit, taking on the
@@ -42,6 +35,6 @@ export function IndieSection() {
         is not that easy. But the motivation and condition make me keep going
         and keep moving.
       </p>
-    </section>
+    </>
   );
 }

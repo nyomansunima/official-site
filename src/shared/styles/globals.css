@@ -14,7 +14,7 @@
   --font-mono: "JetBrains Mono", monospace;
 
   --text-sm: 0.84375rem;
-  --text-base: 0.9375rem;
+  --text-base: 0.9175rem;
   --text-lg: 1.03125rem;
   --text-xl: 1.125rem;
 
@@ -93,28 +93,20 @@
     }
   }
 
-  em {
-    font-style: "italic";
-    color: var(--color-accent);
-  }
-
   strong {
-    font-weight: var(--font-weight-normal);
+    @apply font-medium;
   }
 
   h1 {
-    font-size: var(--text-xl);
-    font-weight: var(--font-weight-medium);
+    @apply text-xl font-medium leading-normal text-balance;
   }
 
   h2 {
-    font-size: var(--text-lg);
-    font-weight: var(--font-weight-medium);
+    @apply text-lg font-medium leading-normal text-balance;
   }
 
   h3 {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
+    @apply text-base font-medium leading-normal text-balance;
   }
 
   img {

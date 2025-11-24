@@ -1,19 +1,12 @@
 export function AchievementSection() {
   return (
-    <section>
-      <br />
-
-      <div className="not-prose mt-10 flex flex-col gap-2">
-        <span className="font-mono text-foreground/40 text-sm tracking-tight">
-          Achievements.
-        </span>
-        <h2>Best moment, journey and milestones of hard time</h2>
-      </div>
+    <>
+      <h2>Best moment, journey and milestones of hard time</h2>
 
       <p>
         Every professional journey has its defining moments—the ones that test
         your limits, bring unexpected opportunities, and ultimately shape the
-        person you become. This section is dedicated to those transformative
+        person you become. This is dedicated to those transformative
         experiences, showcasing the highlights of my career path. From the early
         days of pushing through tough challenges to recent milestones marked by
         rewarding successes, each moment is a testament to resilience, passion,
@@ -44,6 +37,6 @@ export function AchievementSection() {
         moments that made even the hardest times worthwhile, turning challenges
         into memorable milestones.
       </p>
-    </section>
+    </>
   );
 }

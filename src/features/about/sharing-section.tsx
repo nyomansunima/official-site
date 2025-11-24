@@ -1,14 +1,7 @@
 export function SharingSection() {
   return (
-    <section>
-      <br />
-
-      <div className="not-prose mt-10 flex flex-col gap-2">
-        <span className="font-mono text-foreground/40 text-sm tracking-tight">
-          Sharing.
-        </span>
-        <h2>I love to read, write, and share the toughts</h2>
-      </div>
+    <>
+      <h2>I love to read, write, and share the toughts</h2>
 
       <p>
         I'm passionate about sharing my knowledge and experiences with others.
@@ -43,6 +36,6 @@ export function SharingSection() {
         By sharing my journey and experiences, I can inspire and motivate others
         to pursue their dreams and make a difference in the world.
       </p>
-    </section>
+    </>
   );
 }

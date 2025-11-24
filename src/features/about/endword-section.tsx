@@ -1,13 +1,7 @@
 export function EndWordSection() {
   return (
-    <section>
-      <br />
-      <div className="not-prose mt-10 flex flex-col gap-2">
-        <span className="font-mono text-foreground/40 text-sm tracking-tight">
-          Endword.
-        </span>
-        <h2>Last word to say, thanks</h2>
-      </div>
+    <>
+      <h2>Last word to say, thanks</h2>
 
       <p>
         Through every success, collaboration, and challenge, these moments have
@@ -30,15 +24,6 @@ export function EndWordSection() {
         Then <a href={"/contact"}>contact me</a> if you want to collaborate and
         make something awesome together.
       </p>
-
-      <p>Thanks for all of your support and attention.</p>
-
-      <div className="not-prose mt-16 flex flex-col gap-3">
-        <p>Nyoman Sunima</p>
-        <span className="font-mono text-foreground/40 text-sm tracking-tight">
-          Your business & work best partner.
-        </span>
-      </div>
-    </section>
+    </>
   );
 }

@@ -1,12 +1,7 @@
-export function DetailSection() {
+export function IntroSection() {
   return (
-    <section>
-      <div className="not-prose flex flex-col gap-2">
-        <span className="font-mono text-foreground/40 text-sm tracking-tight">
-          Hello.
-        </span>
-        <h2>Hey, we're good friends</h2>
-      </div>
+    <>
+      <h2>Hey, I'm a product designer and software engineer</h2>
 
       <p>
         Hello, my name is Nyoman Sunima, a product designer, software engineer &
@@ -60,6 +55,6 @@ export function DetailSection() {
         think outside the box and deliver forward-thinking solutions that
         resonate with audiences.
       </p>
-    </section>
+    </>
   );
 }

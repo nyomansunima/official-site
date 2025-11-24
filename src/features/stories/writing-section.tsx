@@ -1,19 +1,19 @@
 import { parseReadableDate } from "@shared/libs/utils";
-import storiesData from "./stories-data.json" with { type: "json" };
+import writingData from "./writing-data.json" with { type: "json" };
 
-const recents = [...storiesData].reverse();
+const writings = [...writingData].reverse();
 
-export type RecentData = {
+type RecentData = {
   title: string;
   timeline: string;
   url: string;
 };
 
-type RecentItemProps = {
+type WritingItemProps = {
   recent: RecentData;
 };
 
-function RecentItem({ recent }: RecentItemProps) {
+function WritingItem({ recent }: WritingItemProps) {
   const { title, timeline, url } = recent;
   const parsedDate = parseReadableDate(timeline);
 
@@ -43,13 +43,13 @@ function RecentItem({ recent }: RecentItemProps) {
   );
 }
 
-export function RecentlySection() {
+export function WritingSection() {
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-foreground/60">Updates :</h2>
+      <h2 className="text-foreground/60">Writings:</h2>
       <div className="flex flex-col gap-1">
-        {recents.map((recent, i) => (
-          <RecentItem key={i} recent={recent} />
+        {writings.map((recent, i) => (
+          <WritingItem key={i} recent={recent} />
         ))}
       </div>
     </section>

@@ -10,9 +10,13 @@ export function WorkItem({ work }: Props) {
 
   const readableTimeline = parseReadableDate(date);
   const link = `/works/${_meta.path}`;
+  const isDisabled = status === "Coming soon";
 
   return (
-    <a className={mergeClass("flex flex-col")} href={link}>
+    <a
+      className={mergeClass("flex flex-col", isDisabled && "pointer-events")}
+      href={link}
+    >
       <div className="relative flex h-[200px] tablet:h-[360px] w-full overflow-hidden rounded-2xl">
         <img
           alt={title}
