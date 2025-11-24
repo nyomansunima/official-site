@@ -1,4 +1,4 @@
-import { ProductSection } from "@features/crafts";
+import { CraftSection } from "@features/crafts";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -10,13 +10,13 @@ export const Route = createFileRoute("/crafts")({
         "See all of my projects, business, products, side husltes and something that i built",
     }),
   }),
-  component: PageComponent,
+  component: RouteComponent,
 });
 
-function PageComponent() {
+function RouteComponent() {
   return (
     <main className="flex flex-col gap-20">
-      <ProductSection />
+      <CraftSection />
     </main>
   );
 }

@@ -9,10 +9,10 @@ export const Route = createFileRoute("/contact")({
       description: "Get in touch with me right now, start your idea",
     }),
   }),
-  component: PageComponent,
+  component: RouteComponent,
 });
 
-function PageComponent() {
+function RouteComponent() {
   return (
     <main className="flex flex-col gap-20">
       <ContactSection />

@@ -1,4 +1,4 @@
-import { PublicationSection, RecentlySection } from "@features/stories";
+import { PublicationSection, WritingSection } from "@features/stories";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -10,14 +10,14 @@ export const Route = createFileRoute("/stories")({
         "Everyday i write, record, and create any resources to sharing into the social media and community platforms",
     }),
   }),
-  component: PageComponent,
+  component: RouteComponent,
 });
 
-function PageComponent() {
+function RouteComponent() {
   return (
     <main className="flex flex-col gap-20">
       <PublicationSection />
-      <RecentlySection />
+      <WritingSection />
     </main>
   );
 }

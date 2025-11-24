@@ -27,10 +27,10 @@ export const Route = createFileRoute("/works/$slug")({
 
     return { work, relatedWorks };
   },
-  component: PageComponent,
+  component: RouteComponent,
 });
 
-function PageComponent() {
+function RouteComponent() {
   const { work, relatedWorks } = Route.useLoaderData() as any;
 
   return (

@@ -10,10 +10,10 @@ export const Route = createFileRoute("/")({
         "Focused on crafting digital products, website, web app, mobile app to help business",
     }),
   }),
-  component: PageComponent,
+  component: RouteComponent,
 });
 
-function PageComponent() {
+function RouteComponent() {
   return (
     <main className="flex flex-col gap-20">
       <HeroSection />

@@ -10,10 +10,10 @@ export const Route = createFileRoute("/journeys")({
         "The whole story of me, nyoman sunima and all of the journey",
     }),
   }),
-  component: PageComponent,
+  component: RouteComponent,
 });
 
-function PageComponent() {
+function RouteComponent() {
   return (
     <main className="flex flex-col gap-20">
       <ExperienceSection />

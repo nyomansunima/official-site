@@ -9,10 +9,10 @@ export const Route = createFileRoute("/goodies")({
       description: "Get free resources and things that help your works",
     }),
   }),
-  component: PageComponent,
+  component: RouteComponent,
 });
 
-function PageComponent() {
+function RouteComponent() {
   return (
     <main className="flex flex-col">
       <GoodiesSection />

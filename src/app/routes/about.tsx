@@ -1,9 +1,9 @@
 import {
   AchievementSection,
   ActivitySection,
-  DetailSection,
   EndWordSection,
   IndieSection,
+  IntroSection,
   SharingSection,
 } from "@features/about";
 import { ArticleContent } from "@shared/components";
@@ -14,18 +14,17 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: generatedMetadata({
       title: "About | Nyoman Sunima",
-      description:
-        "The whole story about me, nyoman sunima and all of the journey",
+      description: "The whole story about me and all of the journey",
     }),
   }),
-  component: PageComponent,
+  component: RouteComponent,
 });
 
-function PageComponent() {
+function RouteComponent() {
   return (
     <main className="flex flex-col">
       <ArticleContent>
-        <DetailSection />
+        <IntroSection />
         <ActivitySection />
         <SharingSection />
         <IndieSection />

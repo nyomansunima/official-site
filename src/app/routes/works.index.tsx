@@ -14,10 +14,10 @@ export const Route = createFileRoute("/works/")({
     const works = await getWorks();
     return { works };
   },
-  component: PageComponent,
+  component: RouteComponent,
 });
 
-function PageComponent() {
+function RouteComponent() {
   const { works } = Route.useLoaderData();
 
   return (
