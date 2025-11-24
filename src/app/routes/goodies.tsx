@@ -1,11 +1,11 @@
-import { SourceSection } from "@features/resources";
+import { GoodiesSection } from "@features/goodies";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/resources")({
+export const Route = createFileRoute("/goodies")({
   head: () => ({
     meta: generatedMetadata({
-      title: "Resources | Nyoman Sunima",
+      title: "Goodies | Nyoman Sunima",
       description: "Get free resources and things that help your works",
     }),
   }),
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/resources")({
 function PageComponent() {
   return (
     <main className="flex flex-col">
-      <SourceSection />
+      <GoodiesSection />
     </main>
   );
 }
