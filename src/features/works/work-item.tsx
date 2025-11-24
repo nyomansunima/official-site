@@ -14,7 +14,10 @@ export function WorkItem({ work }: Props) {
 
   return (
     <a
-      className={mergeClass("flex flex-col", isDisabled && "pointer-events")}
+      className={mergeClass(
+        "flex flex-col",
+        isDisabled && "pointer-events-none"
+      )}
       href={link}
     >
       <div className="relative flex h-[200px] tablet:h-[360px] w-full overflow-hidden rounded-2xl">
