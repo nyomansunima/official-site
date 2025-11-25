@@ -1,24 +1,9 @@
 import { ArticleContent } from "@shared/components";
-import avatarImg from "./Avatar.webp";
 
 export function HeroSection() {
   return (
     <section className="flex flex-col">
       <ArticleContent>
-        <div className="not-prose flex">
-          <div className="flex cursor-pointer items-center justify-center rounded-full border border-border border-dashed p-1">
-            <img
-              alt="Nyoman Sunima Profile"
-              className="not-prose rounded-full! object-cover"
-              height={48}
-              src={avatarImg}
-              width={48}
-            />
-          </div>
-        </div>
-
-        <h2>Nyoman Sunima</h2>
-
         <p>
           Hello, I am a product designer, software engineer & creator. Building
           saas, sites, and tools. Currently working as a freelancer, building my
