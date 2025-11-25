@@ -5,28 +5,19 @@ export function HeroSection() {
   return (
     <section className="flex flex-col">
       <ArticleContent>
-        <div className="group not-prose flex items-center gap-3 pb-6">
+        <div className="not-prose flex">
           <div className="flex cursor-pointer items-center justify-center rounded-full border border-border border-dashed p-1">
             <img
               alt="Nyoman Sunima Profile"
               className="not-prose rounded-full! object-cover"
-              height={60}
+              height={48}
               src={avatarImg}
-              width={60}
+              width={48}
             />
           </div>
-          <div className="flex flex-col gap-1">
-            <h2 className="font-medium text-lg">Nyoman Sunima</h2>
-            <span className="font-mono text-foreground/60 text-sm tracking-tight">
-              Product designer, software engineer & creator
-            </span>
-            <div className="mt-2 flex">
-              <span className="cursor-pointer rounded-full bg-fuchsia-100 px-2 py-1 font-medium font-mono text-fuchsia-600 text-xs tracking-tight">
-                Open to work
-              </span>
-            </div>
-          </div>
         </div>
+
+        <h2>Nyoman Sunima</h2>
 
         <p>
           Hello, I am a product designer, software engineer & creator. Building
