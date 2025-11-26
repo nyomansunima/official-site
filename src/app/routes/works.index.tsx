@@ -21,7 +21,7 @@ function RouteComponent() {
   const { works } = Route.useLoaderData();
 
   return (
-    <main className="flex flex-col gap-20 tablet:gap-36">
+    <main className="flex flex-col">
       <WorksListSection works={works} />
     </main>
   );

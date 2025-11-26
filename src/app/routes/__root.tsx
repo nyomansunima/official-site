@@ -1,4 +1,4 @@
-import { Button, CenteredLayout, Header } from "@shared/components";
+import { Button } from "@shared/components/ui/button";
 import styles from "@shared/styles/globals.css?url";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import type * as React from "react";
@@ -38,12 +38,11 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
         <HeadContent />
       </head>
       <body>
-        <CenteredLayout>
-          <Header />
-          <div className="mt-5 tablet:mt-10 min-h-screen pt-6 pb-28 tablet:pb-56">
+        <div className="container mx-auto laptop:px-0 px-5">
+          <div className="mx-auto mt-5 tablet:mt-10 min-h-screen desktop:w-7/12 laptop:w-9/12 tablet:w-11/12 w-full laptop:px-20 pt-24 pb-28 tablet:pb-56">
             {children}
           </div>
-        </CenteredLayout>
+        </div>
         <Scripts />
       </body>
     </html>

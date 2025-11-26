@@ -1,4 +1,4 @@
-import { HeroSection } from "@features/home";
+import { IntroSection } from "@features/home";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -15,8 +15,8 @@ export const Route = createFileRoute("/")({
 
 function RouteComponent() {
   return (
-    <main className="flex flex-col gap-20">
-      <HeroSection />
+    <main className="flex flex-col">
+      <IntroSection />
     </main>
   );
 }

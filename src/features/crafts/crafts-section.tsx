@@ -22,11 +22,7 @@ function CraftItem({ craft }: CraftItemProps) {
   const { title, link } = craft;
 
   return (
-    <a
-      className="flex items-center gap-2 py-2 transition-all"
-      href={link}
-      target="_blank"
-    >
+    <a className="flex items-center gap-2 py-2" href={link} target="_blank">
       <svg
         className="fill-foreground/40"
         height="14"

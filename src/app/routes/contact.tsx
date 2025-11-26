@@ -14,7 +14,7 @@ export const Route = createFileRoute("/contact")({
 
 function RouteComponent() {
   return (
-    <main className="flex flex-col gap-20">
+    <main className="flex flex-col">
       <ContactSection />
     </main>
   );
