@@ -16,9 +16,9 @@ function PublicationItem({ publication }: PublicationItemProps) {
     <a className="flex items-center gap-2 py-2" href={url} target="_blank">
       <svg
         className="fill-foreground/40"
-        height="14"
+        height="10"
         viewBox="0 0 24 24"
-        width="14"
+        width="10"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z" />
