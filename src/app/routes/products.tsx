@@ -1,11 +1,11 @@
-import { CraftSection } from "@features/crafts";
+import { ProductsSection } from "@features/products";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/crafts")({
+export const Route = createFileRoute("/products")({
   head: () => ({
     meta: generatedMetadata({
-      title: "Crafts | Nyoman Sunima",
+      title: "Products | Nyoman Sunima",
       description:
         "See all of my projects, business, products, side husltes and something that i built",
     }),
@@ -15,8 +15,8 @@ export const Route = createFileRoute("/crafts")({
 
 function RouteComponent() {
   return (
-    <main className="flex flex-col gap-20">
-      <CraftSection />
+    <main className="flex flex-col">
+      <ProductsSection />
     </main>
   );
 }

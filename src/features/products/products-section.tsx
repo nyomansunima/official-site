@@ -1,33 +1,33 @@
-import crafts from "./crafts-data.json" with { type: "json" };
+import products from "./products-data.json" with { type: "json" };
 
-type CraftData = {
+type ProductData = {
   title: string;
   link: string;
 };
 
-type CraftItemProps = {
-  craft: CraftData;
+type ProductItemProps = {
+  product: ProductData;
 };
 
-type CraftGroupData = {
+type ProductGroupData = {
   title: string;
-  list: CraftData[];
+  list: ProductData[];
 };
 
-type CraftGroupProps = {
-  group: CraftGroupData;
+type ProductGroupProps = {
+  group: ProductGroupData;
 };
 
-function CraftItem({ craft }: CraftItemProps) {
-  const { title, link } = craft;
+function ProductItem({ product }: ProductItemProps) {
+  const { title, link } = product;
 
   return (
     <a className="flex items-center gap-2 py-2" href={link} target="_blank">
       <svg
         className="fill-foreground/40"
-        height="14"
+        height="10"
         viewBox="0 0 24 24"
-        width="14"
+        width="10"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z" />
@@ -37,7 +37,7 @@ function CraftItem({ craft }: CraftItemProps) {
   );
 }
 
-function CraftGroup({ group }: CraftGroupProps) {
+function ProductGroup({ group }: ProductGroupProps) {
   const { title, list } = group;
 
   return (
@@ -45,20 +45,20 @@ function CraftGroup({ group }: CraftGroupProps) {
       <h2 className="text-foreground/60">{title}:</h2>
 
       <div className="flex flex-col gap-1">
-        {list.map((craft, index) => (
-          <CraftItem craft={craft} key={index} />
+        {list.map((product, index) => (
+          <ProductItem key={index} product={product} />
         ))}
       </div>
     </div>
   );
 }
 
-export function CraftSection() {
+export function ProductsSection() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col gap-16">
-        {crafts.map((group, i) => (
-          <CraftGroup group={group} key={i} />
+        {products.map((group, i) => (
+          <ProductGroup group={group} key={i} />
         ))}
       </div>
     </div>
