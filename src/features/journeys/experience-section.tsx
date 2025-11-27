@@ -25,18 +25,16 @@ function ExperienceItem({ experience }: ExperienceItemProps) {
       <div className="flex grow items-center gap-2">
         <svg
           className="fill-foreground/40"
-          height="14"
+          height="10"
           viewBox="0 0 24 24"
-          width="14"
+          width="10"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z" />
         </svg>
         <div className="flex items-center gap-2">
           {team}
-          <span className="font-mono text-foreground/40 text-sm tracking-tighter">
-            ({position})
-          </span>
+          <span className="text-foreground/40 text-sm">({position})</span>
         </div>
       </div>
 

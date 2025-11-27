@@ -19,10 +19,11 @@ export function EndWordSection() {
       </p>
 
       <p>
-        Check my <a href={"/works"}>works</a>, <a href={"/crafts"}>handmade</a>,{" "}
-        <a href={"/journeys"}>journeys</a> and <a href={"/stories"}>stories</a>.
-        Then <a href={"/contact"}>contact me</a> if you want to collaborate and
-        make something awesome together.
+        Check my <a href={"/works"}>works</a>,{" "}
+        <a href={"/products"}>handmade</a>, <a href={"/journeys"}>journeys</a>{" "}
+        and <a href={"/contents"}>contents</a>. Then{" "}
+        <a href={"/contact"}>contact me</a> if you want to collaborate and make
+        something awesome together.
       </p>
     </>
   );

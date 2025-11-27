@@ -1,7 +1,7 @@
 export function IntroSection() {
   return (
     <section className="prose">
-      <h2>Nyoman Sunima</h2>
+      <h1>Nyoman Sunima</h1>
       <p>
         Hello, I am a product designer, software engineer & creator. Building
         saas, sites, and tools. Currently working as a freelancer, building my
@@ -128,11 +128,11 @@ export function IntroSection() {
           works
         </a>
         , explore the{" "}
-        <a className="underline" href={"/crafts"}>
+        <a className="underline" href={"/products"}>
           products
         </a>{" "}
-        I've created or read my own{" "}
-        <a className="underline" href={"/stories"}>
+        that I've created or read my own{" "}
+        <a className="underline" href={"/contents"}>
           contents
         </a>
         . You also can see a{" "}
@@ -153,8 +153,6 @@ export function IntroSection() {
         </a>{" "}
         if interested.
       </p>
-
-      <p>Thanks.</p>
     </section>
   );
 }

@@ -9,19 +9,19 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as StoriesRouteImport } from './routes/stories'
+import { Route as ProductsRouteImport } from './routes/products'
 import { Route as JourneysRouteImport } from './routes/journeys'
 import { Route as GoodiesRouteImport } from './routes/goodies'
-import { Route as CraftsRouteImport } from './routes/crafts'
+import { Route as ContentsRouteImport } from './routes/contents'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorksIndexRouteImport } from './routes/works.index'
 import { Route as WorksSlugRouteImport } from './routes/works.$slug'
 
-const StoriesRoute = StoriesRouteImport.update({
-  id: '/stories',
-  path: '/stories',
+const ProductsRoute = ProductsRouteImport.update({
+  id: '/products',
+  path: '/products',
   getParentRoute: () => rootRouteImport,
 } as any)
 const JourneysRoute = JourneysRouteImport.update({
@@ -34,9 +34,9 @@ const GoodiesRoute = GoodiesRouteImport.update({
   path: '/goodies',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CraftsRoute = CraftsRouteImport.update({
-  id: '/crafts',
-  path: '/crafts',
+const ContentsRoute = ContentsRouteImport.update({
+  id: '/contents',
+  path: '/contents',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -69,10 +69,10 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/crafts': typeof CraftsRoute
+  '/contents': typeof ContentsRoute
   '/goodies': typeof GoodiesRoute
   '/journeys': typeof JourneysRoute
-  '/stories': typeof StoriesRoute
+  '/products': typeof ProductsRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
 }
@@ -80,10 +80,10 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/crafts': typeof CraftsRoute
+  '/contents': typeof ContentsRoute
   '/goodies': typeof GoodiesRoute
   '/journeys': typeof JourneysRoute
-  '/stories': typeof StoriesRoute
+  '/products': typeof ProductsRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
 }
@@ -92,10 +92,10 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/crafts': typeof CraftsRoute
+  '/contents': typeof ContentsRoute
   '/goodies': typeof GoodiesRoute
   '/journeys': typeof JourneysRoute
-  '/stories': typeof StoriesRoute
+  '/products': typeof ProductsRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works/': typeof WorksIndexRoute
 }
@@ -105,10 +105,10 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/crafts'
+    | '/contents'
     | '/goodies'
     | '/journeys'
-    | '/stories'
+    | '/products'
     | '/works/$slug'
     | '/works'
   fileRoutesByTo: FileRoutesByTo
@@ -116,10 +116,10 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/crafts'
+    | '/contents'
     | '/goodies'
     | '/journeys'
-    | '/stories'
+    | '/products'
     | '/works/$slug'
     | '/works'
   id:
@@ -127,10 +127,10 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/crafts'
+    | '/contents'
     | '/goodies'
     | '/journeys'
-    | '/stories'
+    | '/products'
     | '/works/$slug'
     | '/works/'
   fileRoutesById: FileRoutesById
@@ -139,21 +139,21 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
-  CraftsRoute: typeof CraftsRoute
+  ContentsRoute: typeof ContentsRoute
   GoodiesRoute: typeof GoodiesRoute
   JourneysRoute: typeof JourneysRoute
-  StoriesRoute: typeof StoriesRoute
+  ProductsRoute: typeof ProductsRoute
   WorksSlugRoute: typeof WorksSlugRoute
   WorksIndexRoute: typeof WorksIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/stories': {
-      id: '/stories'
-      path: '/stories'
-      fullPath: '/stories'
-      preLoaderRoute: typeof StoriesRouteImport
+    '/products': {
+      id: '/products'
+      path: '/products'
+      fullPath: '/products'
+      preLoaderRoute: typeof ProductsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/journeys': {
@@ -170,11 +170,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GoodiesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/crafts': {
-      id: '/crafts'
-      path: '/crafts'
-      fullPath: '/crafts'
-      preLoaderRoute: typeof CraftsRouteImport
+    '/contents': {
+      id: '/contents'
+      path: '/contents'
+      fullPath: '/contents'
+      preLoaderRoute: typeof ContentsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -219,10 +219,10 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
-  CraftsRoute: CraftsRoute,
+  ContentsRoute: ContentsRoute,
   GoodiesRoute: GoodiesRoute,
   JourneysRoute: JourneysRoute,
-  StoriesRoute: StoriesRoute,
+  ProductsRoute: ProductsRoute,
   WorksSlugRoute: WorksSlugRoute,
   WorksIndexRoute: WorksIndexRoute,
 }
