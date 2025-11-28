@@ -1,5 +1,14 @@
 [
   {
+    "title": "Exploring",
+    "list": [
+      {
+        "title": "Acronim",
+        "link": "https://acronim.vercel.app"
+      }
+    ]
+  },
+  {
     "title": "Teams",
     "list": [
       {
