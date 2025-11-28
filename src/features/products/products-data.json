@@ -72,6 +72,10 @@
       {
         "title": "Mailo",
         "link": "https://trymailo.vercel.app"
+      },
+      {
+        "title": "Compobits",
+        "link": "https://compobits.vercel.app"
       }
     ]
   },
