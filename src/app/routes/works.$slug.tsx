@@ -12,7 +12,7 @@ export const Route = createFileRoute("/works/$slug")({
     const work = (ctx.loaderData as any).work;
     return {
       meta: generatedMetadata({
-        title: `Works - ${work.title}| Nyoman Sunima`,
+        title: `Works - ${work.title} | Nyoman Sunima`,
         description: work.description,
         image: work.image,
       }),
@@ -28,6 +28,7 @@ export const Route = createFileRoute("/works/$slug")({
     return { work, relatedWorks };
   },
   component: RouteComponent,
+  notFoundComponent: () => <p>Hello</p>,
 });
 
 function RouteComponent() {

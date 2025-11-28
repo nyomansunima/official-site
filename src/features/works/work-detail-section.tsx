@@ -16,17 +16,11 @@ export function WorkDetailSection({ work }: WorkDetailSectionProps) {
         <h1 className="text-balance font-medium text-lg">{title}</h1>
 
         <div className="mt-2 flex items-center gap-3">
-          <span className="cursor-pointer font-mono text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground">
-            {parsedDate}
-          </span>
-
-          <span className="cursor-pointer font-mono text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground">
-            {status}
-          </span>
-
+          <span className="text-foreground/40 text-sm">{parsedDate}</span>
+          <span className="text-foreground/40 text-sm">{status}</span>
           {team && (
             <a
-              className="font-mono text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground"
+              className="text-foreground/40 text-sm"
               href={team.url}
               target="_blank"
             >
