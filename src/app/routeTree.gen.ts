@@ -9,9 +9,9 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as JourneysRouteImport } from './routes/journeys'
-import { Route as GoodiesRouteImport } from './routes/goodies'
 import { Route as ContentsRouteImport } from './routes/contents'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
@@ -19,6 +19,11 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorksIndexRouteImport } from './routes/works.index'
 import { Route as WorksSlugRouteImport } from './routes/works.$slug'
 
+const ResourcesRoute = ResourcesRouteImport.update({
+  id: '/resources',
+  path: '/resources',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsRoute = ProductsRouteImport.update({
   id: '/products',
   path: '/products',
@@ -27,11 +32,6 @@ const ProductsRoute = ProductsRouteImport.update({
 const JourneysRoute = JourneysRouteImport.update({
   id: '/journeys',
   path: '/journeys',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GoodiesRoute = GoodiesRouteImport.update({
-  id: '/goodies',
-  path: '/goodies',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContentsRoute = ContentsRouteImport.update({
@@ -70,9 +70,9 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contents': typeof ContentsRoute
-  '/goodies': typeof GoodiesRoute
   '/journeys': typeof JourneysRoute
   '/products': typeof ProductsRoute
+  '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
 }
@@ -81,9 +81,9 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contents': typeof ContentsRoute
-  '/goodies': typeof GoodiesRoute
   '/journeys': typeof JourneysRoute
   '/products': typeof ProductsRoute
+  '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
 }
@@ -93,9 +93,9 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contents': typeof ContentsRoute
-  '/goodies': typeof GoodiesRoute
   '/journeys': typeof JourneysRoute
   '/products': typeof ProductsRoute
+  '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works/': typeof WorksIndexRoute
 }
@@ -106,9 +106,9 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/contents'
-    | '/goodies'
     | '/journeys'
     | '/products'
+    | '/resources'
     | '/works/$slug'
     | '/works'
   fileRoutesByTo: FileRoutesByTo
@@ -117,9 +117,9 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/contents'
-    | '/goodies'
     | '/journeys'
     | '/products'
+    | '/resources'
     | '/works/$slug'
     | '/works'
   id:
@@ -128,9 +128,9 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/contents'
-    | '/goodies'
     | '/journeys'
     | '/products'
+    | '/resources'
     | '/works/$slug'
     | '/works/'
   fileRoutesById: FileRoutesById
@@ -140,15 +140,22 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   ContentsRoute: typeof ContentsRoute
-  GoodiesRoute: typeof GoodiesRoute
   JourneysRoute: typeof JourneysRoute
   ProductsRoute: typeof ProductsRoute
+  ResourcesRoute: typeof ResourcesRoute
   WorksSlugRoute: typeof WorksSlugRoute
   WorksIndexRoute: typeof WorksIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/resources': {
+      id: '/resources'
+      path: '/resources'
+      fullPath: '/resources'
+      preLoaderRoute: typeof ResourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products': {
       id: '/products'
       path: '/products'
@@ -161,13 +168,6 @@ declare module '@tanstack/react-router' {
       path: '/journeys'
       fullPath: '/journeys'
       preLoaderRoute: typeof JourneysRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/goodies': {
-      id: '/goodies'
-      path: '/goodies'
-      fullPath: '/goodies'
-      preLoaderRoute: typeof GoodiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contents': {
@@ -220,9 +220,9 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   ContentsRoute: ContentsRoute,
-  GoodiesRoute: GoodiesRoute,
   JourneysRoute: JourneysRoute,
   ProductsRoute: ProductsRoute,
+  ResourcesRoute: ResourcesRoute,
   WorksSlugRoute: WorksSlugRoute,
   WorksIndexRoute: WorksIndexRoute,
 }
