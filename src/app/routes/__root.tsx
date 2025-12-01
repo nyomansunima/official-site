@@ -1,4 +1,3 @@
-import { Button } from "@shared/components/ui/button";
 import styles from "@shared/styles/globals.css?url";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import type * as React from "react";
@@ -66,12 +65,10 @@ function NotFondComponent(): React.ReactElement {
         </div>
 
         <div className="mt-10 flex">
-          <Button asChild variant={"secondary"}>
-            <a href="/">
-              <i className="fi fi-sr-arrow-alt-circle-left" />
-              Bring me back
-            </a>
-          </Button>
+          <a href="/">
+            <i className="fi fi-sr-arrow-alt-circle-left" />
+            Bring me back
+          </a>
         </div>
       </section>
     </main>
@@ -95,12 +92,10 @@ function ErrorComponent(): React.ReactElement {
         </div>
 
         <div className="mt-10 flex">
-          <Button asChild variant={"secondary"}>
-            <a href="/">
-              <i className="fi fi-sr-arrow-alt-circle-left" />
-              Bring me back
-            </a>
-          </Button>
+          <a href="/">
+            <i className="fi fi-sr-arrow-alt-circle-left" />
+            Bring me back
+          </a>
         </div>
       </section>
     </main>
