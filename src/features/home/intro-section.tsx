@@ -74,34 +74,61 @@ export function IntroSection() {
       </p>
 
       <p>
-        Recently, building ui components at{" "}
+        Recently, building ui stuff at{" "}
         <a
           className="underline"
-          href={"https://picosecond.vercel.app"}
+          href={"https://picosecond.weecraft.site"}
           rel="noopener"
           target="_blank"
         >
           Picosecond
         </a>
-        , crafting websites blocks at{" "}
+        ,{" "}
         <a
           className="underline"
-          href={"https://onedayui.vercel.app"}
+          href={"https://oneday.weecraft.site"}
           rel="noopener"
           target="_blank"
         >
           Oneday
-        </a>{" "}
-        and email templates at{" "}
+        </a>
+        ,{" "}
         <a
           className="underline"
-          href={"https://trymailo.vercel.app"}
+          href={"https://compobits.weecraft.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          Compobits
+        </a>{" "}
+        &{" "}
+        <a
+          className="underline"
+          href={"https://mailo.weecraft.site"}
           rel="noopener"
           target="_blank"
         >
           Mailo
         </a>
-        . Also helping web designers to grow at{" "}
+        . Shipping{" "}
+        <a
+          className="underline"
+          href={"https://heroico.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          Heroico
+        </a>{" "}
+        &{" "}
+        <a
+          className="underline"
+          href={"https://thegoodie.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          Goodie
+        </a>
+        . Helping web designers and developers to grow at{" "}
         <a
           className="underline"
           href={"https://thegridline.site"}
@@ -110,7 +137,7 @@ export function IntroSection() {
         >
           The Gridline
         </a>{" "}
-        and creating contents at{" "}
+        &{" "}
         <a
           className="underline"
           href={"https://thescolon.site"}
@@ -123,7 +150,7 @@ export function IntroSection() {
       </p>
 
       <p>
-        See my{" "}
+        For more, you can see my{" "}
         <a className="underline" href={"/works"}>
           works
         </a>
@@ -135,9 +162,9 @@ export function IntroSection() {
         <a className="underline" href={"/contents"}>
           contents
         </a>
-        . You also can see a{" "}
-        <a className="underline" href={"/goodies"}>
-          good things
+        . You also can check my{" "}
+        <a className="underline" href={"/resources"}>
+          resources
         </a>{" "}
         and see my{" "}
         <a className="underline" href={"/journeys"}>
