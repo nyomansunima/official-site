@@ -1,15 +1,15 @@
 [
   {
-    "title": "Exploring",
+    "title": "Playgrounds",
     "list": [
       {
         "title": "Acronim",
-        "link": "https://acronim.vercel.app"
+        "link": "https://acronim.nyomansunima.com"
       }
     ]
   },
   {
-    "title": "Teams",
+    "title": "Startups",
     "list": [
       {
         "title": "Weebo",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "title": "Publications",
+    "title": "Contents",
     "list": [
       {
         "title": "The gridline",
@@ -43,19 +43,19 @@
     ]
   },
   {
-    "title": "Design & dev tools",
+    "title": "Indie tools",
     "list": [
       {
         "title": "Oneday",
-        "link": "https://onedayui.vercel.app"
+        "link": "https://oneday.weecraft.site"
       },
       {
         "title": "Picosecond",
-        "link": "https://picosecond.vercel.app"
+        "link": "https://picosecond.weecraft.site"
       },
       {
         "title": "Goodie",
-        "link": "https://thegoodie.vercel.app"
+        "link": "https://thegoodie.site"
       },
       {
         "title": "Creevoo",
@@ -67,11 +67,11 @@
       },
       {
         "title": "Mailo",
-        "link": "https://trymailo.vercel.app"
+        "link": "https://mailo.weecraft.site"
       },
       {
         "title": "Compobits",
-        "link": "https://compobits.vercel.app"
+        "link": "https://compobits.weecraft.site"
       }
     ]
   },
