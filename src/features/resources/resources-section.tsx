@@ -1,24 +1,24 @@
-import goodies from "./goodies-data.json" with { type: "json" };
+import goodies from "./resources-data.json" with { type: "json" };
 
-type GoodieData = {
+type ResData = {
   title: string;
   url: string;
 };
 
-type GoodieItemProps = {
-  source: GoodieData;
+type ResItemProps = {
+  source: ResData;
 };
 
-type GoodieGroupData = {
+type ResGroupData = {
   title: string;
-  list: GoodieData[];
+  list: ResData[];
 };
 
 type GroupProps = {
-  group: GoodieGroupData;
+  group: ResGroupData;
 };
 
-function GoodieItem({ source }: GoodieItemProps) {
+function ResItem({ source }: ResItemProps) {
   const { title, url } = source;
 
   return (
@@ -37,7 +37,7 @@ function GoodieItem({ source }: GoodieItemProps) {
   );
 }
 
-function GoodieGroup({ group }: GroupProps) {
+function ResGroup({ group }: GroupProps) {
   const { title, list } = group;
 
   return (
@@ -46,19 +46,19 @@ function GoodieGroup({ group }: GroupProps) {
 
       <div className="flex flex-col gap-1">
         {list.map((sou, index) => (
-          <GoodieItem key={index} source={sou} />
+          <ResItem key={index} source={sou} />
         ))}
       </div>
     </div>
   );
 }
 
-export function GoodiesSection() {
+export function ResourcesSection() {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col gap-16">
         {goodies.map((group, index) => (
-          <GoodieGroup group={group} key={index} />
+          <ResGroup group={group} key={index} />
         ))}
       </div>
     </section>
