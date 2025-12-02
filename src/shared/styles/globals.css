@@ -83,11 +83,10 @@
   font-weight: var(--font-weight-normal);
 
   a {
-    text-decoration: "none";
-    font-weight: 400 !important;
+    @apply font-normal;
 
     &:hover {
-      text-decoration: "underline";
+      @apply underline;
     }
   }
 
