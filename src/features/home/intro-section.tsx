@@ -4,30 +4,12 @@ export function IntroSection() {
       <h1>Nyoman Sunima</h1>
       <p>
         Hello, I am a product designer, software engineer & creator. Building
-        saas, sites, and tools. Currently working as a freelancer, building my
-        own saas at{" "}
-        <a
-          className="underline"
-          href={"https://moono.site"}
-          rel="noopener"
-          target="_blank"
-        >
-          Moono
-        </a>{" "}
-        and creating website templates at{" "}
-        <a
-          className="underline"
-          href={"https://creevoo.store"}
-          rel="noopener"
-          target="_blank"
-        >
-          Creevoo
-        </a>
-        .
+        saas, sites and tools. Currently working as a freelancer, building
+        products & side hustle.
       </p>
 
       <p>
-        Founded{" "}
+        Running web design business at{" "}
         <a
           className="underline"
           href={"https://tryweebo.site"}
@@ -35,8 +17,8 @@ export function IntroSection() {
           target="_blank"
         >
           Weebo
-        </a>
-        , a web design partner for business and{" "}
+        </a>{" "}
+        and{" "}
         <a
           className="underline"
           href={"https://usesonibble.site"}
@@ -45,8 +27,25 @@ export function IntroSection() {
         >
           Sonibble
         </a>
-        , a business growth solutions. Also actively shipping open-source
-        projects at{" "}
+        . Building my own saas at{" "}
+        <a
+          className="underline"
+          href={"https://moono.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          Moono
+        </a>
+        , creating website templates at{" "}
+        <a
+          className="underline"
+          href={"https://creevoo.store"}
+          rel="noopener"
+          target="_blank"
+        >
+          Creevoo
+        </a>
+        . Also actively shipping open-source projects at{" "}
         <a
           className="underline"
           href={"https://weecraft.site"}
@@ -67,10 +66,18 @@ export function IntroSection() {
           target="_blank"
         >
           Dimata
+        </a>{" "}
+        and{" "}
+        <a
+          className="underline"
+          href={"https://engagingenterprises.co"}
+          rel="noopener"
+          target="_blank"
+        >
+          Engaging Enterprises
         </a>
-        , a software company that builds enterprise apps for business and
-        management. Then doing a lot of freelance jobs for building websites and
-        shipping apps.
+        . Then doing a lot of freelance jobs for building websites, backend,
+        automation and shipping apps.
       </p>
 
       <p>
