@@ -27,7 +27,7 @@ export function IntroSection() {
         >
           Sonibble
         </a>
-        . Building my own saas at{" "}
+        . Building my own saas, goodies and open source project at{" "}
         <a
           className="underline"
           href={"https://moono.site"}
@@ -36,7 +36,7 @@ export function IntroSection() {
         >
           Moono
         </a>
-        , creating website templates at{" "}
+        , also actively shipping website templates at{" "}
         <a
           className="underline"
           href={"https://creevoo.store"}
@@ -44,15 +44,6 @@ export function IntroSection() {
           target="_blank"
         >
           Creevoo
-        </a>
-        . Also actively shipping open-source projects at{" "}
-        <a
-          className="underline"
-          href={"https://weecraft.site"}
-          rel="noopener"
-          target="_blank"
-        >
-          Weecraft
         </a>
         .
       </p>
@@ -84,7 +75,7 @@ export function IntroSection() {
         Recently, building ui stuff at{" "}
         <a
           className="underline"
-          href={"https://picosecond.weecraft.site"}
+          href={"https://picosecond.moono.site"}
           rel="noopener"
           target="_blank"
         >
@@ -93,7 +84,7 @@ export function IntroSection() {
         ,{" "}
         <a
           className="underline"
-          href={"https://oneday.weecraft.site"}
+          href={"https://oneday.moono.site"}
           rel="noopener"
           target="_blank"
         >
@@ -102,7 +93,7 @@ export function IntroSection() {
         ,{" "}
         <a
           className="underline"
-          href={"https://compobits.weecraft.site"}
+          href={"https://compobits.moono.site"}
           rel="noopener"
           target="_blank"
         >
@@ -111,7 +102,7 @@ export function IntroSection() {
         &{" "}
         <a
           className="underline"
-          href={"https://mailo.weecraft.site"}
+          href={"https://mailo.moono.site"}
           rel="noopener"
           target="_blank"
         >
