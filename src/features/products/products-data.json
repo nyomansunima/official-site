@@ -20,10 +20,6 @@
         "link": "https://moono.site"
       },
       {
-        "title": "Weecraft",
-        "link": "https://weecraft.site"
-      },
-      {
         "title": "Sonibble",
         "link": "https://www.usesonibble.site"
       }
@@ -33,12 +29,12 @@
     "title": "Contents",
     "list": [
       {
-        "title": "The gridline",
+        "title": "Gridline",
         "link": "https://thegridline.site"
       },
       {
-        "title": "The scolon",
-        "link": "https://thescolon.site/"
+        "title": "Scolon",
+        "link": "https://thescolon.site"
       }
     ]
   },
@@ -47,11 +43,11 @@
     "list": [
       {
         "title": "Oneday",
-        "link": "https://oneday.weecraft.site"
+        "link": "https://oneday.moono.site"
       },
       {
         "title": "Picosecond",
-        "link": "https://picosecond.weecraft.site"
+        "link": "https://picosecond.moono.site"
       },
       {
         "title": "Goodie",
@@ -67,11 +63,11 @@
       },
       {
         "title": "Mailo",
-        "link": "https://mailo.weecraft.site"
+        "link": "https://mailo.moono.site"
       },
       {
         "title": "Compobits",
-        "link": "https://compobits.weecraft.site"
+        "link": "https://compobits.moono.site"
       }
     ]
   },
@@ -80,15 +76,7 @@
     "list": [
       {
         "title": "One thing theme",
-        "link": "https://onethingtheme.vercel.app/"
-      },
-      {
-        "title": "Blaze theme",
-        "link": "https://github.com/weecraft/blaze-theme"
-      },
-      {
-        "title": "Boola theme",
-        "link": "https://github.com/weecraft/boola"
+        "link": "https://onethingtheme.moono.site"
       }
     ]
   },
@@ -118,27 +106,6 @@
       {
         "title": "Tanstack start site starter",
         "link": "https://github.com/nyomansunima/tanstack-start-site-starter"
-      }
-    ]
-  },
-  {
-    "title": "Utilities",
-    "list": [
-      {
-        "title": "React router themes",
-        "link": "https://github.com/weecraft/react-router-themes"
-      },
-      {
-        "title": "Hono helper",
-        "link": "https://github.com/weecraft/hono-helper"
-      },
-      {
-        "title": "Nestjs fauna",
-        "link": "https://github.com/weecraft/nestjs-fauna"
-      },
-      {
-        "title": "Nestjs resend",
-        "link": "https://github.com/weecraft/nestjs-resend"
       }
     ]
   }
