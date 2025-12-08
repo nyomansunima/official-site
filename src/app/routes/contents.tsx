@@ -1,4 +1,9 @@
-import { PublicationSection, WritingSection } from "@features/contents";
+import {
+  PublicationSection,
+  SpeakSection,
+  VideoSection,
+  WritingSection,
+} from "@features/contents";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -18,6 +23,8 @@ function RouteComponent() {
     <main className="flex flex-col gap-20">
       <PublicationSection />
       <WritingSection />
+      <VideoSection />
+      <SpeakSection />
     </main>
   );
 }
