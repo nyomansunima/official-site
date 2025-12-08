@@ -16,7 +16,7 @@ export default defineConfig({
     tailwindcss(),
     tanstackStart({
       prerender: {
-        enabled: true,
+        enabled: false,
         crawlLinks: true,
         autoStaticPathsDiscovery: true,
       },
