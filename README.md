@@ -19,11 +19,9 @@ The concept of this site is simple, powerful, creative, and clean.
 
 Since building this project here are list about stack, site, tech and any library in this project
 
-- [React router](https://reactrouter.com)
+- [Tanstack start](https://tanstack.com/start)
 - [Tailwincss](https://tailwindcss.com)
 - [Vercel](https://vercel.com)
-- [Shadcn UI](https://ui.shadcn.com)
-- [Kit](https://kit.com)
 
 ## License
 
