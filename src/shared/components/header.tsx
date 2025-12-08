@@ -21,8 +21,8 @@ export function Header() {
       <Link href="/works">Works</Link>
       <Link href="/products">Products</Link>
       <Link href="/contents">Contents</Link>
+      <Link href="/resources">Resources</Link>
       <Link href="/journeys">Journeys</Link>
-      <Link href="/about">About</Link>
       <Link href="/contact">Contact</Link>
     </header>
   );
