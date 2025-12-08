@@ -30,7 +30,7 @@ function LogItem({ log }: LogItemProps) {
 
   return (
     <a className="flex flex-col" href={url || "/"} target="_blank">
-      {image && (
+      {image !== undefined && (
         <div className="relative mb-6 h-[200px] tablet:h-[360px] w-full overflow-hidden rounded-2xl">
           <img
             alt={title}

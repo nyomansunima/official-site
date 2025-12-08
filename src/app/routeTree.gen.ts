@@ -9,7 +9,6 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as JourneysRouteImport } from './routes/journeys'
 import { Route as ContentsRouteImport } from './routes/contents'
@@ -19,11 +18,6 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorksIndexRouteImport } from './routes/works.index'
 import { Route as WorksSlugRouteImport } from './routes/works.$slug'
 
-const ResourcesRoute = ResourcesRouteImport.update({
-  id: '/resources',
-  path: '/resources',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ProductsRoute = ProductsRouteImport.update({
   id: '/products',
   path: '/products',
@@ -72,7 +66,6 @@ export interface FileRoutesByFullPath {
   '/contents': typeof ContentsRoute
   '/journeys': typeof JourneysRoute
   '/products': typeof ProductsRoute
-  '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
 }
@@ -83,7 +76,6 @@ export interface FileRoutesByTo {
   '/contents': typeof ContentsRoute
   '/journeys': typeof JourneysRoute
   '/products': typeof ProductsRoute
-  '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
 }
@@ -95,7 +87,6 @@ export interface FileRoutesById {
   '/contents': typeof ContentsRoute
   '/journeys': typeof JourneysRoute
   '/products': typeof ProductsRoute
-  '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works/': typeof WorksIndexRoute
 }
@@ -108,7 +99,6 @@ export interface FileRouteTypes {
     | '/contents'
     | '/journeys'
     | '/products'
-    | '/resources'
     | '/works/$slug'
     | '/works'
   fileRoutesByTo: FileRoutesByTo
@@ -119,7 +109,6 @@ export interface FileRouteTypes {
     | '/contents'
     | '/journeys'
     | '/products'
-    | '/resources'
     | '/works/$slug'
     | '/works'
   id:
@@ -130,7 +119,6 @@ export interface FileRouteTypes {
     | '/contents'
     | '/journeys'
     | '/products'
-    | '/resources'
     | '/works/$slug'
     | '/works/'
   fileRoutesById: FileRoutesById
@@ -142,20 +130,12 @@ export interface RootRouteChildren {
   ContentsRoute: typeof ContentsRoute
   JourneysRoute: typeof JourneysRoute
   ProductsRoute: typeof ProductsRoute
-  ResourcesRoute: typeof ResourcesRoute
   WorksSlugRoute: typeof WorksSlugRoute
   WorksIndexRoute: typeof WorksIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/resources': {
-      id: '/resources'
-      path: '/resources'
-      fullPath: '/resources'
-      preLoaderRoute: typeof ResourcesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/products': {
       id: '/products'
       path: '/products'
@@ -222,7 +202,6 @@ const rootRouteChildren: RootRouteChildren = {
   ContentsRoute: ContentsRoute,
   JourneysRoute: JourneysRoute,
   ProductsRoute: ProductsRoute,
-  ResourcesRoute: ResourcesRoute,
   WorksSlugRoute: WorksSlugRoute,
   WorksIndexRoute: WorksIndexRoute,
 }

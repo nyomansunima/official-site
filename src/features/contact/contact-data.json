@@ -1,47 +1,47 @@
 [
-  { "label": "Send me email", "href": "mailto:nyomansunima@gmail.com" },
+  { "label": "Email", "href": "mailto:nyomansunima@gmail.com" },
   {
-    "label": "Schedule meeting",
+    "label": "Meeting",
     "href": "https://cal.com/nyomansunima/build-opportunity"
   },
   {
-    "label": "Chat on whatsapp",
+    "label": "Whatsapp",
     "href": "https://api.whatsapp.com/send?phone=6285161619109"
   },
   {
-    "label": "Subscribe on youtube",
+    "label": "Youtube",
     "href": "https://youtube.com/@nyomansunima"
   },
   {
-    "label": "Messages on twitter",
+    "label": "Twitter",
     "href": "https://twitter.com/nyomansunima"
   },
   {
-    "label": "Connect on threads",
+    "label": "Threads",
     "href": "https://threads.net/@bynyomansunima"
   },
   {
-    "label": "Connect on linkedin",
+    "label": "Linkedin",
     "href": "https://linkedin.com/in/nyomansunima"
   },
   {
-    "label": "See on facebook",
+    "label": "Facebook",
     "href": "https://facebook.com/nyomansunima"
   },
   {
-    "label": "DM me on instagram",
+    "label": "Instagram",
     "href": "https://instagram.com/itsnyomansunima"
   },
   {
-    "label": "Check my github",
+    "label": "Github",
     "href": "https://github.com/nyomansunima"
   },
   {
-    "label": "Chat on peerlist",
+    "label": "Peerlist",
     "href": "https://peerlist.io/nyomansunima"
   },
   {
-    "label": "Collaborate on algora",
+    "label": "Algora",
     "href": "https://algora.io/nyomansunima"
   }
 ]

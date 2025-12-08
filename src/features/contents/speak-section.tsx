@@ -1,19 +1,19 @@
 import { parseReadableDate } from "@shared/libs/utils";
-import writingData from "./writing-data.json" with { type: "json" };
+import speaksData from "./speak-data.json" with { type: "json" };
 
-const writings = [...writingData].reverse();
+const speaks = [...speaksData].reverse();
 
-type WritingData = {
+type SpeakData = {
   title: string;
   timeline: string;
   url: string;
 };
 
-type WritingItemProps = {
-  item: WritingData;
+type SpeakItemProps = {
+  item: SpeakData;
 };
 
-function WritingItem({ item }: WritingItemProps) {
+function SpeakItem({ item }: SpeakItemProps) {
   const { title, timeline, url } = item;
   const parsedDate = parseReadableDate(timeline);
 
@@ -43,14 +43,34 @@ function WritingItem({ item }: WritingItemProps) {
   );
 }
 
-export function WritingSection() {
+function EmptySpeak() {
+  return (
+    <p className="flex items-center gap-2">
+      <svg
+        className="fill-foreground/40"
+        height="10"
+        viewBox="0 0 24 24"
+        width="10"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z" />
+      </svg>
+
+      <span>We're cooking</span>
+    </p>
+  );
+}
+
+export function SpeakSection() {
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-foreground/60">Writings:</h2>
+      <h2 className="text-foreground/60">Speaks:</h2>
       <div className="flex flex-col gap-1">
-        {writings.map((item, i) => (
-          <WritingItem item={item} key={i} />
-        ))}
+        {speaks.length > 0 ? (
+          speaks.map((item, i) => <SpeakItem item={item} key={i} />)
+        ) : (
+          <EmptySpeak />
+        )}
       </div>
     </section>
   );

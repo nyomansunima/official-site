@@ -22,7 +22,7 @@
   --breakpoint-desktop: 80rem;
 
   --color-background: hsl(0 0 100%);
-  --color-foreground: hsl(0 0 10%);
+  --color-foreground: hsl(0 0 0%);
   --color-surface: hsl(0 0 100%);
   --color-border: hsl(0 0 92%);
   --color-input: hsl(0 0 96%);
@@ -30,8 +30,8 @@
   --color-primary-foreground: hsl(0 0 98%);
   --color-secondary: hsl(0 0 96%);
   --color-secondary-foreground: hsl(0 0 10%);
-  --color-link: hsl(221 83 50%);
-  --color-accent: hsl(0 0 40%);
+  --color-link: oklch(62.3% 0.214 259.815);
+  --color-accent: oklch(62.3% 0.214 259.815);
 }
 
 @layer base {

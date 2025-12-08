@@ -35,7 +35,6 @@ export function generatedMetadata({
     { name: "category", content: "Websites" },
     { name: "generator", content: "React Router" },
     { name: "pinterest-rich-pin", content: "true" },
-
     {
       name: "og:title",
       content: title,
@@ -52,7 +51,6 @@ export function generatedMetadata({
     },
     { name: "og:locale", content: "en_US" },
     { name: "og:type", content: "website" },
-
     {
       name: "twitter:title",
       content: title,

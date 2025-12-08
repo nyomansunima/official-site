@@ -148,35 +148,25 @@ export function IntroSection() {
       </p>
 
       <p>
-        For more, you can see my{" "}
-        <a className="underline" href={"/works"}>
-          works
+        Building my own saas products{" "}
+        <a
+          className="underline"
+          href={"https://poockey.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          Poockey
+        </a>{" "}
+        &{" "}
+        <a
+          className="underline"
+          href={"https://tryhaloo.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          Haloo
         </a>
-        , explore the{" "}
-        <a className="underline" href={"/products"}>
-          products
-        </a>{" "}
-        that I've created or read my own{" "}
-        <a className="underline" href={"/contents"}>
-          contents
-        </a>
-        . You also can check my{" "}
-        <a className="underline" href={"/resources"}>
-          resources
-        </a>{" "}
-        and see my{" "}
-        <a className="underline" href={"/journeys"}>
-          journeys
-        </a>
-        . If you curious you can read{" "}
-        <a className="underline" href={"/about"}>
-          about me
-        </a>{" "}
-        or{" "}
-        <a className="underline" href={"/contact"}>
-          reach out
-        </a>{" "}
-        if interested.
+        .
       </p>
     </section>
   );
