@@ -3,7 +3,6 @@
 
 /* Tailwindcss */
 @import "tailwindcss";
-
 @plugin "@tailwindcss/typography";
 
 @theme {
@@ -55,10 +54,6 @@
     @apply text-base font-normal leading-normal! text-foreground bg-background font-sans antialiased selection:bg-blue-100/90 selection:text-blue-950;
     font-style: normal;
   }
-
-  .fi {
-    @apply flex justify-center items-center;
-  }
 }
 
 @utility prose {
@@ -78,9 +73,7 @@
   --tw-prose-th-borders: var(--color-border);
   --tw-prose-td-borders: var(--color-border);
 
-  font-size: var(--text-base);
-  line-height: calc(var(--spacing) * 7) !important;
-  font-weight: var(--font-weight-normal);
+  @apply text-base leading-7 font-normal;
 
   a {
     @apply font-normal;
