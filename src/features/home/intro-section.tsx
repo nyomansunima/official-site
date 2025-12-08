@@ -1,9 +1,8 @@
 export function IntroSection() {
   return (
     <section className="prose">
-      <h1>Nyoman Sunima</h1>
       <p>
-        Hello, I am a product designer, software engineer & creator. Building
+        Hey, I am a product designer, software engineer & creator. Building
         saas, sites and tools. Currently working as a freelancer, building
         products & side hustle.
       </p>
