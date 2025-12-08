@@ -9,15 +9,20 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as JourneysRouteImport } from './routes/journeys'
 import { Route as ContentsRouteImport } from './routes/contents'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorksIndexRouteImport } from './routes/works.index'
 import { Route as WorksSlugRouteImport } from './routes/works.$slug'
 
+const ResourcesRoute = ResourcesRouteImport.update({
+  id: '/resources',
+  path: '/resources',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsRoute = ProductsRouteImport.update({
   id: '/products',
   path: '/products',
@@ -38,11 +43,6 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -61,32 +61,32 @@ const WorksSlugRoute = WorksSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contents': typeof ContentsRoute
   '/journeys': typeof JourneysRoute
   '/products': typeof ProductsRoute
+  '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contents': typeof ContentsRoute
   '/journeys': typeof JourneysRoute
   '/products': typeof ProductsRoute
+  '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contents': typeof ContentsRoute
   '/journeys': typeof JourneysRoute
   '/products': typeof ProductsRoute
+  '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works/': typeof WorksIndexRoute
 }
@@ -94,48 +94,55 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/about'
     | '/contact'
     | '/contents'
     | '/journeys'
     | '/products'
+    | '/resources'
     | '/works/$slug'
     | '/works'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/about'
     | '/contact'
     | '/contents'
     | '/journeys'
     | '/products'
+    | '/resources'
     | '/works/$slug'
     | '/works'
   id:
     | '__root__'
     | '/'
-    | '/about'
     | '/contact'
     | '/contents'
     | '/journeys'
     | '/products'
+    | '/resources'
     | '/works/$slug'
     | '/works/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   ContentsRoute: typeof ContentsRoute
   JourneysRoute: typeof JourneysRoute
   ProductsRoute: typeof ProductsRoute
+  ResourcesRoute: typeof ResourcesRoute
   WorksSlugRoute: typeof WorksSlugRoute
   WorksIndexRoute: typeof WorksIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/resources': {
+      id: '/resources'
+      path: '/resources'
+      fullPath: '/resources'
+      preLoaderRoute: typeof ResourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products': {
       id: '/products'
       path: '/products'
@@ -164,13 +171,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -197,11 +197,11 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   ContentsRoute: ContentsRoute,
   JourneysRoute: JourneysRoute,
   ProductsRoute: ProductsRoute,
+  ResourcesRoute: ResourcesRoute,
   WorksSlugRoute: WorksSlugRoute,
   WorksIndexRoute: WorksIndexRoute,
 }
