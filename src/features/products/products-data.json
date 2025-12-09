@@ -13,12 +13,7 @@
       {
         "title": "Sonibble",
         "link": "https://www.usesonibble.site"
-      }
-    ]
-  },
-  {
-    "title": "Saas",
-    "list": [
+      },
       {
         "title": "Poockey",
         "link": "https://www.poockey.site"
@@ -26,12 +21,7 @@
       {
         "title": "Haloo",
         "link": "https://www.tryhaloo.site"
-      }
-    ]
-  },
-  {
-    "title": "Contents",
-    "list": [
+      },
       {
         "title": "Gridline",
         "link": "https://thegridline.site"
@@ -43,7 +33,7 @@
     ]
   },
   {
-    "title": "Others",
+    "title": "Utilities",
     "list": [
       {
         "title": "Oneday",
