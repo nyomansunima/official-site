@@ -29,10 +29,10 @@ function Item({ work }: ItemProps) {
 
 export function RelatedWorkSection({ relatedWorks }: RelatedWorksSectionProps) {
   return (
-    <section className="mt-20 flex flex-col border-border border-t border-dashed pt-16">
-      <h2 className="mt-2 font-medium text-lg">Another works</h2>
+    <section className="mt-20 flex flex-col gap-4 border-border border-t border-dashed pt-16">
+      <h2 className="text-foreground/60">Another works:</h2>
 
-      <ul className="mt-6 flex flex-col gap-2">
+      <ul className="grid grid-cols-1 gap-x-16 gap-y-1 md:grid-cols-3">
         {relatedWorks.map((work, i) => (
           <Item key={i} work={work} />
         ))}

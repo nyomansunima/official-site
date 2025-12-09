@@ -35,7 +35,7 @@ export const getRelatedWorks = createServerFn()
     const slug = ctx.data.slug;
     const works = allWorks;
     const relatedWorks =
-      works.filter((w) => w._meta.path !== slug).slice(0, 5) || [];
+      works.filter((w) => w._meta.path !== slug).slice(0, 3) || [];
 
     return relatedWorks;
   });
