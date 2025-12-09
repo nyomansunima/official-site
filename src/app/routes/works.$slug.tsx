@@ -12,7 +12,7 @@ export const Route = createFileRoute("/works/$slug")({
     const work = (ctx.loaderData as any).work;
     return {
       meta: generatedMetadata({
-        title: `Works - ${work.title} | Nyoman Sunima`,
+        title: `${work.title} - Works | Nyoman Sunima`,
         description: work.description,
         image: work.image,
       }),
