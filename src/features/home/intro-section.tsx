@@ -8,7 +8,7 @@ export function IntroSection() {
       </p>
 
       <p>
-        Daily running web design business at{" "}
+        Daily, running web design business at{" "}
         <a
           className="underline"
           href={"https://tryweebo.site"}
@@ -35,7 +35,7 @@ export function IntroSection() {
         >
           Moono
         </a>
-        , also actively shipping website templates at{" "}
+        , actively shipping website templates at{" "}
         <a
           className="underline"
           href={"https://creevoo.store"}
@@ -44,7 +44,7 @@ export function IntroSection() {
         >
           Creevoo
         </a>
-        .
+        , also actively contribute to open source project.
       </p>
 
       <p>
@@ -71,7 +71,7 @@ export function IntroSection() {
       </p>
 
       <p>
-        Recently, building ui & animation related stuff for{" "}
+        Recently, building ui & animations related stuff for{" "}
         <a
           className="underline"
           href={"https://picosecond.moono.site"}
@@ -107,7 +107,7 @@ export function IntroSection() {
         >
           Mailo
         </a>
-        . Created curated list for good design and resources for{" "}
+        . Curated list for good design and resources at{" "}
         <a
           className="underline"
           href={"https://heroico.site"}
@@ -129,7 +129,7 @@ export function IntroSection() {
       </p>
 
       <p>
-        Building my own saas products{" "}
+        Shipping my own saas products{" "}
         <a
           className="underline"
           href={"https://poockey.site"}
@@ -154,7 +154,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          The Gridline
+          Gridline
         </a>{" "}
         &{" "}
         <a
@@ -163,9 +163,10 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          The Scolon
+          Scolon
         </a>
-        .
+        , also create content about business, saas, indie hacking and getting
+        better.
       </p>
     </section>
   );
