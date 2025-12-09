@@ -18,7 +18,7 @@ function ExperienceItem({ experience }: ExperienceItemProps) {
 
   return (
     <a
-      className="flex tablet:flex-row flex-col items-start tablet:items-center gap-2 py-2"
+      className="flex flex-col items-start gap-2 py-2 md:flex-row md:items-center"
       href={url}
       target="_blank"
     >
@@ -38,7 +38,7 @@ function ExperienceItem({ experience }: ExperienceItemProps) {
         </div>
       </div>
 
-      <span className="ml-5 tablet:ml-0 text-foreground/40 text-sm">
+      <span className="ml-5 text-foreground/40 text-sm md:ml-0">
         {timeline}
       </span>
     </a>

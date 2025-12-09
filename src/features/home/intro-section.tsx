@@ -3,12 +3,12 @@ export function IntroSection() {
     <section className="prose">
       <p>
         Hey, I am a product designer, software engineer & creator. Building
-        saas, sites and tools. Currently working as a freelancer, building
-        products & side hustle.
+        saas, sites and tools. Currently working as a freelancer, looking for
+        opportunity to join team building software.
       </p>
 
       <p>
-        Running web design business at{" "}
+        Daily running web design business at{" "}
         <a
           className="underline"
           href={"https://tryweebo.site"}
@@ -26,7 +26,7 @@ export function IntroSection() {
         >
           Sonibble
         </a>
-        . Building my own saas, goodies and open source project at{" "}
+        . Building my own products at{" "}
         <a
           className="underline"
           href={"https://moono.site"}
@@ -71,7 +71,7 @@ export function IntroSection() {
       </p>
 
       <p>
-        Recently, building ui stuff at{" "}
+        Recently, building ui & animation related stuff for{" "}
         <a
           className="underline"
           href={"https://picosecond.moono.site"}
@@ -107,7 +107,7 @@ export function IntroSection() {
         >
           Mailo
         </a>
-        . Shipping{" "}
+        . Created curated list for good design and resources for{" "}
         <a
           className="underline"
           href={"https://heroico.site"}
@@ -124,24 +124,6 @@ export function IntroSection() {
           target="_blank"
         >
           Goodie
-        </a>
-        . Helping web designers and developers to grow at{" "}
-        <a
-          className="underline"
-          href={"https://thegridline.site"}
-          rel="noopener"
-          target="_blank"
-        >
-          The Gridline
-        </a>{" "}
-        &{" "}
-        <a
-          className="underline"
-          href={"https://thescolon.site"}
-          rel="noopener"
-          target="_blank"
-        >
-          The Scolon
         </a>
         .
       </p>
@@ -164,6 +146,24 @@ export function IntroSection() {
           target="_blank"
         >
           Haloo
+        </a>
+        . Helping web designers and developers to grow at{" "}
+        <a
+          className="underline"
+          href={"https://thegridline.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          The Gridline
+        </a>{" "}
+        &{" "}
+        <a
+          className="underline"
+          href={"https://thescolon.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          The Scolon
         </a>
         .
       </p>

@@ -38,8 +38,8 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
         <HeadContent />
       </head>
       <body>
-        <div className="container mx-auto laptop:px-0 px-5">
-          <div className="mx-auto min-h-screen desktop:w-7/12 laptop:w-9/12 tablet:w-11/12 w-full laptop:px-20 pb-28">
+        <div className="container mx-auto px-5 lg:px-0">
+          <div className="mx-auto min-h-screen w-full pb-28 md:w-11/12 lg:w-9/12 lg:px-20 xl:w-7/12">
             <Header />
             {children}
           </div>

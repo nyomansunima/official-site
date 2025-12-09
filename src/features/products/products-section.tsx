@@ -44,7 +44,7 @@ function ProductGroup({ group }: ProductGroupProps) {
     <div className="flex flex-col gap-4">
       <h2 className="text-foreground/60">{title}:</h2>
 
-      <div className="flex flex-col gap-1">
+      <div className="grid grid-cols-1 gap-x-16 gap-y-1 md:grid-cols-3">
         {list.map((product, index) => (
           <ProductItem key={index} product={product} />
         ))}

@@ -1,14 +1,5 @@
 [
   {
-    "title": "Playgrounds",
-    "list": [
-      {
-        "title": "Acronim",
-        "link": "https://acronim.nyomansunima.com"
-      }
-    ]
-  },
-  {
     "title": "Startups",
     "list": [
       {
@@ -52,7 +43,7 @@
     ]
   },
   {
-    "title": "Indie tools",
+    "title": "Others",
     "list": [
       {
         "title": "Oneday",
@@ -81,35 +72,35 @@
       {
         "title": "Compobits",
         "link": "https://compobits.moono.site"
-      }
-    ]
-  },
-  {
-    "title": "Themes",
-    "list": [
+      },
+      {
+        "title": "Acronim",
+        "link": "https://acronim.nyomansunima.com"
+      },
       {
         "title": "One thing theme",
         "link": "https://onethingtheme.moono.site"
       }
     ]
   },
+
   {
-    "title": "Starter kit",
+    "title": "Starter kits",
     "list": [
       {
-        "title": "Nextjs site starter",
+        "title": "Nextjs",
         "link": "https://github.com/nyomansunima/nextjs-site-starter"
       },
       {
-        "title": "React router site starter",
+        "title": "React router",
         "link": "https://github.com/nyomansunima/react-router-site-starter"
       },
       {
-        "title": "Astro site starter",
+        "title": "Astro",
         "link": "https://github.com/nyomansunima/astro-site-starter"
       },
       {
-        "title": "Typescript package starter",
+        "title": "Typescript",
         "link": "https://github.com/nyomansunima/ts-package-starter"
       },
       {
@@ -117,7 +108,7 @@
         "link": "https://github.com/nyomansunima/saas-starter"
       },
       {
-        "title": "Tanstack start site starter",
+        "title": "Tanstack start",
         "link": "https://github.com/nyomansunima/tanstack-start-site-starter"
       }
     ]

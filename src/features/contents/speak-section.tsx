@@ -19,7 +19,7 @@ function SpeakItem({ item }: SpeakItemProps) {
 
   return (
     <a
-      className="flex tablet:flex-row flex-col tablet:items-center py-2"
+      className="flex flex-col py-2 md:flex-row md:items-center"
       href={url}
       target="_blank"
     >
@@ -36,7 +36,7 @@ function SpeakItem({ item }: SpeakItemProps) {
         <span className="line-clamp-1 text-pretty">{title}</span>
       </div>
 
-      <span className="ml-5 tablet:ml-0 text-foreground/40 text-sm">
+      <span className="ml-5 text-foreground/40 text-sm md:ml-0">
         {parsedDate}
       </span>
     </a>

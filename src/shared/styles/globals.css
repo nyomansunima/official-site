@@ -15,11 +15,6 @@
   --text-lg: 1.03125rem;
   --text-xl: 1.1rem;
 
-  --breakpoint-*: initial;
-  --breakpoint-tablet: 40rem;
-  --breakpoint-laptop: 64rem;
-  --breakpoint-desktop: 80rem;
-
   --color-background: hsl(0 0 100%);
   --color-foreground: hsl(0 0 0%);
   --color-surface: hsl(0 0 100%);
