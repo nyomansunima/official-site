@@ -3,8 +3,9 @@ export function IntroSection() {
     <section className="prose">
       <p>
         Hey, I am a product designer, software engineer & creator. Building
-        saas, sites and tools. Currently working as a freelancer, looking for
-        opportunity to join team building software.
+        saas, sites and tools that focus on design, interactions and detail.
+        Currently working as a freelancer, looking for opportunity to join team
+        building software.
       </p>
 
       <p>
