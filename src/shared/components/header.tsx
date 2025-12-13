@@ -19,7 +19,7 @@ export function Header() {
     <header className="mb-16 flex flex-wrap items-center gap-x-5 gap-y-5 border-border border-b border-dashed pt-12 pb-7">
       <Link href="/">Home</Link>
       <Link href="/works">Works</Link>
-      <Link href="/products">Products</Link>
+      <Link href="/projects">Projects</Link>
       <Link href="/contents">Contents</Link>
       <Link href="/resources">Resources</Link>
       <Link href="/journeys">Journeys</Link>
