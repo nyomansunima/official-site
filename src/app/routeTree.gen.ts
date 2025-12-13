@@ -10,7 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ResourcesRouteImport } from './routes/resources'
-import { Route as ProductsRouteImport } from './routes/products'
+import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as JourneysRouteImport } from './routes/journeys'
 import { Route as ContentsRouteImport } from './routes/contents'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -24,9 +24,9 @@ const ResourcesRoute = ResourcesRouteImport.update({
   path: '/resources',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProductsRoute = ProductsRouteImport.update({
-  id: '/products',
-  path: '/products',
+const ProjectsRoute = ProjectsRouteImport.update({
+  id: '/projects',
+  path: '/projects',
   getParentRoute: () => rootRouteImport,
 } as any)
 const JourneysRoute = JourneysRouteImport.update({
@@ -71,7 +71,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/contents': typeof ContentsRoute
   '/journeys': typeof JourneysRoute
-  '/products': typeof ProductsRoute
+  '/projects': typeof ProjectsRoute
   '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
@@ -82,7 +82,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/contents': typeof ContentsRoute
   '/journeys': typeof JourneysRoute
-  '/products': typeof ProductsRoute
+  '/projects': typeof ProjectsRoute
   '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works': typeof WorksIndexRoute
@@ -94,7 +94,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/contents': typeof ContentsRoute
   '/journeys': typeof JourneysRoute
-  '/products': typeof ProductsRoute
+  '/projects': typeof ProjectsRoute
   '/resources': typeof ResourcesRoute
   '/works/$slug': typeof WorksSlugRoute
   '/works/': typeof WorksIndexRoute
@@ -107,7 +107,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/contents'
     | '/journeys'
-    | '/products'
+    | '/projects'
     | '/resources'
     | '/works/$slug'
     | '/works'
@@ -118,7 +118,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/contents'
     | '/journeys'
-    | '/products'
+    | '/projects'
     | '/resources'
     | '/works/$slug'
     | '/works'
@@ -129,7 +129,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/contents'
     | '/journeys'
-    | '/products'
+    | '/projects'
     | '/resources'
     | '/works/$slug'
     | '/works/'
@@ -141,7 +141,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   ContentsRoute: typeof ContentsRoute
   JourneysRoute: typeof JourneysRoute
-  ProductsRoute: typeof ProductsRoute
+  ProjectsRoute: typeof ProjectsRoute
   ResourcesRoute: typeof ResourcesRoute
   WorksSlugRoute: typeof WorksSlugRoute
   WorksIndexRoute: typeof WorksIndexRoute
@@ -156,11 +156,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ResourcesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/products': {
-      id: '/products'
-      path: '/products'
-      fullPath: '/products'
-      preLoaderRoute: typeof ProductsRouteImport
+    '/projects': {
+      id: '/projects'
+      path: '/projects'
+      fullPath: '/projects'
+      preLoaderRoute: typeof ProjectsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/journeys': {
@@ -221,7 +221,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   ContentsRoute: ContentsRoute,
   JourneysRoute: JourneysRoute,
-  ProductsRoute: ProductsRoute,
+  ProjectsRoute: ProjectsRoute,
   ResourcesRoute: ResourcesRoute,
   WorksSlugRoute: WorksSlugRoute,
   WorksIndexRoute: WorksIndexRoute,

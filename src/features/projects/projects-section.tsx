@@ -1,25 +1,25 @@
-import products from "./products-data.json" with { type: "json" };
+import projects from "./projects-data.json" with { type: "json" };
 
-type ProductData = {
+type ProjectData = {
   title: string;
   link: string;
 };
 
-type ProductItemProps = {
-  product: ProductData;
+type ProjectItemProps = {
+  project: ProjectData;
 };
 
-type ProductGroupData = {
+type ProjectGroupData = {
   title: string;
-  list: ProductData[];
+  list: ProjectData[];
 };
 
-type ProductGroupProps = {
-  group: ProductGroupData;
+type ProjectGroupProps = {
+  group: ProjectGroupData;
 };
 
-function ProductItem({ product }: ProductItemProps) {
-  const { title, link } = product;
+function ProjectItem({ project }: ProjectItemProps) {
+  const { title, link } = project;
 
   return (
     <a className="flex items-center gap-2 py-2" href={link} target="_blank">
@@ -37,7 +37,7 @@ function ProductItem({ product }: ProductItemProps) {
   );
 }
 
-function ProductGroup({ group }: ProductGroupProps) {
+function ProjectGroup({ group }: ProjectGroupProps) {
   const { title, list } = group;
 
   return (
@@ -45,20 +45,20 @@ function ProductGroup({ group }: ProductGroupProps) {
       <h2 className="text-foreground/60">{title}:</h2>
 
       <div className="grid grid-cols-1 gap-x-16 gap-y-1 md:grid-cols-3">
-        {list.map((product, index) => (
-          <ProductItem key={index} product={product} />
+        {list.map((project, index) => (
+          <ProjectItem key={index} project={project} />
         ))}
       </div>
     </div>
   );
 }
 
-export function ProductsSection() {
+export function ProjectsSection() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col gap-16">
-        {products.map((group, i) => (
-          <ProductGroup group={group} key={i} />
+        {projects.map((group, i) => (
+          <ProjectGroup group={group} key={i} />
         ))}
       </div>
     </div>
