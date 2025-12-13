@@ -40,9 +40,7 @@ export function WorkItem({ work }: WorkItemProps) {
         </span>
       </div>
 
-      <p className="mt-3 line-clamp-2 text-pretty text-foreground/60 leading-7">
-        {description}
-      </p>
+      <p className="mt-3 line-clamp-2 text-pretty leading-7">{description}</p>
     </a>
   );
 }
