@@ -1,7 +1,7 @@
 import {
   getRelatedWorks,
-  getWorkDetail,
-  RelatedWorkSection,
+  getWork,
+  RelatedWorksSection,
   WorkDetailSection,
 } from "@features/works";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/works/$slug")({
   // @ts-expect-error Just checking error for the return value
   loader: async (ctx) => {
     const slug = ctx.params.slug;
-    const work = await getWorkDetail({ data: { slug } });
+    const work = await getWork({ data: { slug } });
     const relatedWorks = await getRelatedWorks({ data: { slug } });
 
     return { work, relatedWorks };
@@ -37,7 +37,7 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <WorkDetailSection work={work} />
-      <RelatedWorkSection relatedWorks={relatedWorks} />
+      <RelatedWorksSection relatedWorks={relatedWorks} />
     </main>
   );
 }

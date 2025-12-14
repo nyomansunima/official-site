@@ -1,4 +1,4 @@
-import { getWorks, WorksListSection } from "@features/works";
+import { getWorks, WorkListSection } from "@features/works";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -22,7 +22,7 @@ function RouteComponent() {
 
   return (
     <main className="flex flex-col">
-      <WorksListSection works={works} />
+      <WorkListSection works={works} />
     </main>
   );
 }
