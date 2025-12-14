@@ -5,7 +5,7 @@ type WorkItemProps = {
   work: Work;
 };
 
-type WorksListSectionProps = {
+type WorkListSectionProps = {
   works: Work[];
 };
 
@@ -21,7 +21,7 @@ export function WorkItem({ work }: WorkItemProps) {
       className={`"flex flex-col" ${isDisabled ? "pointer-events-none" : ""}`}
       href={link}
     >
-      <div className="relative flex h-[200px] w-full overflow-hidden rounded-2xl md:h-[360px]">
+      <div className="relative flex h-50 w-full overflow-hidden rounded-2xl md:h-90">
         <img
           alt={title}
           className="h-full w-full object-cover"
@@ -45,7 +45,7 @@ export function WorkItem({ work }: WorkItemProps) {
   );
 }
 
-export function WorksListSection({ works }: WorksListSectionProps) {
+export function WorkListSection({ works }: WorkListSectionProps) {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col gap-16">
