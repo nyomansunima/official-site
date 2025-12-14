@@ -1,7 +1,7 @@
 import { parseReadableDate } from "@shared/libs/utils";
-import journeysData from "./journeys-data.json" with { type: "json" };
+import logsData from "./logs-data.json" with { type: "json" };
 
-const logGroups = [...journeysData].reverse();
+const logs = [...logsData].reverse();
 
 type LogItemData = {
   title: string;
@@ -31,7 +31,7 @@ function LogItem({ log }: LogItemProps) {
   return (
     <a className="flex flex-col" href={url || "/"} target="_blank">
       {image !== undefined && (
-        <div className="relative mb-6 h-[200px] w-full overflow-hidden rounded-2xl md:h-[360px]">
+        <div className="relative mb-6 h-50 w-full overflow-hidden rounded-2xl md:h-90">
           <img
             alt={title}
             className="h-full w-full object-cover"
@@ -72,7 +72,7 @@ export function LogSection() {
   return (
     <section className="flex flex-col gap-4">
       <div className="flex flex-col gap-16">
-        {logGroups.map((group, groupIndex) => (
+        {logs.map((group, groupIndex) => (
           <LogGroup group={group} key={groupIndex} />
         ))}
       </div>

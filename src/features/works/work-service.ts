@@ -3,7 +3,7 @@ import { allWorks } from "content-collections";
 import dayjs from "dayjs";
 import z from "zod";
 
-export const getWorkDetail = createServerFn()
+export const getWork = createServerFn()
   .inputValidator(
     z.object({
       slug: z.string(),
@@ -12,7 +12,6 @@ export const getWorkDetail = createServerFn()
   .handler((ctx) => {
     const works = allWorks;
     const slug = ctx.data.slug;
-
     const work = works.find((w) => w._meta.path === slug);
     return work;
   });
@@ -36,6 +35,5 @@ export const getRelatedWorks = createServerFn()
     const works = allWorks;
     const relatedWorks =
       works.filter((w) => w._meta.path !== slug).slice(0, 3) || [];
-
     return relatedWorks;
   });

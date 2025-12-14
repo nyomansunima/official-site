@@ -4,11 +4,11 @@ type RelatedWorksSectionProps = {
   relatedWorks: Work[];
 };
 
-type ItemProps = {
+type RelatedItemProps = {
   work: Work;
 };
 
-function Item({ work }: ItemProps) {
+function RelatedItem({ work }: RelatedItemProps) {
   const { title, _meta } = work;
 
   return (
@@ -27,14 +27,16 @@ function Item({ work }: ItemProps) {
   );
 }
 
-export function RelatedWorkSection({ relatedWorks }: RelatedWorksSectionProps) {
+export function RelatedWorksSection({
+  relatedWorks,
+}: RelatedWorksSectionProps) {
   return (
     <section className="mt-20 flex flex-col gap-4 border-border border-t border-dashed pt-16">
       <h2 className="text-foreground/60">Another works:</h2>
 
       <ul className="grid grid-cols-1 gap-x-16 gap-y-1 md:grid-cols-3">
         {relatedWorks.map((work, i) => (
-          <Item key={i} work={work} />
+          <RelatedItem key={i} work={work} />
         ))}
       </ul>
     </section>
