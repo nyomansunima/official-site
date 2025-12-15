@@ -142,11 +142,20 @@ export function IntroSection() {
         ,{" "}
         <a
           className="underline"
-          href={"https://invoic.moono.site"}
+          href={"https://okay.moono.site"}
           rel="noopener"
           target="_blank"
         >
-          Invoic
+          Okay
+        </a>
+        ,{" "}
+        <a
+          className="underline"
+          href={"https://signa.moono.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          Signa
         </a>{" "}
         &{" "}
         <a
