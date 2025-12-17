@@ -2,14 +2,19 @@ export function IntroSection() {
   return (
     <section className="prose">
       <p>
-        Hello, I am a product designer, software engineer & creator. Building
-        saas, sites and tools that focus on design, interactions and detail.
-        Currently working as a freelancer, looking for opportunity to join team
-        building software.
+        I've been helping businesses to build better products, ship faster &
+        scale by combining product design, software engineering and
+        entrepreneurial strategy.
       </p>
 
       <p>
-        Daily, running web design business at{" "}
+        Building saas, sites and tools that focus on design, interactions,
+        details, scaling infrastructures, timeline management, feedbacks, and
+        iterations.
+      </p>
+
+      <p>
+        Currently running web design business at{" "}
         <a
           className="underline"
           href={"https://tryweebo.site"}
