@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["ultracite/core", "ultracite/react"],
+  "extends": ["ultracite/core", "ultracite/react", "ultracite/remix"],
   "linter": {
     "rules": {
       "a11y": {
@@ -18,8 +18,7 @@
       },
       "style": {
         "noExportedImports": "off",
-        "noMagicNumbers": "off",
-        "useFilenamingConvention": "off"
+        "noMagicNumbers": "off"
       },
       "correctness": {
         "useImageSize": "off"
