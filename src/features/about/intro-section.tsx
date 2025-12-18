@@ -1,7 +1,11 @@
 export function IntroSection() {
   return (
     <>
-      <h2>Hey, I'm a product designer and software engineer</h2>
+      <h2>
+        Business centric product designer,
+        <br />
+        software engineer & creator
+      </h2>
 
       <p>
         Hello, my name is Nyoman Sunima, a product designer, software engineer &

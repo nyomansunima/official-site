@@ -2,15 +2,16 @@ export function IntroSection() {
   return (
     <section className="prose">
       <p>
-        I've been helping businesses to build better products, ship faster &
-        scale by combining product design, software engineering and
-        entrepreneurial strategy.
+        I've successfully helped businesses to create their software, websites,
+        automations and workflows that lift the profits, increase efficiencies
+        and reduce the costs.
       </p>
 
       <p>
-        Building saas, sites and tools that focus on design, interactions,
-        details, scaling infrastructures, timeline management, feedbacks, and
-        iterations.
+        Built better products, ship faster & scale by combining product design,
+        software engineering and entrepreneurial strategy. Focusing on design,
+        interactions, details, scaling infrastructures, timeline management,
+        feedbacks, and iterations.
       </p>
 
       <p>
@@ -52,7 +53,6 @@ export function IntroSection() {
         </a>
         , also actively contribute to open source project.
       </p>
-
       <p>
         Before that, I was a software engineer at{" "}
         <a
@@ -73,9 +73,8 @@ export function IntroSection() {
           Engaging Enterprises
         </a>
         . Then doing a lot of freelance jobs for building websites, backend,
-        automation and shipping apps.
+        automations and shipping apps.
       </p>
-
       <p>
         Recently, building ui & animations related stuff for{" "}
         <a
@@ -133,7 +132,6 @@ export function IntroSection() {
         </a>
         .
       </p>
-
       <p>
         Shipping my own saas products{" "}
         <a
@@ -191,6 +189,10 @@ export function IntroSection() {
         </a>
         , also create content about business, saas, indie hacking and getting
         better.
+      </p>
+
+      <p>
+        Interested?, <a href="/contact">connect now</a>.
       </p>
     </section>
   );
