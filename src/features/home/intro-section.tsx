@@ -192,7 +192,8 @@ export function IntroSection() {
       </p>
 
       <p>
-        Interested?, <a href="/contact">connect now</a>.
+        If you're interested to collaborate or discuss something{" "}
+        <a href="/contact">let's connect</a>.
       </p>
     </section>
   );
