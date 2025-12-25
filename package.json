@@ -32,7 +32,7 @@
     "@vitejs/plugin-react": "^5.1.2",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
-    "ultracite": "6.4.2",
+    "ultracite": "6.5.0",
     "vite": "^7.3.0",
     "vite-tsconfig-paths": "^6.0.3",
     "web-vitals": "^5.1.0",
