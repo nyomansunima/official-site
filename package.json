@@ -6,13 +6,13 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "content-collections build && ultracite fix && tsc",
+    "check": "content-collections build && ultracite fix --unsafe && tsc",
     "clean": "rm -rf .tanstack .nitro .output build dist"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
-    "@tanstack/react-router": "^1.141.8",
-    "@tanstack/react-start": "^1.142.0",
+    "@tanstack/react-router": "^1.143.11",
+    "@tanstack/react-start": "^1.143.11",
     "dayjs": "^1.11.19",
     "nitro": "^3.0.1-alpha.1",
     "react": "19.2.3",
