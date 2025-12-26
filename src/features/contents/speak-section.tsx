@@ -3,15 +3,15 @@ import speaksData from "./speak-data.json" with { type: "json" };
 
 const speaks = [...speaksData].reverse();
 
-type SpeakData = {
+interface SpeakData {
   title: string;
   timeline: string;
   url: string;
-};
+}
 
-type SpeakItemProps = {
+interface SpeakItemProps {
   item: SpeakData;
-};
+}
 
 function SpeakItem({ item }: SpeakItemProps) {
   const { title, timeline, url } = item;

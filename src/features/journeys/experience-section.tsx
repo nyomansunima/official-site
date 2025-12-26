@@ -2,16 +2,16 @@ import experienceData from "./experiences-data.json" with { type: "json" };
 
 const experiences = [...experienceData].reverse();
 
-type ExperienceItemData = {
+interface ExperienceItemData {
   team: string;
   position: string;
   timeline: string;
   url: string;
-};
+}
 
-type ExperienceItemProps = {
+interface ExperienceItemProps {
   experience: ExperienceItemData;
-};
+}
 
 function ExperienceItem({ experience }: ExperienceItemProps) {
   const { team, position, timeline, url } = experience;

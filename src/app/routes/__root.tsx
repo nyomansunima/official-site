@@ -3,9 +3,9 @@ import styles from "@shared/styles/globals.css?url";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import type * as React from "react";
 
-type RootDocumentProps = {
+interface RootDocumentProps {
   children: React.ReactNode;
-};
+}
 export const Route = createRootRoute({
   head: () => ({
     meta: [

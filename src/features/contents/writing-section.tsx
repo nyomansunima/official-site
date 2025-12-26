@@ -3,15 +3,15 @@ import writingData from "./writing-data.json" with { type: "json" };
 
 const writings = [...writingData].reverse();
 
-type WritingData = {
+interface WritingData {
   title: string;
   timeline: string;
   url: string;
-};
+}
 
-type WritingItemProps = {
+interface WritingItemProps {
   item: WritingData;
-};
+}
 
 function WritingItem({ item }: WritingItemProps) {
   const { title, timeline, url } = item;

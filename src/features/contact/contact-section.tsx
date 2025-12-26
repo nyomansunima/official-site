@@ -1,13 +1,13 @@
 import contacts from "./contact-data.json" with { type: "json" };
 
-type ContactData = {
+interface ContactData {
   href: string;
   label: string;
-};
+}
 
-type ContactItemProps = {
+interface ContactItemProps {
   contact: ContactData;
-};
+}
 
 function ContactItem({ contact }: ContactItemProps) {
   const { href, label } = contact;

@@ -1,13 +1,13 @@
 import { parseReadableDate } from "@shared/libs/utils";
 import type { Work } from "content-collections";
 
-type WorkItemProps = {
+interface WorkItemProps {
   work: Work;
-};
+}
 
-type WorkListSectionProps = {
+interface WorkListSectionProps {
   works: Work[];
-};
+}
 
 export function WorkItem({ work }: WorkItemProps) {
   const { title, description, image, _meta, date, status } = work;

@@ -2,9 +2,9 @@ import { MDXContent } from "@content-collections/mdx/react";
 import { parseReadableDate } from "@shared/libs/utils";
 import type { Work } from "content-collections";
 
-type WorkDetailSectionProps = {
+interface WorkDetailSectionProps {
   work: Work;
-};
+}
 
 export function WorkDetailSection({ work }: WorkDetailSectionProps) {
   const { date, team, title, mdx, status } = work;

@@ -1,7 +1,7 @@
-type LinkProps = {
+interface LinkProps {
   children: React.ReactNode;
   href: string;
-};
+}
 
 function Link({ href, children }: LinkProps) {
   return (

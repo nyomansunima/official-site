@@ -3,26 +3,26 @@ import logsData from "./logs-data.json" with { type: "json" };
 
 const logs = [...logsData].reverse();
 
-type LogItemData = {
+interface LogItemData {
   title: string;
   description: string;
   date: string;
   image?: string;
   url?: string;
-};
+}
 
-type LogItemProps = {
+interface LogItemProps {
   log: LogItemData;
-};
+}
 
-type LogGroupData = {
+interface LogGroupData {
   title: string;
   list: LogItemData[];
-};
+}
 
-type LogGroupProps = {
+interface LogGroupProps {
   group: LogGroupData;
-};
+}
 
 function LogItem({ log }: LogItemProps) {
   const { title, description, date, image, url } = log;

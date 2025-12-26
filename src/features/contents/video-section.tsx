@@ -3,15 +3,15 @@ import videoDatas from "./video-data.json" with { type: "json" };
 
 const videos = [...videoDatas].reverse();
 
-type VideoData = {
+interface VideoData {
   title: string;
   timeline: string;
   url: string;
-};
+}
 
-type VideoItemProps = {
+interface VideoItemProps {
   item: VideoData;
-};
+}
 
 function VideoItem({ item }: VideoItemProps) {
   const { title, timeline, url } = item;

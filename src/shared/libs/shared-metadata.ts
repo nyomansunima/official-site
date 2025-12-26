@@ -1,8 +1,8 @@
-type GeneratedMetadataInput = {
+interface GeneratedMetadataInput {
   title: string;
   description: string;
   image?: string;
-};
+}
 
 export function generatedMetadata({
   title,

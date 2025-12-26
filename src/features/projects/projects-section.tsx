@@ -1,22 +1,22 @@
 import projects from "./projects-data.json" with { type: "json" };
 
-type ProjectData = {
+interface ProjectData {
   title: string;
   link: string;
-};
+}
 
-type ProjectItemProps = {
+interface ProjectItemProps {
   project: ProjectData;
-};
+}
 
-type ProjectGroupData = {
+interface ProjectGroupData {
   title: string;
   list: ProjectData[];
-};
+}
 
-type ProjectGroupProps = {
+interface ProjectGroupProps {
   group: ProjectGroupData;
-};
+}
 
 function ProjectItem({ project }: ProjectItemProps) {
   const { title, link } = project;

@@ -1,12 +1,12 @@
 import type { Work } from "content-collections";
 
-type RelatedWorksSectionProps = {
+interface RelatedWorksSectionProps {
   relatedWorks: Work[];
-};
+}
 
-type RelatedItemProps = {
+interface RelatedItemProps {
   work: Work;
-};
+}
 
 function RelatedItem({ work }: RelatedItemProps) {
   const { title, _meta } = work;

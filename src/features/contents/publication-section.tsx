@@ -1,13 +1,13 @@
 import publications from "./publication-data.json" with { type: "json" };
 
-type PublicationData = {
+interface PublicationData {
   title: string;
   url: string;
-};
+}
 
-type PublicationItemProps = {
+interface PublicationItemProps {
   publication: PublicationData;
-};
+}
 
 function PublicationItem({ publication }: PublicationItemProps) {
   const { title, url } = publication;

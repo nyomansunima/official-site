@@ -1,22 +1,22 @@
 import resources from "./resources-data.json" with { type: "json" };
 
-type ResData = {
+interface ResData {
   title: string;
   url: string;
-};
+}
 
-type ResItemProps = {
+interface ResItemProps {
   source: ResData;
-};
+}
 
-type ResGroupData = {
+interface ResGroupData {
   title: string;
   list: ResData[];
-};
+}
 
-type GroupProps = {
+interface GroupProps {
   group: ResGroupData;
-};
+}
 
 function ResItem({ source }: ResItemProps) {
   const { title, url } = source;
