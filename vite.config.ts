@@ -22,7 +22,7 @@ export default defineConfig({
       },
       sitemap: {
         enabled: true,
-        host: "https://www.nyomansunima.com",
+        host: "https://www.heysunima.com",
       },
       srcDirectory: "src/app",
     }),
