@@ -10,7 +10,7 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-     git clone https://github.com/nyomansunima/official-site.git
+     git clone https://github.com/heysunima/official-site.git
    ```
 2. Install the dependencies by run
    ```bash
