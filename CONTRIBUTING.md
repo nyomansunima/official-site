@@ -39,7 +39,7 @@ Please make sure your code passes all tests before submitting a pull request.To 
 
 ## Security
 
-If you find a security vulnerability in the project, please do not create an issue. Instead, contact the maintainers directly at [nyomansunima@gmail.com](mailto:nyomansunima@gmail.com) to report the issue.
+If you find a security vulnerability in the project, please do not create an issue. Instead, contact the maintainers directly at [heysunima@gmail.com](mailto:heysunima@gmail.com) to report the issue.
 
 ## Code of Conduct
 

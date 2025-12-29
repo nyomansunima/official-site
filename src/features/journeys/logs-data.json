@@ -131,7 +131,7 @@
         "description": "Create a starter kit template to create full typescript package library for nodejs. Minimize the configurations and production ready.",
         "date": "Aug, 07 2025",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1754979092944/e7b3249d-cccc-4324-aa7e-c9cf9514b182.webp",
-        "url": "https://github.com/nyomansunima/ts-package-starter"
+        "url": "https://github.com/heysunima/ts-package-starter"
       },
       {
         "title": "Create react router themes package",
@@ -145,14 +145,14 @@
         "description": "Create and launch the saas starter kit, a all in one saas product starter template. Built for backend, web, landing, mobile and desktop app.",
         "date": "Aug, 14 2025",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1755170428245/ae42a1df-9fa9-4588-b0fc-d400af52a5a4.webp",
-        "url": "https://github.com/nyomansunima/saas-starter"
+        "url": "https://github.com/heysunima/saas-starter"
       },
       {
         "title": "Build & launch Invoic",
         "description": "Ship & launch a invoice generator project to help business create, manage & share unlimited invoices",
         "date": "2025-12-14",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1755170428245/ae42a1df-9fa9-4588-b0fc-d400af52a5a4.webp",
-        "url": "https://github.com/nyomansunima/saas-starter"
+        "url": "https://github.com/heysunima/saas-starter"
       }
     ]
   }

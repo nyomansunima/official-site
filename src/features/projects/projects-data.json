@@ -87,27 +87,27 @@
     "list": [
       {
         "title": "Nextjs",
-        "link": "https://github.com/nyomansunima/nextjs-site-starter"
+        "link": "https://github.com/heysunima/nextjs-site-starter"
       },
       {
         "title": "React router",
-        "link": "https://github.com/nyomansunima/react-router-site-starter"
+        "link": "https://github.com/heysunima/react-router-site-starter"
       },
       {
         "title": "Astro",
-        "link": "https://github.com/nyomansunima/astro-site-starter"
+        "link": "https://github.com/heysunima/astro-site-starter"
       },
       {
         "title": "Typescript",
-        "link": "https://github.com/nyomansunima/ts-package-starter"
+        "link": "https://github.com/heysunima/ts-package-starter"
       },
       {
         "title": "Saas starter",
-        "link": "https://github.com/nyomansunima/saas-starter"
+        "link": "https://github.com/heysunima/saas-starter"
       },
       {
         "title": "Tanstack start",
-        "link": "https://github.com/nyomansunima/tanstack-start-site-starter"
+        "link": "https://github.com/heysunima/tanstack-start-site-starter"
       }
     ]
   }
