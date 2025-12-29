@@ -15,7 +15,7 @@ export function IntroSection() {
       </p>
 
       <p>
-        Currently running web design business at{" "}
+        Running web design business at{" "}
         <a
           className="underline"
           href={"https://tryweebo.site"}
@@ -54,29 +54,7 @@ export function IntroSection() {
         , also actively contribute to open source project.
       </p>
       <p>
-        Before that, I was a software engineer at{" "}
-        <a
-          className="underline"
-          href={"https://dimata.com"}
-          rel="noopener"
-          target="_blank"
-        >
-          Dimata
-        </a>{" "}
-        and{" "}
-        <a
-          className="underline"
-          href={"https://engagingenterprises.co"}
-          rel="noopener"
-          target="_blank"
-        >
-          Engaging Enterprises
-        </a>
-        . Then doing a lot of freelance jobs for building websites, backend,
-        automations and shipping apps.
-      </p>
-      <p>
-        Recently, building ui & animations related stuff for{" "}
+        Building ui & animations related stuff for{" "}
         <a
           className="underline"
           href={"https://picosecond.moono.site"}
