@@ -28,8 +28,8 @@ export function generatedMetadata({
       content:
         "Product Designer, UI UX Designer, Web Designer, Shopify Developer, Web Developer, Webflow Expert, Framer Expert, Squarespace, Wix Developer, Fullstack, Mobile Developer, Indie Hacker",
     },
-    { name: "creator", content: "heysunima" },
-    { name: "publisher", content: "heysunima" },
+    { name: "creator", content: "nyomansunima" },
+    { name: "publisher", content: "nyomansunima" },
     { name: "application-name", content: "Nyoman Sunima" },
     {
       name: "google-site-verification",
@@ -62,8 +62,8 @@ export function generatedMetadata({
       content: description,
     },
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:site", content: "heysunima" },
-    { name: "twitter:creator", content: "@heysunima" },
+    { name: "twitter:site", content: "nyomansunima" },
+    { name: "twitter:creator", content: "@nyomansunima" },
     {
       name: "twitter:image",
       content:

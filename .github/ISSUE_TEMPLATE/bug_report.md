@@ -3,7 +3,7 @@ name: Bug report
 about: Create a report to help me improve to better one
 title: "Bug: "
 labels: "bug"
-assignees: heysunima
+assignees: nyomansunima
 ---
 
 **Describe the bug**
