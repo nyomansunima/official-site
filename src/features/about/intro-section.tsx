@@ -2,13 +2,13 @@ export function IntroSection() {
   return (
     <>
       <h1>
-        Business centric product designer,
+        Business centric product engineer,
         <br />
-        software engineer & creator
+        entrepreneur & creator
       </h1>
 
       <p>
-        Hello, my name is Nyoman Sunima, a product designer, software engineer &
+        Hello, my name is Nyoman Sunima, a product engineer, entrepreneur &
         creator with a passion for solving problems. Located in Bali, Indonesia
         and work with remotely teams around the world. I loved to shipping
         products, apps, sites and also exploring the technology.

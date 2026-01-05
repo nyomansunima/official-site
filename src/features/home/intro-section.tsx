@@ -8,32 +8,23 @@ export function IntroSection() {
       </p>
 
       <p>
-        Built better products, ship faster & scale by combining product design,
-        software engineering and entrepreneurial strategy. Focusing on design,
+        Built better products, ship faster & scale by combining product
+        engineering and entrepreneurial strategy. Focusing on design,
         interactions, details, scaling infrastructures, timeline management,
         feedbacks, and iterations.
       </p>
 
       <p>
-        Running web design business at{" "}
+        Running business at{" "}
         <a
           className="underline"
-          href={"https://tryweebo.site"}
+          href={"https://thecoined.site"}
           rel="noopener"
           target="_blank"
         >
-          Weebo
+          Coined
         </a>{" "}
-        and{" "}
-        <a
-          className="underline"
-          href={"https://usesonibble.site"}
-          rel="noopener"
-          target="_blank"
-        >
-          Sonibble
-        </a>
-        . Building my own products at{" "}
+        , building my own products at{" "}
         <a
           className="underline"
           href={"https://moono.site"}
