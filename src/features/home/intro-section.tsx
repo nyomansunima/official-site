@@ -23,7 +23,7 @@ export function IntroSection() {
           target="_blank"
         >
           Coined
-        </a>{" "}
+        </a>
         , building my own products at{" "}
         <a
           className="underline"
