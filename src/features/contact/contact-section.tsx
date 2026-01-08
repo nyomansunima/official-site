@@ -33,7 +33,7 @@ export function ContactSection() {
     <section className="flex flex-col gap-4">
       <h2 className="text-foreground/60">Connects:</h2>
 
-      <div className="grid grid-cols-1 gap-x-16 gap-y-1 md:grid-cols-3">
+      <div className="grid grid-cols-2 gap-x-16 gap-y-1 md:grid-cols-3">
         {contacts.map((con, index) => (
           <ContactItem contact={con} key={index} />
         ))}

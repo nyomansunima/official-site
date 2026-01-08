@@ -8,8 +8,8 @@ export function IntroSection() {
       </p>
 
       <p>
-        Built better products, ship faster & scale by combining product
-        engineering and entrepreneurial strategy. Focusing on design,
+        Built better products, ship faster & scale by combining product design,
+        software engineering and business strategy. Focusing on design,
         interactions, details, scaling infrastructures, timeline management,
         feedbacks, and iterations.
       </p>

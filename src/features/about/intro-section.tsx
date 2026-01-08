@@ -4,7 +4,7 @@ export function IntroSection() {
       <h1>
         Business centric product engineer,
         <br />
-        entrepreneur & creator
+        solopreneur & creator
       </h1>
 
       <p>

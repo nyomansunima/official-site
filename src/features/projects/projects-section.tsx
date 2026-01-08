@@ -3,6 +3,7 @@ import projects from "./projects-data.json" with { type: "json" };
 interface ProjectData {
   title: string;
   link: string;
+  desc: string;
 }
 
 interface ProjectItemProps {
@@ -19,20 +20,29 @@ interface ProjectGroupProps {
 }
 
 function ProjectItem({ project }: ProjectItemProps) {
-  const { title, link } = project;
+  const { title, link, desc } = project;
 
   return (
-    <a className="flex items-center gap-2 py-2" href={link} target="_blank">
-      <svg
-        className="fill-foreground/40"
-        height="10"
-        viewBox="0 0 24 24"
-        width="10"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z" />
-      </svg>
-      <span>{title}</span>
+    <a
+      className="flex flex-col gap-x-2 gap-y-1 py-2 md:flex-row md:items-center"
+      href={link}
+      target="_blank"
+    >
+      <div className="flex items-center gap-2">
+        <svg
+          className="fill-foreground/40"
+          height="10"
+          viewBox="0 0 24 24"
+          width="10"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z" />
+        </svg>
+
+        <span>{title}</span>
+        <span className="hidden md:block">-</span>
+      </div>
+      <span className="ml-4 text-foreground/60 md:ml-0">{desc}</span>
     </a>
   );
 }
@@ -44,7 +54,7 @@ function ProjectGroup({ group }: ProjectGroupProps) {
     <div className="flex flex-col gap-4">
       <h2 className="text-foreground/60">{title}:</h2>
 
-      <div className="grid grid-cols-1 gap-x-16 gap-y-1 md:grid-cols-3">
+      <div className="flex flex-col gap-1">
         {list.map((project, index) => (
           <ProjectItem key={index} project={project} />
         ))}

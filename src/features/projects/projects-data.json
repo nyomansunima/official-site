@@ -4,35 +4,43 @@
     "list": [
       {
         "title": "Moono",
-        "link": "https://moono.site"
+        "link": "https://moono.site",
+        "desc": "Small team building software, goodies, workflows & tools"
       },
       {
         "title": "Coined",
-        "link": "https://www.thecoined.site"
+        "link": "https://www.thecoined.site",
+        "desc": "Helping business build better product, ship faster & scale"
       },
       {
         "title": "Poockey",
-        "link": "https://www.poockey.site"
+        "link": "https://www.poockey.site",
+        "desc": "All in one tool for personal finances"
       },
       {
         "title": "Haloo",
-        "link": "https://www.tryhaloo.site"
+        "link": "https://www.tryhaloo.site",
+        "desc": "Testimonials manager for business"
       },
       {
         "title": "Gridline",
-        "link": "https://thegridline.site"
+        "link": "https://thegridline.site",
+        "desc": "Web designers community, newsletter to grow"
       },
       {
         "title": "Scolon",
-        "link": "https://thescolon.site"
+        "link": "https://thescolon.site",
+        "desc": "Developers community, growth & newsletter"
       },
       {
         "title": "Okay",
-        "link": "https://okay.moono.site"
+        "link": "https://okay.moono.site",
+        "desc": "One tool for business transactions"
       },
       {
         "title": "Signa",
-        "link": "https://signa.moono.site"
+        "link": "https://signa.moono.site",
+        "desc": "Sign documents with no headache"
       }
     ]
   },
@@ -41,39 +49,48 @@
     "list": [
       {
         "title": "Oneday",
-        "link": "https://oneday.moono.site"
+        "link": "https://oneday.moono.site",
+        "desc": "Website blocks & component collections"
       },
       {
         "title": "Picosecond",
-        "link": "https://picosecond.moono.site"
+        "link": "https://picosecond.moono.site",
+        "desc": "Seriously making ui for apps"
       },
       {
         "title": "Goodie",
-        "link": "https://thegoodie.site"
+        "link": "https://thegoodie.site",
+        "desc": "Indie hackers tools collections"
       },
       {
         "title": "Creevoo",
-        "link": "https://www.creevoo.store"
+        "link": "https://www.creevoo.store",
+        "desc": "Building stunning website templates"
       },
       {
         "title": "Heroico",
-        "link": "https://heroico.site"
+        "link": "https://heroico.site",
+        "desc": "Website design, brand & apps inspirations"
       },
       {
         "title": "Mailo",
-        "link": "https://mailo.moono.site"
+        "link": "https://mailo.moono.site",
+        "desc": "React email components blocks"
       },
       {
         "title": "Compobits",
-        "link": "https://compobits.moono.site"
+        "link": "https://compobits.moono.site",
+        "desc": "Stunning crafted react component collections"
       },
       {
         "title": "Acronim",
-        "link": "https://acronim.nyomansunima.com"
+        "link": "https://acronim.nyomansunima.com",
+        "desc": "Design, animation & motion playgrounds"
       },
       {
         "title": "One thing theme",
-        "link": "https://onethingtheme.moono.site"
+        "link": "https://onethingtheme.moono.site",
+        "desc": "Minimal themes for code productivity"
       }
     ]
   },
@@ -83,27 +100,28 @@
     "list": [
       {
         "title": "Nextjs",
-        "link": "https://github.com/nyomansunima/nextjs-site-starter"
+        "link": "https://github.com/nyomansunima/nextjs-site-starter",
+        "desc": "Nextjs website starter kit"
       },
       {
         "title": "React router",
-        "link": "https://github.com/nyomansunima/react-router-site-starter"
+        "link": "https://github.com/nyomansunima/react-router-site-starter",
+        "desc": "React router website starter kit"
       },
       {
         "title": "Astro",
-        "link": "https://github.com/nyomansunima/astro-site-starter"
+        "link": "https://github.com/nyomansunima/astro-site-starter",
+        "desc": "Astro website starter kit"
       },
       {
         "title": "Typescript",
-        "link": "https://github.com/nyomansunima/ts-package-starter"
-      },
-      {
-        "title": "Saas starter",
-        "link": "https://github.com/nyomansunima/saas-starter"
+        "link": "https://github.com/nyomansunima/ts-package-starter",
+        "desc": "Typescript package starter"
       },
       {
         "title": "Tanstack start",
-        "link": "https://github.com/nyomansunima/tanstack-start-site-starter"
+        "link": "https://github.com/nyomansunima/tanstack-start-site-starter",
+        "desc": "Tanstack start website starter kit"
       }
     ]
   }
