@@ -5,15 +5,16 @@ _"My personal website to connect and share something with client and audience"_
 This project is contain my personal site apps, including the backend and the frontend.
 The concept of this site is simple, powerful, creative, and clean.
 
-- Project showcase
-- Target and status
-- Explorations into stack and project
-- Service to offer with client
-- Personal bio link profile
+- Projects showcase
+- Works & case studies
+- Explorations
+- Services
 - About me
-- Newsletter
-- Many other includeds
+- Contact
+- Journeys
+- Contents & newsletters
 - Changelog history and works
+- Many other includeds
 
 ## Stacks
 
@@ -22,6 +23,8 @@ Since building this project here are list about stack, site, tech and any librar
 - [Tanstack start](https://tanstack.com/start)
 - [Tailwincss](https://tailwindcss.com)
 - [Vercel](https://vercel.com)
+- [Content collections](https://content-collections.dev)
+- [Ultracite](https://ultracite.ai)
 
 ## License
 
