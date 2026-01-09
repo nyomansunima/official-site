@@ -21,14 +21,12 @@ export function WorkItem({ work }: WorkItemProps) {
       className={`"flex flex-col" ${isDisabled ? "pointer-events-none" : ""}`}
       href={link}
     >
-      <div className="relative flex h-50 w-full overflow-hidden rounded-2xl md:h-90">
-        <img
-          alt={title}
-          className="h-full w-full object-cover"
-          sizes="(min-width: 1024px) 2048px, 100vw"
-          src={image}
-        />
-      </div>
+      <img
+        alt={title}
+        className="h-50 w-full rounded-2xl object-cover md:h-90"
+        sizes="(min-width: 1024px) 2048px, 100vw"
+        src={image}
+      />
 
       <div className="mt-6 flex items-center gap-4">
         <h3 className="font-medium">{title}</h3>
