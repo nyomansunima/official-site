@@ -31,20 +31,22 @@ function LogItem({ log }: LogItemProps) {
   return (
     <a className="flex flex-col" href={url || "/"} target="_blank">
       {image !== undefined && (
-        <img
-          alt={title}
-          className="mb-6 h-50 w-full overflow-hidden rounded-2xl object-cover md:h-90"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          src={image}
-        />
+        <div className="mb-6 flex rounded-2xl border border-border border-dashed p-1">
+          <img
+            alt={title}
+            className="h-50 w-full overflow-hidden rounded-xl object-cover md:h-90"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src={image}
+          />
+        </div>
       )}
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 leading-none">
         <h3 className="font-medium">{title}</h3>
         <span className="text-foreground/40 text-sm">{readableDate}</span>
       </div>
 
-      <p className="mt-3 text-pretty text-foreground/70 leading-7">
+      <p className="mt-3 text-pretty text-foreground/70 leading-relaxed">
         {description}
       </p>
     </a>

@@ -1,5 +1,6 @@
 import { parseReadableDate } from "@shared/libs/utils";
 import type { Work } from "content-collections";
+import { cx } from "tailwind-variants/lite";
 
 interface WorkItemProps {
   work: Work;
@@ -18,15 +19,17 @@ export function WorkItem({ work }: WorkItemProps) {
 
   return (
     <a
-      className={`"flex flex-col" ${isDisabled ? "pointer-events-none" : ""}`}
+      className={cx("flex flex-col", isDisabled ? "pointer-events-none" : "")}
       href={link}
     >
-      <img
-        alt={title}
-        className="h-50 w-full rounded-2xl object-cover md:h-90"
-        sizes="(min-width: 1024px) 2048px, 100vw"
-        src={image}
-      />
+      <div className="flex rounded-2xl border border-border border-dashed p-1">
+        <img
+          alt={title}
+          className="h-50 w-full rounded-xl object-cover md:h-90"
+          sizes="(min-width: 1024px) 2048px, 100vw"
+          src={image}
+        />
+      </div>
 
       <div className="mt-6 flex items-center gap-4">
         <h3 className="font-medium">{title}</h3>
@@ -38,7 +41,7 @@ export function WorkItem({ work }: WorkItemProps) {
         </span>
       </div>
 
-      <p className="mt-3 line-clamp-2 text-pretty text-foreground/70 leading-7">
+      <p className="mt-3 line-clamp-2 text-pretty text-foreground/70 leading-relaxed">
         {description}
       </p>
     </a>
