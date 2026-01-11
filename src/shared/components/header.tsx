@@ -6,7 +6,7 @@ interface LinkProps {
 function Link({ href, children }: LinkProps) {
   return (
     <a
-      className="flex items-center justify-center text-foreground/60 text-sm leading-none tracking-normal transition-all duration-300 hover:-translate-y-0.5 hover:text-foreground"
+      className="flex items-center justify-center text-foreground/60 text-sm leading-none tracking-normal transition-all duration-300 ease-out hover:-translate-y-0.5 hover:text-foreground"
       href={href}
     >
       {children}
