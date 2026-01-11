@@ -30,6 +30,7 @@
     "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.2",
+    "tailwind-variants": "^3.2.2",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
     "ultracite": "7.0.11",
