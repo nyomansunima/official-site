@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Tailwindcss */
 @import "tailwindcss";
@@ -8,7 +8,6 @@
 @theme {
   --font-*: initial;
   --font-sans: "Inter", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
 
   --text-sm: 0.84375rem;
   --text-base: 0.9175rem;
@@ -16,7 +15,7 @@
   --text-xl: 1.1rem;
 
   --color-background: hsl(0 0 98%);
-  --color-foreground: hsl(0 0 0%);
+  --color-foreground: hsl(0 0 15%);
   --color-surface: hsl(0 0 100%);
   --color-border: hsl(0 0 90%);
   --color-input: hsl(0 0 96%);
@@ -46,7 +45,7 @@
   }
 
   body {
-    @apply text-base font-normal leading-normal! text-foreground bg-background font-sans antialiased selection:bg-blue-100/90 selection:text-blue-950;
+    @apply text-base font-normal leading-normal! text-foreground bg-background font-sans antialiased selection:bg-fuchsia-100/90 selection:text-fuchsia-950;
     font-style: normal;
   }
 }
