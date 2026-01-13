@@ -55,7 +55,7 @@ function NotFondComponent(): React.ReactElement {
     <main className="flex flex-col">
       <section className="flex flex-col">
         <div className="flex flex-col">
-          <span className="font-mono text-foreground/40 text-sm tracking-tight">
+          <span className="text-foreground/40 text-sm tracking-tight">
             404.
           </span>
           <h2 className="mt-2 font-medium text-lg">Not found.</h2>
@@ -82,7 +82,7 @@ function ErrorComponent(): React.ReactElement {
     <main className="flex flex-col">
       <section className="flex flex-col">
         <div className="flex flex-col">
-          <span className="font-mono text-foreground/40 text-sm tracking-tight">
+          <span className="text-foreground/40 text-sm tracking-tight">
             500.
           </span>
           <h2 className="mt-2 font-medium text-lg">Error found.</h2>
