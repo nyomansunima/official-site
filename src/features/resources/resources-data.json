@@ -402,5 +402,34 @@
         "url": "https://kinde.com"
       }
     ]
+  },
+  {
+    "title": "AIs",
+    "list": [
+      {
+        "title": "Gemini",
+        "url": "https://gemini.google.com"
+      },
+      {
+        "title": "OpenAI",
+        "url": "https://openai.com"
+      },
+      {
+        "title": "Anthropic",
+        "url": "https://anthropic.com"
+      },
+      {
+        "title": "ElevenLabs",
+        "url": "https://elevenlabs.io"
+      },
+      {
+        "title": "Relume",
+        "url": "https://relume.com"
+      },
+      {
+        "title": "Hugging Face",
+        "url": "https://huggingface.co"
+      }
+    ]
   }
 ]
