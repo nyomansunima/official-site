@@ -31,14 +31,12 @@ function LogItem({ log }: LogItemProps) {
   return (
     <a className="flex flex-col" href={url || "/"} target="_blank">
       {image !== undefined && (
-        <div className="mb-6 flex rounded-2xl border border-border border-dashed p-1">
-          <img
-            alt={title}
-            className="h-50 w-full overflow-hidden rounded-xl object-cover md:h-90"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            src={image}
-          />
-        </div>
+        <img
+          alt={title}
+          className="mb-6 h-50 w-full overflow-hidden rounded-xl object-cover md:h-90"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          src={image}
+        />
       )}
 
       <div className="flex items-center gap-4 leading-none">

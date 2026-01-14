@@ -22,14 +22,12 @@ export function WorkItem({ work }: WorkItemProps) {
       className={cx("flex flex-col", isDisabled ? "pointer-events-none" : "")}
       href={link}
     >
-      <div className="flex rounded-2xl border border-border border-dashed p-1">
-        <img
-          alt={title}
-          className="h-50 w-full rounded-xl object-cover md:h-90"
-          sizes="(min-width: 1024px) 2048px, 100vw"
-          src={image}
-        />
-      </div>
+      <img
+        alt={title}
+        className="h-50 w-full rounded-xl object-cover md:h-90"
+        sizes="(min-width: 1024px) 2048px, 100vw"
+        src={image}
+      />
 
       <div className="mt-6 flex items-center gap-4">
         <h3 className="font-medium">{title}</h3>
