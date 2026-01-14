@@ -15,14 +15,14 @@ export function IntroSection() {
       </p>
 
       <p>
-        Running business at{" "}
+        Founded & running business at{" "}
         <a
           className="underline"
           href={"https://thecoined.site"}
           rel="noopener"
           target="_blank"
         >
-          Coined
+          coined
         </a>
         , building my own products at{" "}
         <a
@@ -31,16 +31,25 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          Moono
+          moono
         </a>
-        , actively shipping website templates at{" "}
+        , helping web designers and developers to grow at{" "}
         <a
           className="underline"
-          href={"https://creevoo.store"}
+          href={"https://thegridline.site"}
           rel="noopener"
           target="_blank"
         >
-          Creevoo
+          gridline
+        </a>{" "}
+        &{" "}
+        <a
+          className="underline"
+          href={"https://thescolon.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          scolon
         </a>
         , also actively contribute to open source project.
       </p>
@@ -52,7 +61,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          Picosecond
+          picosecond
         </a>
         ,{" "}
         <a
@@ -61,7 +70,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          Oneday
+          oneday
         </a>
         ,{" "}
         <a
@@ -70,7 +79,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          Compobits
+          compobits
         </a>{" "}
         &{" "}
         <a
@@ -79,37 +88,16 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          Mailo
+          mailo
         </a>
-        . Curated list for good design and resources at{" "}
-        <a
-          className="underline"
-          href={"https://heroico.site"}
-          rel="noopener"
-          target="_blank"
-        >
-          Heroico
-        </a>{" "}
-        &{" "}
-        <a
-          className="underline"
-          href={"https://thegoodie.site"}
-          rel="noopener"
-          target="_blank"
-        >
-          Goodie
-        </a>
-        .
-      </p>
-      <p>
-        Shipping my own saas products{" "}
+        . Shipping my own saas products{" "}
         <a
           className="underline"
           href={"https://poockey.site"}
           rel="noopener"
           target="_blank"
         >
-          Poockey
+          poockey
         </a>
         ,{" "}
         <a
@@ -118,7 +106,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          Okay
+          okay
         </a>
         ,{" "}
         <a
@@ -127,7 +115,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          Signa
+          signa
         </a>{" "}
         &{" "}
         <a
@@ -136,28 +124,27 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          Haloo
+          haloo
         </a>
-        . Helping web designers and developers to grow at{" "}
+        . Curated list for good design and resources at{" "}
         <a
           className="underline"
-          href={"https://thegridline.site"}
+          href={"https://heroico.site"}
           rel="noopener"
           target="_blank"
         >
-          Gridline
+          heroico
         </a>{" "}
         &{" "}
         <a
           className="underline"
-          href={"https://thescolon.site"}
+          href={"https://thegoodie.site"}
           rel="noopener"
           target="_blank"
         >
-          Scolon
+          goodie
         </a>
-        , also create content about business, saas, indie hacking and getting
-        better.
+        .
       </p>
 
       <p>
