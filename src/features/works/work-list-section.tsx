@@ -24,7 +24,7 @@ export function WorkItem({ work }: WorkItemProps) {
     >
       <img
         alt={title}
-        className="h-50 w-full rounded-xl object-cover md:h-90"
+        className="h-70 w-full rounded-xl object-cover sm:h-90"
         sizes="(min-width: 1024px) 2048px, 100vw"
         src={image}
       />

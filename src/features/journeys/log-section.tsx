@@ -33,7 +33,7 @@ function LogItem({ log }: LogItemProps) {
       {image !== undefined && (
         <img
           alt={title}
-          className="mb-6 h-50 w-full overflow-hidden rounded-xl object-cover md:h-90"
+          className="mb-6 h-70 w-full overflow-hidden rounded-xl object-cover sm:h-90"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           src={image}
         />
