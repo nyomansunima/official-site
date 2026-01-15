@@ -38,7 +38,7 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
         <HeadContent />
       </head>
       <body className="container mx-auto px-5 lg:px-0">
-        <div className="mx-auto w-full pb-28 md:w-9/12 lg:w-6/12 xl:w-5/12">
+        <div className="mx-auto w-full pb-28 sm:w-10/12 md:w-9/12 lg:w-6/12 xl:w-5/12">
           <Header />
           {children}
         </div>
