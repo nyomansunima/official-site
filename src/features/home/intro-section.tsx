@@ -8,13 +8,6 @@ export function IntroSection() {
       </p>
 
       <p>
-        Built better products, ship faster & scale by combining product design,
-        software engineering and business strategy. Focusing on design,
-        interactions, details, scaling infrastructures, timeline management,
-        feedbacks, and iterations.
-      </p>
-
-      <p>
         Founded & running business at{" "}
         <a
           className="underline"
@@ -54,7 +47,7 @@ export function IntroSection() {
         , also actively contribute to open source project.
       </p>
       <p>
-        Building ui & animations related stuff for{" "}
+        Building ui for{" "}
         <a
           className="underline"
           href={"https://picosecond.moono.site"}
@@ -90,7 +83,7 @@ export function IntroSection() {
         >
           mailo
         </a>
-        . Shipping my own saas products{" "}
+        . Shipping the products at{" "}
         <a
           className="underline"
           href={"https://poockey.site"}
