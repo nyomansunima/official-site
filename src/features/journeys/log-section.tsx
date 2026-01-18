@@ -44,9 +44,7 @@ function LogItem({ log }: LogItemProps) {
         <span className="text-foreground/40 text-sm">{readableDate}</span>
       </div>
 
-      <p className="mt-3 text-pretty text-foreground/70 leading-relaxed">
-        {description}
-      </p>
+      <p className="mt-3 text-pretty leading-relaxed">{description}</p>
     </a>
   );
 }

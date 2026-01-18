@@ -1,9 +1,4 @@
-import {
-  getRelatedWorks,
-  getWork,
-  RelatedWorksSection,
-  WorkDetailSection,
-} from "@features/works";
+import { getWork, WorkDetailSection } from "@features/works";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -23,21 +18,19 @@ export const Route = createFileRoute("/works/$slug")({
   loader: async (ctx) => {
     const slug = ctx.params.slug;
     const work = await getWork({ data: { slug } });
-    const relatedWorks = await getRelatedWorks({ data: { slug } });
 
-    return { work, relatedWorks };
+    return { work };
   },
   component: RouteComponent,
   notFoundComponent: () => <p>Hello</p>,
 });
 
 function RouteComponent() {
-  const { work, relatedWorks } = Route.useLoaderData() as any;
+  const { work } = Route.useLoaderData() as any;
 
   return (
     <main className="flex flex-col">
       <WorkDetailSection work={work} />
-      <RelatedWorksSection relatedWorks={relatedWorks} />
     </main>
   );
 }

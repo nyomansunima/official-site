@@ -37,7 +37,7 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
       <head>
         <HeadContent />
       </head>
-      <body className="container mx-auto bg-[radial-gradient(var(--pattern-fg)_1px,transparent_0)] bg-size-[24px_24px] bg-fixed px-5 [--pattern-fg:var(--color-gray-950)]/4 lg:px-0">
+      <body className="container mx-auto bg-[radial-gradient(var(--pattern-fg)_1px,transparent_0)] bg-size-[24px_24px] bg-fixed px-5 [--pattern-fg:var(--color-gray-950)]/5 lg:px-0">
         <div className="mx-auto w-full pb-28 sm:w-10/12 md:w-9/12 lg:w-6/12 xl:w-5/12">
           <Header />
           {children}
