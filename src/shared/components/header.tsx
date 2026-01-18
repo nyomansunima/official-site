@@ -16,15 +16,13 @@ function Link({ href, children }: LinkProps) {
 
 export function Header() {
   return (
-    <header className="mb-16 flex flex-wrap items-center gap-x-6 gap-y-5 pt-12 pb-7">
+    <header className="mb-16 flex flex-wrap items-center gap-x-7 gap-y-5 pt-12 pb-7">
       <Link href="/">Home</Link>
       <Link href="/works">Works</Link>
       <Link href="/projects">Projects</Link>
       <Link href="/contents">Contents</Link>
       <Link href="/resources">Resources</Link>
       <Link href="/journeys">Journeys</Link>
-      <Link href="/about">About</Link>
-      <Link href="/contact">Contact</Link>
     </header>
   );
 }
