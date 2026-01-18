@@ -15,7 +15,7 @@ export function WorkDetailSection({ work }: WorkDetailSectionProps) {
       <article className="prose">
         <h1>{title}</h1>
 
-        <div className="not-prose mt-2 flex items-center gap-3">
+        <div className="not-prose mt-2 mb-10 flex items-center gap-3">
           <span className="text-foreground/40 text-sm">{parsedDate}</span>
           <span className="text-foreground/40 text-sm">{status}</span>
           {team !== undefined && (

@@ -27,13 +27,3 @@ export const getFeaturedWorks = createServerFn().handler(() => {
   const featuredWorks = works.filter((w) => w.isFeatured) || [];
   return featuredWorks;
 });
-
-export const getRelatedWorks = createServerFn()
-  .inputValidator(z.object({ slug: z.string() }))
-  .handler((ctx) => {
-    const slug = ctx.data.slug;
-    const works = allWorks;
-    const relatedWorks =
-      works.filter((w) => w._meta.path !== slug).slice(0, 3) || [];
-    return relatedWorks;
-  });
