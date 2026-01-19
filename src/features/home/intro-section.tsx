@@ -141,9 +141,8 @@ export function IntroSection() {
       </p>
 
       <p>
-        If you're interested to collaborate or discuss something{" "}
-        <a href="/contact">let's connect</a>, also get to know{" "}
-        <a href="/about">me better</a>.
+        Currently, focus on design & develop projects then it globally, also
+        helping business to create their products.
       </p>
     </section>
   );
