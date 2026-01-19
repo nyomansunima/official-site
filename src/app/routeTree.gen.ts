@@ -16,8 +16,6 @@ import { Route as ContentsRouteImport } from './routes/contents'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as WorksIndexRouteImport } from './routes/works.index'
-import { Route as WorksSlugRouteImport } from './routes/works.$slug'
 
 const ResourcesRoute = ResourcesRouteImport.update({
   id: '/resources',
@@ -54,16 +52,6 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const WorksIndexRoute = WorksIndexRouteImport.update({
-  id: '/works/',
-  path: '/works/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const WorksSlugRoute = WorksSlugRouteImport.update({
-  id: '/works/$slug',
-  path: '/works/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -73,8 +61,6 @@ export interface FileRoutesByFullPath {
   '/journeys': typeof JourneysRoute
   '/projects': typeof ProjectsRoute
   '/resources': typeof ResourcesRoute
-  '/works/$slug': typeof WorksSlugRoute
-  '/works/': typeof WorksIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -84,8 +70,6 @@ export interface FileRoutesByTo {
   '/journeys': typeof JourneysRoute
   '/projects': typeof ProjectsRoute
   '/resources': typeof ResourcesRoute
-  '/works/$slug': typeof WorksSlugRoute
-  '/works': typeof WorksIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -96,8 +80,6 @@ export interface FileRoutesById {
   '/journeys': typeof JourneysRoute
   '/projects': typeof ProjectsRoute
   '/resources': typeof ResourcesRoute
-  '/works/$slug': typeof WorksSlugRoute
-  '/works/': typeof WorksIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -109,8 +91,6 @@ export interface FileRouteTypes {
     | '/journeys'
     | '/projects'
     | '/resources'
-    | '/works/$slug'
-    | '/works/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -120,8 +100,6 @@ export interface FileRouteTypes {
     | '/journeys'
     | '/projects'
     | '/resources'
-    | '/works/$slug'
-    | '/works'
   id:
     | '__root__'
     | '/'
@@ -131,8 +109,6 @@ export interface FileRouteTypes {
     | '/journeys'
     | '/projects'
     | '/resources'
-    | '/works/$slug'
-    | '/works/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -143,8 +119,6 @@ export interface RootRouteChildren {
   JourneysRoute: typeof JourneysRoute
   ProjectsRoute: typeof ProjectsRoute
   ResourcesRoute: typeof ResourcesRoute
-  WorksSlugRoute: typeof WorksSlugRoute
-  WorksIndexRoute: typeof WorksIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -198,20 +172,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/works/': {
-      id: '/works/'
-      path: '/works'
-      fullPath: '/works/'
-      preLoaderRoute: typeof WorksIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/works/$slug': {
-      id: '/works/$slug'
-      path: '/works/$slug'
-      fullPath: '/works/$slug'
-      preLoaderRoute: typeof WorksSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -223,8 +183,6 @@ const rootRouteChildren: RootRouteChildren = {
   JourneysRoute: JourneysRoute,
   ProjectsRoute: ProjectsRoute,
   ResourcesRoute: ResourcesRoute,
-  WorksSlugRoute: WorksSlugRoute,
-  WorksIndexRoute: WorksIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
