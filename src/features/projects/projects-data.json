@@ -11,7 +11,12 @@
         "title": "Coined",
         "link": "https://www.thecoined.site",
         "desc": "Helping business build better product, ship faster & scale"
-      },
+      }
+    ]
+  },
+  {
+    "title": "Saas",
+    "list": [
       {
         "title": "Poockey",
         "link": "https://www.poockey.site",
@@ -23,16 +28,6 @@
         "desc": "Testimonials manager for business"
       },
       {
-        "title": "Gridline",
-        "link": "https://thegridline.site",
-        "desc": "Web designers community, newsletter to grow"
-      },
-      {
-        "title": "Scolon",
-        "link": "https://thescolon.site",
-        "desc": "Developers community, growth & newsletter"
-      },
-      {
         "title": "Okay",
         "link": "https://okay.moono.site",
         "desc": "One tool for business transactions"
@@ -41,6 +36,46 @@
         "title": "Signa",
         "link": "https://signa.moono.site",
         "desc": "Sign documents with no headache"
+      }
+    ]
+  },
+  {
+    "title": "Communities",
+    "list": [
+      {
+        "title": "Gridline",
+        "link": "https://thegridline.site",
+        "desc": "Web designers community, newsletter to grow"
+      },
+      {
+        "title": "Scolon",
+        "link": "https://thescolon.site",
+        "desc": "Developers community, growth & newsletter"
+      }
+    ]
+  },
+  {
+    "title": "Goodies",
+    "list": [
+      {
+        "title": "Goodie",
+        "link": "https://thegoodie.site",
+        "desc": "Indie hackers tools collections"
+      },
+      {
+        "title": "Creevoo",
+        "link": "https://www.creevoo.store",
+        "desc": "Building stunning website templates"
+      },
+      {
+        "title": "Heroico",
+        "link": "https://heroico.site",
+        "desc": "Website design, brand & apps inspirations"
+      },
+      {
+        "title": "One thing theme",
+        "link": "https://onethingtheme.moono.site",
+        "desc": "Minimal themes for code productivity"
       }
     ]
   },
@@ -58,21 +93,6 @@
         "desc": "Seriously making ui for apps"
       },
       {
-        "title": "Goodie",
-        "link": "https://thegoodie.site",
-        "desc": "Indie hackers tools collections"
-      },
-      {
-        "title": "Creevoo",
-        "link": "https://www.creevoo.store",
-        "desc": "Building stunning website templates"
-      },
-      {
-        "title": "Heroico",
-        "link": "https://heroico.site",
-        "desc": "Website design, brand & apps inspirations"
-      },
-      {
         "title": "Mailo",
         "link": "https://mailo.moono.site",
         "desc": "React email components blocks"
@@ -86,15 +106,9 @@
         "title": "Acronim",
         "link": "https://acronim.nyomansunima.com",
         "desc": "Design, animation & motion playgrounds"
-      },
-      {
-        "title": "One thing theme",
-        "link": "https://onethingtheme.moono.site",
-        "desc": "Minimal themes for code productivity"
       }
     ]
   },
-
   {
     "title": "Starter kits",
     "list": [
