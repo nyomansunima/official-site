@@ -1,6 +1,6 @@
 [
   {
-    "title": "2019 - The starting time",
+    "title": "2019: The starting time",
     "list": [
       {
         "title": "Learn basic html, css, javascript to create blog",
@@ -22,7 +22,7 @@
     ]
   },
   {
-    "title": "2021 - The year of growth",
+    "title": "2021: The year of growth",
     "list": [
       {
         "title": "Promoted as a senior software engineer",
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "title": "2023 - Take advantage of the opportunity",
+    "title": "2023: Take advantage of the opportunity",
     "list": [
       {
         "title": "Start freelance as a fullstack developer",
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "title": "2024 - Good actions start with good thoughts",
+    "title": "2024: Good actions start with good thoughts",
     "list": [
       {
         "title": "Create web design business",
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "title": "2025 - Everything is starting to change",
+    "title": "2025: Everything is starting to change",
     "list": [
       {
         "title": "Launch Creevoo",
@@ -148,6 +148,16 @@
         "date": "2025-12-14",
         "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1755170428245/ae42a1df-9fa9-4588-b0fc-d400af52a5a4.webp",
         "url": "https://github.com/nyomansunima/saas-starter"
+      }
+    ]
+  },
+  {
+    "title": "2026: New challenges & opportunities",
+    "list": [
+      {
+        "title": "Exloring & ship the projects",
+        "description": "Exploring new opportunities and ship projects that focus on address business needs",
+        "date": "2026-01-01"
       }
     ]
   }
