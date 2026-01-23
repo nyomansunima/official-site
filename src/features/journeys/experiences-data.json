@@ -1,26 +1,14 @@
 [
   {
-    "team": "Dimata",
-    "position": "Senior Software Engineer",
+    "team": "Dimata Sora Jayate",
+    "position": "Senior SWE",
     "timeline": "Jul 2019 - Jul 2023",
     "url": "https://dimata.com"
   },
   {
     "team": "Engaging Enterprises",
-    "position": "Senior Software Engineer",
+    "position": "Senior SWE",
     "timeline": "Aug 2023 - Aug 2025",
     "url": "https://engagingenterprises.co"
-  },
-  {
-    "team": "Moono",
-    "position": "Founder & CEO",
-    "timeline": "Nov 2024 - Present",
-    "url": "https://moono.site"
-  },
-  {
-    "team": "Coined",
-    "position": "Founder & CEO",
-    "timeline": "Jan 2025 - Present",
-    "url": "https://thecoined.site"
   }
 ]

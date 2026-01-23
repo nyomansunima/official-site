@@ -56,7 +56,7 @@ function LogGroup({ group }: LogGroupProps) {
   const reorderList = [...list].reverse();
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-10">
       <h2 className="text-foreground/60">{title}</h2>
 
       <div className="flex flex-col gap-16">

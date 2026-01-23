@@ -8,23 +8,14 @@ export function IntroSection() {
       </p>
 
       <p>
-        Founded & running business at{" "}
+        Growing{" "}
         <a
           className="underline"
           href={"https://thecoined.site"}
           rel="noopener"
           target="_blank"
         >
-          coined
-        </a>
-        , building my own products at{" "}
-        <a
-          className="underline"
-          href={"https://moono.site"}
-          rel="noopener"
-          target="_blank"
-        >
-          moono
+          Coined
         </a>
         , helping web designers and developers to grow at{" "}
         <a
@@ -44,7 +35,25 @@ export function IntroSection() {
         >
           scolon
         </a>
-        , also actively contribute to open source project.
+        . Curated list for good design and resources at{" "}
+        <a
+          className="underline"
+          href={"https://heroico.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          heroico
+        </a>{" "}
+        &{" "}
+        <a
+          className="underline"
+          href={"https://thegoodie.site"}
+          rel="noopener"
+          target="_blank"
+        >
+          goodie
+        </a>
+        .
       </p>
       <p>
         Building ui for{" "}
@@ -119,29 +128,11 @@ export function IntroSection() {
         >
           haloo
         </a>
-        . Curated list for good design and resources at{" "}
-        <a
-          className="underline"
-          href={"https://heroico.site"}
-          rel="noopener"
-          target="_blank"
-        >
-          heroico
-        </a>{" "}
-        &{" "}
-        <a
-          className="underline"
-          href={"https://thegoodie.site"}
-          rel="noopener"
-          target="_blank"
-        >
-          goodie
-        </a>
         .
       </p>
 
       <p>
-        Currently, focus on design & develop projects then it globally, also
+        Currently, focus on design & develop projects to ship globally, also
         helping business to create their products.
       </p>
     </section>

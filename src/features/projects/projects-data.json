@@ -13,19 +13,9 @@
     "title": "Startups",
     "list": [
       {
-        "title": "Moono",
-        "link": "https://moono.site",
-        "desc": "Building pain killer products"
-      },
-      {
         "title": "Coined",
         "link": "https://www.thecoined.site",
         "desc": "Helping business build, ship faster & scale"
-      },
-      {
-        "title": "Ovenly",
-        "link": "https://www.theovenly.vercel.app",
-        "desc": "Cooking good tasted open source projects"
       }
     ]
   },
@@ -86,11 +76,6 @@
         "title": "Heroico",
         "link": "https://heroico.site",
         "desc": "Website design, brand & apps inspirations"
-      },
-      {
-        "title": "One thing theme",
-        "link": "https://onethingtheme.moono.site",
-        "desc": "Minimal themes for code productivity"
       }
     ]
   },
@@ -121,36 +106,11 @@
         "title": "Acronim",
         "link": "https://acronim.nyomansunima.com",
         "desc": "Design, animation & motion playgrounds"
-      }
-    ]
-  },
-  {
-    "title": "Starter kits",
-    "list": [
-      {
-        "title": "Nextjs",
-        "link": "https://github.com/nyomansunima/nextjs-site-starter",
-        "desc": "Nextjs website starter kit"
       },
       {
-        "title": "React router",
-        "link": "https://github.com/nyomansunima/react-router-site-starter",
-        "desc": "React router website starter kit"
-      },
-      {
-        "title": "Astro",
-        "link": "https://github.com/nyomansunima/astro-site-starter",
-        "desc": "Astro website starter kit"
-      },
-      {
-        "title": "Typescript",
-        "link": "https://github.com/nyomansunima/ts-package-starter",
-        "desc": "Typescript package starter"
-      },
-      {
-        "title": "Tanstack start",
-        "link": "https://github.com/nyomansunima/tanstack-start-site-starter",
-        "desc": "Tanstack start website starter kit"
+        "title": "One thing theme",
+        "link": "https://onethingtheme.moono.site",
+        "desc": "Minimal themes for code productivity"
       }
     ]
   }
