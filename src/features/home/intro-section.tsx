@@ -24,7 +24,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          gridline
+          Gridline
         </a>{" "}
         &{" "}
         <a
@@ -33,7 +33,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          scolon
+          Scolon
         </a>
         . Curated list for good design and resources at{" "}
         <a
@@ -42,7 +42,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          heroico
+          Heroico
         </a>{" "}
         &{" "}
         <a
@@ -51,7 +51,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          goodie
+          Goodie
         </a>
         .
       </p>
@@ -63,7 +63,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          picosecond
+          Picosecond
         </a>
         ,{" "}
         <a
@@ -72,7 +72,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          oneday
+          Oneday
         </a>
         ,{" "}
         <a
@@ -81,7 +81,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          compobits
+          Compobits
         </a>{" "}
         &{" "}
         <a
@@ -90,7 +90,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          mailo
+          Mailo
         </a>
         . Shipping the products at{" "}
         <a
@@ -99,7 +99,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          poockey
+          Poockey
         </a>
         ,{" "}
         <a
@@ -108,7 +108,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          okay
+          Okay
         </a>
         ,{" "}
         <a
@@ -117,7 +117,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          signa
+          Signa
         </a>{" "}
         &{" "}
         <a
@@ -126,7 +126,7 @@ export function IntroSection() {
           rel="noopener"
           target="_blank"
         >
-          haloo
+          Haloo
         </a>
         .
       </p>
