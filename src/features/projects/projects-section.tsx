@@ -66,7 +66,7 @@ function ProjectGroup({ group }: ProjectGroupProps) {
 export function ProjectsSection() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-20">
         {projects.map((group, i) => (
           <ProjectGroup group={group} key={i} />
         ))}
