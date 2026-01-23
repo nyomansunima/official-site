@@ -15,12 +15,17 @@
       {
         "title": "Moono",
         "link": "https://moono.site",
-        "desc": "Small team building software, goodies, workflows & tools"
+        "desc": "Building pain killer products"
       },
       {
         "title": "Coined",
         "link": "https://www.thecoined.site",
-        "desc": "Helping business build better product, ship faster & scale"
+        "desc": "Helping business build, ship faster & scale"
+      },
+      {
+        "title": "Ovenly",
+        "link": "https://www.theovenly.vercel.app",
+        "desc": "Cooking good tasted open source projects"
       }
     ]
   },
