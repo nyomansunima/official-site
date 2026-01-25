@@ -138,7 +138,7 @@ export function IntroSection() {
           what i've shipped
         </a>{" "}
         and{" "}
-        <a className="underline" href={"/connect"}>
+        <a className="underline" href={"/contact"}>
           connect now
         </a>
         .
