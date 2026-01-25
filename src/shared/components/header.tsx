@@ -20,7 +20,6 @@ export function Header() {
       <Link href="/">Home</Link>
       <Link href="/projects">Projects</Link>
       <Link href="/contents">Contents</Link>
-      <Link href="/journeys">Journeys</Link>
       <Link href="/contact">Contact</Link>
     </header>
   );

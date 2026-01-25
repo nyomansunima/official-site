@@ -56,7 +56,7 @@ export function IntroSection() {
         .
       </p>
       <p>
-        Building ui for{" "}
+        Building open source projects at{" "}
         <a
           className="underline"
           href={"https://picosecond.moono.site"}
@@ -92,7 +92,7 @@ export function IntroSection() {
         >
           Mailo
         </a>
-        . Shipping the products at{" "}
+        . Shipping businesses & users products at{" "}
         <a
           className="underline"
           href={"https://poockey.site"}
@@ -133,7 +133,15 @@ export function IntroSection() {
 
       <p>
         Currently, focus on design & develop projects to ship globally, also
-        helping business to create their products.
+        helping business to create their products. See more of{" "}
+        <a className="underline" href={"/projects"}>
+          what i've shipped
+        </a>{" "}
+        and{" "}
+        <a className="underline" href={"/connect"}>
+          connect now
+        </a>
+        .
       </p>
     </section>
   );
