@@ -1,6 +1,11 @@
 export function IntroSection() {
   return (
     <section className="prose">
+      <h1 className="font-extrabold font-serif text-2xl! tracking-normal! subpixel-antialiased">
+        Build scalable
+        <br />
+        softwares & systems.
+      </h1>
       <p>
         I've successfully helped businesses to create their software, websites,
         automations and workflows that lift the profits, increase efficiencies
