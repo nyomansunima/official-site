@@ -10,12 +10,12 @@
   --font-sans: "Inter", sans-serif;
 
   --text-sm: 0.84375rem;
-  --text-base: 0.9015rem;
+  --text-base: 0.8715rem;
   --text-lg: 1.03125rem;
   --text-xl: 1.1rem;
 
   --color-background: hsl(0 0 98%);
-  --color-foreground: hsl(0 0 19%);
+  --color-foreground: hsl(0 0 20%);
   --color-surface: hsl(0 0 100%);
   --color-border: hsl(0 0 93%);
   --color-input: hsl(0 0 96%);
@@ -44,8 +44,10 @@
   }
 
   body {
-    @apply text-base font-normal leading-normal! text-foreground bg-background font-sans antialiased selection:bg-fuchsia-100/90 selection:text-fuchsia-950;
-    font-style: normal;
+    @apply text-base font-normal leading-normal text-foreground bg-background font-sans antialiased selection:bg-fuchsia-100/90 selection:text-fuchsia-950;
+    text-rendering: optimizeLegibility;
+    font-kerning: auto;
+    font-optical-sizing: auto;
   }
 }
 

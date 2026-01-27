@@ -15,12 +15,12 @@ export function Item({ data, type }: ItemProps) {
   const comp = {
     SIMPLE: (
       <a
-        className="flex items-center gap-2 py-2"
+        className="group flex items-center gap-2 py-2"
         href={data.url}
         target="_blank"
       >
         <svg
-          className="text-foreground/40"
+          className="text-foreground/40 transition-colors duration-300 group-hover:text-foreground"
           fill="currentColor"
           height="10"
           viewBox="0 0 24 24"
@@ -35,13 +35,14 @@ export function Item({ data, type }: ItemProps) {
 
     ALIGN: (
       <a
-        className="flex flex-col gap-x-2 gap-y-1 py-2 md:flex-row md:items-center"
+        className="group flex flex-col gap-x-2 gap-y-1 py-2 md:flex-row md:items-center"
         href={data.url}
         target="_blank"
       >
         <div className="flex items-center gap-2">
           <svg
-            className="fill-foreground/40"
+            className="text-foreground/40 transition-colors duration-300 group-hover:text-foreground"
+            fill="currentColor"
             height="10"
             viewBox="0 0 24 24"
             width="10"
@@ -59,13 +60,14 @@ export function Item({ data, type }: ItemProps) {
 
     JUSTIFY: (
       <a
-        className="flex flex-col py-2 md:flex-row md:items-center"
+        className="group flex flex-col py-2 md:flex-row md:items-center"
         href={data.url}
         target="_blank"
       >
         <div className="flex grow items-center gap-2">
           <svg
-            className="fill-foreground/40"
+            className="text-foreground/40 transition-colors duration-300 group-hover:text-foreground"
+            fill="currentColor"
             height="10"
             viewBox="0 0 24 24"
             width="10"
@@ -109,7 +111,7 @@ interface StacksProps {
 
 export function Stacks({ type, children }: StacksProps) {
   return type === "LIST" ? (
-    <div className="flex flex-col gap-1">{children}</div>
+    <div className="flex flex-col gap-0.5">{children}</div>
   ) : (
     <div className="grid grid-cols-2 gap-x-10 gap-y-1 sm:grid-cols-3">
       {children}
