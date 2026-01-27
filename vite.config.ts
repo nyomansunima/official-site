@@ -13,15 +13,6 @@ export default defineConfig({
     tsconfigPaths(),
     tailwindcss(),
     tanstackStart({
-      prerender: {
-        enabled: false,
-        crawlLinks: true,
-        autoStaticPathsDiscovery: true,
-      },
-      sitemap: {
-        enabled: true,
-        host: "https://www.nyomansunima.com",
-      },
       srcDirectory: "src/app",
     }),
     react(),

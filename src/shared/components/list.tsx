@@ -20,7 +20,8 @@ export function Item({ data, type }: ItemProps) {
         target="_blank"
       >
         <svg
-          className="fill-foreground/40"
+          className="text-foreground/40"
+          fill="currentColor"
           height="10"
           viewBox="0 0 24 24"
           width="10"
@@ -110,6 +111,8 @@ export function Stacks({ type, children }: StacksProps) {
   return type === "LIST" ? (
     <div className="flex flex-col gap-1">{children}</div>
   ) : (
-    <div className="grid grid-cols-3 gap-x-10 gap-y-1">{children}</div>
+    <div className="grid grid-cols-2 gap-x-10 gap-y-1 sm:grid-cols-3">
+      {children}
+    </div>
   );
 }

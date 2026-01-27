@@ -16,11 +16,6 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <article className="prose">
-        <h1>
-          Build scalable
-          <br />
-          softwares & systems.
-        </h1>
         <p>
           I've successfully helped businesses to create their software,
           websites, automations and workflows that lift the profits, increase
@@ -156,6 +151,10 @@ function RouteComponent() {
           helping business to create their products. See more of{" "}
           <a className="underline" href={"/projects"}>
             what i've shipped
+          </a>
+          ,{" "}
+          <a className="underline" href={"/contents"}>
+            what i've shared
           </a>{" "}
           and{" "}
           <a className="underline" href={"/contact"}>

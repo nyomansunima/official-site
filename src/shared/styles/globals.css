@@ -7,11 +7,10 @@
 
 @theme {
   --font-*: initial;
-  --font-serif: "Instrument Serif", serif;
   --font-sans: "Inter", sans-serif;
 
   --text-sm: 0.84375rem;
-  --text-base: 0.9175rem;
+  --text-base: 0.9015rem;
   --text-lg: 1.03125rem;
   --text-xl: 1.1rem;
 
@@ -24,7 +23,6 @@
   --color-primary-foreground: hsl(0 0 98%);
   --color-secondary: hsl(0 0 96%);
   --color-secondary-foreground: hsl(0 0 10%);
-  --color-link: oklch(54.6% 0.245 262.881);
   --color-accent: oklch(54.6% 0.245 262.881);
 }
 

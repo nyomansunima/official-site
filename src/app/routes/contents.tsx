@@ -1,4 +1,4 @@
-import publishers from "@features/data/publishers-data.json";
+import publications from "@features/data/publication-data.json";
 import writings from "@features/data/writing-data.json";
 import * as List from "@shared/components/list";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
@@ -19,9 +19,9 @@ function RouteComponent() {
   return (
     <main className="flex flex-col gap-16">
       <List.Group>
-        <List.Title>Publishers:</List.Title>
+        <List.Title>Publications:</List.Title>
         <List.Stacks type="GRID">
-          {publishers.map((item, itemIndex) => (
+          {publications.map((item, itemIndex) => (
             <List.Item
               data={{ title: item.title, url: item.url }}
               key={itemIndex}
@@ -36,7 +36,7 @@ function RouteComponent() {
         <List.Stacks type="LIST">
           {writings.reverse().map((item, itemIndex) => (
             <List.Item
-              data={{ title: item.title, url: item.url, desc: item.timeline }}
+              data={{ title: item.title, url: item.url }}
               key={itemIndex}
               type="JUSTIFY"
             />
@@ -65,7 +65,7 @@ function RouteComponent() {
             data={{
               title: "Cooking",
               url: "/",
-              desc: "Crafting the videos for you",
+              desc: "Crafting the podcasts for you",
             }}
             type="ALIGN"
           />
