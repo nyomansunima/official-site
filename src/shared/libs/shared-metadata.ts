@@ -26,7 +26,7 @@ export function generatedMetadata({
     {
       name: "keywords",
       content:
-        "Product Designer, UI UX Designer, Web Designer, Shopify Developer, Web Developer, Webflow Expert, Framer Expert, Squarespace, Wix Developer, Fullstack, Mobile Developer, Indie Hacker",
+        "Product Designer, Product Engineer, Software Engineer, Fullstack Engineer, Cloud Native Backend Specialist, React, Node.js, React Native, Go, Java, Rust",
     },
     { name: "creator", content: "nyomansunima" },
     { name: "publisher", content: "nyomansunima" },
@@ -49,7 +49,7 @@ export function generatedMetadata({
       name: "og:image",
       content:
         image ??
-        "https://cdn.hashnode.com/res/hashnode/image/upload/v1765965435790/7bbfaf15-b304-4385-875b-adc76cb8b3e8.png",
+        "https://cdn.hashnode.com/res/hashnode/image/upload/v1769506360931/4e5a6e4e-bfdc-4e5d-a3e7-4b5040c8d1fc.png",
     },
     { name: "og:locale", content: "en_US" },
     { name: "og:type", content: "website" },
@@ -68,7 +68,7 @@ export function generatedMetadata({
       name: "twitter:image",
       content:
         image ??
-        "https://cdn.hashnode.com/res/hashnode/image/upload/v1765965435790/7bbfaf15-b304-4385-875b-adc76cb8b3e8.png",
+        "https://cdn.hashnode.com/res/hashnode/image/upload/v1769506360931/4e5a6e4e-bfdc-4e5d-a3e7-4b5040c8d1fc.png",
     },
   ];
 }

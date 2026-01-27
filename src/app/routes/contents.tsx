@@ -1,9 +1,6 @@
-import {
-  PublicationSection,
-  SpeakSection,
-  VideoSection,
-  WritingSection,
-} from "@features/contents";
+import publishers from "@features/data/publishers-data.json";
+import writings from "@features/data/writing-data.json";
+import * as List from "@shared/components/list";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -20,11 +17,60 @@ export const Route = createFileRoute("/contents")({
 
 function RouteComponent() {
   return (
-    <main className="flex flex-col gap-20">
-      <PublicationSection />
-      <WritingSection />
-      <VideoSection />
-      <SpeakSection />
+    <main className="flex flex-col gap-16">
+      <List.Group>
+        <List.Title>Publishers:</List.Title>
+        <List.Stacks type="GRID">
+          {publishers.map((item, itemIndex) => (
+            <List.Item
+              data={{ title: item.title, url: item.url }}
+              key={itemIndex}
+              type="SIMPLE"
+            />
+          ))}
+        </List.Stacks>
+      </List.Group>
+
+      <List.Group>
+        <List.Title>Writings:</List.Title>
+        <List.Stacks type="LIST">
+          {writings.reverse().map((item, itemIndex) => (
+            <List.Item
+              data={{ title: item.title, url: item.url, desc: item.timeline }}
+              key={itemIndex}
+              type="JUSTIFY"
+            />
+          ))}
+        </List.Stacks>
+      </List.Group>
+
+      <List.Group>
+        <List.Title>Videos:</List.Title>
+        <List.Stacks type="LIST">
+          <List.Item
+            data={{
+              title: "Cooking",
+              url: "/",
+              desc: "Crafting the videos for you",
+            }}
+            type="ALIGN"
+          />
+        </List.Stacks>
+      </List.Group>
+
+      <List.Group>
+        <List.Title>Speaks:</List.Title>
+        <List.Stacks type="LIST">
+          <List.Item
+            data={{
+              title: "Cooking",
+              url: "/",
+              desc: "Crafting the videos for you",
+            }}
+            type="ALIGN"
+          />
+        </List.Stacks>
+      </List.Group>
     </main>
   );
 }

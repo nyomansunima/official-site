@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Hire me",
+    "list": [
+      { "title": "Email", "url": "mailto:nyomansunima@gmail.com" },
+      {
+        "title": "Meeting",
+        "url": "https://cal.com/nyomansunima/connects"
+      },
+      {
+        "title": "Whatsapp",
+        "url": "https://api.whatsapp.com/send?phone=6285161619109"
+      }
+    ]
+  },
+  {
+    "title": "Follows me",
+    "list": [
+      {
+        "title": "Linkedin",
+        "url": "https://linkedin.com/in/nyomansunima"
+      },
+      {
+        "title": "Producthunt",
+        "url": "https://producthunt.com/@nyomansunima"
+      },
+      {
+        "title": "Youtube",
+        "url": "https://youtube.com/@nyomansunima"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/nyomansunima"
+      },
+      {
+        "title": "Threads",
+        "url": "https://threads.net/nyomansunimaa"
+      },
+      {
+        "title": "Facebook",
+        "url": "https://facebook.com/nyomansunimaa"
+      },
+      {
+        "title": "Instagram",
+        "url": "https://instagram.com/nyomansunimaa"
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/nyomansunima"
+      },
+      {
+        "title": "Dribbble",
+        "url": "https://dribbble.com/nyomansunima"
+      }
+    ]
+  }
+]

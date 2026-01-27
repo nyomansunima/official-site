@@ -1,4 +1,5 @@
-import { ContactSection } from "@features/contact";
+import contacts from "@features/data/contact-data.json";
+import * as List from "@shared/components/list";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -14,8 +15,21 @@ export const Route = createFileRoute("/contact")({
 
 function RouteComponent() {
   return (
-    <main className="flex flex-col">
-      <ContactSection />
+    <main className="flex flex-col gap-16">
+      {contacts.map((group, groupIndex) => (
+        <List.Group key={groupIndex}>
+          <List.Title>{group.title}:</List.Title>
+          <List.Stacks type="GRID">
+            {group.list.map((item, itemIndex) => (
+              <List.Item
+                data={{ title: item.title, url: item.url }}
+                key={itemIndex}
+                type="SIMPLE"
+              />
+            ))}
+          </List.Stacks>
+        </List.Group>
+      ))}
     </main>
   );
 }
