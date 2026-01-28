@@ -23,23 +23,23 @@ function RouteComponent() {
         </p>
 
         <p>
-          Growing{" "}
+          Running{" "}
           <a
             className="underline"
             href={"https://thecoined.site"}
             rel="noopener"
             target="_blank"
           >
-            Coined
+            coined
           </a>
-          , helping web designers and developers to grow at{" "}
+          , growing communities at{" "}
           <a
             className="underline"
             href={"https://thegridline.site"}
             rel="noopener"
             target="_blank"
           >
-            Gridline
+            gridline
           </a>{" "}
           &{" "}
           <a
@@ -48,7 +48,7 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            Scolon
+            scolon
           </a>
           . Curated list for good design and resources at{" "}
           <a
@@ -57,7 +57,7 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            Heroico
+            heroico
           </a>{" "}
           &{" "}
           <a
@@ -66,19 +66,16 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            Goodie
+            goodie
           </a>
-          .
-        </p>
-        <p>
-          Building open source projects at{" "}
+          . Building open source projects at{" "}
           <a
             className="underline"
             href={"https://picosecond.moono.site"}
             rel="noopener"
             target="_blank"
           >
-            Picosecond
+            picosecond
           </a>
           ,{" "}
           <a
@@ -87,7 +84,7 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            Oneday
+            oneday
           </a>
           ,{" "}
           <a
@@ -96,7 +93,7 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            Compobits
+            compobits
           </a>{" "}
           &{" "}
           <a
@@ -105,7 +102,7 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            Mailo
+            mailo
           </a>
           . Shipping businesses & users products at{" "}
           <a
@@ -114,7 +111,7 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            Poockey
+            poockey
           </a>
           ,{" "}
           <a
@@ -123,7 +120,7 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            Okay
+            okay
           </a>
           ,{" "}
           <a
@@ -132,7 +129,7 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            Signa
+            signa
           </a>{" "}
           &{" "}
           <a
@@ -141,7 +138,7 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            Haloo
+            haloo
           </a>
           .
         </p>
