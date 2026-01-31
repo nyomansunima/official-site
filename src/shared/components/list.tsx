@@ -15,21 +15,21 @@ export function Item({ data, type }: ItemProps) {
   const comp = {
     SIMPLE: (
       <a
-        className="group flex items-center gap-1 py-2 group"
+        className="group group flex items-center gap-1 py-2"
         href={data.url}
         target="_blank"
       >
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
+          className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
           fill="none"
+          height="24"
           stroke="currentColor"
-          stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <circle cx="12.1" cy="12.1" r="1" />
         </svg>
@@ -39,22 +39,22 @@ export function Item({ data, type }: ItemProps) {
 
     ALIGN: (
       <a
-        className="group flex flex-col gap-x-2 gap-y-1 py-2 md:flex-row md:items-center group"
+        className="group group flex flex-col gap-x-2 gap-y-1 py-2 md:flex-row md:items-center"
         href={data.url}
         target="_blank"
       >
         <div className="flex items-center gap-1">
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
+            className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
             fill="none"
+            height="24"
             stroke="currentColor"
-            stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <circle cx="12.1" cy="12.1" r="1" />
           </svg>
@@ -68,22 +68,22 @@ export function Item({ data, type }: ItemProps) {
 
     JUSTIFY: (
       <a
-        className="group flex flex-col py-2 md:flex-row md:items-center group"
+        className="group group flex flex-col py-2 md:flex-row md:items-center"
         href={data.url}
         target="_blank"
       >
         <div className="flex grow items-center gap-1">
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
+            className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
             fill="none"
+            height="24"
             stroke="currentColor"
-            stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <circle cx="12.1" cy="12.1" r="1" />
           </svg>
