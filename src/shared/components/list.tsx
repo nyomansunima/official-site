@@ -15,19 +15,23 @@ export function Item({ data, type }: ItemProps) {
   const comp = {
     SIMPLE: (
       <a
-        className="group flex items-center gap-2 py-2"
+        className="group flex items-center gap-1 py-2 group"
         href={data.url}
         target="_blank"
       >
         <svg
-          className="text-foreground/40 transition-colors duration-300 group-hover:text-foreground"
-          fill="currentColor"
-          height="10"
-          viewBox="0 0 24 24"
-          width="10"
           xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
         >
-          <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z" />
+          <circle cx="12.1" cy="12.1" r="1" />
         </svg>
         <span>{data.title}</span>
       </a>
@@ -35,20 +39,24 @@ export function Item({ data, type }: ItemProps) {
 
     ALIGN: (
       <a
-        className="group flex flex-col gap-x-2 gap-y-1 py-2 md:flex-row md:items-center"
+        className="group flex flex-col gap-x-2 gap-y-1 py-2 md:flex-row md:items-center group"
         href={data.url}
         target="_blank"
       >
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1">
           <svg
-            className="text-foreground/40 transition-colors duration-300 group-hover:text-foreground"
-            fill="currentColor"
-            height="10"
-            viewBox="0 0 24 24"
-            width="10"
             xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
           >
-            <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z" />
+            <circle cx="12.1" cy="12.1" r="1" />
           </svg>
 
           <span>{data.title}</span>
@@ -60,20 +68,24 @@ export function Item({ data, type }: ItemProps) {
 
     JUSTIFY: (
       <a
-        className="group flex flex-col py-2 md:flex-row md:items-center"
+        className="group flex flex-col py-2 md:flex-row md:items-center group"
         href={data.url}
         target="_blank"
       >
-        <div className="flex grow items-center gap-2">
+        <div className="flex grow items-center gap-1">
           <svg
-            className="text-foreground/40 transition-colors duration-300 group-hover:text-foreground"
-            fill="currentColor"
-            height="10"
-            viewBox="0 0 24 24"
-            width="10"
             xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
           >
-            <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z" />
+            <circle cx="12.1" cy="12.1" r="1" />
           </svg>
           <span className="line-clamp-1 text-pretty">{data.title}</span>
         </div>
@@ -93,7 +105,7 @@ interface GroupProps {
 }
 
 export function Group({ children }: GroupProps) {
-  return <div className="flex flex-col gap-4">{children}</div>;
+  return <div className="flex flex-col gap-2">{children}</div>;
 }
 
 interface TitleProps {

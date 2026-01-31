@@ -4,6 +4,8 @@ import * as List from "@shared/components/list";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
+const reversedWritings = writings.reverse();
+
 export const Route = createFileRoute("/contents")({
   head: () => ({
     meta: generatedMetadata({
@@ -17,7 +19,7 @@ export const Route = createFileRoute("/contents")({
 
 function RouteComponent() {
   return (
-    <main className="flex flex-col gap-16">
+    <main className="flex flex-col gap-10">
       <List.Group>
         <List.Title>Publications:</List.Title>
         <List.Stacks type="GRID">
@@ -34,7 +36,7 @@ function RouteComponent() {
       <List.Group>
         <List.Title>Writings:</List.Title>
         <List.Stacks type="LIST">
-          {writings.reverse().map((item, itemIndex) => (
+          {reversedWritings.map((item, itemIndex) => (
             <List.Item
               data={{ title: item.title, url: item.url }}
               key={itemIndex}
