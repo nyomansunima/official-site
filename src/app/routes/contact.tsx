@@ -24,7 +24,6 @@ function RouteComponent() {
               <List.Item
                 data={{ title: item.title, url: item.url }}
                 key={itemIndex}
-                type="SIMPLE"
               />
             ))}
           </List.Stacks>

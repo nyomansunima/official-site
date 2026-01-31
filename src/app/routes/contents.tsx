@@ -27,7 +27,6 @@ function RouteComponent() {
             <List.Item
               data={{ title: item.title, url: item.url }}
               key={itemIndex}
-              type="SIMPLE"
             />
           ))}
         </List.Stacks>
@@ -40,7 +39,6 @@ function RouteComponent() {
             <List.Item
               data={{ title: item.title, url: item.url }}
               key={itemIndex}
-              type="JUSTIFY"
             />
           ))}
         </List.Stacks>
@@ -51,11 +49,9 @@ function RouteComponent() {
         <List.Stacks type="LIST">
           <List.Item
             data={{
-              title: "Cooking",
+              title: "Cooking - Crafting the videos for you",
               url: "/",
-              desc: "Crafting the videos for you",
             }}
-            type="ALIGN"
           />
         </List.Stacks>
       </List.Group>
@@ -65,11 +61,9 @@ function RouteComponent() {
         <List.Stacks type="LIST">
           <List.Item
             data={{
-              title: "Cooking",
+              title: "Cooking - Crafting the podcasts for you",
               url: "/",
-              desc: "Crafting the podcasts for you",
             }}
-            type="ALIGN"
           />
         </List.Stacks>
       </List.Group>
