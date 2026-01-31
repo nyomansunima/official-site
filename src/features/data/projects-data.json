@@ -1,106 +1,90 @@
 [
   {
-    "title": "Startups",
+    "title": "Startups:",
     "list": [
       {
-        "title": "Coined",
-        "link": "https://www.thecoined.site",
-        "desc": "Helping business build, ship faster & scale"
+        "title": "Coined: helping business build, ship faster & scale",
+        "link": "https://www.thecoined.site"
       }
     ]
   },
   {
-    "title": "Saas",
+    "title": "Saas:",
     "list": [
       {
-        "title": "Poockey",
-        "link": "https://www.poockey.site",
-        "desc": "All in one tool for personal finances"
+        "title": "Poockey: all in one tool for personal finances",
+        "link": "https://www.poockey.site"
       },
       {
-        "title": "Haloo",
-        "link": "https://www.tryhaloo.site",
-        "desc": "Testimonials manager for business"
+        "title": "Haloo: testimonials manager for business",
+        "link": "https://www.tryhaloo.site"
       },
       {
-        "title": "Okay",
-        "link": "https://okay.moono.site",
-        "desc": "One tool for business transactions"
+        "title": "Okay: one tool for business transactions",
+        "link": "https://okay.moono.site"
       },
       {
-        "title": "Signa",
-        "link": "https://signa.moono.site",
-        "desc": "Sign documents with no headache"
+        "title": "Signa: sign documents with no headache",
+        "link": "https://signa.moono.site"
       }
     ]
   },
   {
-    "title": "Communities",
+    "title": "Communities:",
     "list": [
       {
-        "title": "Gridline",
-        "link": "https://thegridline.site",
-        "desc": "Web designers community, newsletter to grow"
+        "title": "Gridline: web designers community, newsletter to grow",
+        "link": "https://thegridline.site"
       },
       {
-        "title": "Scolon",
-        "link": "https://thescolon.site",
-        "desc": "Developers community, growth & newsletter"
+        "title": "Scolon: developers community, growth & newsletter",
+        "link": "https://thescolon.site"
       }
     ]
   },
   {
-    "title": "Goodies",
+    "title": "Goodies:",
     "list": [
       {
-        "title": "Goodie",
-        "link": "https://thegoodie.site",
-        "desc": "Indie hackers tools collections"
+        "title": "Goodie: indie hackers tools collections",
+        "link": "https://thegoodie.site"
       },
       {
-        "title": "Creevoo",
-        "link": "https://www.creevoo.store",
-        "desc": "Building stunning website templates"
+        "title": "Creevoo: building stunning website templates",
+        "link": "https://www.creevoo.store"
       },
       {
-        "title": "Heroico",
-        "link": "https://heroico.site",
-        "desc": "Website design, brand & apps inspirations"
+        "title": "Heroico: website design, brand & apps inspirations",
+        "link": "https://heroico.site"
       }
     ]
   },
   {
-    "title": "Utilities",
+    "title": "Utilities:",
     "list": [
       {
-        "title": "Oneday",
-        "link": "https://oneday.moono.site",
-        "desc": "Website blocks & component collections"
+        "title": "Oneday: website blocks & component collections",
+        "link": "https://oneday.moono.site"
       },
       {
-        "title": "Picosecond",
-        "link": "https://picosecond.moono.site",
-        "desc": "Seriously making ui for apps"
+        "title": "Picosecond: seriously making ui for apps",
+        "link": "https://picosecond.moono.site"
       },
       {
-        "title": "Mailo",
-        "link": "https://mailo.moono.site",
-        "desc": "React email components blocks"
+        "title": "Mailo: react email components blocks",
+        "link": "https://mailo.moono.site"
       },
       {
-        "title": "Compobits",
-        "link": "https://compobits.moono.site",
-        "desc": "Stunning crafted react component collections"
+        "title": "Compobits: stunning crafted react component collections",
+        "link": "https://compobits.moono.site"
       },
       {
-        "title": "Acronim",
-        "link": "https://acronim.nyomansunima.com",
-        "desc": "Design, animation & motion playgrounds"
+        "title": "Acronim: design, animation & motion playgrounds",
+        "link": "https://acronim.nyomansunima.com"
       },
       {
-        "title": "One thing theme",
-        "link": "https://onethingtheme.moono.site",
-        "desc": "Minimal themes for code productivity"
+        "title": "One thing theme: minimal themes for code productivity",
+        "link": "https://onethingtheme.moono.site"
       }
     ]
   }
