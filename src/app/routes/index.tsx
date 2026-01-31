@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: generatedMetadata({
       title:
-        "Product Engineer - Build softwares, tools & systems | Nyoman Sunima",
+        "Product Engineer - Build scalable softwares & systems | Nyoman Sunima",
       description:
         "Helped businesses to create their software, websites, automations and workflows that lift the profits, increase efficiencies and reduce the costs",
     }),
