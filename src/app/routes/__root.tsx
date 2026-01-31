@@ -37,8 +37,8 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
       <head>
         <HeadContent />
       </head>
-      <body className="container mx-auto bg-[radial-gradient(var(--pattern-fg)_1px,transparent_0)] bg-size-[24px_24px] bg-fixed px-5 [--pattern-fg:var(--color-gray-950)]/5 lg:px-10">
-        <div className="mx-auto w-full pb-28 sm:w-10/12 md:w-9/12 lg:w-6/12 xl:w-5/12">
+      <body className="container mx-auto bg-[radial-gradient(var(--pattern-fg)_1px,transparent_0)] bg-size-[24px_24px] bg-fixed px-5 [--pattern-fg:var(--color-gray-950)]/5">
+        <div className="mx-auto w-full pb-28 sm:w-10/12 sm:px-10 md:w-9/12 lg:w-6/12 xl:w-5/12">
           <Header />
           {children}
         </div>
@@ -75,9 +75,9 @@ function NotFondComponent(): React.ReactElement {
               fill="none"
               height="14"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               width="14"
               xmlns="http://www.w3.org/2000/svg"
@@ -120,9 +120,9 @@ function ErrorComponent(): React.ReactElement {
               fill="none"
               height="14"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               width="14"
               xmlns="http://www.w3.org/2000/svg"
