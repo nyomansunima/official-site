@@ -24,7 +24,7 @@ function RouteComponent() {
         </p>
 
         <p>
-          Running{" "}
+          Running the{" "}
           <a
             className="underline"
             href={"https://thecoined.site"}
@@ -33,7 +33,7 @@ function RouteComponent() {
           >
             coined
           </a>
-          , growing communities at{" "}
+          , growing the communities at{" "}
           <a
             className="underline"
             href={"https://thegridline.site"}
@@ -69,7 +69,11 @@ function RouteComponent() {
           >
             goodie
           </a>
-          . Building open source projects at{" "}
+          .
+        </p>
+
+        <p>
+          Building open source projects at{" "}
           <a
             className="underline"
             href={"https://picosecond.moono.site"}
@@ -152,11 +156,11 @@ function RouteComponent() {
           </a>
           ,{" "}
           <a className="underline" href={"/contents"}>
-            what i've shared
+            the thoughts
           </a>{" "}
           and{" "}
           <a className="underline" href={"/contact"}>
-            connect now
+            reach out now
           </a>
           .
         </p>
