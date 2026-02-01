@@ -1,5 +1,6 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
 
 /* Tailwindcss */
 @import "tailwindcss";
@@ -7,7 +8,7 @@
 
 @theme {
   --font-*: initial;
-  --font-sans: "Inter", sans-serif;
+  --font-serif: "Domine", serif;
 
   --text-sm: 0.82375rem;
   --text-base: 0.8715rem;
@@ -44,7 +45,7 @@
   }
 
   body {
-    @apply text-base font-normal leading-normal text-foreground bg-background font-sans antialiased selection:bg-fuchsia-100/90 selection:text-fuchsia-950;
+    @apply text-base font-normal leading-normal text-foreground bg-background font-serif antialiased selection:bg-fuchsia-100/90 selection:text-fuchsia-950;
     text-rendering: optimizeLegibility;
     font-kerning: auto;
     font-optical-sizing: auto;
