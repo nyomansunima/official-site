@@ -11,7 +11,11 @@ interface ItemProps {
 
 export function Item({ data }: ItemProps) {
   return (
-    <a className="group group flex gap-1 py-1" href={data.url} target="_blank">
+    <a
+      className="group group flex gap-1 py-1 transition-colors duration-300 hover:text-foreground/60"
+      href={data.url}
+      target="_blank"
+    >
       <svg
         className="text-foreground/40"
         fill="none"
