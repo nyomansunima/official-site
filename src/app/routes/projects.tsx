@@ -22,10 +22,7 @@ function RouteComponent() {
           <List.Title>{group.title}</List.Title>
           <List.Stacks type="LIST">
             {group.list.map((item, itemIndex) => (
-              <List.Item
-                data={{ title: item.title, url: item.link }}
-                key={itemIndex}
-              />
+              <List.Item data={item} key={itemIndex} />
             ))}
           </List.Stacks>
         </List.Group>

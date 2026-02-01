@@ -18,13 +18,10 @@ function RouteComponent() {
     <main className="flex flex-col gap-10">
       {contacts.map((group, groupIndex) => (
         <List.Group key={groupIndex}>
-          <List.Title>{group.title}:</List.Title>
+          <List.Title>{group.title}</List.Title>
           <List.Stacks type="GRID">
             {group.list.map((item, itemIndex) => (
-              <List.Item
-                data={{ title: item.title, url: item.url }}
-                key={itemIndex}
-              />
+              <List.Item data={item} key={itemIndex} />
             ))}
           </List.Stacks>
         </List.Group>

@@ -160,7 +160,7 @@ function RouteComponent() {
           </a>{" "}
           and{" "}
           <a className="underline" href={"/contact"}>
-            reach out now
+            reach out
           </a>
           .
         </p>
