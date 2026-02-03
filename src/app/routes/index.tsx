@@ -17,6 +17,11 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <article className="prose">
+        <h1>
+          Build scalable
+          <br />
+          softwares & systems.
+        </h1>
         <p>
           I've successfully helped businesses to create their software,
           websites, automations and workflows that lift the profits, increase

@@ -19,54 +19,57 @@ export const Route = createFileRoute("/contents")({
 
 function RouteComponent() {
   return (
-    <main className="flex flex-col gap-10">
-      <List.Group>
-        <List.Title>Publications:</List.Title>
-        <List.Stacks type="GRID">
-          {publications.map((item, itemIndex) => (
+    <main className="flex flex-col gap-6">
+      <h1 className="font-medium text-xl leading-tight">Contents.</h1>
+      <div className="flex flex-col gap-10">
+        <List.Group>
+          <List.Title>Publications:</List.Title>
+          <List.Stacks type="GRID">
+            {publications.map((item, itemIndex) => (
+              <List.Item
+                data={{ title: item.title, url: item.url }}
+                key={itemIndex}
+              />
+            ))}
+          </List.Stacks>
+        </List.Group>
+
+        <List.Group>
+          <List.Title>Writings:</List.Title>
+          <List.Stacks type="LIST">
+            {reversedWritings.map((item, itemIndex) => (
+              <List.Item
+                data={{ title: item.title, url: item.url }}
+                key={itemIndex}
+              />
+            ))}
+          </List.Stacks>
+        </List.Group>
+
+        <List.Group>
+          <List.Title>Videos:</List.Title>
+          <List.Stacks type="LIST">
             <List.Item
-              data={{ title: item.title, url: item.url }}
-              key={itemIndex}
+              data={{
+                title: "Cooking - Crafting the videos for you",
+                url: "/",
+              }}
             />
-          ))}
-        </List.Stacks>
-      </List.Group>
+          </List.Stacks>
+        </List.Group>
 
-      <List.Group>
-        <List.Title>Writings:</List.Title>
-        <List.Stacks type="LIST">
-          {reversedWritings.map((item, itemIndex) => (
+        <List.Group>
+          <List.Title>Speaks:</List.Title>
+          <List.Stacks type="LIST">
             <List.Item
-              data={{ title: item.title, url: item.url }}
-              key={itemIndex}
+              data={{
+                title: "Cooking - Crafting the podcasts for you",
+                url: "/",
+              }}
             />
-          ))}
-        </List.Stacks>
-      </List.Group>
-
-      <List.Group>
-        <List.Title>Videos:</List.Title>
-        <List.Stacks type="LIST">
-          <List.Item
-            data={{
-              title: "Cooking - Crafting the videos for you",
-              url: "/",
-            }}
-          />
-        </List.Stacks>
-      </List.Group>
-
-      <List.Group>
-        <List.Title>Speaks:</List.Title>
-        <List.Stacks type="LIST">
-          <List.Item
-            data={{
-              title: "Cooking - Crafting the podcasts for you",
-              url: "/",
-            }}
-          />
-        </List.Stacks>
-      </List.Group>
+          </List.Stacks>
+        </List.Group>
+      </div>
     </main>
   );
 }
