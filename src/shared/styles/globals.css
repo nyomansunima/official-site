@@ -9,7 +9,7 @@
   --font-*: initial;
   --font-serif: "Domine", serif;
 
-  --text-sm: 0.82375rem;
+  --text-sm: 0.8375rem;
   --text-base: 0.8915rem;
   --text-lg: 1.03125rem;
   --text-xl: 1.1rem;
@@ -83,15 +83,15 @@
   }
 
   h1 {
-    @apply text-xl font-medium leading-tight text-balance tracking-tight;
+    @apply text-xl font-medium leading-tight text-balance;
   }
 
   h2 {
-    @apply text-lg font-medium leading-tight text-balance tracking-tight;
+    @apply text-lg font-medium leading-tight text-balance;
   }
 
   h3 {
-    @apply text-base font-medium leading-tight text-balance tracking-tight;
+    @apply text-base font-medium leading-tight text-balance;
   }
 
   img {
