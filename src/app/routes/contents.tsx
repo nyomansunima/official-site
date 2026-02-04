@@ -51,7 +51,7 @@ function RouteComponent() {
           <List.Stacks type="LIST">
             <List.Item
               data={{
-                title: "Cooking - Crafting the videos for you",
+                title: "Crafting the videos for you",
                 url: "/",
               }}
             />
@@ -63,7 +63,7 @@ function RouteComponent() {
           <List.Stacks type="LIST">
             <List.Item
               data={{
-                title: "Cooking - Crafting the podcasts for you",
+                title: "Crafting the podcasts for you",
                 url: "/",
               }}
             />
