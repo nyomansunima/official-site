@@ -22,10 +22,11 @@ function RouteComponent() {
           <br />
           softwares & systems.
         </h1>
+
         <p>
-          I've successfully helped businesses to create their software,
-          websites, automations and workflows that lift the profits, increase
-          efficiencies and reduce the costs.
+          I've successfully helped companies to generate over $102 million in
+          revenues, reduced the infrastructure costs up to $273,000 annually and
+          saved 40+ hours monthly.
         </p>
 
         <p>
