@@ -24,9 +24,8 @@ function RouteComponent() {
         </h1>
 
         <p>
-          I've successfully helped companies to generate over $102 million in
-          revenues, reduced the infrastructure costs up to $273,000 annually and
-          saved 40+ hours monthly.
+          I've successfully helped companies generate over $21M in revenues
+          through building scalable softwares and systems.
         </p>
 
         <p>
