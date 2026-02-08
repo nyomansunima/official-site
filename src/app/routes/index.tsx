@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: generatedMetadata({
       title:
-        "Software Engineer - Build scalable software & systems | Nyoman Sunima",
+        "Software Engineer - Build Scalable Software & Systems | Nyoman Sunima",
       description:
         "Helped businesses to create their software, websites, automations and workflows that lift the profits, increase efficiencies and reduce the costs",
     }),
@@ -18,14 +18,14 @@ function RouteComponent() {
     <main className="flex flex-col">
       <article className="prose">
         <h1>
-          Build scalable
+          Help business
           <br />
-          software & systems.
+          ship faster & scale.
         </h1>
 
         <p>
-          I've successfully helped companies generate over $21M in revenues
-          through building scalable software and systems by combining product
+          I've successfully helped companies generate over $21M in revenue
+          through building scalable software and systems that combine product
           engineering and business strategy.
         </p>
 

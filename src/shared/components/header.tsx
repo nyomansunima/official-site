@@ -16,7 +16,7 @@ function Link({ href, children }: LinkProps) {
 
 export function Header() {
   return (
-    <header className="flex flex-wrap items-center gap-7 border-foreground border-b border-dashed pt-7 pb-5">
+    <header className="relative flex flex-wrap items-center gap-7 pt-7 pb-5 after:absolute after:bottom-0 after:h-0.5 after:w-full after:bg-[repeating-linear-gradient(to_right,var(--color-foreground)_0px,var(--color-foreground)_5px,transparent_5px,transparent_10px)] after:bg-position-[100%_1px] after:bg-no-repeat">
       <Link href="/">Home</Link>
       <Link href="/projects">Projects</Link>
       <Link href="/contents">Contents</Link>
