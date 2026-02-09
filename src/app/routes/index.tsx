@@ -26,8 +26,8 @@ function RouteComponent() {
         <p>
           Helped companies to generate $107M+ in annual revenue and saved over
           $237k in annual infrastructure costs. Led the development team up to
-          30% faster using automation, and built scalable software and systems
-          that handle $2.3B monthly transactions.
+          30% faster using automation and built scalable software & systems that
+          handle $2.3B monthly transactions.
         </p>
 
         <p>
