@@ -7,7 +7,7 @@
 
 @theme {
   --font-*: initial;
-  --font-serif: "Domine", serif;
+  --font-default: "Domine", serif;
 
   --text-sm: 0.8375rem;
   --text-base: 0.8915rem;
@@ -44,9 +44,7 @@
   }
 
   body {
-    @apply text-base font-normal leading-normal text-foreground bg-background font-serif antialiased selection:bg-fuchsia-100/90 selection:text-fuchsia-950;
-    text-rendering: optimizeLegibility;
-    font-kerning: auto;
+    @apply text-base font-normal leading-normal text-foreground bg-background font-default antialiased selection:bg-fuchsia-100/90 selection:text-fuchsia-950;
     font-optical-sizing: auto;
   }
 }
