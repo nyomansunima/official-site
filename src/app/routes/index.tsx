@@ -31,10 +31,17 @@ function RouteComponent() {
         </p>
 
         <p>
-          Previously worked at <a href="https://www.rimlogistics.com">RIM</a>{" "}
-          and <a href="https://dimata.com">Dimata</a> to transform legacy
-          systems into modern, scalable solutions that help businesses to lift
-          their profits, increase efficiencies and reduce the costs.
+          Previously worked at{" "}
+          <a href="https://www.rimlogistics.com" rel="noopener" target="_blank">
+            RIM
+          </a>{" "}
+          and{" "}
+          <a href="https://dimata.com" rel="noopener" target="_blank">
+            Dimata
+          </a>{" "}
+          to transform legacy systems into modern, scalable solutions that help
+          businesses to lift their profits, increase efficiencies and reduce the
+          costs.
         </p>
 
         <p>
