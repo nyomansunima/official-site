@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: generatedMetadata({
       title:
-        "Software Engineer - Build Scalable Software & Systems | Nyoman Sunima",
+        "Software Engineer - Build scalable software & systems | Nyoman Sunima",
       description:
         "Helped businesses to create their software, websites, automations and workflows that lift the profits, increase efficiencies and reduce the costs",
     }),
@@ -18,61 +18,44 @@ function RouteComponent() {
     <main className="flex flex-col">
       <article className="prose">
         <h1>
-          Help business
+          Product centric
           <br />
-          ship faster & scale.
+          software engineer.
         </h1>
 
         <p>
-          I've successfully helped companies generate over $21M in revenue
-          through building scalable software and systems that combine product
-          engineering and business strategy.
+          Helped companies to generate $107M+ in annual revenue and saved over
+          $237k in annual infrastructure costs. Led the development team up to
+          30% faster using automation, and built scalable software and systems
+          that handle $2.3B monthly transactions.
         </p>
 
         <p>
-          Running the{" "}
-          <a
-            className="underline"
-            href={"https://thecoined.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          Previously worked at <a href="https://www.rimlogistics.com">RIM</a>{" "}
+          and <a href="https://dimata.com">Dimata</a> to transform legacy
+          systems into modern, scalable solutions that help businesses to lift
+          their profits, increase efficiencies and reduce the costs.
+        </p>
+
+        <p>
+          Currently, running the{" "}
+          <a href={"https://thecoined.site"} rel="noopener" target="_blank">
             coined
           </a>
           , growing the communities at{" "}
-          <a
-            className="underline"
-            href={"https://thegridline.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          <a href={"https://thegridline.site"} rel="noopener" target="_blank">
             gridline
           </a>{" "}
           &{" "}
-          <a
-            className="underline"
-            href={"https://thescolon.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          <a href={"https://thescolon.site"} rel="noopener" target="_blank">
             scolon
           </a>
           . Curated list for good design and resources at{" "}
-          <a
-            className="underline"
-            href={"https://heroico.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          <a href={"https://heroico.site"} rel="noopener" target="_blank">
             heroico
           </a>{" "}
           &{" "}
-          <a
-            className="underline"
-            href={"https://thegoodie.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          <a href={"https://thegoodie.site"} rel="noopener" target="_blank">
             goodie
           </a>
           .
@@ -81,7 +64,6 @@ function RouteComponent() {
         <p>
           Building open source projects at{" "}
           <a
-            className="underline"
             href={"https://picosecond.moono.site"}
             rel="noopener"
             target="_blank"
@@ -89,17 +71,11 @@ function RouteComponent() {
             picosecond
           </a>
           ,{" "}
-          <a
-            className="underline"
-            href={"https://oneday.moono.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          <a href={"https://oneday.moono.site"} rel="noopener" target="_blank">
             oneday
           </a>
           ,{" "}
           <a
-            className="underline"
             href={"https://compobits.moono.site"}
             rel="noopener"
             target="_blank"
@@ -107,48 +83,23 @@ function RouteComponent() {
             compobits
           </a>{" "}
           &{" "}
-          <a
-            className="underline"
-            href={"https://mailo.moono.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          <a href={"https://mailo.moono.site"} rel="noopener" target="_blank">
             mailo
           </a>
           . Shipping businesses & users products at{" "}
-          <a
-            className="underline"
-            href={"https://poockey.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          <a href={"https://poockey.site"} rel="noopener" target="_blank">
             poockey
           </a>
           ,{" "}
-          <a
-            className="underline"
-            href={"https://okay.moono.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          <a href={"https://okay.moono.site"} rel="noopener" target="_blank">
             okay
           </a>
           ,{" "}
-          <a
-            className="underline"
-            href={"https://signa.moono.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          <a href={"https://signa.moono.site"} rel="noopener" target="_blank">
             signa
           </a>{" "}
           &{" "}
-          <a
-            className="underline"
-            href={"https://tryhaloo.site"}
-            rel="noopener"
-            target="_blank"
-          >
+          <a href={"https://tryhaloo.site"} rel="noopener" target="_blank">
             haloo
           </a>
           .
@@ -157,18 +108,9 @@ function RouteComponent() {
         <p>
           Currently, focus on design & develop projects to ship globally, also
           helping business to create their products. See more of{" "}
-          <a className="underline" href={"/projects"}>
-            what i've shipped
-          </a>
-          ,{" "}
-          <a className="underline" href={"/contents"}>
-            the thoughts
-          </a>{" "}
-          and{" "}
-          <a className="underline" href={"/contact"}>
-            reach out
-          </a>
-          .
+          <a href={"/projects"}>what i've shipped</a>,{" "}
+          <a href={"/contents"}>the thoughts</a> and{" "}
+          <a href={"/contact"}>reach out</a>.
         </p>
       </article>
     </main>
