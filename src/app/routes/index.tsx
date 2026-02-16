@@ -24,9 +24,9 @@ function RouteComponent() {
         </h1>
 
         <p>
-          Helped companies to generate $207M+ in annual revenue and saved over
-          $237k in annual infrastructure costs. Led the development team up to
-          30% faster.
+          Helped companies to generate $207M+ in annual revenue, saved over
+          $237K in annual infrastructure costs and led the development team up
+          to 30% faster.
         </p>
 
         <p>
