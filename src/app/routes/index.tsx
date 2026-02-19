@@ -31,8 +31,7 @@ function RouteComponent() {
 
         <p>
           Combining product design, software engineering and business strategy
-          to built scalable software, robust systems, automations and workflows
-          that lift the profits, increase efficiencies and reduce the costs.
+          to built scalable software, robust systems, automations and workflows.
         </p>
 
         <p>
@@ -44,7 +43,7 @@ function RouteComponent() {
           <a href="https://dimata.com" rel="noopener" target="_blank">
             Dimata
           </a>{" "}
-          to transform legacy systems into modern, scalable solutions that help
+          to transform legacy systems into scalable solutions that help
           businesses to lift their profits, increase efficiencies and reduce the
           costs.
         </p>
