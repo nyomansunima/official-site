@@ -30,7 +30,7 @@ export function Item({ data }: ItemProps) {
       >
         <circle cx="12.1" cy="12.1" r="1" />
       </svg>
-      <span className="mt-0.5">{data.title}</span>
+      <span className="mt-0.5 flex flex-1">{data.title}</span>
     </a>
   );
 }
