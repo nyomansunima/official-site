@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: generatedMetadata({
       title:
-        "Software Engineer - Build scalable software & systems | Nyoman Sunima",
+        "Product Engineer - Build scalable software & systems | Nyoman Sunima",
       description:
         "Helped businesses to create their software, websites, automations and workflows that lift the profits, increase efficiencies and reduce the costs",
     }),
@@ -18,9 +18,9 @@ function RouteComponent() {
     <main className="flex flex-col">
       <article className="prose">
         <h1>
-          Product centric
+          Business centric
           <br />
-          software engineer.
+          product engineer.
         </h1>
 
         <p>
