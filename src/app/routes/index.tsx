@@ -35,9 +35,13 @@ function RouteComponent() {
         </p>
 
         <p>
-          Previously worked at{" "}
+          Contributed to{" "}
           <a href="https://www.rimlogistics.com" rel="noopener" target="_blank">
             RIM
+          </a>
+          ,{" "}
+          <a href="https://www.procore.com" rel="noopener" target="_blank">
+            Procore
           </a>{" "}
           and{" "}
           <a href="https://dimata.com" rel="noopener" target="_blank">
@@ -49,7 +53,7 @@ function RouteComponent() {
         </p>
 
         <p>
-          Currently, running the{" "}
+          Running the{" "}
           <a href={"https://thecoined.site"} rel="noopener" target="_blank">
             coined
           </a>
