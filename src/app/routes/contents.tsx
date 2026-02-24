@@ -1,10 +1,7 @@
-import publications from "@features/data/publication-data.json";
-import writings from "@features/data/writing-data.json";
+import contents from "@features/data/contents-data.json";
 import * as List from "@shared/components/list";
 import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
-
-const reversedWritings = writings.reverse();
 
 export const Route = createFileRoute("/contents")({
   head: () => ({
@@ -22,53 +19,22 @@ function RouteComponent() {
     <main className="flex flex-col gap-6">
       <h1 className="font-medium text-xl leading-tight">Contents.</h1>
       <div className="flex flex-col gap-10">
-        <List.Group>
-          <List.Title>Publications:</List.Title>
-          <List.Stacks type="GRID">
-            {publications.map((item, itemIndex) => (
-              <List.Item
-                data={{ title: item.title, url: item.url }}
-                key={itemIndex}
-              />
-            ))}
-          </List.Stacks>
-        </List.Group>
-
-        <List.Group>
-          <List.Title>Writings:</List.Title>
-          <List.Stacks type="LIST">
-            {reversedWritings.map((item, itemIndex) => (
-              <List.Item
-                data={{ title: item.title, url: item.url }}
-                key={itemIndex}
-              />
-            ))}
-          </List.Stacks>
-        </List.Group>
-
-        <List.Group>
-          <List.Title>Videos:</List.Title>
-          <List.Stacks type="LIST">
-            <List.Item
-              data={{
-                title: "Crafting the videos for you",
-                url: "/",
-              }}
-            />
-          </List.Stacks>
-        </List.Group>
-
-        <List.Group>
-          <List.Title>Speaks:</List.Title>
-          <List.Stacks type="LIST">
-            <List.Item
-              data={{
-                title: "Crafting the podcasts for you",
-                url: "/",
-              }}
-            />
-          </List.Stacks>
-        </List.Group>
+        {contents.map((group, groupIndex) => (
+          <List.Group key={groupIndex}>
+            <List.Title>{group.title}</List.Title>
+            <List.Stacks
+              type={
+                group.title.toLowerCase().includes("publications")
+                  ? "GRID"
+                  : "LIST"
+              }
+            >
+              {group.list.map((item, itemIndex) => (
+                <List.Item data={item} key={itemIndex} />
+              ))}
+            </List.Stacks>
+          </List.Group>
+        ))}
       </div>
     </main>
   );
