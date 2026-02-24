@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Publications:",
+    "list": [
+      {
+        "title": "Youtube",
+        "url": "https://youtube.com/@nyomansunima"
+      },
+      {
+        "title": "Dev.to",
+        "url": "https://dev.to/nyomansunima"
+      },
+      {
+        "title": "Medium",
+        "url": "https://medium.com/@nyomansunima"
+      },
+      {
+        "title": "Substack",
+        "url": "https://substack.com/@nyomansunima"
+      },
+      {
+        "title": "Scolon",
+        "url": "https://www.thescolon.site"
+      },
+      {
+        "title": "Gridline",
+        "url": "https://www.thegridline.site"
+      }
+    ]
+  },
+  {
+    "title": "Writings:",
+    "list": [
+      {
+        "title": "How to create a better README",
+        "url": "https://dev.to/nyomansunima/how-to-create-better-readme-1j0n"
+      },
+      {
+        "title": "How to make your GitHub project better",
+        "url": "https://dev.to/nyomansunima/how-to-make-your-github-project-better-51ph"
+      },
+      {
+        "title": "Turn Nest.Js into Serverless",
+        "url": "https://dev.to/nyomansunima/turn-nestjs-into-serverless-with-nitric-in-a-few-seconds-ag4"
+      }
+    ]
+  },
+  {
+    "title": "Speaks:",
+    "list": [
+      {
+        "title": "Cooking",
+        "url": "/"
+      }
+    ]
+  },
+  {
+    "title": "Videos:",
+    "list": [
+      {
+        "title": "Cooking",
+        "url": "/"
+      }
+    ]
+  }
+]
