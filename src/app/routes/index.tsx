@@ -40,6 +40,10 @@ function RouteComponent() {
             RIM
           </a>
           ,{" "}
+          <a href="https://www.withjoy.com" rel="noopener" target="_blank">
+            Joy
+          </a>
+          ,{" "}
           <a href="https://www.procore.com" rel="noopener" target="_blank">
             Procore
           </a>{" "}
@@ -55,23 +59,23 @@ function RouteComponent() {
         <p>
           Running the{" "}
           <a href={"https://thecoined.site"} rel="noopener" target="_blank">
-            coined
+            Coined
           </a>
           , growing the communities at{" "}
           <a href={"https://thegridline.site"} rel="noopener" target="_blank">
-            gridline
+            Gridline
           </a>{" "}
           &{" "}
           <a href={"https://thescolon.site"} rel="noopener" target="_blank">
-            scolon
+            Scolon
           </a>
           . Curated list for good design and resources at{" "}
           <a href={"https://heroico.site"} rel="noopener" target="_blank">
-            heroico
+            Heroico
           </a>{" "}
           &{" "}
           <a href={"https://thegoodie.site"} rel="noopener" target="_blank">
-            goodie
+            Goodie
           </a>
           .
         </p>
@@ -83,11 +87,11 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            picosecond
+            Picosecond
           </a>
           ,{" "}
           <a href={"https://oneday.moono.site"} rel="noopener" target="_blank">
-            oneday
+            Oneday
           </a>
           ,{" "}
           <a
@@ -95,27 +99,27 @@ function RouteComponent() {
             rel="noopener"
             target="_blank"
           >
-            compobits
+            Compobits
           </a>{" "}
           &{" "}
           <a href={"https://mailo.moono.site"} rel="noopener" target="_blank">
-            mailo
+            Mailo
           </a>
           . Shipping businesses & users products at{" "}
           <a href={"https://poockey.site"} rel="noopener" target="_blank">
-            poockey
+            Poockey
           </a>
           ,{" "}
           <a href={"https://okay.moono.site"} rel="noopener" target="_blank">
-            okay
+            Okay
           </a>
           ,{" "}
           <a href={"https://signa.moono.site"} rel="noopener" target="_blank">
-            signa
+            Signa
           </a>{" "}
           &{" "}
           <a href={"https://tryhaloo.site"} rel="noopener" target="_blank">
-            haloo
+            Haloo
           </a>
           .
         </p>
@@ -124,8 +128,8 @@ function RouteComponent() {
           Currently, focus on design & develop projects to ship globally, also
           helping business to create their products. See more of{" "}
           <a href={"/projects"}>what i've shipped</a>,{" "}
-          <a href={"/contents"}>the thoughts</a> and{" "}
-          <a href={"/contact"}>reach out</a>.
+          <a href={"/contents"}>my thoughts</a> and{" "}
+          <a href={"/contact"}>reach out</a> for collaboration.
         </p>
       </article>
     </main>
