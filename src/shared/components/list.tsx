@@ -1,8 +1,8 @@
 import type React from "react";
 
 interface Data {
-  url: string;
   title: string;
+  url: string;
 }
 
 interface ItemProps {
@@ -12,7 +12,7 @@ interface ItemProps {
 export function Item({ data }: ItemProps) {
   return (
     <a
-      className="group group flex gap-1 py-1 transition-colors duration-300 hover:text-foreground/60"
+      className="group flex gap-1 py-1 transition-colors duration-300 hover:text-foreground/60"
       href={data.url}
       target="_blank"
     >
@@ -52,8 +52,8 @@ export function Title({ children }: TitleProps) {
 }
 
 interface StacksProps {
-  type: "LIST" | "GRID";
   children: React.ReactNode;
+  type: "LIST" | "GRID";
 }
 
 export function Stacks({ type, children }: StacksProps) {

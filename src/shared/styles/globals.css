@@ -9,11 +9,6 @@
   --font-*: initial;
   --font-default: "Domine", serif;
 
-  --text-sm: 0.8375rem;
-  --text-base: 0.8915rem;
-  --text-lg: 1.03125rem;
-  --text-xl: 1.1rem;
-
   --color-background: hsl(0 0 97%);
   --color-foreground: hsl(0 0 20%);
   --color-surface: hsl(0 0 100%);
@@ -44,8 +39,8 @@
   }
 
   body {
-    @apply text-base font-normal leading-normal text-foreground bg-background font-default antialiased selection:bg-fuchsia-100/90 selection:text-fuchsia-950;
     font-optical-sizing: auto;
+    @apply text-base font-normal leading-normal text-foreground bg-background font-default antialiased selection:bg-fuchsia-100/90 selection:text-fuchsia-950;
   }
 }
 

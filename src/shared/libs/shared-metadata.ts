@@ -1,7 +1,7 @@
 interface GeneratedMetadataInput {
-  title: string;
   description: string;
   image?: string;
+  title: string;
 }
 
 export function generatedMetadata({
