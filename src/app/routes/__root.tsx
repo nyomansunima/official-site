@@ -1,4 +1,3 @@
-import { Header } from "@shared/components/header";
 import styles from "@shared/styles/globals.css?url";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import type * as React from "react";
@@ -37,9 +36,8 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
       <head>
         <HeadContent />
       </head>
-      <body className="container mx-auto bg-[radial-gradient(var(--pattern-fg)_1px,transparent_0)] bg-size-[24px_24px] bg-fixed px-5 [--pattern-fg:var(--color-gray-950)]/5">
-        <div className="mx-auto flex w-full flex-col gap-12 pb-28 sm:w-10/12 sm:px-5 md:w-9/12 lg:w-6/12 xl:w-5/12">
-          <Header />
+      <body className="container mx-auto">
+        <div className="mx-auto flex w-full flex-col gap-12 pt-16 pb-28 sm:w-10/12 sm:px-5 md:w-9/12 lg:w-6/12 xl:w-5/12">
           {children}
         </div>
         <Scripts />
