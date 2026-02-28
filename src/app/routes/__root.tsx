@@ -36,8 +36,8 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
       <head>
         <HeadContent />
       </head>
-      <body className="container mx-auto">
-        <div className="mx-auto flex w-full flex-col gap-12 pt-16 pb-28 sm:w-10/12 sm:px-5 md:w-9/12 lg:w-6/12 xl:w-5/12">
+      <body className="container mx-auto px-5 sm:px-0">
+        <div className="mx-auto flex w-full flex-col gap-12 pt-16 pb-28 sm:w-10/12 sm:px-10 md:w-9/12 lg:w-6/12 xl:w-5/12">
           {children}
         </div>
         <Scripts />

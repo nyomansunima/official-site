@@ -17,7 +17,11 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <article className="prose">
-        <h1>Nyoman Sunima, the business centric product engineer.</h1>
+        <h1>
+          The business centric
+          <br />
+          product engineer.
+        </h1>
 
         <p>
           Helped companies to generate $207M+ in annual revenue, saved over
