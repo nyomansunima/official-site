@@ -78,15 +78,15 @@
   }
 
   h1 {
-    @apply text-xl font-medium leading-tight text-balance;
+    @apply text-2xl font-semibold leading-tight text-balance;
   }
 
   h2 {
-    @apply text-lg font-medium leading-tight text-balance;
+    @apply text-lg font-semibold leading-tight text-balance;
   }
 
   h3 {
-    @apply text-base font-medium leading-tight text-balance;
+    @apply text-base font-semibold leading-tight text-balance;
   }
 
   img {

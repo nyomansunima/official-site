@@ -17,12 +17,12 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <article className="prose">
-        <h1>Product engineer.</h1>
+        <h1>Product Engineer.</h1>
 
         <p>
-          Helped companies to generate $207M+ in annual revenue, saved over
-          $237K in annual infrastructure costs and led the development team up
-          to 30% faster.
+          I've successfully helped companies to generate $207M+ in annual
+          revenue, saved over $237K in annual infrastructure costs and led the
+          development team up to 30% faster.
         </p>
 
         <p>
@@ -47,9 +47,9 @@ function RouteComponent() {
           <a href="https://dimata.com" rel="noopener" target="_blank">
             Dimata
           </a>{" "}
-          to transform legacy systems into scalable solutions that help
-          businesses to lift their profits, increase efficiencies and reduce the
-          costs.
+          to built products and transform legacy systems into scalable solutions
+          that help businesses to lift their profits, increase efficiencies &
+          reduce the costs.
         </p>
 
         <p>
