@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Cambo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
 
 /* Tailwindcss */
 @import "tailwindcss";
@@ -7,7 +7,9 @@
 
 @theme {
   --font-*: initial;
-  --font-default: "Cambo", serif;
+  --font-default: "Domine", serif;
+
+  --text-base: 0.955rem;
 
   --color-background: hsl(0 0 100%);
   --color-foreground: hsl(0 0 20%);
