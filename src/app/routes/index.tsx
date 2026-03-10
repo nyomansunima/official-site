@@ -17,17 +17,12 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <article className="prose">
-        <h1>Nyoman Sunima.</h1>
+        <h1>NYOMAN SUNIMA.</h1>
 
         <p>
           I've successfully helped companies to generate $207M+ in annual
           revenue, saved over $237K in annual infrastructure costs and led the
           development team up to 30% faster.
-        </p>
-
-        <p>
-          Combining product design, software engineering and business strategy
-          to built scalable software, robust systems, automations and workflows.
         </p>
 
         <p>
