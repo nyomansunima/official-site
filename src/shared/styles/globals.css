@@ -78,7 +78,7 @@
   }
 
   h1 {
-    @apply text-2xl font-semibold leading-tight text-balance;
+    @apply text-xl font-semibold leading-tight text-balance;
   }
 
   h2 {

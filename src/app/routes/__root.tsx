@@ -1,3 +1,4 @@
+import { Header } from "@shared/components/header";
 import styles from "@shared/styles/globals.css?url";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import type * as React from "react";
@@ -37,7 +38,8 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
         <HeadContent />
       </head>
       <body className="container mx-auto px-5 sm:px-0">
-        <div className="mx-auto flex w-full flex-col gap-12 pt-16 pb-28 sm:w-10/12 sm:px-10 md:w-9/12 lg:w-6/12 xl:w-5/12">
+        <div className="mx-auto flex w-full flex-col gap-10 pb-28 sm:w-10/12 sm:px-10 md:w-9/12 lg:w-6/12 xl:w-5/12">
+          <Header />
           {children}
         </div>
         <Scripts />
