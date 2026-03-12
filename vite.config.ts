@@ -14,6 +14,13 @@ export default defineConfig({
     tailwindcss(),
     tanstackStart({
       srcDirectory: "src/app",
+      prerender: {
+        enabled: true,
+      },
+      sitemap: {
+        enabled: true,
+        host: "https://www.nyomansunima.com",
+      },
     }),
     react(),
     nitro(),
