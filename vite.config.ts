@@ -5,6 +5,9 @@ import { nitro } from "nitro/vite";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  resolve: {
+    tsconfigPaths: true,
+  },
   server: {
     port: 3000,
   },
@@ -23,7 +26,4 @@ export default defineConfig({
     react(),
     nitro(),
   ],
-  resolve: {
-    tsconfigPaths: true,
-  },
 });
