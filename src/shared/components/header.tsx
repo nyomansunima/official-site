@@ -6,7 +6,7 @@ interface ItemProps {
 function Item({ href, children }: ItemProps) {
   return (
     <a
-      className="text-foreground text-sm transition-colors duration-300 hover:text-foreground/60"
+      className="text-foreground text-sm transition-colors duration-300 hover:text-foreground/60 tracking-tighter"
       href={href}
     >
       {children}

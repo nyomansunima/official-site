@@ -17,6 +17,8 @@ export default defineConfig({
       srcDirectory: "src/app",
       prerender: {
         enabled: true,
+        autoStaticPathsDiscovery: true,
+        crawlLinks: true,
       },
       sitemap: {
         enabled: true,

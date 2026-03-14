@@ -17,7 +17,9 @@ export const Route = createFileRoute("/projects")({
 function RouteComponent() {
   return (
     <main className="flex flex-col gap-6">
-      <h1 className="font-normal text-xl leading-tight">Projects.</h1>
+      <h1 className="font-medium text-xl leading-tight tracking-tighter">
+        Projects.
+      </h1>
       <div className="flex flex-col gap-10">
         {projects.map((group, groupIndex) => (
           <List.Group key={groupIndex}>

@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Tailwindcss */
 @import "tailwindcss";
@@ -7,9 +7,11 @@
 
 @theme {
   --font-*: initial;
-  --font-default: "Domine", serif;
+  --font-default: "Inter", sans-serif;
 
-  --text-base: 0.935rem;
+  --text-base: 0.9125rem;
+
+  --leading-tight: 1.1;
 
   --color-background: hsl(0 0 100%);
   --color-foreground: hsl(0 0 20%);
@@ -41,8 +43,9 @@
   }
 
   body {
-    font-optical-sizing: auto;
     @apply text-base font-normal leading-normal text-foreground bg-background font-default tracking-tight antialiased selection:bg-fuchsia-100/60 selection:text-fuchsia-950;
+
+    font-optical-sizing: auto;
   }
 }
 
@@ -78,15 +81,15 @@
   }
 
   h1 {
-    @apply text-xl font-normal  leading-tight text-balance;
+    @apply text-xl font-medium tracking-tighter  leading-tight text-balance;
   }
 
   h2 {
-    @apply text-lg font-normal  leading-tight text-balance;
+    @apply text-lg font-medium tracking-tighter  leading-tight text-balance;
   }
 
   h3 {
-    @apply text-base font-normal  leading-tight text-balance;
+    @apply text-base font-medium tracking-tighter  leading-tight text-balance;
   }
 
   img {
