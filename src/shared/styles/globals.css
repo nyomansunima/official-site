@@ -9,7 +9,7 @@
   --font-*: initial;
   --font-default: "PT Serif", serif;
 
-  --text-base: 0.955rem;
+  --text-base: 0.975rem;
 
   --leading-tight: 1.1;
 
@@ -24,7 +24,7 @@
   --color-secondary-foreground: hsl(0 0 10%);
   --color-accent: oklch(0.5694 0.1534 23.3);
   --color-selection: oklch(0.922 0.0553 92.53);
-  --color-selection-foreground: oklch(0.4262 0.0501 51.91);
+  --color-selection-foreground: oklch(0.4588 0.148 37.1);
 }
 
 @layer base {
