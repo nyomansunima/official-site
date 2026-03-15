@@ -14,6 +14,7 @@ export function Item({ data }: ItemProps) {
     <a
       className="group flex gap-1 py-1 transition-colors duration-300 hover:text-foreground/60"
       href={data.url}
+      rel="noopener"
       target="_blank"
     >
       <svg
