@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Tailwindcss */
 @import "tailwindcss";
@@ -7,24 +7,24 @@
 
 @theme {
   --font-*: initial;
-  --font-default: "PT Serif", serif;
+  --font-default: "Noto Serif", serif;
 
-  --text-base: 0.975rem;
+  --text-base: 0.905rem;
 
   --leading-tight: 1.1;
 
-  --color-background: oklch(0.9555 0.0555 96.15);
-  --color-foreground: oklch(0.4262 0.0501 51.91);
-  --color-surface: hsl(0 0 97%);
-  --color-border: oklch(0.6066 0.1304 68.49);
-  --color-input: hsl(0 0 96%);
-  --color-primary: hsl(0 0 0%);
-  --color-primary-foreground: hsl(0 0 98%);
-  --color-secondary: hsl(0 0 96%);
-  --color-secondary-foreground: hsl(0 0 10%);
-  --color-accent: oklch(0.5694 0.1534 23.3);
-  --color-selection: oklch(0.922 0.0553 92.53);
-  --color-selection-foreground: oklch(0.4588 0.148 37.1);
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.2 0 0);
+  --color-surface: hsl(0 0 9 7%);
+  --color-border: oklch(92.2% 0 0);
+  --color-input: oklch(96% 0 0);
+  --color-primary: oklch(0 0 0);
+  --color-primary-foreground: oklch(98.2% 0 0);
+  --color-secondary: oklch(96% 0 0);
+  --color-secondary-foreground: oklch(% 0 0);
+  --color-accent: oklch(0.6273 0.233484 32.6704);
+  --color-selection: oklch(1 0 0);
+  --color-selection-foreground: oklch(0.6273 0.233484 32.6704);
 }
 
 @layer base {
@@ -70,10 +70,10 @@
   @apply text-base leading-7 font-normal max-w-full;
 
   a {
-    @apply font-normal;
+    @apply font-normal no-underline;
 
     &:hover {
-      @apply underline;
+      @apply underline text-accent;
     }
   }
 
