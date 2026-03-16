@@ -9,8 +9,6 @@
   --font-*: initial;
   --font-default: "STIX Two Text", serif;
 
-  /*--text-base: 1rem;*/
-
   --leading-tight: 1.1;
 
   --color-background: oklch(1 0 0);

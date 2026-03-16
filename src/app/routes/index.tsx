@@ -16,6 +16,15 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <article className="prose">
+        <div className="not-prose">
+          <img
+            src="/images/avatar.png"
+            alt="Nyoman Sunima"
+            width={60}
+            height={60}
+            className="overflow-hidden transition-all duration-300 hover:scale-95 cursor-pointer"
+          />
+        </div>
         <p>
           Hello, I'am Nyoman Sunima
           <br />
