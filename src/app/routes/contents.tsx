@@ -21,13 +21,7 @@ function RouteComponent() {
         {contents.map((group, groupIndex) => (
           <List.Group key={groupIndex}>
             <List.Title>{group.title}</List.Title>
-            <List.Stacks
-              type={
-                group.title.toLowerCase().includes("publications")
-                  ? "GRID"
-                  : "LIST"
-              }
-            >
+            <List.Stacks type={"LIST"}>
               {group.list.map((item, itemIndex) => (
                 <List.Item data={item} key={itemIndex} />
               ))}

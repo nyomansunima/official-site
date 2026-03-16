@@ -18,7 +18,6 @@ export function Header() {
   return (
     <header className="flex items-center gap-5 pt-7 pb-3">
       <Item href="/">Home</Item>
-      <Item href="/works">Works</Item>
       <Item href="/projects">Projects</Item>
       <Item href="/contents">Contents</Item>
       <Item href="/contact">Contact</Item>

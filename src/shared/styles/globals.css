@@ -19,7 +19,7 @@
   --color-primary: oklch(0 0 0);
   --color-primary-foreground: oklch(98.2% 0 0);
   --color-secondary: oklch(96% 0 0);
-  --color-secondary-foreground: oklch(% 0 0);
+  --color-secondary-foreground: oklch(0% 0 0);
   --color-accent: oklch(0.6273 0.233484 32.6704);
   --color-selection: oklch(1 0 0);
   --color-selection-foreground: oklch(0.6273 0.233484 32.6704);

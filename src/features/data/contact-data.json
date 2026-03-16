@@ -53,5 +53,22 @@
         "url": "https://dribbble.com/nyomansunima"
       }
     ]
+  },
+  {
+    "title": "Find me on:",
+    "list": [
+      {
+        "title": "Dev.to",
+        "url": "https://dev.to/nyomansunima"
+      },
+      {
+        "title": "Medium",
+        "url": "https://medium.com/@nyomansunima"
+      },
+      {
+        "title": "Substack",
+        "url": "https://substack.com/@nyomansunima"
+      }
+    ]
   }
 ]

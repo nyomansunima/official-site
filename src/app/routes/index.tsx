@@ -18,11 +18,11 @@ function RouteComponent() {
       <article className="prose">
         <div className="not-prose">
           <img
-            src="/images/avatar.png"
             alt="Nyoman Sunima"
-            width={60}
+            className="cursor-pointer overflow-hidden transition-all duration-300 hover:scale-95"
             height={60}
-            className="overflow-hidden transition-all duration-300 hover:scale-95 cursor-pointer"
+            src="/images/avatar.png"
+            width={60}
           />
         </div>
         <p>
