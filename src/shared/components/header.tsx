@@ -6,7 +6,7 @@ interface ItemProps {
 function Item({ href, children }: ItemProps) {
   return (
     <a
-      className="text-foreground/60 tracking-tighter transition-colors duration-300 hover:text-foreground"
+      className="text-foreground/60 tracking-tight transition-colors duration-300 hover:text-foreground"
       href={href}
     >
       {children}
@@ -16,7 +16,7 @@ function Item({ href, children }: ItemProps) {
 
 export function Header() {
   return (
-    <header className="flex items-center gap-5 pt-7 pb-3 border-b border-border border-dashed">
+    <header className="flex items-center gap-6 pt-7 pb-3">
       <Item href="/">Home</Item>
       <Item href="/projects">Projects</Item>
       <Item href="/contents">Contents</Item>

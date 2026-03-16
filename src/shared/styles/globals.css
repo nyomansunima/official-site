@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap");
 
 /* Tailwindcss */
 @import "tailwindcss";
@@ -7,14 +7,14 @@
 
 @theme {
   --font-*: initial;
-  --font-default: "IBM Plex Serif", serif;
+  --font-default: "STIX Two Text", serif;
 
-  --text-base: 0.935rem;
+  /*--text-base: 1rem;*/
 
   --leading-tight: 1.1;
 
   --color-background: oklch(1 0 0);
-  --color-foreground: oklch(0.35 0 0);
+  --color-foreground: oklch(0.34 0 0);
   --color-surface: hsl(0 0 9 7%);
   --color-border: oklch(95% 0 0);
   --color-input: oklch(96% 0 0);
@@ -45,7 +45,7 @@
   }
 
   body {
-    @apply text-base font-normal leading-normal text-foreground bg-background font-default tracking-tight antialiased selection:bg-selection selection:text-selection-foreground;
+    @apply text-base font-normal leading-normal text-foreground bg-background font-default tracking-normal antialiased selection:bg-selection selection:text-selection-foreground;
   }
 }
 

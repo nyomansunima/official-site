@@ -17,6 +17,12 @@ function RouteComponent() {
     <main className="flex flex-col">
       <article className="prose">
         <p>
+          Hello, I'am Nyoman Sunima
+          <br />
+          product engineer crafting software & system.
+        </p>
+
+        <p>
           I've successfully helped companies to generate $207M+ in annual
           revenue, saved over $237K in annual infrastructure costs and led the
           development team up to 30% faster.
