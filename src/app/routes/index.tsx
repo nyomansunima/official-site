@@ -16,10 +16,6 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <article className="prose">
-        <h1>
-          Building software
-          <br />& systems.
-        </h1>
         <p>
           I've successfully helped companies to generate $207M+ in annual
           revenue, saved over $237K in annual infrastructure costs and led the
