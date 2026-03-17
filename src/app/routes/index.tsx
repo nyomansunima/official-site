@@ -20,9 +20,9 @@ function RouteComponent() {
           <img
             alt="Nyoman Sunima"
             className="cursor-pointer overflow-hidden transition-all duration-300 hover:scale-95"
-            height={60}
+            height={52}
             src="/images/avatar.png"
-            width={60}
+            width={52}
           />
         </div>
         <p>
@@ -131,7 +131,7 @@ function RouteComponent() {
           Currently, focus on design & develop projects to ship globally, also
           helping business to create their products. See more of{" "}
           <a href={"/projects"}>what i've shipped</a>,{" "}
-          <a href={"/contents"}>my thoughts</a> and{" "}
+          <a href={"/thoughts"}>my thoughts</a> and{" "}
           <a href={"/contact"}>reach out</a> for collaboration.
         </p>
       </article>
