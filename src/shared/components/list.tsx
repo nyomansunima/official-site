@@ -59,7 +59,7 @@ interface StacksProps {
 
 export function Stacks({ type, children }: StacksProps) {
   return type === "LIST" ? (
-    <div className="flex flex-col gap-1">{children}</div>
+    <div className="flex flex-col gap-0.5">{children}</div>
   ) : (
     <div className="grid grid-cols-2 gap-x-5 gap-y-1 sm:grid-cols-3 sm:gap-x-8">
       {children}
