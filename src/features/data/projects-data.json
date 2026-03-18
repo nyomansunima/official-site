@@ -1,14 +1,5 @@
 [
   {
-    "title": "Case studies:",
-    "list": [
-      {
-        "title": "Cooking",
-        "url": "/"
-      }
-    ]
-  },
-  {
     "title": "Startups:",
     "list": [
       {
@@ -35,19 +26,6 @@
       {
         "title": "Signa: sign documents with no headache",
         "url": "https://signa.moono.site"
-      }
-    ]
-  },
-  {
-    "title": "Communities:",
-    "list": [
-      {
-        "title": "Gridline: web designers community, newsletter to grow",
-        "url": "https://thegridline.site"
-      },
-      {
-        "title": "Scolon: developers community, growth & newsletter",
-        "url": "https://thescolon.site"
       }
     ]
   },

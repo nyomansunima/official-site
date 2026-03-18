@@ -4,7 +4,7 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: generatedMetadata({
-      title: "Product Engineer - Build Software & Systems | Nyoman Sunima",
+      title: "Software Engineer - Build Software & Systems | Nyoman Sunima",
       description:
         "Helped businesses to create their software, websites, automations and workflows that lift the profits, increase efficiencies and reduce the costs",
     }),
