@@ -27,8 +27,7 @@ function RouteComponent() {
         </div>
         <p>
           Hello, I'am Nyoman Sunima
-          <br />
-          product engineer crafting software & system.
+          <br />a product engineer based in Bali, Indonesia.
         </p>
 
         <p>
