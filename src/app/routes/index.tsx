@@ -26,9 +26,8 @@ function RouteComponent() {
           />
         </div>
         <p>
-          Hello,
-          <br />
-          I'm a product engineer based in bali, indonesia.
+          Hello, I'm Nyoman Sunima a product engineer based in bali, indonesia.
+          Currently working as freelancer.
         </p>
 
         <p>
@@ -38,7 +37,7 @@ function RouteComponent() {
         </p>
 
         <p>
-          Contributed to{" "}
+          Previously worked at{" "}
           <a href="https://www.rimlogistics.com" rel="noopener" target="_blank">
             RIM
           </a>
