@@ -26,8 +26,8 @@ function RouteComponent() {
           />
         </div>
         <p>
-          Hello, I'm Nyoman Sunima a product engineer based in bali, indonesia.
-          Currently working as freelancer.
+          Hello, my name is <i>nyoman sunima</i>. A product engineer based in
+          bali, indonesia. Currently working as freelancer.
         </p>
 
         <p>
@@ -38,19 +38,39 @@ function RouteComponent() {
 
         <p>
           Previously worked at{" "}
-          <a href="https://www.rimlogistics.com" rel="noopener" target="_blank">
+          <a
+            href="https://www.rimlogistics.com"
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             RIM
           </a>
           ,{" "}
-          <a href="https://www.withjoy.com" rel="noopener" target="_blank">
+          <a
+            href="https://www.withjoy.com"
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Joy
           </a>
           ,{" "}
-          <a href="https://www.procore.com" rel="noopener" target="_blank">
+          <a
+            href="https://www.procore.com"
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Procore
           </a>{" "}
           and{" "}
-          <a href="https://dimata.com" rel="noopener" target="_blank">
+          <a
+            href="https://dimata.com"
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Dimata
           </a>{" "}
           to built products and transform legacy systems into scalable solutions
@@ -60,23 +80,48 @@ function RouteComponent() {
 
         <p>
           Running the{" "}
-          <a href={"https://thecoined.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://thecoined.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Coined
           </a>
           , growing the communities at{" "}
-          <a href={"https://thegridline.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://thegridline.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Gridline
           </a>{" "}
           &{" "}
-          <a href={"https://thescolon.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://thescolon.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Scolon
           </a>
           . Curated list for good design and resources at{" "}
-          <a href={"https://heroico.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://heroico.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Heroico
           </a>{" "}
           &{" "}
-          <a href={"https://thegoodie.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://thegoodie.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Goodie
           </a>
           .
@@ -88,11 +133,17 @@ function RouteComponent() {
             href={"https://picosecond.moono.site"}
             rel="noopener"
             target="_blank"
+            className="italic"
           >
             Picosecond
           </a>
           ,{" "}
-          <a href={"https://oneday.moono.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://oneday.moono.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Oneday
           </a>
           ,{" "}
@@ -100,27 +151,53 @@ function RouteComponent() {
             href={"https://compobits.moono.site"}
             rel="noopener"
             target="_blank"
+            className="italic"
           >
             Compobits
           </a>{" "}
           &{" "}
-          <a href={"https://mailo.moono.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://mailo.moono.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Mailo
           </a>
           . Shipping businesses & users products at{" "}
-          <a href={"https://poockey.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://poockey.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Poockey
           </a>
           ,{" "}
-          <a href={"https://okay.moono.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://okay.moono.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Okay
           </a>
           ,{" "}
-          <a href={"https://signa.moono.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://signa.moono.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Signa
           </a>{" "}
           &{" "}
-          <a href={"https://tryhaloo.site"} rel="noopener" target="_blank">
+          <a
+            href={"https://tryhaloo.site"}
+            rel="noopener"
+            target="_blank"
+            className="italic"
+          >
             Haloo
           </a>
           .
