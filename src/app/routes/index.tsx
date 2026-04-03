@@ -26,7 +26,7 @@ function RouteComponent() {
           />
         </div>
         <p>
-          Hello, my name is <i>nyoman sunima</i>. A product engineer based in
+          Hello, my name is <i>"nyoman sunima"</i>. A product engineer based in
           bali, indonesia. Currently working as freelancer.
         </p>
 
