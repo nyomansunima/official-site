@@ -206,9 +206,18 @@ function RouteComponent() {
         <p>
           Currently, focus on design & develop projects to ship globally, also
           helping business to create their products. See more of{" "}
-          <a href={"/projects"}>what i've shipped</a>,{" "}
-          <a href={"/thoughts"}>my thoughts</a> and{" "}
-          <a href={"/contact"}>reach out</a> for collaboration.
+          <a href={"/projects"} className="italic">
+            what i've shipped
+          </a>
+          ,{" "}
+          <a href={"/thoughts"} className="italic">
+            my thoughts
+          </a>{" "}
+          and{" "}
+          <a href={"/contact"} className="italic">
+            reach out
+          </a>{" "}
+          for collaboration.
         </p>
       </article>
     </main>

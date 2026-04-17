@@ -12,13 +12,13 @@ interface ItemProps {
 export function Item({ data }: ItemProps) {
   return (
     <a
-      className="group flex gap-1 py-1 transition-colors duration-300 hover:text-foreground/60"
+      className="group flex gap-1 py-1 transition-colors duration-300 hover:text-accent"
       href={data.url}
       rel="noopener"
       target="_blank"
     >
       <svg
-        className="text-foreground/40"
+        className="text-foreground/40 group-hover:text-accent"
         fill="none"
         height="24"
         stroke="currentColor"
@@ -49,7 +49,7 @@ interface TitleProps {
 }
 
 export function Title({ children }: TitleProps) {
-  return <h2 className="text-foreground/60">{children}</h2>;
+  return <h2 className="text-foreground">{children}</h2>;
 }
 
 interface StacksProps {
