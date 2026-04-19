@@ -11,6 +11,8 @@
 
   --leading-tight: 1.1;
 
+  --text-base: 1.02rem;
+
   --color-background: oklch(1 0 0);
   --color-foreground: oklch(0.29 0 0);
   --color-surface: hsl(0 0 9 7%);
