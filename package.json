@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
-    "@tanstack/react-router": "^1.168.22",
-    "@tanstack/react-start": "^1.167.41",
+    "@tanstack/react-router": "^1.168.23",
+    "@tanstack/react-start": "^1.167.42",
     "nitro": "^3.0.260415-beta",
     "react": "19.2.5",
     "react-dom": "19.2.5"
@@ -29,7 +29,7 @@
     "tailwindcss": "^4.2.2",
     "typescript": "^6.0.3",
     "ultracite": "7.6.0",
-    "vite": "^8.0.8",
+    "vite": "^8.0.9",
     "web-vitals": "^5.2.0",
     "zod": "^4.3.6"
   }
