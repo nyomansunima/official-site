@@ -16,24 +16,15 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <article className="prose">
-        <div className="not-prose">
-          <img
-            alt="Nyoman Sunima"
-            className="cursor-pointer overflow-hidden transition-all duration-300 hover:scale-95"
-            height={52}
-            src="/images/avatar.png"
-            width={52}
-          />
-        </div>
         <p>
-          Hello, my name is <i>"nyoman sunima"</i>. A product engineer based in
-          bali, indonesia. Currently working as freelancer.
+          🖐️ Hello, my name is <i>"nyoman sunima"</i> . A product engineer based
+          in bali, indonesia. Currently working as freelancer.
         </p>
 
         <p>
           I've successfully helped companies to generate $207M+ in annual
           revenue, saved over $237K in annual infrastructure costs and led the
-          development team up to 30% faster.
+          development team up to 30% faster 🎉.
         </p>
 
         <p>
@@ -73,9 +64,8 @@ function RouteComponent() {
           >
             Dimata
           </a>{" "}
-          to built products and transform legacy systems into scalable solutions
-          that help businesses to lift their profits, increase efficiencies &
-          reduce the costs.
+          to built products and transform the legacy systems to lift profits,
+          increase efficiencies & reduce the costs.
         </p>
 
         <p>
@@ -217,7 +207,7 @@ function RouteComponent() {
           <a href={"/contact"} className="italic">
             reach out
           </a>{" "}
-          for collaboration.
+          for collaboration 📮.
         </p>
       </article>
     </main>
