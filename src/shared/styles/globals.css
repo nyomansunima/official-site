@@ -6,7 +6,6 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-*: initial;
   --font-default: "STIX Two Text", serif;
 
   --leading-tight: 1.1;

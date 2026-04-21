@@ -30,37 +30,37 @@ function RouteComponent() {
         <p>
           Previously worked at{" "}
           <a
+            className="italic"
             href="https://www.rimlogistics.com"
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             RIM
           </a>
           ,{" "}
           <a
+            className="italic"
             href="https://www.withjoy.com"
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Joy
           </a>
           ,{" "}
           <a
+            className="italic"
             href="https://www.procore.com"
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Procore
           </a>{" "}
           and{" "}
           <a
+            className="italic"
             href="https://dimata.com"
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Dimata
           </a>{" "}
@@ -71,46 +71,46 @@ function RouteComponent() {
         <p>
           Running the{" "}
           <a
+            className="italic"
             href={"https://thecoined.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Coined
           </a>
           , growing the communities at{" "}
           <a
+            className="italic"
             href={"https://thegridline.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Gridline
           </a>{" "}
           &{" "}
           <a
+            className="italic"
             href={"https://thescolon.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Scolon
           </a>
           . Curated list for good design and resources at{" "}
           <a
+            className="italic"
             href={"https://heroico.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Heroico
           </a>{" "}
           &{" "}
           <a
+            className="italic"
             href={"https://thegoodie.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Goodie
           </a>
@@ -120,73 +120,73 @@ function RouteComponent() {
         <p>
           Building open source projects at{" "}
           <a
+            className="italic"
             href={"https://picosecond.moono.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Picosecond
           </a>
           ,{" "}
           <a
+            className="italic"
             href={"https://oneday.moono.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Oneday
           </a>
           ,{" "}
           <a
+            className="italic"
             href={"https://compobits.moono.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Compobits
           </a>{" "}
           &{" "}
           <a
+            className="italic"
             href={"https://mailo.moono.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Mailo
           </a>
           . Shipping businesses & users products at{" "}
           <a
+            className="italic"
             href={"https://poockey.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Poockey
           </a>
           ,{" "}
           <a
+            className="italic"
             href={"https://okay.moono.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Okay
           </a>
           ,{" "}
           <a
+            className="italic"
             href={"https://signa.moono.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Signa
           </a>{" "}
           &{" "}
           <a
+            className="italic"
             href={"https://tryhaloo.site"}
             rel="noopener"
             target="_blank"
-            className="italic"
           >
             Haloo
           </a>
@@ -196,15 +196,15 @@ function RouteComponent() {
         <p>
           Currently, focus on design & develop projects to ship globally, also
           helping business to create their products. See more of{" "}
-          <a href={"/projects"} className="italic">
+          <a className="italic" href={"/projects"}>
             what i've shipped
           </a>
           ,{" "}
-          <a href={"/thoughts"} className="italic">
+          <a className="italic" href={"/thoughts"}>
             my thoughts
           </a>{" "}
           and{" "}
-          <a href={"/contact"} className="italic">
+          <a className="italic" href={"/contact"}>
             reach out
           </a>{" "}
           for collaboration 📮.
