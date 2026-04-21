@@ -38,7 +38,6 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
         <HeadContent />
       </head>
       <body className="container mx-auto px-5 sm:px-0 relative">
-        <div class="absolute inset-0 -z-10 h-full w-full bg-transparent bg-[radial-gradient(#FFEBD6_1px,transparent_1px)] [background-size:18px_18px]" />
         <div className="mx-auto flex w-full flex-col gap-10 pb-28 sm:w-10/12 sm:px-10 md:w-9/12 lg:w-6/12 xl:w-5/12 relative">
           <Header />
           {children}
