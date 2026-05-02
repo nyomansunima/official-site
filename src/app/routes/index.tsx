@@ -17,8 +17,8 @@ function RouteComponent() {
     <main className="flex flex-col">
       <article className="prose">
         <p>
-          🖐️ Hello, my name is <i>"nyoman sunima"</i> . A product engineer based
-          in bali, indonesia. Currently working as freelancer.
+          Hello, my name is <i>"nyoman sunima"</i> . A product engineer based in
+          bali, indonesia. Currently working as freelancer.
         </p>
 
         <p>
