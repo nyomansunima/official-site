@@ -11,26 +11,26 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
-    "@tanstack/react-router": "^1.168.23",
-    "@tanstack/react-start": "^1.167.42",
-    "nitro": "^3.0.260415-beta",
+    "@tanstack/react-router": "^1.169.1",
+    "@tanstack/react-start": "^1.167.59",
+    "nitro": "^3.0.260429-beta",
     "react": "19.2.5",
     "react-dom": "19.2.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.12",
+    "@biomejs/biome": "2.4.14",
     "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.2.2",
+    "@tailwindcss/vite": "^4.2.4",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "tailwind-variants": "^3.2.2",
-    "tailwindcss": "^4.2.2",
+    "tailwindcss": "^4.2.4",
     "typescript": "^6.0.3",
-    "ultracite": "7.6.0",
-    "vite": "^8.0.9",
+    "ultracite": "7.6.2",
+    "vite": "^8.0.10",
     "web-vitals": "^5.2.0",
-    "zod": "^4.3.6"
+    "zod": "^4.4.2"
   }
 }
