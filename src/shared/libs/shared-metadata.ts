@@ -47,9 +47,7 @@ export function generatedMetadata({
     },
     {
       name: "og:image",
-      content:
-        image ??
-        "https://cdn.hashnode.com/res/hashnode/image/upload/v1769506360931/4e5a6e4e-bfdc-4e5d-a3e7-4b5040c8d1fc.png",
+      content: image ?? "https://www.nyomansunima.com/images/og-image.png",
     },
     { name: "og:locale", content: "en_US" },
     { name: "og:type", content: "website" },
@@ -66,9 +64,7 @@ export function generatedMetadata({
     { name: "twitter:creator", content: "@nyomansunima" },
     {
       name: "twitter:image",
-      content:
-        image ??
-        "https://cdn.hashnode.com/res/hashnode/image/upload/v1769506360931/4e5a6e4e-bfdc-4e5d-a3e7-4b5040c8d1fc.png",
+      content: image ?? "https://www.nyomansunima.com/images/og-image.png",
     },
   ];
 }
