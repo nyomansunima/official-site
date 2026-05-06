@@ -23,13 +23,9 @@ function RouteComponent() {
         </h1>
 
         <p>
-          A product engineer based in bali, indonesia. Currently working as
-          freelancer.
-        </p>
-
-        <p>
-          I've successfully helped companies to generate <i>$207M+</i> in annual
-          revenue and reduced over <i>$1.5M</i> of total development costs 🎉.
+          A product engineer based in bali, indonesia. Helped companies to
+          generate <i>$207M+</i> in annual revenue and reduced over <i>$1.5M</i>{" "}
+          of total development costs 🎉.
         </p>
 
         <p>
