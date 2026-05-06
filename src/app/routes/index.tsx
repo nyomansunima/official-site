@@ -16,15 +16,20 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <article className="prose">
+        <h1>
+          Product specialized
+          <br />
+          software engineer
+        </h1>
+
         <p>
-          Hello, my name is <i>"nyoman sunima"</i> . A product engineer based in
-          bali, indonesia. Currently working as freelancer.
+          A product engineer based in bali, indonesia. Currently working as
+          freelancer.
         </p>
 
         <p>
-          I've successfully helped companies to generate $207M+ in annual
-          revenue, saved over $237K in annual infrastructure costs and led the
-          development team up to 30% faster 🎉.
+          I've successfully helped companies to generate <i>$207M+</i> in annual
+          revenue and reduced over <i>$1.5M</i> of total development costs 🎉.
         </p>
 
         <p>
@@ -68,130 +73,7 @@ function RouteComponent() {
           increase efficiencies & reduce the costs.
         </p>
 
-        <p>
-          Running the{" "}
-          <a
-            className="italic"
-            href={"https://thecoined.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Coined
-          </a>
-          , growing the communities at{" "}
-          <a
-            className="italic"
-            href={"https://thegridline.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Gridline
-          </a>{" "}
-          &{" "}
-          <a
-            className="italic"
-            href={"https://thescolon.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Scolon
-          </a>
-          . Curated list for good design and resources at{" "}
-          <a
-            className="italic"
-            href={"https://heroico.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Heroico
-          </a>{" "}
-          &{" "}
-          <a
-            className="italic"
-            href={"https://thegoodie.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Goodie
-          </a>
-          .
-        </p>
-
-        <p>
-          Building open source projects at{" "}
-          <a
-            className="italic"
-            href={"https://picosecond.moono.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Picosecond
-          </a>
-          ,{" "}
-          <a
-            className="italic"
-            href={"https://oneday.moono.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Oneday
-          </a>
-          ,{" "}
-          <a
-            className="italic"
-            href={"https://compobits.moono.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Compobits
-          </a>{" "}
-          &{" "}
-          <a
-            className="italic"
-            href={"https://mailo.moono.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Mailo
-          </a>
-          . Shipping businesses & users products at{" "}
-          <a
-            className="italic"
-            href={"https://poockey.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Poockey
-          </a>
-          ,{" "}
-          <a
-            className="italic"
-            href={"https://okay.moono.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Okay
-          </a>
-          ,{" "}
-          <a
-            className="italic"
-            href={"https://signa.moono.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Signa
-          </a>{" "}
-          &{" "}
-          <a
-            className="italic"
-            href={"https://tryhaloo.site"}
-            rel="noopener"
-            target="_blank"
-          >
-            Haloo
-          </a>
-          .
-        </p>
+        <img alt="Clickhouse" src="/images/clickhouse-bg.webp" />
 
         <p>
           Currently, focus on design & develop projects to ship globally, also
