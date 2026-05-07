@@ -72,7 +72,7 @@ function RouteComponent() {
         <img alt="Clickhouse" src="/images/clickhouse-bg.webp" />
 
         <p>
-          Currently, focus on design & develop projects to ship globally, also
+          Currently, focus on build products to ship globally, also
           helping business to create their products. See more of{" "}
           <a className="italic" href={"/projects"}>
             what i've shipped
