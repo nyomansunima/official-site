@@ -28,7 +28,7 @@
     "tailwind-variants": "^3.2.2",
     "tailwindcss": "^4.2.4",
     "typescript": "^6.0.3",
-    "ultracite": "7.6.3",
+    "ultracite": "7.8.3",
     "vite": "^8.0.10",
     "web-vitals": "^5.2.0",
     "zod": "^4.4.3"
