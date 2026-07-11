@@ -6,98 +6,97 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-    --font-default: "Google Sans", sans-serif;
+  --font-default: "Google Sans", sans-serif;
 
-    --text-sm: 0.785rem;
-    --text-base: 0.88rem;
+  --text-sm: 0.785rem;
+  --text-base: 0.88rem;
 
-    --leading-tight: 1.1;
+  --leading-tight: 1.1;
 
-    --color-background: oklch(98% 0 0);
-    --color-foreground: oklch(0 0 0);
-    --color-surface: oklch(1 0 0);
-    --color-border: oklch(94% 0 0);
-    --color-input: oklch(96% 0 0);
-    --color-primary: oklch(0 0 0);
-    --color-primary-foreground: oklch(98.2% 0 0);
-    --color-secondary: oklch(94% 0 0);
-    --color-secondary-foreground: oklch(0% 0 0);
-    --color-accent: oklch(0.627306 0.233484 32.6704);
-    --color-selection: oklch(98% 0 0);
-    --color-selection-foreground: oklch(0.627306 0.233484 32.6704);
+  --color-background: oklch(98% 0 0);
+  --color-foreground: oklch(0 0 0);
+  --color-surface: oklch(1 0 0);
+  --color-border: oklch(94% 0 0);
+  --color-input: oklch(96% 0 0);
+  --color-primary: oklch(0 0 0);
+  --color-primary-foreground: oklch(98.2% 0 0);
+  --color-secondary: oklch(94% 0 0);
+  --color-secondary-foreground: oklch(0% 0 0);
+  --color-accent: oklch(0.627306 0.233484 32.6704);
+  --color-selection: oklch(98% 0 0);
+  --color-selection-foreground: oklch(0.627306 0.233484 32.6704);
 }
 
 @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 
-    *,
-    ::after,
-    ::before,
-    ::backdrop,
-    ::file-selector-button {
-        border-color: var(--color-gray-200, currentColor);
-    }
+  * {
+    @apply box-border;
+  }
 
-    * {
-        @apply box-border;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
 
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        @apply text-base font-normal leading-normal text-foreground bg-background font-default tracking-normal subpixel-antialiased selection:bg-selection selection:text-selection-foreground relative;
-    }
+  body {
+    @apply text-base font-normal leading-normal text-foreground bg-background font-default tracking-normal subpixel-antialiased selection:bg-selection selection:text-selection-foreground relative;
+  }
 }
 
 @utility squircle {
-    corner-shape: squircle;
+  corner-shape: squircle;
 }
 
 @utility prose {
-    --tw-prose-headings: var(--color-foreground);
-    --tw-prose-body: var(--color-foreground);
-    --tw-prose-links: var(--color-foreground);
-    --tw-prose-bold: var(--color-foreground);
-    --tw-prose-counters: var(--color-foreground);
-    --tw-prose-bullets: var(--color-foreground);
-    --tw-prose-hr: var(--color-border);
-    --tw-prose-quotes: var(--color-secondary);
-    --tw-prose-quote-borders: var(--color-foreground);
-    --tw-prose-captions: var(--color-secondary);
-    --tw-prose-code: var(--color-foreground);
-    --tw-prose-pre-code: var(--color-foreground);
-    --tw-prose-pre-bg: var(--color-surface);
-    --tw-prose-th-borders: var(--color-border);
-    --tw-prose-td-borders: var(--color-border);
+  --tw-prose-headings: var(--color-foreground);
+  --tw-prose-body: var(--color-foreground);
+  --tw-prose-links: var(--color-foreground);
+  --tw-prose-bold: var(--color-foreground);
+  --tw-prose-counters: var(--color-foreground);
+  --tw-prose-bullets: var(--color-foreground);
+  --tw-prose-hr: var(--color-border);
+  --tw-prose-quotes: var(--color-secondary);
+  --tw-prose-quote-borders: var(--color-foreground);
+  --tw-prose-captions: var(--color-secondary);
+  --tw-prose-code: var(--color-foreground);
+  --tw-prose-pre-code: var(--color-foreground);
+  --tw-prose-pre-bg: var(--color-surface);
+  --tw-prose-th-borders: var(--color-border);
+  --tw-prose-td-borders: var(--color-border);
 
-    @apply text-base leading-relaxed font-normal max-w-full tracking-tight;
+  @apply text-base leading-relaxed font-normal max-w-full tracking-tight;
 
-    a {
-        @apply font-normal no-underline;
+  a {
+    @apply font-normal no-underline;
 
-        &:hover {
-            @apply underline text-accent;
-        }
+    &:hover {
+      @apply underline text-accent;
     }
+  }
 
-    strong {
-        @apply font-medium;
-    }
+  strong {
+    @apply font-medium;
+  }
 
-    h1 {
-        @apply text-xl font-medium tracking-tighter leading-tight text-balance;
-    }
+  h1 {
+    @apply text-xl font-medium tracking-tighter leading-tight text-balance;
+  }
 
-    h2 {
-        @apply text-lg font-medium tracking-tighter leading-tight text-balance;
-    }
+  h2 {
+    @apply text-lg font-medium tracking-tighter leading-tight text-balance;
+  }
 
-    h3 {
-        @apply text-base font-medium tracking-tighter leading-tight text-balance;
-    }
+  h3 {
+    @apply text-base font-medium tracking-tighter leading-tight text-balance;
+  }
 
-    img {
-        @apply rounded-xl;
-    }
+  img {
+    @apply rounded-xl;
+  }
 }
