@@ -1,6 +1,6 @@
-import styles from "@shared/styles/globals.css?url";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import type * as React from "react";
+import styles from "~/app/globals.css?url";
 
 interface RootDocumentProps {
   children: React.ReactNode;
@@ -37,7 +37,7 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
         <HeadContent />
       </head>
       <body className="container relative mx-auto px-5 sm:px-0">
-        <div className="relative mx-auto flex w-full flex-col gap-10 pt-10 pb-28 sm:w-10/12 sm:px-10 sm:pt-28 md:w-9/12 lg:w-6/12 xl:w-5/12">
+        <div className="relative mx-auto flex w-full flex-col gap-14 pt-10 pb-28 sm:w-10/12 sm:px-10 sm:pt-28 md:w-9/12 lg:w-6/12 xl:w-5/12">
           {children}
         </div>
         <Scripts />
