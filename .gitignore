@@ -27,5 +27,8 @@ playwright/.cache/
 build
 dist
 
+# CLoudflare
+.wrangler
+
 # content collections
 .content-collections
