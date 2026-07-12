@@ -1,0 +1,80 @@
+{
+  "featured": {
+    "spotlights": [
+      {
+        "img": "https://cdn.dribbble.com/userupload/19420515/file/original-2ed398d89b0939d71e46ddaeb840c140.png",
+        "url": "/",
+        "title": "Bank"
+      },
+      {
+        "img": "https://cdn.dribbble.com/userupload/48180421/file/61190e26fa2496f88e9bddc6f5b8f41f.jpg",
+        "url": "/",
+        "title": "Micro Learning"
+      },
+      {
+        "img": "https://cdn.dribbble.com/userupload/15891252/file/original-3301079672549d007c74c7cbce004e85.jpg",
+        "url": "/",
+        "title": "Finances"
+      }
+    ],
+    "casestudies": [
+      {
+        "title": "Tracking system",
+        "url": "/",
+        "img": "https://cdn.dribbble.com/userupload/47391735/file/bfc528ce2ebd30b06d0c842c585e2b4f.png",
+        "date": "08/24"
+      },
+      {
+        "title": "Travellio",
+        "url": "/",
+        "img": "https://cdn.dribbble.com/userupload/16734510/file/original-f1e2b34a8a8030e12f2a83625ecac051.png",
+        "date": "12/25"
+      },
+      {
+        "title": "Cargic Logistics",
+        "url": "/",
+        "img": "https://cdn.dribbble.com/userupload/47153260/file/87a3e2ac3e9e8c1326e59250b25d42c6.png",
+        "date": "08/25"
+      }
+    ]
+  },
+  "list": {
+    "spotlights": [
+      {
+        "img": "https://cdn.dribbble.com/userupload/19420515/file/original-2ed398d89b0939d71e46ddaeb840c140.png",
+        "url": "/",
+        "title": "Bank"
+      },
+      {
+        "img": "https://cdn.dribbble.com/userupload/48180421/file/61190e26fa2496f88e9bddc6f5b8f41f.jpg",
+        "url": "/",
+        "title": "Micro Learning"
+      },
+      {
+        "img": "https://cdn.dribbble.com/userupload/15891252/file/original-3301079672549d007c74c7cbce004e85.jpg",
+        "url": "/",
+        "title": "Finances"
+      }
+    ],
+    "casestudies": [
+      {
+        "title": "Tracking system",
+        "url": "/",
+        "img": "https://cdn.dribbble.com/userupload/47391735/file/bfc528ce2ebd30b06d0c842c585e2b4f.png",
+        "date": "08/24"
+      },
+      {
+        "title": "Travellio",
+        "url": "/",
+        "img": "https://cdn.dribbble.com/userupload/16734510/file/original-f1e2b34a8a8030e12f2a83625ecac051.png",
+        "date": "12/25"
+      },
+      {
+        "title": "Cargic Logistics",
+        "url": "/",
+        "img": "https://cdn.dribbble.com/userupload/47153260/file/87a3e2ac3e9e8c1326e59250b25d42c6.png",
+        "date": "08/25"
+      }
+    ]
+  }
+}

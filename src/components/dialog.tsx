@@ -1,20 +1,24 @@
 import { Dialog as DialogPrimitive } from "@base-ui/react/dialog";
+import { play } from "cuelume";
 import { cx } from "tailwind-variants/lite";
 import { Button } from "./button";
-import { play } from "cuelume";
 
 function Dialog({ ...props }: DialogPrimitive.Root.Props) {
-
   function soundListener(state: boolean) {
     if (state) {
-      play("success")
+      play("success");
     } else {
-      play("droplet")
+      play("droplet");
     }
   }
 
-
-  return <DialogPrimitive.Root data-slot="dialog" onOpenChange={soundListener} {...props} />;
+  return (
+    <DialogPrimitive.Root
+      data-slot="dialog"
+      onOpenChange={soundListener}
+      {...props}
+    />
+  );
 }
 
 function DialogTrigger({ ...props }: DialogPrimitive.Trigger.Props) {
@@ -60,7 +64,7 @@ function DialogContent({
         data-slot="dialog-content"
         {...props}
       >
-        <div className="container relative mx-auto px-5 sm:px-0">
+        <div className="scrollbar-none container relative mx-auto max-h-full overflow-y-auto px-5 sm:px-0">
           <div className="relative mx-auto flex w-full flex-col pt-10 pb-28 sm:w-10/12 sm:px-10 sm:pt-28 md:w-9/12 lg:w-6/12 xl:w-5/12">
             {children}
           </div>

@@ -53,126 +53,111 @@ function Thought({ thought }: ThoughtProps) {
   );
 }
 
-function MoreThoughtsButton({ ...props }) {
-  return (
-    <Button
-      className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-      variant="text"
-      {...props}
-    >
-      <svg
-        fill="currentColor"
-        height={14}
-        viewBox="0 0 24 24"
-        width={14}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-        <path
-          d="M12 2c-.218 0 -.432 .002 -.642 .005l-.616 .017l-.299 .013l-.579 .034l-.553 .046c-4.785 .464 -6.732 2.411 -7.196 7.196l-.046 .553l-.034 .579c-.005 .098 -.01 .198 -.013 .299l-.017 .616l-.004 .318l-.001 .324c0 .218 .002 .432 .005 .642l.017 .616l.013 .299l.034 .579l.046 .553c.464 4.785 2.411 6.732 7.196 7.196l.553 .046l.579 .034c.098 .005 .198 .01 .299 .013l.616 .017l.642 .005l.642 -.005l.616 -.017l.299 -.013l.579 -.034l.553 -.046c4.785 -.464 6.732 -2.411 7.196 -7.196l.046 -.553l.034 -.579c.005 -.098 .01 -.198 .013 -.299l.017 -.616l.005 -.642l-.005 -.642l-.017 -.616l-.013 -.299l-.034 -.579l-.046 -.553c-.464 -4.785 -2.411 -6.732 -7.196 -7.196l-.553 -.046l-.579 -.034a28.058 28.058 0 0 0 -.299 -.013l-.616 -.017l-.318 -.004l-.324 -.001zm0 5a1 1 0 0 1 .993 .883l.007 .117v5.585l2.293 -2.292a1 1 0 0 1 1.32 -.083l.094 .083a1 1 0 0 1 .083 1.32l-.083 .094l-4 4a1.008 1.008 0 0 1 -.112 .097l-.11 .071l-.114 .054l-.105 .035l-.149 .03l-.117 .006l-.075 -.003l-.126 -.017l-.111 -.03l-.111 -.044l-.098 -.052l-.092 -.064l-.094 -.083l-4 -4a1 1 0 0 1 1.32 -1.497l.094 .083l2.293 2.292v-5.585a1 1 0 0 1 1 -1z"
-          fill="currentColor"
-        />
-      </svg>
-      See more
-    </Button>
-  );
-}
-
-function MoreThoughts() {
+function MoreThoughtsModal() {
   const [activeTab, setActiveTab] = React.useState<string>(TABS.WRITINGS);
 
-  function onChangeTab(tab: string) {
-    setActiveTab(tab);
-  }
-
-  return (
-    <div className="flex flex-col">
-      <div className="mt-5 flex flex-wrap gap-2">
-        <Button
-          className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-          data-cuelume-press="tick"
-          onClick={() => {
-            onChangeTab(TABS.WRITINGS);
-          }}
-          variant={activeTab === TABS.WRITINGS ? "secondary" : "outline"}
-        >
-          <svg
-            fill="currentColor"
-            height={14}
-            viewBox="0 0 24 24"
-            width={14}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-            <path d="M9 3a1 1 0 0 1 .608 .206l.1 .087l2.706 2.707h6.586a3 3 0 0 1 2.995 2.824l.005 .176v8a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-11a3 3 0 0 1 2.824 -2.995l.176 -.005h4z" />
-          </svg>
-          Writings
-        </Button>
-        <Button
-          className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-          data-cuelume-press="tick"
-          onClick={() => {
-            onChangeTab(TABS.VIDEOS);
-          }}
-          variant={activeTab === TABS.VIDEOS ? "secondary" : "outline"}
-        >
-          <svg
-            fill="currentColor"
-            height={14}
-            viewBox="0 0 24 24"
-            width={14}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-            <path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-5 2.66c-2.285 0 -3.915 2.619 -3.997 5.752l-.003 .248c0 3.242 1.655 6 4 6s4 -2.758 4 -6s-1.655 -6 -4 -6" />
-          </svg>
-          Videos
-        </Button>
-        <Button
-          className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-          data-cuelume-press="tick"
-          onClick={() => {
-            onChangeTab(TABS.SPEAKS);
-          }}
-          variant={activeTab === TABS.SPEAKS ? "secondary" : "outline"}
-        >
-          <svg
-            fill="currentColor"
-            height={14}
-            viewBox="0 0 24 24"
-            width={14}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-            <path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-2.168 11.605c-1.285 -1.927 -4.354 -2.132 -6.387 -.777a1 1 0 0 0 1.11 1.664c1.195 -.797 3.014 -.675 3.613 .223a1 1 0 1 0 1.664 -1.11m1.268 -3.245c-2.469 -1.852 -5.895 -2.187 -8.608 -.589a1 1 0 0 0 1.016 1.724c1.986 -1.171 4.544 -.92 6.392 .465a1 1 0 0 0 1.2 -1.6m1.43 -3.048c-3.677 -2.298 -7.766 -2.152 -10.977 -.546a1 1 0 0 0 .894 1.788c2.635 -1.317 5.997 -1.437 9.023 .454a1 1 0 1 0 1.06 -1.696" />
-          </svg>
-          Speaks
-        </Button>
-      </div>
-      <div className="no-scrollbar mt-3 max-h-[60vh] w-full overflow-y-auto">
-        <React.Activity
-          mode={activeTab === TABS.WRITINGS ? "visible" : "hidden"}
-        >
-          <div className="mt-2 flex flex-col gap-1">
-            {sources.list.writings.map((thought, i) => (
-              <Thought key={i} thought={thought} />
-            ))}
-          </div>
-        </React.Activity>
-      </div>
-    </div>
-  );
-}
-
-function MoreThoughtsModal() {
   return (
     <Dialog>
-      <DialogTrigger render={<MoreThoughtsButton />} />
+      <DialogTrigger
+        render={
+          <Button
+            className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+            variant="text"
+          >
+            <svg
+              fill="currentColor"
+              height={14}
+              viewBox="0 0 24 24"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+              <path
+                d="M12 2c-.218 0 -.432 .002 -.642 .005l-.616 .017l-.299 .013l-.579 .034l-.553 .046c-4.785 .464 -6.732 2.411 -7.196 7.196l-.046 .553l-.034 .579c-.005 .098 -.01 .198 -.013 .299l-.017 .616l-.004 .318l-.001 .324c0 .218 .002 .432 .005 .642l.017 .616l.013 .299l.034 .579l.046 .553c.464 4.785 2.411 6.732 7.196 7.196l.553 .046l.579 .034c.098 .005 .198 .01 .299 .013l.616 .017l.642 .005l.642 -.005l.616 -.017l.299 -.013l.579 -.034l.553 -.046c4.785 -.464 6.732 -2.411 7.196 -7.196l.046 -.553l.034 -.579c.005 -.098 .01 -.198 .013 -.299l.017 -.616l.005 -.642l-.005 -.642l-.017 -.616l-.013 -.299l-.034 -.579l-.046 -.553c-.464 -4.785 -2.411 -6.732 -7.196 -7.196l-.553 -.046l-.579 -.034a28.058 28.058 0 0 0 -.299 -.013l-.616 -.017l-.318 -.004l-.324 -.001zm0 5a1 1 0 0 1 .993 .883l.007 .117v5.585l2.293 -2.292a1 1 0 0 1 1.32 -.083l.094 .083a1 1 0 0 1 .083 1.32l-.083 .094l-4 4a1.008 1.008 0 0 1 -.112 .097l-.11 .071l-.114 .054l-.105 .035l-.149 .03l-.117 .006l-.075 -.003l-.126 -.017l-.111 -.03l-.111 -.044l-.098 -.052l-.092 -.064l-.094 -.083l-4 -4a1 1 0 0 1 1.32 -1.497l.094 .083l2.293 2.292v-5.585a1 1 0 0 1 1 -1z"
+                fill="currentColor"
+              />
+            </svg>
+            See more
+          </Button>
+        }
+      />
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Thoughts.</DialogTitle>
         </DialogHeader>
-        <MoreThoughts />
+        <div className="mt-5 flex flex-wrap gap-2">
+          <Button
+            className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+            data-cuelume-press="tick"
+            onClick={() => {
+              setActiveTab(TABS.WRITINGS);
+            }}
+            variant={activeTab === TABS.WRITINGS ? "secondary" : "outline"}
+          >
+            <svg
+              fill="currentColor"
+              height={14}
+              viewBox="0 0 24 24"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+              <path d="M9 3a1 1 0 0 1 .608 .206l.1 .087l2.706 2.707h6.586a3 3 0 0 1 2.995 2.824l.005 .176v8a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-11a3 3 0 0 1 2.824 -2.995l.176 -.005h4z" />
+            </svg>
+            Writings
+          </Button>
+          <Button
+            className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+            data-cuelume-press="tick"
+            onClick={() => {
+              setActiveTab(TABS.VIDEOS);
+            }}
+            variant={activeTab === TABS.VIDEOS ? "secondary" : "outline"}
+          >
+            <svg
+              fill="currentColor"
+              height={14}
+              viewBox="0 0 24 24"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+              <path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-5 2.66c-2.285 0 -3.915 2.619 -3.997 5.752l-.003 .248c0 3.242 1.655 6 4 6s4 -2.758 4 -6s-1.655 -6 -4 -6" />
+            </svg>
+            Videos
+          </Button>
+          <Button
+            className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+            data-cuelume-press="tick"
+            onClick={() => {
+              setActiveTab(TABS.SPEAKS);
+            }}
+            variant={activeTab === TABS.SPEAKS ? "secondary" : "outline"}
+          >
+            <svg
+              fill="currentColor"
+              height={14}
+              viewBox="0 0 24 24"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+              <path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-2.168 11.605c-1.285 -1.927 -4.354 -2.132 -6.387 -.777a1 1 0 0 0 1.11 1.664c1.195 -.797 3.014 -.675 3.613 .223a1 1 0 1 0 1.664 -1.11m1.268 -3.245c-2.469 -1.852 -5.895 -2.187 -8.608 -.589a1 1 0 0 0 1.016 1.724c1.986 -1.171 4.544 -.92 6.392 .465a1 1 0 0 0 1.2 -1.6m1.43 -3.048c-3.677 -2.298 -7.766 -2.152 -10.977 -.546a1 1 0 0 0 .894 1.788c2.635 -1.317 5.997 -1.437 9.023 .454a1 1 0 1 0 1.06 -1.696" />
+            </svg>
+            Speaks
+          </Button>
+        </div>
+        <div className="mt-3 flex">
+          <React.Activity
+            mode={activeTab === TABS.WRITINGS ? "visible" : "hidden"}
+          >
+            <div className="mt-2 flex w-full flex-col gap-1">
+              {sources.list.writings.map((thought, i) => (
+                <Thought key={i} thought={thought} />
+              ))}
+            </div>
+          </React.Activity>
+        </div>
       </DialogContent>
     </Dialog>
   );
