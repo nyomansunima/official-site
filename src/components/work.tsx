@@ -97,8 +97,8 @@ function SpotlightList() {
 
 export function WorksSection() {
   const TABS = {
-    SPOTLIGHTS: "SPOTLIGHTSS",
     CASE_STUDIES: "CASE_STUDIES",
+    SPOTLIGHTS: "SPOTLIGHTSS",
   } as const;
   const [activeTab, setActiveTab] = React.useState<string>(TABS.SPOTLIGHTS);
 

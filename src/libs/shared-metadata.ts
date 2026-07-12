@@ -20,51 +20,51 @@ export function generatedMetadata({
   return [
     { title },
     {
-      name: "description",
       content: description,
+      name: "description",
     },
     {
-      name: "keywords",
       content:
         "Product Designer, Product Engineer, Software Engineer, Fullstack Engineer, Cloud Native Backend Specialist, React, Node.js, React Native, Go, Java, Rust",
+      name: "keywords",
     },
-    { name: "creator", content: "nyomansunima" },
-    { name: "publisher", content: "nyomansunima" },
-    { name: "application-name", content: "Nyoman Sunima" },
+    { content: "nyomansunima", name: "creator" },
+    { content: "nyomansunima", name: "publisher" },
+    { content: "Nyoman Sunima", name: "application-name" },
     {
-      name: "google-site-verification",
       content: "YbWaUzcbw5swUBX5q_CTy2_zSMu1ou9ZOPWxiXjh97o",
+      name: "google-site-verification",
     },
-    { name: "category", content: "Websites" },
-    { name: "pinterest-rich-pin", content: "true" },
+    { content: "Websites", name: "category" },
+    { content: "true", name: "pinterest-rich-pin" },
     {
+      content: title,
       name: "og:title",
-      content: title,
     },
     {
+      content: description,
       name: "og:description",
-      content: description,
     },
     {
+      content: image ?? "https://www.nyomansunima.com/images/og-image.png",
       name: "og:image",
-      content: image ?? "https://www.nyomansunima.com/images/og-image.png",
     },
-    { name: "og:locale", content: "en_US" },
-    { name: "og:type", content: "website" },
+    { content: "en_US", name: "og:locale" },
+    { content: "website", name: "og:type" },
     {
-      name: "twitter:title",
       content: title,
+      name: "twitter:title",
     },
     {
-      name: "twitter:description",
       content: description,
+      name: "twitter:description",
     },
-    { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:site", content: "nyomansunima" },
-    { name: "twitter:creator", content: "@nyomansunima" },
+    { content: "summary_large_image", name: "twitter:card" },
+    { content: "nyomansunima", name: "twitter:site" },
+    { content: "@nyomansunima", name: "twitter:creator" },
     {
-      name: "twitter:image",
       content: image ?? "https://www.nyomansunima.com/images/og-image.png",
+      name: "twitter:image",
     },
   ];
 }

@@ -1,120 +1,15 @@
-import { useMediaQuery } from "~/libs/use-media-query";
+import sources from "~/data/projects.json";
 import { Button } from "./button";
-import { Dialog, DialogContent, DialogTrigger } from "./dialog";
-import { Drawer, DrawerContent, DrawerTrigger } from "./drawer";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "./dialog";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./hover-card";
 
-const featured: ProjectData[] = [
-  {
-    icon: "https://coined.vercel.app/favicon.ico",
-    title: "Coined",
-    href: "https://www.thecoined.site",
-    desc: "Helping business build, ship faster & scale",
-  },
-  {
-    icon: "https://www.poockey.site/favicon.ico",
-    title: "Poockey",
-    href: "https://www.poockey.site",
-    desc: "All in one tool for personal finances",
-  },
-  {
-    icon: "https://signa.moono.site/favicon.ico",
-    title: "Signa",
-    href: "https://signa.moono.site",
-    desc: "Sign documents with no headache",
-  },
-  {
-    icon: "https://s3-new.macosicons.com/macosicons/parse/macOSicons_lfznh2ZAJq_lowResPng-aeeddac5ba.png",
-    title: "Creevoo",
-    href: "https://www.creevoo.store",
-    desc: "Building stunning website templates",
-  },
-  {
-    icon: "https://okay.moono.site/favicon.ico",
-    title: "Okay",
-    href: "https://okay.moono.site",
-    desc: "one tool for business transactions",
-  },
-];
-
-const projects: ProjectData[] = [
-  {
-    icon: "https://coined.vercel.app/favicon.ico",
-    title: "Coined",
-    href: "https://www.thecoined.site",
-    desc: "helping business build, ship faster & scale",
-  },
-  {
-    icon: "https://www.poockey.site/favicon.ico",
-    title: "Poockey",
-    href: "https://www.poockey.site",
-    desc: "all in one tool for personal finances",
-  },
-  {
-    icon: "https://signa.moono.site/favicon.ico",
-    title: "Signa",
-    href: "https://signa.moono.site",
-    desc: "sign documents with no headache",
-  },
-  {
-    icon: "https://www.tryhaloo.site/favicon.ico",
-    title: "Haloo",
-    href: "https://www.tryhaloo.site",
-    desc: "testimonials manager for business",
-  },
-  {
-    icon: "https://okay.moono.site/favicon.ico",
-    title: "Okay",
-    href: "https://okay.moono.site",
-    desc: "one tool for business transactions",
-  },
-  {
-    icon: "https://thegoodie.site/favicon.ico",
-    title: "Goodie",
-    href: "https://thegoodie.site",
-    desc: "indie hackers tools collections",
-  },
-  {
-    icon: "https://s3-new.macosicons.com/macosicons/parse/macOSicons_lfznh2ZAJq_lowResPng-aeeddac5ba.png",
-    title: "Creevoo",
-    href: "https://www.creevoo.store",
-    desc: "building stunning website templates",
-  },
-  {
-    icon: "https://heroico.site/favicon.ico",
-    title: "Heroico",
-    href: "https://heroico.site",
-    desc: "website design, brand & apps inspirations",
-  },
-  {
-    icon: "https://oneday.moono.site/favicon.ico",
-    title: "Oneday",
-    href: "https://oneday.moono.site",
-    desc: "website blocks & component collections",
-  },
-  {
-    icon: "https://picosecond.moono.site/favicon.ico",
-    title: "Picosecond",
-    href: "https://picosecond.moono.site",
-    desc: "seriously making ui for apps",
-  },
-  {
-    icon: "https://mailo.moono.site/favicon.ico",
-    title: "Mailo",
-    href: "https://mailo.moono.site",
-    desc: "react email components blocks",
-  },
-];
-
-interface ProjectData {
-  desc: string;
-  href: string;
-  icon: string;
-  title: string;
-}
-
 interface ProjectProps {
-  project: ProjectData;
+  project: {
+    desc: string;
+    href: string;
+    icon: string;
+    title: string;
+  };
 }
 
 function Project({ project }: ProjectProps) {
@@ -164,30 +59,15 @@ function Project({ project }: ProjectProps) {
   );
 }
 
-function ProjectList() {
-  return (
-    <div className="flex w-full justify-between gap-3">
-      {featured.map((project, i) => (
-        <Project key={i} project={project} />
-      ))}
-    </div>
-  );
-}
-
 function MoreProjects() {
   return (
-    <>
-      <h2 className="-mx-4 border-border border-b border-dashed px-3 pb-2 font-medium tracking-tight sm:-mt-3">
-        Projects.
-      </h2>
-      <div className="no-scrollbar max-h-[65vh] w-full overflow-y-auto py-3 sm:max-h-[60vh]">
-        <div className="flex w-full flex-wrap gap-6">
-          {projects.map((project, i) => (
-            <Project key={i} project={project} />
-          ))}
-        </div>
+    <div className="no-scrollbar max-h-[65vh] w-full overflow-y-auto py-3 sm:max-h-[60vh] mt-5">
+      <div className="flex w-full flex-wrap gap-6">
+        {sources.list.map((project, i) => (
+          <Project key={i} project={project} />
+        ))}
       </div>
-    </>
+    </div>
   );
 }
 
@@ -217,26 +97,16 @@ function MoreProjectsButton({ ...props }) {
 }
 
 function MoreProjectsModal() {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
-
-  if (isDesktop) {
-    return (
-      <Dialog>
-        <DialogTrigger render={<MoreProjectsButton />} />
-        <DialogContent showCloseButton={false}>
-          <MoreProjects />
-        </DialogContent>
-      </Dialog>
-    );
-  }
-
   return (
-    <Drawer>
-      <DrawerTrigger render={<MoreProjectsButton />} />
-      <DrawerContent>
+    <Dialog>
+      <DialogTrigger render={<MoreProjectsButton />} />
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Projects.</DialogTitle>
+        </DialogHeader>
         <MoreProjects />
-      </DrawerContent>
-    </Drawer>
+      </DialogContent>
+    </Dialog>
   );
 }
 
@@ -248,7 +118,11 @@ export function ProjectSection() {
       </h1>
 
       <div className="mt-5 flex w-full">
-        <ProjectList />
+        <div className="flex w-full justify-between gap-3">
+          {sources.featureds.map((project, i) => (
+            <Project key={i} project={project} />
+          ))}
+        </div>
       </div>
 
       <div className="mt-5 flex justify-center border-border border-t border-dashed pt-3">

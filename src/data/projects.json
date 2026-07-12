@@ -1,0 +1,102 @@
+{
+  "featureds": [
+    {
+      "desc": "Helping business build, ship faster & scale",
+      "href": "https://www.thecoined.site",
+      "icon": "https://coined.vercel.app/favicon.ico",
+      "title": "Coined"
+    },
+    {
+      "desc": "All in one tool for personal finances",
+      "href": "https://www.poockey.site",
+      "icon": "https://www.poockey.site/favicon.ico",
+      "title": "Poockey"
+    },
+    {
+      "desc": "Sign documents with no headache",
+      "href": "https://signa.moono.site",
+      "icon": "https://signa.moono.site/favicon.ico",
+      "title": "Signa"
+    },
+    {
+      "desc": "Building stunning website templates",
+      "href": "https://www.creevoo.store",
+      "icon": "https://s3-new.macosicons.com/macosicons/parse/macOSicons_lfznh2ZAJq_lowResPng-aeeddac5ba.png",
+      "title": "Creevoo"
+    },
+    {
+      "desc": "one tool for business transactions",
+      "href": "https://okay.moono.site",
+      "icon": "https://okay.moono.site/favicon.ico",
+      "title": "Okay"
+    }
+  ],
+  "list": [
+    {
+      "desc": "helping business build, ship faster & scale",
+      "href": "https://www.thecoined.site",
+      "icon": "https://coined.vercel.app/favicon.ico",
+      "title": "Coined"
+    },
+    {
+      "desc": "all in one tool for personal finances",
+      "href": "https://www.poockey.site",
+      "icon": "https://www.poockey.site/favicon.ico",
+      "title": "Poockey"
+    },
+    {
+      "desc": "sign documents with no headache",
+      "href": "https://signa.moono.site",
+      "icon": "https://signa.moono.site/favicon.ico",
+      "title": "Signa"
+    },
+    {
+      "desc": "testimonials manager for business",
+      "href": "https://www.tryhaloo.site",
+      "icon": "https://www.tryhaloo.site/favicon.ico",
+      "title": "Haloo"
+    },
+    {
+      "desc": "one tool for business transactions",
+      "href": "https://okay.moono.site",
+      "icon": "https://okay.moono.site/favicon.ico",
+      "title": "Okay"
+    },
+    {
+      "desc": "indie hackers tools collections",
+      "href": "https://thegoodie.site",
+      "icon": "https://thegoodie.site/favicon.ico",
+      "title": "Goodie"
+    },
+    {
+      "desc": "building stunning website templates",
+      "href": "https://www.creevoo.store",
+      "icon": "https://s3-new.macosicons.com/macosicons/parse/macOSicons_lfznh2ZAJq_lowResPng-aeeddac5ba.png",
+      "title": "Creevoo"
+    },
+    {
+      "desc": "website design, brand & apps inspirations",
+      "href": "https://heroico.site",
+      "icon": "https://heroico.site/favicon.ico",
+      "title": "Heroico"
+    },
+    {
+      "desc": "website blocks & component collections",
+      "href": "https://oneday.moono.site",
+      "icon": "https://oneday.moono.site/favicon.ico",
+      "title": "Oneday"
+    },
+    {
+      "desc": "seriously making ui for apps",
+      "href": "https://picosecond.moono.site",
+      "icon": "https://picosecond.moono.site/favicon.ico",
+      "title": "Picosecond"
+    },
+    {
+      "desc": "react email components blocks",
+      "href": "https://mailo.moono.site",
+      "icon": "https://mailo.moono.site/favicon.ico",
+      "title": "Mailo"
+    }
+  ]
+}

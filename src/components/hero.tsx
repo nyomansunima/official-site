@@ -90,9 +90,9 @@ export function HeroSection() {
       <div className="mt-6 flex items-center gap-2">
         <a
           className={buttonVariants({
+            className: "transition-all duration-300 hover:-translate-y-0.5",
             size: "default",
             variant: "default",
-            className: "transition-all duration-300 hover:-translate-y-0.5",
           })}
           href="https://cal.com/nyomansunima/connects?duration=15"
           rel="noopener"
@@ -116,9 +116,9 @@ export function HeroSection() {
         </a>
         <a
           className={buttonVariants({
+            className: "transition-all duration-300 hover:-translate-y-0.5",
             size: "default",
             variant: "secondary",
-            className: "transition-all duration-300 hover:-translate-y-0.5",
           })}
           href="https://api.whatsapp.com/send?phone=6285161619109"
           rel="noopener"

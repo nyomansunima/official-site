@@ -6,28 +6,28 @@ interface RootDocumentProps {
   children: React.ReactNode;
 }
 export const Route = createRootRoute({
+  errorComponent: ErrorComponent,
   head: () => ({
+    links: [
+      { href: "/favicon.ico", rel: "icon", type: "image/x-icon" },
+      { href: "/sitemap.xml", rel: "sitemap", type: "application/xml" },
+      {
+        href: styles,
+        rel: "stylesheet",
+      },
+    ],
     meta: [
       {
         charSet: "utf-8",
       },
       {
-        name: "viewport",
         content: "width=device-width, initial-scale=1",
-      },
-    ],
-    links: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: "sitemap", type: "application/xml", href: "/sitemap.xml" },
-      {
-        rel: "stylesheet",
-        href: styles,
+        name: "viewport",
       },
     ],
   }),
-  shellComponent: RootDocument,
   notFoundComponent: NotFondComponent,
-  errorComponent: ErrorComponent,
+  shellComponent: RootDocument,
 });
 
 function RootDocument({ children }: RootDocumentProps): React.ReactElement {

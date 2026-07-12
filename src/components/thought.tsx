@@ -1,106 +1,54 @@
 import * as React from "react";
-import { useMediaQuery } from "~/libs/use-media-query";
+import sources from "~/data/thoughts.json";
 import { Button } from "./button";
-import { Dialog, DialogContent, DialogTrigger } from "./dialog";
-import { Drawer, DrawerContent, DrawerTrigger } from "./drawer";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./dialog";
 
 const TABS = {
-  WRITINGS: "WRITINGS",
-  VIDEOS: "VIDEOS",
   SPEAKS: "SPEAKS",
+  VIDEOS: "VIDEOS",
+  WRITINGS: "WRITINGS",
 } as const;
 
-const writings: ThoughtData[] = [
-  {
-    title: "How to create a better README",
-    url: "https://dev.to/nyomansunima/how-to-create-better-readme-1j0n",
-  },
-  {
-    title: "How to make your GitHub project better",
-    url: "https://dev.to/nyomansunima/how-to-make-your-github-project-better-51ph",
-  },
-  {
-    title: "Turn Nest.Js into Serverless",
-    url: "https://dev.to/nyomansunima/turn-nestjs-into-serverless-with-nitric-in-a-few-seconds-ag4",
-  },
-];
-
-const featured = [
-  {
-    title: "How to create a better README",
-    url: "https://dev.to/nyomansunima/how-to-create-better-readme-1j0n",
-  },
-  {
-    title: "How to make your GitHub project better",
-    url: "https://dev.to/nyomansunima/how-to-make-your-github-project-better-51ph",
-  },
-  {
-    title: "Turn Nest.Js into Serverless",
-    url: "https://dev.to/nyomansunima/turn-nestjs-into-serverless-with-nitric-in-a-few-seconds-ag4",
-  },
-];
-
-interface ThoughtData {
-  title: string;
-  url: string;
-}
-
 interface ThoughtProps {
-  thought: ThoughtData;
+  thought: {
+    title: string;
+    url: string;
+  };
 }
 
 function Thought({ thought }: ThoughtProps) {
   return (
     <a
-      className="group flex items-center gap-2 py-1 outline-none transition-all duration-300 hover:-translate-y-0.5 hover:text-foreground/40"
+      className="group flex items-center gap-2 py-1 outline-none transition-all duration-300 hover:-translate-y-0.5"
       href={thought.url}
       rel="noopener"
       target="_blank"
     >
-      <svg
-        className="text-foreground/40"
-        fill="currentColor"
-        height={10}
-        viewBox="0 0 24 24"
-        width={10}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-        <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
-      </svg>
+      <div className="flex grow items-center gap-2">
+        <svg
+          className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
+          fill="currentColor"
+          height={10}
+          viewBox="0 0 24 24"
+          width={10}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+          <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+        </svg>
 
-      <h3>{thought.title}</h3>
+        <h3>{thought.title}</h3>
+      </div>
+      <span className="text-foreground/40 tracking-tight transition-all duration-300 group-hover:text-foreground">
+        08/12
+      </span>
     </a>
-  );
-}
-
-function WritingList() {
-  return (
-    <div className="flex w-full flex-col gap-2">
-      {featured.map((thought, index) => (
-        <Thought key={index} thought={thought} />
-      ))}
-    </div>
-  );
-}
-
-function VideoList() {
-  return (
-    <div className="flex w-full flex-col gap-2">
-      {featured.map((thought, index) => (
-        <Thought key={index} thought={thought} />
-      ))}
-    </div>
-  );
-}
-
-function SpeakList() {
-  return (
-    <div className="flex w-full flex-col gap-2">
-      {featured.map((thought, index) => (
-        <Thought key={index} thought={thought} />
-      ))}
-    </div>
   );
 }
 
@@ -130,62 +78,99 @@ function MoreThoughtsButton({ ...props }) {
 }
 
 function MoreThoughts() {
+  const [activeTab, setActiveTab] = React.useState<string>(TABS.WRITINGS);
+
+  function onChangeTab(tab: string) {
+    setActiveTab(tab);
+  }
+
   return (
-    <>
-      <h2 className="-mx-4 border-border border-b border-dashed px-3 pb-2 font-medium tracking-tight sm:-mt-3">
-        Thoughts.
-      </h2>
-      <div className="no-scrollbar flex max-h-[60vh] w-full flex-col gap-10 overflow-y-auto py-3">
-        <div className="flex flex-col">
-          <span className="text-foreground/40">Writings:</span>
-          <div className="mt-2 flex flex-col gap-1">
-            {writings.map((thought, i) => (
-              <Thought key={i} thought={thought} />
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <span className="text-foreground/40">Videos:</span>
-          <div className="mt-2 flex flex-col gap-1">
-            {writings.map((thought, i) => (
-              <Thought key={i} thought={thought} />
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <span className="text-foreground/40">Speaks:</span>
-          <div className="mt-2 flex flex-col gap-1">
-            {writings.map((thought, i) => (
-              <Thought key={i} thought={thought} />
-            ))}
-          </div>
-        </div>
+    <div className="flex flex-col">
+      <div className="mt-5 flex flex-wrap gap-2">
+        <Button
+          className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+          onClick={() => {
+            onChangeTab(TABS.WRITINGS);
+          }}
+          variant={activeTab === TABS.WRITINGS ? "secondary" : "outline"}
+        >
+          <svg
+            fill="currentColor"
+            height={14}
+            viewBox="0 0 24 24"
+            width={14}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+            <path d="M9 3a1 1 0 0 1 .608 .206l.1 .087l2.706 2.707h6.586a3 3 0 0 1 2.995 2.824l.005 .176v8a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-11a3 3 0 0 1 2.824 -2.995l.176 -.005h4z" />
+          </svg>
+          Writings
+        </Button>
+        <Button
+          className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+          onClick={() => {
+            onChangeTab(TABS.VIDEOS);
+          }}
+          variant={activeTab === TABS.VIDEOS ? "secondary" : "outline"}
+        >
+          <svg
+            fill="currentColor"
+            height={14}
+            viewBox="0 0 24 24"
+            width={14}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+            <path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-5 2.66c-2.285 0 -3.915 2.619 -3.997 5.752l-.003 .248c0 3.242 1.655 6 4 6s4 -2.758 4 -6s-1.655 -6 -4 -6" />
+          </svg>
+          Videos
+        </Button>
+        <Button
+          className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+          onClick={() => {
+            onChangeTab(TABS.SPEAKS);
+          }}
+          variant={activeTab === TABS.SPEAKS ? "secondary" : "outline"}
+        >
+          <svg
+            fill="currentColor"
+            height={14}
+            viewBox="0 0 24 24"
+            width={14}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+            <path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-2.168 11.605c-1.285 -1.927 -4.354 -2.132 -6.387 -.777a1 1 0 0 0 1.11 1.664c1.195 -.797 3.014 -.675 3.613 .223a1 1 0 1 0 1.664 -1.11m1.268 -3.245c-2.469 -1.852 -5.895 -2.187 -8.608 -.589a1 1 0 0 0 1.016 1.724c1.986 -1.171 4.544 -.92 6.392 .465a1 1 0 0 0 1.2 -1.6m1.43 -3.048c-3.677 -2.298 -7.766 -2.152 -10.977 -.546a1 1 0 0 0 .894 1.788c2.635 -1.317 5.997 -1.437 9.023 .454a1 1 0 1 0 1.06 -1.696" />
+          </svg>
+          Speaks
+        </Button>
       </div>
-    </>
+      <div className="no-scrollbar mt-3 max-h-[60vh] w-full overflow-y-auto">
+        <React.Activity
+          mode={activeTab === TABS.WRITINGS ? "visible" : "hidden"}
+        >
+          <div className="mt-2 flex flex-col gap-1">
+            {sources.list.writings.map((thought, i) => (
+              <Thought key={i} thought={thought} />
+            ))}
+          </div>
+        </React.Activity>
+      </div>
+    </div>
   );
 }
 
 function MoreThoughtsModal() {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
-
-  if (isDesktop) {
-    return (
-      <Dialog>
-        <DialogTrigger render={<MoreThoughtsButton />} />
-        <DialogContent showCloseButton={false}>
-          <MoreThoughts />
-        </DialogContent>
-      </Dialog>
-    );
-  }
-
   return (
-    <Drawer>
-      <DrawerTrigger render={<MoreThoughtsButton />} />
-      <DrawerContent>
+    <Dialog>
+      <DialogTrigger render={<MoreThoughtsButton />} />
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Thoughts.</DialogTitle>
+        </DialogHeader>
         <MoreThoughts />
-      </DrawerContent>
-    </Drawer>
+      </DialogContent>
+    </Dialog>
   );
 }
 
@@ -282,13 +267,25 @@ export function ThoughtsSection() {
         <React.Activity
           mode={activeTab === TABS.WRITINGS ? "visible" : "hidden"}
         >
-          <WritingList />
+          <div className="flex w-full flex-col gap-2">
+            {sources.featured.writings.map((thought, index) => (
+              <Thought key={index} thought={thought} />
+            ))}
+          </div>
         </React.Activity>
         <React.Activity mode={activeTab === TABS.VIDEOS ? "visible" : "hidden"}>
-          <VideoList />
+          <div className="flex w-full flex-col gap-2">
+            {sources.featured.videos.map((thought, index) => (
+              <Thought key={index} thought={thought} />
+            ))}
+          </div>
         </React.Activity>
         <React.Activity mode={activeTab === TABS.SPEAKS ? "visible" : "hidden"}>
-          <SpeakList />
+          <div className="flex w-full flex-col gap-2">
+            {sources.featured.speaks.map((thought, index) => (
+              <Thought key={index} thought={thought} />
+            ))}
+          </div>
         </React.Activity>
       </div>
     </div>

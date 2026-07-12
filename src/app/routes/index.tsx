@@ -7,14 +7,14 @@ import { WorksSection } from "~/components/work";
 import { generatedMetadata } from "~/libs/shared-metadata";
 
 export const Route = createFileRoute("/")({
+  component: RouteComponent,
   head: () => ({
     meta: generatedMetadata({
-      title: "Product Engineer - Build Software & Systems | Nyoman Sunima",
       description:
         "Helped businesses to create their software, websites, automations and workflows that lift the profits, increase efficiencies and reduce the costs",
+      title: "Product Engineer - Build Software & Systems | Nyoman Sunima",
     }),
   }),
-  component: RouteComponent,
 });
 
 function RouteComponent() {
