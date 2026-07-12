@@ -19,6 +19,7 @@ interface ThoughtProps {
   thought: {
     title: string;
     url: string;
+    date: string;
   };
 }
 
@@ -46,7 +47,7 @@ function Thought({ thought }: ThoughtProps) {
         <h3>{thought.title}</h3>
       </div>
       <span className="text-foreground/40 tracking-tight transition-all duration-300 group-hover:text-foreground">
-        08/12
+        {thought.date}
       </span>
     </a>
   );
@@ -56,7 +57,6 @@ function MoreThoughtsButton({ ...props }) {
   return (
     <Button
       className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-      data-cuelume-press="tick"
       variant="text"
       {...props}
     >

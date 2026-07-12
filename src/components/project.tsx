@@ -7,7 +7,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./dialog";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "./hover-card";
 
 interface ProjectProps {
   project: {
@@ -19,49 +18,24 @@ interface ProjectProps {
 }
 
 function Project({ project }: ProjectProps) {
-  return (
-    <HoverCard>
-      <HoverCardTrigger
-        render={
-          <a
-            className="group relative flex h-13 w-13 items-center gap-2 outline-none transition-all duration-300"
-            href={project.href}
-            rel="noopener"
-            target="_blank"
-          >
-            <span className="absolute h-13 w-13 rotate-12 scale-80 rounded-2xl border border-border border-dashed bg-background transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-2 group-hover:scale-95" />
-            <span className="absolute h-13 w-13 scale-80 rounded-2xl border border-border border-dashed bg-background transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:scale-95" />
-            <div className="absolute rounded-2xl border border-border border-dashed bg-background p-2 transition-all duration-200 group-hover:-translate-y-0.5">
-              <img
-                alt={project.title}
-                className="overflow-hidden rounded-lg object-cover transition-all duration-300 group-hover:-rotate-6"
-                height={44}
-                src={project.icon}
-                width={44}
-              />
-            </div>
-          </a>
-        }
+  return (<a
+    className="group relative flex h-13 w-13 items-center gap-2 outline-none transition-all duration-300"
+    href={project.href}
+    rel="noopener"
+    target="_blank"
+  >
+    <span className="absolute h-13 w-13 rotate-12 scale-80 rounded-2xl border border-border border-dashed bg-background transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-2 group-hover:scale-95" />
+    <span className="absolute h-13 w-13 scale-80 rounded-2xl border border-border border-dashed bg-background transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:scale-95" />
+    <div className="absolute rounded-2xl border border-border border-dashed bg-background p-2 transition-all duration-200 group-hover:-translate-y-0.5">
+      <img
+        alt={project.title}
+        className="overflow-hidden rounded-lg object-cover transition-all duration-300 group-hover:-rotate-6"
+        height={44}
+        src={project.icon}
+        width={44}
       />
-      <HoverCardContent>
-        <div className="relative flex select-none flex-col">
-          <h3 className="text-foreground">{project.title}</h3>
-          <span className="text-foreground/40">{project.desc}</span>
-
-          <svg
-            className="absolute -top-2 -right-2 text-foreground/20"
-            fill="currentColor"
-            height={14}
-            viewBox="0 0 24 24"
-            width={14}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-            <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
-          </svg>
-        </div>
-      </HoverCardContent>
-    </HoverCard>
+    </div>
+  </a>
   );
 }
 
@@ -81,7 +55,6 @@ function MoreProjectsButton({ ...props }) {
   return (
     <Button
       className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-      data-cuelume-press="tick"
       variant="text"
       {...props}
     >
