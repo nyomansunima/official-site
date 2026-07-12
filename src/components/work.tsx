@@ -111,6 +111,7 @@ export function WorksSection() {
       <div className="mt-5 flex items-center gap-2">
         <Button
           className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+          data-cuelume-press="tick"
           onClick={() => {
             setActiveTab(TABS.SPOTLIGHTS);
           }}
@@ -131,6 +132,7 @@ export function WorksSection() {
         </Button>
         <Button
           className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+          data-cuelume-press="tick"
           onClick={() => {
             setActiveTab(TABS.CASE_STUDIES);
           }}

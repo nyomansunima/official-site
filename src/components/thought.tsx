@@ -56,6 +56,7 @@ function MoreThoughtsButton({ ...props }) {
   return (
     <Button
       className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+      data-cuelume-press="tick"
       variant="text"
       {...props}
     >
@@ -89,6 +90,7 @@ function MoreThoughts() {
       <div className="mt-5 flex flex-wrap gap-2">
         <Button
           className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+          data-cuelume-press="tick"
           onClick={() => {
             onChangeTab(TABS.WRITINGS);
           }}
@@ -108,6 +110,7 @@ function MoreThoughts() {
         </Button>
         <Button
           className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+          data-cuelume-press="tick"
           onClick={() => {
             onChangeTab(TABS.VIDEOS);
           }}
@@ -127,6 +130,7 @@ function MoreThoughts() {
         </Button>
         <Button
           className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+          data-cuelume-press="tick"
           onClick={() => {
             onChangeTab(TABS.SPEAKS);
           }}
@@ -187,6 +191,7 @@ export function ThoughtsSection() {
         <div className="flex items-center gap-2">
           <Button
             className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+            data-cuelume-press="tick"
             onClick={() => {
               setActiveTab(TABS.WRITINGS);
             }}
@@ -206,6 +211,7 @@ export function ThoughtsSection() {
           </Button>
           <Button
             className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+            data-cuelume-press="tick"
             onClick={() => {
               setActiveTab(TABS.VIDEOS);
             }}
@@ -225,6 +231,7 @@ export function ThoughtsSection() {
           </Button>
           <Button
             className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+            data-cuelume-press="tick"
             onClick={() => {
               setActiveTab(TABS.SPEAKS);
             }}

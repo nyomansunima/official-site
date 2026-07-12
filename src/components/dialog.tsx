@@ -60,6 +60,7 @@ function DialogContent({
             render={
               <Button
                 className="absolute top-2 right-2"
+                data-cuelume-press="droplet"
                 size="icon-sm"
                 variant="secondary"
               >

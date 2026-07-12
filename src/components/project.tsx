@@ -1,6 +1,12 @@
 import sources from "~/data/projects.json";
 import { Button } from "./button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "./dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./dialog";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./hover-card";
 
 interface ProjectProps {
@@ -61,7 +67,7 @@ function Project({ project }: ProjectProps) {
 
 function MoreProjects() {
   return (
-    <div className="no-scrollbar max-h-[65vh] w-full overflow-y-auto py-3 sm:max-h-[60vh] mt-5">
+    <div className="no-scrollbar mt-5 max-h-[65vh] w-full overflow-y-auto py-3 sm:max-h-[60vh]">
       <div className="flex w-full flex-wrap gap-6">
         {sources.list.map((project, i) => (
           <Project key={i} project={project} />
@@ -75,6 +81,7 @@ function MoreProjectsButton({ ...props }) {
   return (
     <Button
       className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+      data-cuelume-press="tick"
       variant="text"
       {...props}
     >

@@ -1,5 +1,6 @@
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
-import type * as React from "react";
+import { bind } from "cuelume";
+import * as React from "react";
 import styles from "~/app/globals.css?url";
 
 interface RootDocumentProps {
@@ -31,6 +32,10 @@ export const Route = createRootRoute({
 });
 
 function RootDocument({ children }: RootDocumentProps): React.ReactElement {
+  React.useEffect(() => {
+    bind();
+  }, []);
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
