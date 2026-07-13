@@ -10,12 +10,12 @@ export function generatedMetadata({
   image,
 }: GeneratedMetadataInput):
   | (
-    | React.DetailedHTMLProps<
-      React.MetaHTMLAttributes<HTMLMetaElement>,
-      HTMLMetaElement
-    >
-    | undefined
-  )[]
+      | React.DetailedHTMLProps<
+          React.MetaHTMLAttributes<HTMLMetaElement>,
+          HTMLMetaElement
+        >
+      | undefined
+    )[]
   | undefined {
   return [
     { title },
@@ -37,34 +37,27 @@ export function generatedMetadata({
     },
     { content: "Websites", name: "category" },
     { content: "true", name: "pinterest-rich-pin" },
-    {
-      content: title,
-      name: "og:title",
-    },
-    {
-      content: description,
-      name: "og:description",
-    },
+
+    { content: title, property: "og:title" },
+    { content: description, property: "og:description" },
     {
       content: image ?? "https://nyomansunima.com/images/meta-image.png",
-      name: "og:image",
+      property: "og:image",
     },
-    { content: "en_US", name: "og:locale" },
-    { content: "website", name: "og:type" },
-    {
-      content: title,
-      name: "twitter:title",
-    },
-    {
-      content: description,
-      name: "twitter:description",
-    },
+    { content: "website", property: "og:type" },
+    { content: "https://nyomansunima.com", property: "og:url" },
+    { content: "Nyoman Sunima", property: "og:site_name" },
+    { content: "en_US", property: "og:locale" },
+
     { content: "summary_large_image", name: "twitter:card" },
-    { content: "nyomansunima", name: "twitter:site" },
-    { content: "@nyomansunima", name: "twitter:creator" },
+    { content: title, name: "twitter:title" },
+    { content: description, name: "twitter:description" },
     {
       content: image ?? "https://nyomansunima.com/images/meta-image.png",
       name: "twitter:image",
     },
+    { content: "@nyomansunima", name: "twitter:creator" },
+
+    { content: "#000000", name: "theme-color" },
   ];
 }
