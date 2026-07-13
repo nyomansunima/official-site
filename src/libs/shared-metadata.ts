@@ -10,12 +10,12 @@ export function generatedMetadata({
   image,
 }: GeneratedMetadataInput):
   | (
-      | React.DetailedHTMLProps<
-          React.MetaHTMLAttributes<HTMLMetaElement>,
-          HTMLMetaElement
-        >
-      | undefined
-    )[]
+    | React.DetailedHTMLProps<
+      React.MetaHTMLAttributes<HTMLMetaElement>,
+      HTMLMetaElement
+    >
+    | undefined
+  )[]
   | undefined {
   return [
     { title },
@@ -46,7 +46,7 @@ export function generatedMetadata({
       name: "og:description",
     },
     {
-      content: image ?? "https://www.nyomansunima.com/images/meta-image.png",
+      content: image ?? "https://nyomansunima.com/images/meta-image.png",
       name: "og:image",
     },
     { content: "en_US", name: "og:locale" },
@@ -63,7 +63,7 @@ export function generatedMetadata({
     { content: "nyomansunima", name: "twitter:site" },
     { content: "@nyomansunima", name: "twitter:creator" },
     {
-      content: image ?? "https://www.nyomansunima.com/images/meta-image.png",
+      content: image ?? "https://nyomansunima.com/images/meta-image.png",
       name: "twitter:image",
     },
   ];
