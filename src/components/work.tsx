@@ -65,7 +65,7 @@ function CaseStudy({ cs }: CaseStudyProps) {
       </div>
       <div className="mt-3 flex items-center justify-between">
         <h3 className="text-foreground leading-none">{cs.title}</h3>
-        <span className="text-foreground/40 text-sm leading-none">
+        <span className="text-foreground/40 leading-none tracking-tight">
           {cs.date}
         </span>
       </div>

@@ -20,18 +20,11 @@ export function HeroSection() {
       </h1>
 
       <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
-        A product engineer based in bali, indonesia.{" "}
-        <span className="text-foreground italic">
-          {" "}
-          Helped companies to generate $207M+ in annual revenue and reduced over
-          $1.5M of total development costs.
-        </span>
-      </p>
-
-      <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
-        Previously worked at{" "}
+        Based in Bali, Indonesia. Helped companies to generate $207M+ in annual
+        revenue and reduced over $1.5M of total development costs. Previously
+        worked at{" "}
         <a
-          className="text-foreground italic"
+          className="text-foreground"
           href="https://www.rimlogistics.com"
           rel="noopener"
           target="_blank"
@@ -40,7 +33,7 @@ export function HeroSection() {
         </a>
         ,{" "}
         <a
-          className="text-foreground italic"
+          className="text-foreground"
           href="https://www.withjoy.com"
           rel="noopener"
           target="_blank"
@@ -49,7 +42,7 @@ export function HeroSection() {
         </a>
         ,{" "}
         <a
-          className="text-foreground italic"
+          className="text-foreground"
           href="https://www.procore.com"
           rel="noopener"
           target="_blank"
@@ -58,18 +51,14 @@ export function HeroSection() {
         </a>{" "}
         and{" "}
         <a
-          className="text-foreground italic"
+          className="text-foreground"
           href="https://dimata.com"
           rel="noopener"
           target="_blank"
         >
           Dimata
-        </a>{" "}
-        to{" "}
-        <span className="text-foreground italic">
-          built products and transform the legacy systems
-        </span>{" "}
-        to lift profits, increase efficiencies & reduce the costs.
+        </a>
+        .
       </p>
 
       <div className="mt-3 flex gap-1">

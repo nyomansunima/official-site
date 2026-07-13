@@ -8,8 +8,8 @@
 @theme {
   --font-default: "Google Sans", sans-serif;
 
-  --text-sm: 0.785rem;
-  --text-base: 0.88rem;
+  --text-sm: 0.79rem;
+  --text-base: 0.93rem;
 
   --leading-tight: 1.1;
 
@@ -42,6 +42,7 @@
 
   html {
     scroll-behavior: smooth;
+    @apply scrollbar-none;
   }
 
   body {
