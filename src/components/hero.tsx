@@ -20,7 +20,7 @@ export function HeroSection() {
       </h1>
 
       <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
-        Based in Bali, Indonesia. Helped companies to generate $207M+ in annual
+        Based in <span className="text-foreground">Bali, Indonesia</span>. Helped companies to generate $207M+ in annual
         revenue and reduced over $1.5M of total development costs. Previously
         worked at{" "}
         <a
