@@ -3,6 +3,7 @@
 
 /* Tailwindcss */
 @import "tailwindcss";
+@import "tw-animate-css";
 @plugin "@tailwindcss/typography";
 
 @theme {

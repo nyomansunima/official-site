@@ -2,6 +2,7 @@ import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { bind } from "cuelume";
 import * as React from "react";
 import styles from "~/app/globals.css?url";
+import { TooltipProvider } from "~/components/tooltip";
 
 interface RootDocumentProps {
   children: React.ReactNode;
@@ -43,7 +44,7 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
       </head>
       <body className="container relative mx-auto px-5 sm:px-0">
         <div className="relative mx-auto flex w-full flex-col gap-14 pt-10 pb-28 sm:w-10/12 sm:px-10 sm:pt-28 md:w-9/12 lg:w-6/12 xl:w-5/12">
-          {children}
+          <TooltipProvider>{children}</TooltipProvider>
         </div>
         <Scripts />
       </body>
