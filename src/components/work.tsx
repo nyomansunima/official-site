@@ -1,47 +1,15 @@
 import React, { Activity } from "react";
+import { cx } from "tailwind-variants/lite";
 import sources from "~/data/works.json";
-import { Button } from "./button";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "./dialog";
-import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
+import { Dialog, DialogContent, DialogTrigger } from "./dialog";
 
 const TABS = {
   CASE_STUDIES: "CASE_STUDIES",
   SPOTLIGHTS: "SPOTLIGHTSS",
 } as const;
 
-interface SpotlightProps {
-  spot: {
-    url?: string;
-    img: string;
-    title: string;
-  };
-}
-
-function Spotlight({ spot }: SpotlightProps) {
-  return (
-    <a
-      className="flex cursor-pointer select-none rounded-xl border border-border border-dashed bg-surface p-1 transition-all duration-300 hover:-translate-y-0.5"
-      href={spot.url}
-      rel="noopener"
-      target="_blank"
-    >
-      <img
-        alt={spot.title}
-        className="h-80 w-full overflow-hidden rounded-lg object-cover"
-        src={spot.img}
-      />
-    </a>
-  );
-}
-
-interface CaseStudyProps {
-  cs: {
+interface WorkProps {
+  work: {
     date: string;
     url?: string;
     img: string;
@@ -49,28 +17,51 @@ interface CaseStudyProps {
   };
 }
 
-function CaseStudy({ cs }: CaseStudyProps) {
+function Work({ work }: WorkProps) {
   return (
     <a
-      className="flex cursor-pointer flex-col transition-all duration-300 hover:-translate-y-0.5"
-      href={cs.url}
+      className="group/item flex cursor-pointer flex-col transition-all duration-300"
+      href={work.url}
       rel="noopener"
       target="_blank"
     >
       <div className="flex select-none rounded-xl border border-border border-dashed bg-surface p-1">
         <img
-          alt={cs.title}
-          className="h-40 w-full overflow-hidden rounded-lg object-cover object-top"
-          src={cs.img}
+          alt={work.title}
+          className="h-50 w-full overflow-hidden rounded-lg object-cover object-top sm:h-80"
+          src={work.img}
         />
       </div>
-      <div className="mt-3 flex items-center justify-between">
-        <h3 className="text-foreground leading-none">{cs.title}</h3>
-        <span className="text-foreground/40 leading-none tracking-tight">
-          {cs.date}
+      <div className="mt-3 flex items-end justify-between">
+        <span className="text-foreground/40 leading-none tracking-tight transition-all duration-300 group-hover:text-foreground">
+          {work.title}
+        </span>
+        <span className="text-foreground/20 leading-none tracking-tight">
+          {work.date}
         </span>
       </div>
     </a>
+  );
+}
+
+interface TabProps {
+  children: React.ReactNode;
+  isActive: boolean;
+  onClick: () => void;
+}
+
+function Tab({ onClick, isActive, children }: TabProps) {
+  return (
+    <button
+      className={cx(
+        "flex cursor-pointer items-center gap-1 text-foreground/30 leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground",
+        isActive && "text-foreground/60!"
+      )}
+      data-cuelume-press="tick"
+      onClick={onClick}
+    >
+      {children}
+    </button>
   );
 }
 
@@ -79,99 +70,45 @@ function MoreWorksModal() {
 
   return (
     <Dialog>
-      <Tooltip>
-        <TooltipTrigger
-          render={
-            <DialogTrigger
-              render={
-                <Button
-                  className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-                  variant="text"
-                >
-                  <svg
-                    fill="currentColor"
-                    height={14}
-                    viewBox="0 0 24 24"
-                    width={14}
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-                    <path d="M12 2l.324 .001l.318 .004l.616 .017l.299 .013l.579 .034l.553 .046c4.785 .464 6.732 2.411 7.196 7.196l.046 .553l.034 .579c.005 .098 .01 .198 .013 .299l.017 .616l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.464 4.785 -2.411 6.732 -7.196 7.196l-.553 .046l-.579 .034c-.098 .005 -.198 .01 -.299 .013l-.616 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.785 -.464 -6.732 -2.411 -7.196 -7.196l-.046 -.553l-.034 -.579a28.058 28.058 0 0 1 -.013 -.299l-.017 -.616c-.003 -.21 -.005 -.424 -.005 -.642l.001 -.324l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.464 -4.785 2.411 -6.732 7.196 -7.196l.553 -.046l.579 -.034c.098 -.005 .198 -.01 .299 -.013l.616 -.017c.21 -.003 .424 -.005 .642 -.005zm3 9h-6l-.117 .007a1 1 0 0 0 .117 1.993h6l.117 -.007a1 1 0 0 0 -.117 -1.993z" />
-                  </svg>
-                  See more
-                </Button>
-              }
-            />
-          }
-        />
-        <TooltipContent className={"font-medium"}>
-          Yeah, there's more
-        </TooltipContent>
-      </Tooltip>
+      <DialogTrigger
+        render={
+          <button className="flex cursor-pointer items-center gap-1 text-foreground/40 leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground">
+            Others.
+          </button>
+        }
+      />
       <DialogContent>
-        <DialogHeader>
-          <DialogTitle>Works.</DialogTitle>
-        </DialogHeader>
-        <div className="mt-5 flex items-center gap-2">
-          <Button
-            className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-            data-cuelume-press="tick"
+        <div className="flex items-center gap-2 border-border border-b border-dashed pb-2 text-foreground/20">
+          <Tab
+            isActive={activeTab === TABS.SPOTLIGHTS}
             onClick={() => {
               setActiveTab(TABS.SPOTLIGHTS);
             }}
-            variant={activeTab === TABS.SPOTLIGHTS ? "secondary" : "outline"}
           >
-            <svg
-              data-icon="inline-start"
-              fill="currentColor"
-              height={14}
-              viewBox="0 0 24 24"
-              width={14}
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-              <path d="M13 2l.018 .001l.016 .001l.083 .005l.011 .002h.011l.038 .009l.052 .008l.016 .006l.011 .001l.029 .011l.052 .014l.019 .009l.015 .004l.028 .014l.04 .017l.021 .012l.022 .01l.023 .015l.031 .017l.034 .024l.018 .011l.013 .012l.024 .017l.038 .034l.022 .017l.008 .01l.014 .012l.036 .041l.026 .027l.006 .009c.12 .147 .196 .322 .218 .513l.001 .012l.002 .041l.004 .064v6h5a1 1 0 0 1 .868 1.497l-.06 .091l-8 11c-.568 .783 -1.808 .38 -1.808 -.588v-6h-5a1 1 0 0 1 -.868 -1.497l.06 -.091l8 -11l.01 -.013l.018 -.024l.033 -.038l.018 -.022l.009 -.008l.013 -.014l.04 -.036l.028 -.026l.008 -.006a1 1 0 0 1 .402 -.199l.011 -.001l.027 -.005l.074 -.013l.011 -.001l.041 -.002z" />
-            </svg>
             Spotlights
-          </Button>
-          <Button
-            className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-            data-cuelume-press="tick"
+          </Tab>
+          /
+          <Tab
+            isActive={activeTab === TABS.CASE_STUDIES}
             onClick={() => {
               setActiveTab(TABS.CASE_STUDIES);
             }}
-            variant={activeTab === TABS.CASE_STUDIES ? "secondary" : "outline"}
           >
-            <svg
-              data-icon="inline-start"
-              fill="currentColor"
-              height={14}
-              viewBox="0 0 24 24"
-              width={14}
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-              <path d="M11.595 2.13a1 1 0 0 1 1.455 -1.016c3.11 1.625 5.41 3.797 6.77 6.627l-.013 -.024l.01 .019l.115 .232c2.751 5.7 .088 12.587 -5.913 13.76l-.267 .049c-8.719 1.91 -14.455 -8.74 -7.97 -14.918c.466 -.46 1.28 -1.196 1.636 -1.45a1 1 0 0 1 1.582 .813c0 .311 .086 1.117 .205 1.694q .046 .215 .093 .383l.017 .058l.1 -.02c1.562 -.396 2.522 -3.021 2.21 -5.955z" />
-            </svg>
-            Case studies
-          </Button>
+            Case Studies
+          </Tab>
         </div>
-        <div className="mt-5 flex">
+        <div className="mt-5 flex flex-col gap-10">
           <Activity mode={activeTab === TABS.SPOTLIGHTS ? "visible" : "hidden"}>
-            <div className="flex w-full flex-col gap-2">
-              {sources.list.spotlights.map((spot, i) => (
-                <Spotlight key={i} spot={spot} />
-              ))}
-            </div>
+            {sources.list.spotlights.map((work, i) => (
+              <Work key={i} work={work} />
+            ))}
           </Activity>
           <Activity
             mode={activeTab === TABS.CASE_STUDIES ? "visible" : "hidden"}
           >
-            <div className="flex w-full flex-col gap-10">
-              {sources.list.casestudies.map((cs, i) => (
-                <CaseStudy cs={cs} key={i} />
-              ))}
-            </div>
+            {sources.list.casestudies.map((work, i) => (
+              <Work key={i} work={work} />
+            ))}
           </Activity>
         </div>
       </DialogContent>
@@ -180,80 +117,20 @@ function MoreWorksModal() {
 }
 
 export function WorksSection() {
-  const [activeTab, setActiveTab] = React.useState<string>(TABS.SPOTLIGHTS);
-
   return (
-    <div className="mt-16 flex flex-col">
-      <h1 className="text-balance font-medium text-xl leading-tight tracking-tight">
-        Works.
-      </h1>
-
-      <div className="mt-5 flex items-center justify-between gap-2">
-        <div className="flex items-center gap-2">
-          <Button
-            className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-            data-cuelume-press="tick"
-            onClick={() => {
-              setActiveTab(TABS.SPOTLIGHTS);
-            }}
-            variant={activeTab === TABS.SPOTLIGHTS ? "secondary" : "outline"}
-          >
-            <svg
-              data-icon="inline-start"
-              fill="currentColor"
-              height={14}
-              viewBox="0 0 24 24"
-              width={14}
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-              <path d="M13 2l.018 .001l.016 .001l.083 .005l.011 .002h.011l.038 .009l.052 .008l.016 .006l.011 .001l.029 .011l.052 .014l.019 .009l.015 .004l.028 .014l.04 .017l.021 .012l.022 .01l.023 .015l.031 .017l.034 .024l.018 .011l.013 .012l.024 .017l.038 .034l.022 .017l.008 .01l.014 .012l.036 .041l.026 .027l.006 .009c.12 .147 .196 .322 .218 .513l.001 .012l.002 .041l.004 .064v6h5a1 1 0 0 1 .868 1.497l-.06 .091l-8 11c-.568 .783 -1.808 .38 -1.808 -.588v-6h-5a1 1 0 0 1 -.868 -1.497l.06 -.091l8 -11l.01 -.013l.018 -.024l.033 -.038l.018 -.022l.009 -.008l.013 -.014l.04 -.036l.028 -.026l.008 -.006a1 1 0 0 1 .402 -.199l.011 -.001l.027 -.005l.074 -.013l.011 -.001l.041 -.002z" />
-            </svg>
-            Spotlights
-          </Button>
-          <Button
-            className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
-            data-cuelume-press="tick"
-            onClick={() => {
-              setActiveTab(TABS.CASE_STUDIES);
-            }}
-            variant={activeTab === TABS.CASE_STUDIES ? "secondary" : "outline"}
-          >
-            <svg
-              data-icon="inline-start"
-              fill="currentColor"
-              height={14}
-              viewBox="0 0 24 24"
-              width={14}
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-              <path d="M11.595 2.13a1 1 0 0 1 1.455 -1.016c3.11 1.625 5.41 3.797 6.77 6.627l-.013 -.024l.01 .019l.115 .232c2.751 5.7 .088 12.587 -5.913 13.76l-.267 .049c-8.719 1.91 -14.455 -8.74 -7.97 -14.918c.466 -.46 1.28 -1.196 1.636 -1.45a1 1 0 0 1 1.582 .813c0 .311 .086 1.117 .205 1.694q .046 .215 .093 .383l.017 .058l.1 -.02c1.562 -.396 2.522 -3.021 2.21 -5.955z" />
-            </svg>
-            Case studies
-          </Button>
-        </div>
-        <div className="flex">
-          <MoreWorksModal />
-        </div>
+    <section className="mt-16 flex flex-col">
+      <div className="flex items-center justify-between border-border border-b border-dashed pb-2">
+        <span className="text-foreground/40 leading-tight tracking-tight">
+          Works.
+        </span>
+        <MoreWorksModal />
       </div>
 
-      <div className="mt-5 flex w-full">
-        <Activity mode={activeTab === TABS.SPOTLIGHTS ? "visible" : "hidden"}>
-          <div className="flex w-full flex-col gap-2">
-            {sources.featured.spotlights.map((spot, i) => (
-              <Spotlight key={i} spot={spot} />
-            ))}
-          </div>
-        </Activity>
-        <Activity mode={activeTab === TABS.CASE_STUDIES ? "visible" : "hidden"}>
-          <div className="flex w-full flex-col gap-10">
-            {sources.featured.casestudies.map((cs, i) => (
-              <CaseStudy cs={cs} key={i} />
-            ))}
-          </div>
-        </Activity>
+      <div className="mt-5 flex w-full flex-col gap-10">
+        {sources.featureds.map((work, i) => (
+          <Work key={i} work={work} />
+        ))}
       </div>
-    </div>
+    </section>
   );
 }

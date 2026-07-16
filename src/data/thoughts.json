@@ -1,25 +1,21 @@
 {
-  "featured": {
-    "writings": [
-      {
-        "title": "How to create a better README",
-        "url": "https://dev.to/nyomansunima/how-to-create-better-readme-1j0n",
-        "date": "09/25"
-      },
-      {
-        "title": "How to make your GitHub project better",
-        "url": "https://dev.to/nyomansunima/how-to-make-your-github-project-better-51ph",
-        "date": "09/25"
-      },
-      {
-        "title": "Turn Nest.Js into Serverless",
-        "url": "https://dev.to/nyomansunima/turn-nestjs-into-serverless-with-nitric-in-a-few-seconds-ag4",
-        "date": "09/25"
-      }
-    ],
-    "videos": [],
-    "speaks": []
-  },
+  "featureds": [
+    {
+      "title": "How to create a better README",
+      "url": "https://dev.to/nyomansunima/how-to-create-better-readme-1j0n",
+      "date": "09/25"
+    },
+    {
+      "title": "How to make your GitHub project better",
+      "url": "https://dev.to/nyomansunima/how-to-make-your-github-project-better-51ph",
+      "date": "09/25"
+    },
+    {
+      "title": "Turn Nest.Js into Serverless",
+      "url": "https://dev.to/nyomansunima/turn-nestjs-into-serverless-with-nitric-in-a-few-seconds-ag4",
+      "date": "09/25"
+    }
+  ],
   "list": {
     "writings": [
       {

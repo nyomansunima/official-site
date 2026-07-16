@@ -8,13 +8,13 @@ interface ItemProps {
 function Item({ href, title }: ItemProps) {
   return (
     <a
-      className="group flex items-center gap-1 py-1 transition-all duration-300 hover:-translate-y-0.5"
+      className="group flex items-center gap-2 py-1 transition-all duration-300 hover:-translate-y-0.5"
       href={href}
       rel="noopener"
       target="_blank"
     >
       <svg
-        className="text-foreground/40 transition-all duration-300 group-hover:text-foreground"
+        className="text-foreground/20"
         fill="currentColor"
         height={10}
         viewBox="0 0 24 24"
@@ -31,16 +31,18 @@ function Item({ href, title }: ItemProps) {
 
 export function ContactSection() {
   return (
-    <div className="mt-16 flex flex-col">
-      <h1 className="text-balance font-medium text-xl leading-tight tracking-tighter">
-        Connects.
-      </h1>
+    <section className="mt-16 flex flex-col">
+      <div className="flex items-center justify-between border-border border-b border-dashed pb-2">
+        <span className="text-foreground/40 leading-tight tracking-tight">
+          Thoughts.
+        </span>
+      </div>
 
       <div className="mt-5 flex flex-wrap gap-2">
         <a
           className={buttonVariants({
             className: "transition-all duration-300 hover:-translate-y-0.5",
-            variant: "secondary",
+            variant: "outline",
           })}
           href="https://twitter.com/nyomansunima"
           rel="noopener noreferrer"
@@ -162,6 +164,6 @@ export function ContactSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

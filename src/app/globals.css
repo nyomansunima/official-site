@@ -1,5 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
 
 /* Tailwindcss */
 @import "tailwindcss";
@@ -7,9 +8,9 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-default: "Google Sans", sans-serif;
+  --font-default: "Schibsted Grotesk", sans-serif;
 
-  --text-sm: 0.79rem;
+  --text-sm: 0.83rem;
   --text-base: 0.93rem;
 
   --leading-tight: 1.1;
@@ -17,7 +18,7 @@
   --color-background: oklch(98% 0 0);
   --color-foreground: oklch(0 0 0);
   --color-surface: oklch(1 0 0);
-  --color-border: oklch(94% 0 0);
+  --color-border: oklch(93% 0 0);
   --color-input: oklch(96% 0 0);
   --color-primary: oklch(0 0 0);
   --color-primary-foreground: oklch(98.2% 0 0);
