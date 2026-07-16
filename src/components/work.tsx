@@ -20,7 +20,7 @@ interface WorkProps {
 function Work({ work }: WorkProps) {
   return (
     <a
-      className="group/item flex cursor-pointer flex-col transition-all duration-300"
+      className="group/item flex cursor-pointer flex-col transition-all duration-300 hover:-translate-y-0.5"
       href={work.url}
       rel="noopener"
       target="_blank"
@@ -33,7 +33,7 @@ function Work({ work }: WorkProps) {
         />
       </div>
       <div className="mt-3 flex items-end justify-between">
-        <span className="text-foreground/40 leading-none tracking-tight transition-all duration-300 group-hover:text-foreground">
+        <span className="text-foreground/40 leading-none tracking-tight transition-all duration-300 group-hover/item:text-foreground">
           {work.title}
         </span>
         <span className="text-foreground/20 leading-none tracking-tight">
@@ -73,7 +73,24 @@ function MoreWorksModal() {
       <DialogTrigger
         render={
           <button className="flex cursor-pointer items-center gap-1 text-foreground/40 leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground">
-            Others.
+            Others
+            <svg
+              className="icon icon-tabler icons-tabler-outline icon-tabler-square-rounded-chevrons-right"
+              fill="none"
+              height={14}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+              <path d="M9 9l3 3l-3 3" />
+              <path d="M13 9l3 3l-3 3" />
+              <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
+            </svg>
           </button>
         }
       />
@@ -126,7 +143,7 @@ export function WorksSection() {
         <MoreWorksModal />
       </div>
 
-      <div className="mt-5 flex w-full flex-col gap-10">
+      <div className="group/list mt-5 flex w-full flex-col gap-10">
         {sources.featureds.map((work, i) => (
           <Work key={i} work={work} />
         ))}
