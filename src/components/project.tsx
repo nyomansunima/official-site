@@ -1,6 +1,5 @@
 import sources from "~/data/projects.json";
 import { Dialog, DialogContent, DialogTrigger } from "./dialog";
-import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
 
 interface ProjectProps {
   project: {
@@ -13,31 +12,24 @@ interface ProjectProps {
 
 function Project({ project }: ProjectProps) {
   return (
-    <Tooltip>
-      <TooltipTrigger
-        render={
-          <a
-            className="group relative flex h-13 w-13 items-center gap-2 outline-none transition-all duration-300"
-            href={project.href}
-            rel="noopener"
-            target="_blank"
-          >
-            <span className="absolute h-13 w-13 rotate-12 scale-80 rounded-2xl border border-border border-dashed bg-background transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-2 group-hover:scale-95" />
-            <span className="absolute h-13 w-13 scale-80 rounded-2xl border border-border border-dashed bg-background transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:scale-95" />
-            <div className="absolute rounded-2xl border border-border border-dashed bg-background p-2 transition-all duration-200 group-hover:-translate-y-0.5">
-              <img
-                alt={project.title}
-                className="overflow-hidden rounded-lg object-cover transition-all duration-300 group-hover:-rotate-6"
-                height={44}
-                src={project.icon}
-                width={44}
-              />
-            </div>
-          </a>
-        }
-      />
-      <TooltipContent>{project.title}</TooltipContent>
-    </Tooltip>
+    <a
+      className="group flex flex-col outline-none transition-all duration-300"
+      href={project.href}
+      rel="noopener"
+      target="_blank"
+    >
+      <div className="flex items-center gap-2">
+        <img
+          alt={project.title}
+          className="overflow-hidden rounded-md object-cover"
+          height={16}
+          src={project.icon}
+          width={16}
+        />
+        <span className="text-foreground">{project.title}</span>
+      </div>
+      <span className="mt-1 text-foreground/40">{project.desc}</span>
+    </a>
   );
 }
 
@@ -69,7 +61,7 @@ function MoreProjectsModal() {
         }
       />
       <DialogContent>
-        <div className="flex w-full flex-wrap gap-6">
+        <div className="flex w-full flex-col gap-6">
           {sources.list.map((project, i) => (
             <Project key={i} project={project} />
           ))}
@@ -89,7 +81,7 @@ export function ProjectSection() {
         <MoreProjectsModal />
       </div>
 
-      <div className="mt-5 flex w-full justify-between gap-3">
+      <div className="mt-5 flex w-full flex-col gap-6">
         {sources.featureds.map((project, i) => (
           <Project key={i} project={project} />
         ))}
