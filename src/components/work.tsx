@@ -72,7 +72,10 @@ function MoreWorksModal() {
     <Dialog>
       <DialogTrigger
         render={
-          <button className="flex cursor-pointer items-center gap-1 text-foreground/40 leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground">
+          <button
+            className="flex cursor-pointer items-center gap-1 text-foreground/40 leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground"
+            data-cuelume-hover="tick"
+          >
             Others
             <svg
               className="icon icon-tabler icons-tabler-outline icon-tabler-square-rounded-chevrons-right"

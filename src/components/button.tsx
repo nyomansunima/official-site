@@ -12,7 +12,7 @@ const buttonVariants = tv({
       default:
         "h-8.5 gap-1 px-3 has-data-[icon=inline-start]:pr-4 has-data-[icon=inline-end]:pl-4",
       icon: "flex size-8.5 items-center justify-center",
-      "icon-lg": "size-9",
+      "icon-lg": "size-9 rounded-lg",
       "icon-sm": "flex size-7 items-center justify-center rounded-xl",
       lg: "h-10 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
       sm: "h-7 gap-1 in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5",

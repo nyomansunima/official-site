@@ -2,6 +2,7 @@ import { Dialog as DialogPrimitive } from "@base-ui/react/dialog";
 import { play } from "cuelume";
 import { cx } from "tailwind-variants/lite";
 import { Button } from "./button";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
 
 function Dialog({ ...props }: DialogPrimitive.Root.Props) {
   function soundListener(state: boolean) {
@@ -53,34 +54,40 @@ function DialogContent({
           </div>
         </div>
         {showCloseButton && (
-          <DialogPrimitive.Close
-            data-slot="dialog-close"
-            render={
-              <Button
-                className="absolute top-3 right-3 transition-all duration-300 hover:-translate-y-0.5 sm:top-5 sm:right-5"
-                size="icon-sm"
-                variant="outline"
-              >
-                <svg
-                  className="icon icon-tabler icons-tabler-outline icon-tabler-square-rounded-minus"
-                  fill="none"
-                  height={14}
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                  width={14}
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-                  <path d="M9 12h6" />
-                  <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
-                </svg>
-                <span className="sr-only">Close</span>
-              </Button>
-            }
-          />
+          <Tooltip>
+            <TooltipTrigger
+              render={
+                <DialogPrimitive.Close
+                  data-slot="dialog-close"
+                  render={
+                    <Button
+                      className="absolute top-3 right-3 transition-all duration-300 hover:-translate-y-0.5 sm:top-5 sm:right-5"
+                      size="icon"
+                      variant="secondary"
+                    >
+                      <svg
+                        fill="none"
+                        height={14}
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                        width={14}
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+                        <path d="M10 10l4 4m0 -4l-4 4" />
+                        <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
+                      </svg>
+                      <span className="sr-only">Close</span>
+                    </Button>
+                  }
+                />
+              }
+            />
+            <TooltipContent>Ohh, hide this</TooltipContent>
+          </Tooltip>
         )}
       </DialogPrimitive.Popup>
     </DialogPortal>
