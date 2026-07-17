@@ -12,13 +12,15 @@
       },
       "suspicious": {
         "noArrayIndexKey": "off",
-        "noExplicitAny": "off"
+        "noExplicitAny": "off",
+        "noLeakedRender": "off"
       },
       "performance": {
         "noImgElement": "off",
         "noBarrelFile": "off",
         "noNamespaceImport": "off",
-        "useTopLevelRegex": "off"
+        "useTopLevelRegex": "off",
+        "noJsxPropsBind": "off"
       },
       "style": {
         "useFilenamingConvention": "off",
