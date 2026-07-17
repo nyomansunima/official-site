@@ -13,7 +13,7 @@ interface ProjectProps {
 function Project({ project }: ProjectProps) {
   return (
     <a
-      className="group/item flex flex-col sm:flex-row sm:items-center gap-x-2 py-1 outline-none transition-all duration-300 group-hover/list:text-foreground/40"
+      className="group/item flex flex-col gap-x-2 py-1 outline-none transition-all duration-300 group-hover/list:text-foreground/40 sm:flex-row sm:items-center"
       href={project.href}
       rel="noopener"
       target="_blank"
@@ -51,7 +51,7 @@ function Project({ project }: ProjectProps) {
           <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
         </svg>
       </div>
-      <span className="text-foreground/40 ml-4 sm:ml-0">{project.desc}</span>
+      <span className="ml-4 text-foreground/40 sm:ml-0">{project.desc}</span>
     </a>
   );
 }
@@ -64,6 +64,7 @@ function MoreProjectsModal() {
           <button
             className="flex cursor-pointer items-center gap-1 text-foreground/40 leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground"
             data-cuelume-hover="tick"
+            type="button"
           >
             Others
             <svg

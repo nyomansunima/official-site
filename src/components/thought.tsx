@@ -62,6 +62,7 @@ function Tab({ onClick, isActive, children }: TabProps) {
       )}
       data-cuelume-press="tick"
       onClick={onClick}
+      type="button"
     >
       {children}
     </button>
@@ -78,6 +79,7 @@ function MoreThoughtsModal() {
           <button
             className="flex cursor-pointer items-center gap-1 text-foreground/40 leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground"
             data-cuelume-hover="tick"
+            type="button"
           >
             Others
             <svg

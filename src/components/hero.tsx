@@ -27,7 +27,6 @@ const experiences = [
   },
 ].reverse();
 
-
 interface ExperienceProps {
   exp: {
     url: string;
@@ -90,6 +89,7 @@ function DetailsModal() {
           <button
             className="flex cursor-pointer items-center text-foreground/40 tracking-tight outline-none transition-all duration-300 hover:text-foreground"
             data-cuelume-hover="tick"
+            type="button"
           >
             About me
           </button>
@@ -104,7 +104,15 @@ function DetailsModal() {
           </div>
 
           <div className="mt-5">
-            <p className="text-pretty text-foreground/60 leading-relaxed">
+            <div className="rounded-xl border border-border border-dashed bg-surface p-1">
+              <img
+                alt="Others"
+                className="overflow-hidden rounded-lg"
+                src="/images/meta-image.png"
+              />
+            </div>
+
+            <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consectetur nisi, sunt, mollitia, nam quo tenetur praesentium
               velit dolor impedit debitis dicta et odio quos hic unde. Ullam
