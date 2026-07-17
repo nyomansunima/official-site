@@ -3,6 +3,10 @@ import { cx } from "tailwind-variants/lite";
 import sources from "~/data/thoughts.json";
 import { Dialog, DialogContent, DialogTrigger } from "./dialog";
 
+const writings = sources.list.filter((f) => f.type === "WRITING");
+const videos = sources.list.filter((f) => f.type === "VIDEO");
+const speaks = sources.list.filter((f) => f.type === "SPEAK");
+
 const TABS = {
   SPEAKS: "SPEAKS",
   VIDEOS: "VIDEOS",
@@ -14,6 +18,7 @@ interface ThoughtProps {
     title: string;
     url: string;
     date: string;
+    type: string;
   };
 }
 
@@ -57,7 +62,7 @@ function Tab({ onClick, isActive, children }: TabProps) {
   return (
     <button
       className={cx(
-        "flex cursor-pointer items-center gap-1 text-foreground/30 leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground",
+        "flex cursor-pointer items-center gap-1 text-foreground/30 text-sm leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground",
         isActive && "text-foreground/60!"
       )}
       data-cuelume-press="tick"
@@ -103,14 +108,14 @@ function MoreThoughtsModal() {
         }
       />
       <DialogContent>
-        <div className="flex items-center gap-2 border-border border-b border-dashed pb-2 text-foreground/20">
+        <div className="flex select-none items-center gap-2 border-border border-b border-dashed pb-2 text-foreground/20">
           <Tab
             isActive={activeTab === TABS.WRITINGS}
             onClick={() => {
               setActiveTab(TABS.WRITINGS);
             }}
           >
-            Writings
+            WRITINGS
           </Tab>{" "}
           /
           <Tab
@@ -119,7 +124,7 @@ function MoreThoughtsModal() {
               setActiveTab(TABS.VIDEOS);
             }}
           >
-            Videos
+            VIDEOS
           </Tab>{" "}
           /
           <Tab
@@ -128,7 +133,7 @@ function MoreThoughtsModal() {
               setActiveTab(TABS.SPEAKS);
             }}
           >
-            Speaks
+            SPEAKS
           </Tab>
         </div>
 
@@ -136,7 +141,21 @@ function MoreThoughtsModal() {
           <React.Activity
             mode={activeTab === TABS.WRITINGS ? "visible" : "hidden"}
           >
-            {sources.list.writings.map((thought, i) => (
+            {writings.map((thought, i) => (
+              <Thought key={i} thought={thought} />
+            ))}
+          </React.Activity>
+          <React.Activity
+            mode={activeTab === TABS.VIDEOS ? "visible" : "hidden"}
+          >
+            {videos.map((thought, i) => (
+              <Thought key={i} thought={thought} />
+            ))}
+          </React.Activity>
+          <React.Activity
+            mode={activeTab === TABS.SPEAKS ? "visible" : "hidden"}
+          >
+            {speaks.map((thought, i) => (
               <Thought key={i} thought={thought} />
             ))}
           </React.Activity>
@@ -149,7 +168,7 @@ function MoreThoughtsModal() {
 export function ThoughtsSection() {
   return (
     <section className="mt-16 flex flex-col">
-      <div className="flex items-center justify-between border-border border-b border-dashed pb-2">
+      <div className="flex select-none items-center justify-between border-border border-b border-dashed pb-2">
         <span className="text-foreground/40 leading-tight tracking-tight">
           Thoughts.
         </span>

@@ -100,7 +100,7 @@ function MoreProjectsModal() {
 export function ProjectSection() {
   return (
     <div className="mt-16 flex flex-col">
-      <div className="flex items-center justify-between border-border border-b border-dashed pb-2">
+      <div className="flex select-none items-center justify-between border-border border-b border-dashed pb-2">
         <span className="text-foreground/40 leading-tight tracking-tight">
           Projects.
         </span>

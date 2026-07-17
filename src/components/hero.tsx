@@ -87,24 +87,24 @@ function DetailsModal() {
       <DialogTrigger
         render={
           <button
-            className="flex cursor-pointer items-center text-foreground/40 tracking-tight outline-none transition-all duration-300 hover:text-foreground"
+            className="flex cursor-pointer select-none items-center text-foreground/40 text-sm tracking-tight outline-none transition-all duration-300 hover:text-foreground"
             data-cuelume-hover="tick"
             type="button"
           >
-            About me
+            ABOUT ME
           </button>
         }
       />
       <DialogContent>
         <div className="flex flex-col">
-          <div className="flex items-center justify-between border-border border-b border-dashed pb-2">
+          <div className="flex select-none items-center justify-between border-border border-b border-dashed pb-2">
             <span className="text-foreground/40 leading-tight tracking-tight">
               Few words.
             </span>
           </div>
 
           <div className="mt-5">
-            <div className="rounded-xl border border-border border-dashed bg-surface p-1">
+            <div className="select-none rounded-xl border border-border border-dashed bg-surface p-1">
               <img
                 alt="Others"
                 className="overflow-hidden rounded-lg"
@@ -128,7 +128,7 @@ function DetailsModal() {
           </div>
         </div>
         <div className="mt-16 flex flex-col">
-          <div className="flex items-center justify-between border-border border-b border-dashed pb-2">
+          <div className="flex select-none items-center justify-between border-border border-b border-dashed pb-2">
             <span className="text-foreground/40 leading-tight tracking-tight">
               Experiences.
             </span>
@@ -147,7 +147,7 @@ function DetailsModal() {
 export function HeroSection() {
   return (
     <section className="flex flex-col">
-      <div className="flex">
+      <div className="flex select-none">
         <div className="cursor-pointer rounded-full border border-border border-dashed p-0.5 transition-all duration-300 hover:-translate-y-0.5">
           <img
             alt="Nyoman Sunima Profile Avatar"
@@ -204,25 +204,25 @@ export function HeroSection() {
         .
       </p>
 
-      <div className="mt-6 flex items-center gap-2 text-foreground/10">
+      <div className="mt-6 flex select-none items-center gap-2 text-foreground/10">
         <a
-          className="flex items-center text-foreground/40 tracking-tight transition-all duration-300 hover:text-foreground"
+          className="flex select-none items-center text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground"
           data-cuelume-hover="tick"
           href="https://cal.com/nyomansunima/connects?duration=15"
           rel="noopener"
           target="_blank"
         >
-          Book a call
+          BOOK A CALL
         </a>{" "}
         /
         <a
-          className="flex items-center text-foreground/40 tracking-tight transition-all duration-300 hover:text-foreground"
+          className="flex select-none items-center text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground"
           data-cuelume-hover="tick"
           href="https://api.whatsapp.com/send?phone=6285161619109"
           rel="noopener"
           target="_blank"
         >
-          Chat now
+          CHAT NOW
         </a>
         /
         <DetailsModal />

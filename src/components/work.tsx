@@ -3,6 +3,9 @@ import { cx } from "tailwind-variants/lite";
 import sources from "~/data/works.json";
 import { Dialog, DialogContent, DialogTrigger } from "./dialog";
 
+const spotlights = sources.list.filter((f) => f.type === "SPOTLIGHT");
+const casestudies = sources.list.filter((f) => f.type === "CASE_STUDY");
+
 const TABS = {
   CASE_STUDIES: "CASE_STUDIES",
   SPOTLIGHTS: "SPOTLIGHTSS",
@@ -14,6 +17,7 @@ interface WorkProps {
     url?: string;
     img: string;
     title: string;
+    type: string;
   };
 }
 
@@ -54,7 +58,7 @@ function Tab({ onClick, isActive, children }: TabProps) {
   return (
     <button
       className={cx(
-        "flex cursor-pointer items-center gap-1 text-foreground/30 leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground",
+        "flex cursor-pointer items-center gap-1 text-foreground/30 text-sm leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground",
         isActive && "text-foreground/60!"
       )}
       data-cuelume-press="tick"
@@ -100,14 +104,14 @@ function MoreWorksModal() {
         }
       />
       <DialogContent>
-        <div className="flex items-center gap-2 border-border border-b border-dashed pb-2 text-foreground/20">
+        <div className="flex select-none items-center gap-2 border-border border-b border-dashed pb-2 text-foreground/20">
           <Tab
             isActive={activeTab === TABS.SPOTLIGHTS}
             onClick={() => {
               setActiveTab(TABS.SPOTLIGHTS);
             }}
           >
-            Spotlights
+            SPOTLIGHTS
           </Tab>
           /
           <Tab
@@ -116,19 +120,19 @@ function MoreWorksModal() {
               setActiveTab(TABS.CASE_STUDIES);
             }}
           >
-            Case Studies
+            CASE STUDIES
           </Tab>
         </div>
         <div className="mt-5 flex flex-col gap-10">
           <Activity mode={activeTab === TABS.SPOTLIGHTS ? "visible" : "hidden"}>
-            {sources.list.spotlights.map((work, i) => (
+            {spotlights.map((work, i) => (
               <Work key={i} work={work} />
             ))}
           </Activity>
           <Activity
             mode={activeTab === TABS.CASE_STUDIES ? "visible" : "hidden"}
           >
-            {sources.list.casestudies.map((work, i) => (
+            {casestudies.map((work, i) => (
               <Work key={i} work={work} />
             ))}
           </Activity>
@@ -141,7 +145,7 @@ function MoreWorksModal() {
 export function WorksSection() {
   return (
     <section className="mt-16 flex flex-col">
-      <div className="flex items-center justify-between border-border border-b border-dashed pb-2">
+      <div className="flex select-none items-center justify-between border-border border-b border-dashed pb-2">
         <span className="text-foreground/40 leading-tight tracking-tight">
           Works.
         </span>
