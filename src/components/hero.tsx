@@ -25,7 +25,8 @@ const experiences = [
     role: "Senior software engineer",
     url: "https://rimlogistics.com",
   },
-];
+].reverse();
+
 
 interface ExperienceProps {
   exp: {
@@ -86,12 +87,12 @@ function DetailsModal() {
     <Dialog>
       <DialogTrigger
         render={
-          <span
+          <button
             className="flex cursor-pointer items-center text-foreground/40 tracking-tight outline-none transition-all duration-300 hover:text-foreground"
             data-cuelume-hover="tick"
           >
             About me
-          </span>
+          </button>
         }
       />
       <DialogContent>

@@ -11,7 +11,7 @@ const buttonVariants = tv({
     size: {
       default:
         "h-8.5 gap-1 px-3 has-data-[icon=inline-start]:pr-4 has-data-[icon=inline-end]:pl-4",
-      icon: "flex size-8.5 items-center justify-center",
+      icon: "flex size-8.5 items-center justify-center rounded-2xl",
       "icon-lg": "size-9 rounded-lg",
       "icon-sm": "flex size-7 items-center justify-center rounded-xl",
       lg: "h-10 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
