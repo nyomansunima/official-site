@@ -37,17 +37,19 @@ export function generatedMetadata({
     },
     { content: "Websites", name: "category" },
     { content: "true", name: "pinterest-rich-pin" },
-
     { content: title, property: "og:title" },
     { content: description, property: "og:description" },
-    {
-      content: image ?? "https://nyomansunima.com/images/meta-image.png",
-      property: "og:image",
-    },
     { content: "website", property: "og:type" },
     { content: "https://nyomansunima.com", property: "og:url" },
     { content: "Nyoman Sunima", property: "og:site_name" },
     { content: "en_US", property: "og:locale" },
+    {
+      content: image ?? "https://nyomansunima.com/images/meta-image.png",
+      property: "og:image",
+    },
+    { content: "1200", property: "og:image:width" },
+    { content: "630", property: "og:image:height" },
+    { content: title, property: "og:image:alt" },
 
     { content: "summary_large_image", name: "twitter:card" },
     { content: title, name: "twitter:title" },
@@ -57,7 +59,7 @@ export function generatedMetadata({
       name: "twitter:image",
     },
     { content: "@nyomansunima", name: "twitter:creator" },
-
-    { content: "#000000", name: "theme-color" },
+    { content: "@nyomansunima", name: "twitter:site" },
+    { content: "#FFFFFF", name: "theme-color" },
   ];
 }
