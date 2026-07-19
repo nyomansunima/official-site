@@ -1,4 +1,5 @@
 import { Dialog, DialogContent, DialogTrigger } from "./dialog";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
 
 const experiences = [
   {
@@ -147,19 +148,55 @@ function DetailsModal() {
 export function HeroSection() {
   return (
     <section className="flex flex-col">
-      <div className="flex select-none">
-        <div className="cursor-pointer rounded-full border border-border border-dashed p-0.5 transition-all duration-300 hover:-translate-y-0.5">
-          <img
-            alt="Nyoman Sunima Profile Avatar"
-            className="h-11 w-11 overflow-hidden rounded-full object-cover"
-            src="/images/avatar.png"
+      <div className="flex">
+        <Tooltip>
+          <TooltipTrigger
+            render={
+              <div className="cursor-pointer select-none rounded-full border border-border border-dashed p-0.5 transition-all duration-300 hover:-translate-y-0.5">
+                <img
+                  alt="Nyoman Sunima Profile Avatar"
+                  className="h-11 w-11 overflow-hidden rounded-full object-cover"
+                  src="/images/avatar.png"
+                />
+              </div>
+            }
           />
-        </div>
+          <TooltipContent>
+            <svg
+              fill="currentColor"
+              height={14}
+              viewBox="0 0 24 24"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+              <path d="M12 6q 1.74 0 3.342 .106q 1.619 .107 2.973 .448q 1.388 .345 2.436 1.05a4.9 4.9 0 0 1 1.665 1.916c.397 .801 .584 1.769 .584 2.91c0 1.156 -.222 2.208 -.673 3.14c-.45 .934 -1.073 1.685 -1.868 2.236a4.7 4.7 0 0 1 -2.73 .839q -.932 .001 -1.703 -.263a7 7 0 0 1 -1.374 -.644a20 20 0 0 1 -1.107 -.736a8 8 0 0 0 -.901 -.567a1.4 1.4 0 0 0 -.643 -.174c-.209 0 -.426 .057 -.658 .18q -.42 .226 -.893 .564a20 20 0 0 1 -1.105 .733a6.8 6.8 0 0 1 -1.366 .642a5.2 5.2 0 0 1 -1.688 .264a4.7 4.7 0 0 1 -2.75 -.838c-.794 -.55 -1.418 -1.302 -1.868 -2.234q -.675 -1.407 -.673 -3.14c-.005 -1.135 .182 -2.105 .577 -2.9a4.9 4.9 0 0 1 1.673 -1.926c.699 -.47 1.511 -.816 2.442 -1.049a17 17 0 0 1 2.968 -.447q 1.599 -.11 3.34 -.11" />
+            </svg>
+            Open for new role
+          </TooltipContent>
+        </Tooltip>
+      </div>
+
+      <div className="mt-5 flex select-none items-center gap-2 border-border border-b border-dashed pb-3">
+        <h1 className="font-medium leading-tight tracking-tight">
+          Nyoman Sunima
+        </h1>
+        <svg
+          className="text-blue-500"
+          fill="currentColor"
+          height={16}
+          viewBox="0 0 24 24"
+          width={16}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+          <path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+        </svg>
       </div>
 
       <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
-        Hello, I'am <span className="text-foreground">Nyoman Sunima</span> a
-        product specialized software engineer. Based in{" "}
+        A product specialized software engineer crafting consumer products for
+        businesses. Based in{" "}
         <span className="text-foreground">Bali, Indonesia</span>.
       </p>
 
