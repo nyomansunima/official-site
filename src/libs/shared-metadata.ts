@@ -60,6 +60,6 @@ export function generatedMetadata({
     },
     { content: "@nyomansunima", name: "twitter:creator" },
     { content: "@nyomansunima", name: "twitter:site" },
-    { content: "#F8F8F8", name: "theme-color" },
+    { content: "#FFFFFF", name: "theme-color" },
   ];
 }
