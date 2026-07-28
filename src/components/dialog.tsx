@@ -57,7 +57,7 @@ function DialogContent({
             data-slot="dialog-close"
             render={
               <Button
-                className="absolute top-3 right-3 transition-all duration-300 hover:-translate-y-0.5 sm:top-5 sm:right-5"
+                className="absolute top-3 right-3 transition-all duration-300 hover:scale-95 sm:top-5 sm:right-5"
                 size="icon"
                 variant="secondary"
               >

@@ -65,7 +65,8 @@ function Tab({ onClick, isActive, children }: TabProps) {
         "flex cursor-pointer items-center gap-1 text-foreground/30 text-sm leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground",
         isActive && "text-foreground/60!"
       )}
-      data-cuelume-press="tick"
+      data-cuelume-press
+      data-cuelume-release
       onClick={onClick}
       type="button"
     >

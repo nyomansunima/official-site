@@ -88,7 +88,7 @@ function DetailsModal() {
         render={
           <button
             className="flex cursor-pointer select-none items-center text-foreground/40 text-sm tracking-tight outline-none transition-all duration-300 hover:text-foreground"
-            data-cuelume-hover="tick"
+            data-cuelume-hover
             type="button"
           >
             ABOUT ME
@@ -223,7 +223,7 @@ export function HeroSection() {
       <div className="mt-6 flex select-none items-center gap-2 text-foreground/10">
         <a
           className="flex select-none items-center text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground"
-          data-cuelume-hover="tick"
+          data-cuelume-hover
           href="https://cal.com/nyomansunima/connects?duration=15"
           rel="noopener"
           target="_blank"
@@ -233,7 +233,7 @@ export function HeroSection() {
         /
         <a
           className="flex select-none items-center text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground"
-          data-cuelume-hover="tick"
+          data-cuelume-hover
           href="https://api.whatsapp.com/send?phone=6285161619109"
           rel="noopener"
           target="_blank"
