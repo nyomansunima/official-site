@@ -157,7 +157,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="mt-5 flex select-none items-center gap-2 border-border border-b border-dashed pb-3">
+      <div className="mt-5 flex select-none items-center gap-2 border-border border-y border-dashed py-3">
         <h1 className="font-medium leading-tight tracking-tight">
           Nyoman Sunima
         </h1>

@@ -7,6 +7,7 @@ function Item({ href, title }: ItemProps) {
   return (
     <a
       className="group flex items-center gap-2 py-1 text-foreground/40 transition-all duration-300 hover:text-foreground"
+      data-cuelume-hover="tick"
       href={href}
       rel="noopener"
       target="_blank"
@@ -35,7 +36,8 @@ interface SlashItemProps {
 function SlashItem({ children, href }: SlashItemProps) {
   return (
     <a
-      className="flex items-center gap-2 text-foreground/40 leading-tight tracking-tight transition-all duration-300 hover:text-foreground"
+      className="flex items-center gap-2 text-foreground/60 leading-tight tracking-tight transition-all duration-300 hover:text-foreground"
+      data-cuelume-hover="tick"
       href={href}
       rel="noopener noreferrer"
       target="_blank"
@@ -54,7 +56,7 @@ export function ContactSection() {
         </span>
       </div>
 
-      <div className="mt-5 flex flex-wrap gap-2 border-border border-b border-dashed pb-3 text-foreground/20">
+      <div className="mt-3 flex flex-wrap gap-2 border-border border-b border-dashed pb-3 text-foreground/20">
         <SlashItem href="https://twitter.com/nyomansunima">Twitter</SlashItem> /
         <SlashItem href="https://linkedin.com/in/nyomansunima">
           Linkedin
