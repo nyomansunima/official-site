@@ -26,6 +26,7 @@ function Thought({ thought }: ThoughtProps) {
   return (
     <a
       className="group/item flex items-center gap-2 py-1 outline-none transition-all duration-300 group-hover/list:text-foreground/40"
+      data-cuelume-hover="press"
       href={thought.url}
       rel="noopener"
       target="_blank"
