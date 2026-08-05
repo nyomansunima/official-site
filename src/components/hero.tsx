@@ -40,6 +40,7 @@ function Experience({ exp }: ExperienceProps) {
   return (
     <a
       className="group/item flex items-center gap-2 py-1 outline-none transition-all duration-300 group-hover/list:text-foreground/40"
+      data-cuelume-hover="press"
       href={exp.url}
       rel="noopener"
       target="_blank"
@@ -77,7 +78,7 @@ function DetailsModal() {
         render={
           <button
             className="flex cursor-pointer select-none items-center text-foreground/40 text-sm tracking-tight outline-none transition-all duration-300 hover:text-foreground"
-            data-cuelume-hover
+            data-cuelume-hover="press"
             type="button"
           >
             ABOUT ME
@@ -128,12 +129,16 @@ function DetailsModal() {
 export function HeroSection() {
   return (
     <section className="flex flex-col">
-      <h1>Nyoman Sunima</h1>
+      <h1 className="font-medium">Nyoman Sunima</h1>
 
       <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
         Product specialized software engineer based in{" "}
-        <span className="text-foreground">Bali, Indonesia</span>. Generate
-        $207M+ ARR and reduced $1.5M dev costs. Previously worked at{" "}
+        <span className="text-foreground">Bali, Indonesia</span>. Generated over
+        $207M ARR and reduced $1.5M dev costs.
+      </p>
+
+      <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
+        Previously worked at{" "}
         <a
           className="text-foreground"
           href="https://www.rimlogistics.com"
@@ -175,7 +180,7 @@ export function HeroSection() {
       <div className="mt-6 flex select-none items-center gap-2 text-foreground/10">
         <a
           className="flex select-none items-center text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground"
-          data-cuelume-hover
+          data-cuelume-hover="press"
           href="https://cal.com/nyomansunima/connects?duration=15"
           rel="noopener"
           target="_blank"
@@ -185,7 +190,7 @@ export function HeroSection() {
         /
         <a
           className="flex select-none items-center text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground"
-          data-cuelume-hover
+          data-cuelume-hover="press"
           href="https://api.whatsapp.com/send?phone=6281330990903"
           rel="noopener"
           target="_blank"

@@ -24,7 +24,7 @@ interface WorkProps {
 function Work({ work }: WorkProps) {
   return (
     <a
-      className="group/item flex cursor-pointer flex-col transition-all duration-300 hover:-translate-y-0.5"
+      className="group/item flex cursor-pointer flex-col transition-all duration-300"
       href={work.url}
       rel="noopener"
       target="_blank"
@@ -57,7 +57,7 @@ function Tab({ onClick, isActive, children }: TabProps) {
     <button
       className={cx(
         "flex cursor-pointer items-center gap-1 text-foreground/30 text-sm leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground",
-        isActive && "text-foreground/60!"
+        isActive && "text-foreground!"
       )}
       data-cuelume-press
       data-cuelume-release
