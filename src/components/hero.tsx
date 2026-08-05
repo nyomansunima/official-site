@@ -44,17 +44,6 @@ function Experience({ exp }: ExperienceProps) {
       rel="noopener"
       target="_blank"
     >
-      <svg
-        className="text-foreground/20"
-        fill="currentColor"
-        height={10}
-        viewBox="0 0 24 24"
-        width={10}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-        <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
-      </svg>
       <span className="transition-all duration-300 group-hover/item:text-foreground">
         {exp.company}
       </span>
@@ -97,20 +86,12 @@ function DetailsModal() {
       />
       <DialogContent>
         <div className="flex flex-col">
-          <div className="flex select-none items-center justify-between border-border border-b border-dashed pb-2">
-            <span className="text-foreground/40 leading-tight tracking-tight">
-              Few words.
-            </span>
-          </div>
-
           <div className="mt-5">
-            <div className="select-none rounded-xl border border-border border-dashed bg-surface p-1">
-              <img
-                alt="Others"
-                className="overflow-hidden rounded-lg"
-                src="/images/meta-image.png"
-              />
-            </div>
+            <img
+              alt="Others"
+              className="overflow-hidden rounded-lg"
+              src="/images/meta-image.png"
+            />
 
             <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -128,7 +109,7 @@ function DetailsModal() {
           </div>
         </div>
         <div className="mt-16 flex flex-col">
-          <div className="flex select-none items-center justify-between border-border border-b border-dashed pb-2">
+          <div className="flex select-none items-center justify-between">
             <span className="text-foreground/40 leading-tight tracking-tight">
               Experiences.
             </span>

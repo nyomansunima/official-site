@@ -31,23 +31,9 @@ function Thought({ thought }: ThoughtProps) {
       rel="noopener"
       target="_blank"
     >
-      <div className="flex grow items-center gap-2">
-        <svg
-          className="text-foreground/20"
-          fill="currentColor"
-          height={10}
-          viewBox="0 0 24 24"
-          width={10}
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-          <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
-        </svg>
-
-        <span className="transition-all duration-300 group-hover/item:text-foreground">
-          {thought.title}
-        </span>
-      </div>
+      <span className="flex grow transition-all duration-300 group-hover/item:text-foreground">
+        {thought.title}
+      </span>
       <span className="text-foreground/20 tracking-tight">{thought.date}</span>
     </a>
   );

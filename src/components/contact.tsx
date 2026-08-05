@@ -6,24 +6,13 @@ interface ItemProps {
 function Item({ href, title }: ItemProps) {
   return (
     <a
-      className="group flex items-center gap-2 py-1 text-foreground/40 transition-all duration-300 hover:text-foreground"
+      className="group flex items-center gap-2 py-1 text-foreground transition-all duration-300 hover:text-foreground/40"
       data-cuelume-hover="tick"
       href={href}
       rel="noopener"
       target="_blank"
     >
-      <svg
-        className="text-foreground/20"
-        fill="currentColor"
-        height={10}
-        viewBox="0 0 24 24"
-        width={10}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-        <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
-      </svg>
-      <span className="flex flex-1">{title}</span>
+      {title}
     </a>
   );
 }
@@ -36,7 +25,7 @@ interface SlashItemProps {
 function SlashItem({ children, href }: SlashItemProps) {
   return (
     <a
-      className="flex items-center gap-2 text-foreground/60 leading-tight tracking-tight transition-all duration-300 hover:text-foreground"
+      className="flex items-center gap-2 text-foreground/40 leading-tight tracking-tight transition-all duration-300 hover:text-foreground"
       data-cuelume-hover="tick"
       href={href}
       rel="noopener noreferrer"

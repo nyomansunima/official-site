@@ -15,7 +15,7 @@ export default defineConfig({
       },
       sitemap: {
         enabled: true,
-        host: "https://www.nyomansunima.com",
+        host: "https://nyomansunima.fyi",
       },
       srcDirectory: "src/app",
     }),
