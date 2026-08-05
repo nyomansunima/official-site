@@ -49,14 +49,14 @@ function SlashItem({ children, href }: SlashItemProps) {
 
 export function ContactSection() {
   return (
-    <section className="mt-16 flex flex-col">
-      <div className="flex select-none items-center justify-between border-border border-b border-dashed pb-2">
+    <section className="mt-20 flex flex-col">
+      <div className="flex select-none items-center justify-between">
         <span className="text-foreground/40 leading-tight tracking-tight">
           Connects.
         </span>
       </div>
 
-      <div className="mt-3 flex flex-wrap gap-2 border-border border-b border-dashed pb-3 text-foreground/20">
+      <div className="mt-6 flex flex-wrap gap-2 text-foreground/20">
         <SlashItem href="https://twitter.com/nyomansunima">Twitter</SlashItem> /
         <SlashItem href="https://linkedin.com/in/nyomansunima">
           Linkedin

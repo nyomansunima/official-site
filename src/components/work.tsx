@@ -29,13 +29,11 @@ function Work({ work }: WorkProps) {
       rel="noopener"
       target="_blank"
     >
-      <div className="flex select-none rounded-xl border border-border border-dashed bg-surface p-1">
-        <img
-          alt={work.title}
-          className="h-50 w-full overflow-hidden rounded-lg object-cover object-top sm:h-80"
-          src={work.img}
-        />
-      </div>
+      <img
+        alt={work.title}
+        className="h-50 w-full overflow-hidden rounded-lg object-cover object-top sm:h-80"
+        src={work.img}
+      />
       <div className="mt-3 flex items-end justify-between">
         <span className="text-foreground/40 leading-none tracking-tight transition-all duration-300 group-hover/item:text-foreground/60">
           {work.title}
@@ -105,7 +103,7 @@ function MoreWorksModal() {
         }
       />
       <DialogContent>
-        <div className="flex select-none items-center gap-2 border-border border-b border-dashed pb-2 text-foreground/20">
+        <div className="flex select-none items-center gap-2 text-foreground/20">
           <Tab
             isActive={activeTab === TABS.SPOTLIGHTS}
             onClick={() => {
@@ -124,7 +122,7 @@ function MoreWorksModal() {
             CASE STUDIES
           </Tab>
         </div>
-        <div className="mt-5 flex flex-col gap-10">
+        <div className="mt-6 flex flex-col gap-10">
           <Activity mode={activeTab === TABS.SPOTLIGHTS ? "visible" : "hidden"}>
             {spotlights.map((work, i) => (
               <Work key={i} work={work} />
@@ -145,15 +143,15 @@ function MoreWorksModal() {
 
 export function WorksSection() {
   return (
-    <section className="mt-16 flex flex-col">
-      <div className="flex select-none items-center justify-between border-border border-b border-dashed pb-2">
+    <section className="mt-20 flex flex-col">
+      <div className="flex select-none items-center justify-between">
         <span className="text-foreground/40 leading-tight tracking-tight">
           Works.
         </span>
         <MoreWorksModal />
       </div>
 
-      <div className="group/list mt-5 flex w-full flex-col gap-10">
+      <div className="group/list mt-6 flex w-full flex-col gap-10">
         {sources.featureds.map((work, i) => (
           <Work key={i} work={work} />
         ))}

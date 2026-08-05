@@ -110,7 +110,7 @@ function MoreThoughtsModal() {
         }
       />
       <DialogContent>
-        <div className="flex select-none items-center gap-2 border-border border-b border-dashed pb-2 text-foreground/20">
+        <div className="flex select-none items-center gap-2 text-foreground/20">
           <Tab
             isActive={activeTab === TABS.WRITINGS}
             onClick={() => {
@@ -169,8 +169,8 @@ function MoreThoughtsModal() {
 
 export function ThoughtsSection() {
   return (
-    <section className="mt-16 flex flex-col">
-      <div className="flex select-none items-center justify-between border-border border-b border-dashed pb-2">
+    <section className="mt-20 flex flex-col">
+      <div className="flex select-none items-center justify-between">
         <span className="text-foreground/40 leading-tight tracking-tight">
           Thoughts.
         </span>
