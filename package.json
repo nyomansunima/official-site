@@ -21,7 +21,6 @@
   "devDependencies": {
     "@biomejs/biome": "2.5.7",
     "@cloudflare/vite-plugin": "^1.50.0",
-    "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.1.2",
     "@types/react": "^19.2.18",
@@ -34,7 +33,6 @@
     "ultracite": "7.10.1",
     "vite": "^8.2.0",
     "web-vitals": "^6.0.1",
-    "wrangler": "^4.118.0",
-    "zod": "^4.4.3"
+    "wrangler": "^4.118.0"
   }
 }
