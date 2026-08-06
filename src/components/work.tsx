@@ -35,7 +35,7 @@ function Work({ work }: WorkProps) {
         src={work.img}
       />
       <div className="mt-3 flex items-end justify-between">
-        <span className="text-foreground/40 leading-none tracking-tight transition-all duration-300 group-hover/item:text-foreground/60">
+        <span className="text-foreground/40 leading-none tracking-tight transition-all duration-300">
           {work.title}
         </span>
         <span className="text-foreground/20 leading-none tracking-tight">

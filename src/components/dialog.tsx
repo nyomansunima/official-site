@@ -58,6 +58,7 @@ function DialogContent({
             render={
               <Button
                 className="absolute top-3 right-3 transition-all duration-300 hover:scale-95 sm:top-5 sm:right-5"
+                data-cuelume-hover="pulse"
                 size="icon"
                 variant="secondary"
               >

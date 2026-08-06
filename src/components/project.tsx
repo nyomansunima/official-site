@@ -41,7 +41,7 @@ function Project({ project }: ProjectProps) {
           <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
         </svg>
       </div>
-      <span className="ml-4 text-foreground/40 sm:ml-0">{project.desc}</span>
+      <span className="text-foreground/40">{project.desc}</span>
     </a>
   );
 }

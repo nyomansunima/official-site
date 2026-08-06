@@ -132,7 +132,7 @@ export function HeroSection() {
       <h1 className="font-medium">Nyoman Sunima</h1>
 
       <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
-        Product specialized software engineer based in{" "}
+        Software engineer based in{" "}
         <span className="text-foreground">Bali, Indonesia</span>. Generated over
         $207M ARR and reduced $1.5M dev costs.
       </p>

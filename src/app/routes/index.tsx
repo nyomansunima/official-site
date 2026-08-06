@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
     meta: generatedMetadata({
       description:
         "Helped businesses to create their software, websites, automations and workflows that lift the profits, increase efficiencies and reduce the costs",
-      title: "Product Engineer - Build Software & Systems | Nyoman Sunima",
+      title: "Software Engineer - Build Software & Systems | Nyoman Sunima",
     }),
     scripts: [
       {
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
           description:
             "Helped businesses to create their software, websites, automations and workflows that lift the profits, increase efficiencies and reduce the costs",
           image: "https://nyomansunima.com/images/meta-image.png",
-          name: "Product Engineer - Build Software & Systems | Nyoman Sunima",
+          name: "Software Engineer - Build Software & Systems | Nyoman Sunima",
         }),
         type: "application/ld+json",
       },
