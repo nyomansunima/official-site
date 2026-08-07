@@ -20,29 +20,27 @@ function Project({ project }: ProjectProps) {
       rel="noopener"
       target="_blank"
     >
-      <div className="flex items-center gap-2">
-        <span className="transition-all duration-300 group-hover/item:text-foreground">
-          {project.title}
-        </span>
-        <svg
-          className="transition-all duration-300 group-hover/item:text-foreground"
-          fill="none"
-          height={14}
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          viewBox="0 0 24 24"
-          width={14}
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-          <path d="M9 9l3 3l-3 3" />
-          <path d="M13 9l3 3l-3 3" />
-          <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
-        </svg>
-      </div>
-      <span className="grow text-foreground/40">{project.desc}</span>
+      <span className="transition-all duration-300 group-hover/item:text-foreground">
+        {project.title}
+      </span>
+      <svg
+        className="text-foreground/20 transition-all duration-300 group-hover/item:text-foreground"
+        fill="none"
+        height={14}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        width={14}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+        <path d="M3 12a6 6 0 0 1 6 -6h6a6 6 0 0 1 6 6a6 6 0 0 1 -6 6h-6a6 6 0 0 1 -6 -6" />
+      </svg>
+      <span className="grow text-foreground/40 transition-all duration-300 group-hover/item:text-foreground">
+        {project.desc}
+      </span>
       <span className="text-foreground/20 tracking-tight">{project.date}</span>
     </a>
   );
