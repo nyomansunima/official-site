@@ -1,90 +1,104 @@
 {
   "featureds": [
     {
-      "desc": "Helping business build, ship faster & scale",
+      "desc": "growth agencies",
       "href": "https://www.thecoined.site",
       "icon": "https://coined.vercel.app/favicon.ico",
-      "title": "Coined"
+      "title": "Coined",
+      "date": "05/26"
     },
     {
-      "desc": "All in one tool for personal finances",
+      "desc": "personal finances tool",
       "href": "https://www.poockey.site",
       "icon": "https://www.poockey.site/favicon.ico",
-      "title": "Poockey"
+      "title": "Poockey",
+      "date": "06/26"
     },
     {
-      "desc": "Sign documents with no headache",
+      "desc": "sign any documents",
       "href": "https://signa.moono.site",
       "icon": "https://signa.moono.site/favicon.ico",
-      "title": "Signa"
+      "title": "Signa",
+      "date": "07/26"
     }
   ],
   "list": [
     {
-      "desc": "Helping business build, ship faster & scale",
+      "desc": "growth agencies",
       "href": "https://www.thecoined.site",
       "icon": "https://coined.vercel.app/favicon.ico",
-      "title": "Coined"
+      "title": "Coined",
+      "date": "05/26"
     },
     {
-      "desc": "All in one tool for personal finances",
+      "desc": "personal finances tool",
       "href": "https://www.poockey.site",
       "icon": "https://www.poockey.site/favicon.ico",
-      "title": "Poockey"
+      "title": "Poockey",
+      "date": "06/26"
     },
     {
-      "desc": "Sign documents with no headache",
+      "desc": "Sign any documents",
       "href": "https://signa.moono.site",
       "icon": "https://signa.moono.site/favicon.ico",
-      "title": "Signa"
+      "title": "Signa",
+      "date": "07/26"
     },
     {
-      "desc": "Testimonials manager for business",
+      "desc": "testimonials for business",
       "href": "https://www.tryhaloo.site",
       "icon": "https://www.tryhaloo.site/favicon.ico",
-      "title": "Haloo"
+      "title": "Haloo",
+      "date": "07/26"
     },
     {
-      "desc": "One tool for business transactions",
+      "desc": "business transactions tool",
       "href": "https://okay.moono.site",
       "icon": "https://okay.moono.site/favicon.ico",
-      "title": "Okay"
+      "title": "Okay",
+      "date": "07/26"
     },
     {
-      "desc": "Indie hackers tools collections",
+      "desc": "tools collections",
       "href": "https://thegoodie.site",
       "icon": "https://thegoodie.site/favicon.ico",
-      "title": "Goodie"
+      "title": "Goodie",
+      "date": "07/26"
     },
     {
-      "desc": "Building stunning website templates",
+      "desc": "websites templates",
       "href": "https://www.creevoo.store",
       "icon": "https://s3-new.macosicons.com/macosicons/parse/macOSicons_lfznh2ZAJq_lowResPng-aeeddac5ba.png",
-      "title": "Creevoo"
+      "title": "Creevoo",
+      "date": "07/26"
     },
     {
-      "desc": "Website design, brand & apps inspirations",
+      "desc": "design inspirations",
       "href": "https://heroico.site",
       "icon": "https://heroico.site/favicon.ico",
-      "title": "Heroico"
+      "title": "Heroico",
+      "date": "07/26"
     },
     {
-      "desc": "Website blocks & component collections",
+      "desc": "website blocks collections",
       "href": "https://oneday.moono.site",
       "icon": "https://oneday.moono.site/favicon.ico",
-      "title": "Oneday"
+      "title": "Oneday",
+      "date": "07/26"
     },
     {
-      "desc": "Seriously making ui for apps",
+      "desc": "rapid ui for apps",
       "href": "https://picosecond.moono.site",
       "icon": "https://picosecond.moono.site/favicon.ico",
-      "title": "Picosecond"
+      "title": "Picosecond",
+      "date": "07/26"
     },
     {
-      "desc": "React email components blocks",
+      "desc": "react email blocks",
       "href": "https://mailo.moono.site",
       "icon": "https://mailo.moono.site/favicon.ico",
-      "title": "Mailo"
+      "title": "Mailo",
+      "date": "07/26"
     }
   ]
 }

@@ -7,6 +7,7 @@ interface ProjectProps {
     href: string;
     icon: string;
     title: string;
+    date: string;
   };
 }
 
@@ -41,7 +42,8 @@ function Project({ project }: ProjectProps) {
           <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
         </svg>
       </div>
-      <span className="text-foreground/40">{project.desc}</span>
+      <span className="grow text-foreground/40">{project.desc}</span>
+      <span className="text-foreground/20 tracking-tight">{project.date}</span>
     </a>
   );
 }
