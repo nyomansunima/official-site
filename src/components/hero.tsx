@@ -1,31 +1,7 @@
+import experiences from "~/data/experiences.json";
 import { Dialog, DialogContent, DialogTrigger } from "./dialog";
 
-const experiences = [
-  {
-    company: "Dimata",
-    date: "07/19",
-    role: "Software engineer",
-    url: "https://dimata.com",
-  },
-  {
-    company: "Procore",
-    date: "02/22",
-    role: "Senior software engineer",
-    url: "https://procore.com",
-  },
-  {
-    company: "Joy",
-    date: "02/24",
-    role: "Senior product engineer",
-    url: "https://withjoy.com",
-  },
-  {
-    company: "RIM",
-    date: "07/24",
-    role: "Senior software engineer",
-    url: "https://rimlogistics.com",
-  },
-].reverse();
+const reversedExperiences = experiences.reverse();
 
 interface ExperienceProps {
   exp: {
@@ -116,7 +92,7 @@ function DetailsModal() {
             </span>
           </div>
           <div className="group/list mt-5 flex flex-col gap-2">
-            {experiences.map((exp, i) => (
+            {reversedExperiences.map((exp, i) => (
               <Experience exp={exp} key={i} />
             ))}
           </div>
