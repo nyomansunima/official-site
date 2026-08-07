@@ -14,7 +14,7 @@ interface ProjectProps {
 function Project({ project }: ProjectProps) {
   return (
     <a
-      className="group/item flex flex-col gap-x-2 py-1 outline-none transition-all duration-300 group-hover/list:text-foreground/40 sm:flex-row sm:items-center"
+      className="group/item flex items-center gap-x-2 py-1 outline-none transition-all duration-300 group-hover/list:text-foreground/40"
       data-cuelume-hover="press"
       href={project.href}
       rel="noopener"
