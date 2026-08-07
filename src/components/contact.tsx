@@ -62,10 +62,10 @@ export function ContactSection() {
               title="Producthunt"
             />
             <Item href="https://dribbble.com/nyomansunima" title="Dribbble" />
-            <Item href="https://threads.net/nyomansunimaa" title="Threads" />
-            <Item href="https://facebook.com/nyomansunimaa" title="Facebook" />
+            <Item href="https://threads.net/nyomansunima_" title="Threads" />
+            <Item href="https://facebook.com/nyomansunima" title="Facebook" />
             <Item
-              href="https://instagram.com/nyomansunimaa"
+              href="https://instagram.com/nyomansunima_"
               title="Instagram"
             />
           </div>
