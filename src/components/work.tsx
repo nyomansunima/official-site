@@ -24,7 +24,7 @@ interface WorkProps {
 function Work({ work }: WorkProps) {
   return (
     <a
-      className="group/item flex cursor-pointer flex-col transition-all duration-300"
+      className="group/item relative flex cursor-pointer flex-col transition-all duration-300"
       href={work.url}
       rel="noopener"
       target="_blank"
@@ -34,11 +34,11 @@ function Work({ work }: WorkProps) {
         className="h-50 w-full overflow-hidden rounded-lg object-cover object-top sm:h-80"
         src={work.img}
       />
-      <div className="mt-3 flex items-end justify-between">
-        <span className="text-foreground/40 leading-none tracking-tight transition-all duration-300">
+      <div className="absolute inset-x-3 top-3 flex items-end justify-between">
+        <span className="text-white leading-none tracking-tight mix-blend-difference transition-all duration-300">
           {work.title}
         </span>
-        <span className="text-foreground/20 leading-none tracking-tight">
+        <span className="text-white/40 leading-none tracking-tight mix-blend-difference">
           {work.date}
         </span>
       </div>
@@ -122,7 +122,7 @@ function MoreWorksModal() {
             CASE STUDIES
           </Tab>
         </div>
-        <div className="mt-6 flex flex-col gap-10">
+        <div className="mt-6 flex flex-col gap-3">
           <Activity mode={activeTab === TABS.SPOTLIGHTS ? "visible" : "hidden"}>
             {spotlights.map((work, i) => (
               <Work key={i} work={work} />
@@ -151,7 +151,7 @@ export function WorksSection() {
         <MoreWorksModal />
       </div>
 
-      <div className="group/list mt-6 flex w-full flex-col gap-10">
+      <div className="group/list mt-6 flex w-full flex-col gap-3">
         {sources.featureds.map((work, i) => (
           <Work key={i} work={work} />
         ))}
