@@ -47,6 +47,67 @@ function Experience({ exp }: ExperienceProps) {
   );
 }
 
+function AboutMe() {
+  return (
+    <div className="flex flex-col">
+      <div className="prose flex flex-col">
+        <img
+          alt="Activity"
+          src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709241070/2aa95ebc-0bfd-4362-90cb-3b238cc4ef46.jpeg"
+        />
+
+        <p>
+          Hello, my name is Nyoman Sunima, a product designer, software engineer
+          & creator with a passion for solving problems. Located in Bali,
+          Indonesia and work with remotely teams around the world. I loved to
+          shipping products, apps, sites and also exploring the technology.
+        </p>
+
+        <p>
+          It's all start when i'am in a vocational high school (2016) at{" "}
+          <a href="https://smknbalimandara.sch.id">Bali Mandara</a>, i'am had a
+          lot of interest of design, especially in website. I take the computer
+          and networking class, but also learning design & development alone
+          with the tutorials. It's bring me a big impact and also guide my life
+          into tech industries.
+        </p>
+
+        <img
+          alt="Research"
+          src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709277676/dd474a4c-a2fd-4b98-bcf2-3002c6c4aab5.jpeg"
+        />
+
+        <p>
+          I spare my time to educate and grow my knowledge into become better
+          one and understand the problem really well. I like to read books,
+          watching video from other creators and even following the training.
+          It's make me understand and have a knowledge to solve the prolem.
+          Because i can find some references and see how other people solve and
+          do it corectly. So i can see the bigger picture and find the best
+          solutions for it.
+        </p>
+
+        <img
+          alt="Read, write and share"
+          src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709291876/a59a6504-a98b-4818-955f-efba3364d5b6.jpeg"
+        />
+      </div>
+      <div className="mt-16 flex flex-col">
+        <div className="flex select-none items-center justify-between">
+          <span className="text-foreground/40 leading-tight tracking-tight">
+            Experiences.
+          </span>
+        </div>
+        <div className="group/list mt-5 flex flex-col gap-2">
+          {reversedExperiences.map((exp, i) => (
+            <Experience exp={exp} key={i} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function DetailsModal() {
   return (
     <Dialog>
@@ -62,41 +123,7 @@ function DetailsModal() {
         }
       />
       <DialogContent>
-        <div className="flex flex-col">
-          <div className="mt-5">
-            <img
-              alt="Others"
-              className="overflow-hidden rounded-lg"
-              src="/images/meta-image.png"
-            />
-
-            <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consectetur nisi, sunt, mollitia, nam quo tenetur praesentium
-              velit dolor impedit debitis dicta et odio quos hic unde. Ullam
-              sequi ipsum illum, expedita consequatur totam. Eos suscipit
-              laborum, iste explicabo repellendus doloribus voluptatibus nulla
-              voluptatum autem nihil inventore, amet impedit ut at?
-            </p>
-            <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-              quibusdam modi iste doloremque nam esse eius at molestiae
-              accusamus excepturi!
-            </p>
-          </div>
-        </div>
-        <div className="mt-16 flex flex-col">
-          <div className="flex select-none items-center justify-between">
-            <span className="text-foreground/40 leading-tight tracking-tight">
-              Experiences.
-            </span>
-          </div>
-          <div className="group/list mt-5 flex flex-col gap-2">
-            {reversedExperiences.map((exp, i) => (
-              <Experience exp={exp} key={i} />
-            ))}
-          </div>
-        </div>
+        <AboutMe />
       </DialogContent>
     </Dialog>
   );

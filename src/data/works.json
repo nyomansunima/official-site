@@ -64,6 +64,20 @@
       "img": "https://cdn.dribbble.com/userupload/47153260/file/87a3e2ac3e9e8c1326e59250b25d42c6.png",
       "date": "08/25",
       "type": "CASE_STUDY"
+    },
+    {
+      "title": "Withjoy RSVP",
+      "url": "https://withjoy.com",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/0uplu60ibivoycqw43kv.png",
+      "date": "08/25",
+      "type": "SPOTLIGHT"
+    },
+    {
+      "title": "Procore ERP",
+      "url": "https://www.procore.com/en-sg/resource-management",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/dlk2iah656okvcsbnnbk.png",
+      "date": "08/25",
+      "type": "SPOTLIGHT"
     }
   ]
 }
