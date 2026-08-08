@@ -14,7 +14,7 @@ const TABS = {
 interface WorkProps {
   work: {
     date: string;
-    url?: string;
+    url: string;
     img: string;
     title: string;
     type: string;
@@ -31,7 +31,7 @@ function Work({ work }: WorkProps) {
     >
       <img
         alt={work.title}
-        className="h-50 w-full overflow-hidden rounded-lg object-cover object-top sm:h-80"
+        className="aspect-4/3 w-full overflow-hidden rounded-lg object-cover object-top"
         src={work.img}
       />
       <div className="absolute inset-x-3 top-3 flex items-end justify-between">
