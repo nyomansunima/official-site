@@ -194,7 +194,7 @@ export function HeroSection() {
         <a
           className="flex select-none items-center text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground"
           data-cuelume-hover="press"
-          href="https://api.whatsapp.com/send?phone=6281330990903"
+          href="https://t.me/nyomansunima"
           rel="noopener"
           target="_blank"
         >
