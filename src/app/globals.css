@@ -16,7 +16,7 @@
 
   --color-background: oklch(100% 0 0);
   --color-foreground: oklch(0 0 0);
-  --color-surface: oklch(1 0 100);
+  --color-surface: oklch(100% 0 0);
   --color-border: oklch(93% 0 0);
   --color-input: oklch(96% 0 0);
   --color-primary: oklch(0 0 0);
