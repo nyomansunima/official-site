@@ -1,16 +1,16 @@
 {
   "featureds": [
     {
-      "img": "https://cdn.dribbble.com/userupload/48180421/file/61190e26fa2496f88e9bddc6f5b8f41f.jpg",
-      "url": "",
-      "title": "Micro platform",
+      "title": "Joy website",
+      "url": "https://withjoy.com",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/ym10ztve624wff3606ki.webp",
       "date": "08/24"
     },
     {
-      "img": "https://cdn.dribbble.com/userupload/15891252/file/original-3301079672549d007c74c7cbce004e85.jpg",
-      "url": "",
-      "title": "Commercial bank",
-      "date": "08/24"
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/65r7ep1t6xnge2hklyso.webp",
+      "url": "https://thecoined.site",
+      "title": "Coined",
+      "date": "08/25"
     }
   ],
   "list": [
@@ -73,6 +73,12 @@
       "url": "https://withjoy.com",
       "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/ym10ztve624wff3606ki.webp",
       "date": "08/24"
+    },
+    {
+      "title": "Coined",
+      "url": "https://thecoined.site",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/65r7ep1t6xnge2hklyso.webp",
+      "date": "08/25"
     }
   ]
 }
