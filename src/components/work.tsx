@@ -1,6 +1,9 @@
 import sources from "~/data/works.json";
 import { Dialog, DialogContent, DialogTrigger } from "./dialog";
 
+const reversedWorks = sources.list.reverse();
+const reversedFeaturedWorks = sources.featureds.reverse();
+
 interface WorkProps {
   work: {
     date: string;
@@ -13,7 +16,7 @@ interface WorkProps {
 function Work({ work }: WorkProps) {
   return (
     <a
-      className="group/item flex cursor-pointer flex-col outline-none transition-all duration-300"
+      className="group/item relative flex cursor-pointer flex-col outline-none transition-all duration-300"
       href={work.url}
       rel="noopener"
       target="_blank"
@@ -23,11 +26,13 @@ function Work({ work }: WorkProps) {
         className="aspect-4/3 w-full overflow-hidden rounded-lg object-cover object-top"
         src={work.img}
       />
-      <div className="mt-3 flex justify-between text-center">
-        <span className="text-foreground/40 tracking-tight transition-all duration-300 group-hover/item:text-foreground">
+      <div className="absolute inset-x-4 top-3 flex justify-between text-center">
+        <span className="text-white/60 tracking-tight mix-blend-difference transition-all duration-300 group-hover/item:text-white">
           {work.title}
         </span>
-        <span className="text-foreground/20 tracking-tight">{work.date}</span>
+        <span className="text-white/20 tracking-tight mix-blend-difference">
+          {work.date}
+        </span>
       </div>
     </a>
   );
@@ -65,8 +70,8 @@ function MoreWorksModal() {
         }
       />
       <DialogContent>
-        <div className="flex flex-col gap-10">
-          {sources.list.map((work, i) => (
+        <div className="flex flex-col gap-2">
+          {reversedWorks.map((work, i) => (
             <Work key={i} work={work} />
           ))}
         </div>
@@ -85,8 +90,8 @@ export function WorksSection() {
         <MoreWorksModal />
       </div>
 
-      <div className="group/list mt-6 flex w-full flex-col gap-10">
-        {sources.featureds.map((work, i) => (
+      <div className="group/list mt-6 flex w-full flex-col gap-2">
+        {reversedFeaturedWorks.map((work, i) => (
           <Work key={i} work={work} />
         ))}
       </div>

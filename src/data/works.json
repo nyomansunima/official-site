@@ -2,65 +2,77 @@
   "featureds": [
     {
       "img": "https://cdn.dribbble.com/userupload/48180421/file/61190e26fa2496f88e9bddc6f5b8f41f.jpg",
-      "url": "/",
-      "title": "Redesign micro learning platform",
+      "url": "",
+      "title": "Micro platform",
       "date": "08/24"
     },
     {
       "img": "https://cdn.dribbble.com/userupload/15891252/file/original-3301079672549d007c74c7cbce004e85.jpg",
-      "url": "/",
-      "title": "Rebuilt finance app for commercial bank",
+      "url": "",
+      "title": "Commercial bank",
       "date": "08/24"
     }
   ],
   "list": [
     {
       "img": "https://cdn.dribbble.com/userupload/19420515/file/original-2ed398d89b0939d71e46ddaeb840c140.png",
-      "url": "/",
-      "title": "Building app for asian bank",
+      "url": "",
+      "title": "Asian bank",
       "date": "08/24"
     },
     {
       "img": "https://cdn.dribbble.com/userupload/48180421/file/61190e26fa2496f88e9bddc6f5b8f41f.jpg",
-      "url": "/",
-      "title": "Redesign micro learning platform",
+      "url": "",
+      "title": "Learning platform",
       "date": "08/24"
     },
     {
       "img": "https://cdn.dribbble.com/userupload/15891252/file/original-3301079672549d007c74c7cbce004e85.jpg",
-      "url": "/",
-      "title": "Rebuilt finance app for commercial bank",
+      "url": "",
+      "title": "Commercial bank",
       "date": "08/24"
     },
     {
-      "title": "Exploring the tracking system",
-      "url": "/",
+      "title": "Tracking system",
+      "url": "",
       "img": "https://cdn.dribbble.com/userupload/47391735/file/bfc528ce2ebd30b06d0c842c585e2b4f.png",
       "date": "08/24"
     },
     {
-      "title": "Builting platform for travellio",
-      "url": "/",
+      "title": "Travellio",
+      "url": "",
       "img": "https://cdn.dribbble.com/userupload/16734510/file/original-f1e2b34a8a8030e12f2a83625ecac051.png",
       "date": "12/25"
     },
     {
-      "title": "Design & develop dashboard for cargic logistic",
-      "url": "/",
+      "title": "Cargic logistic",
+      "url": "",
       "img": "https://cdn.dribbble.com/userupload/47153260/file/87a3e2ac3e9e8c1326e59250b25d42c6.png",
       "date": "08/25"
     },
     {
-      "title": "Redesign & develop RSVP feature for joy",
+      "title": "Joy RSVP",
       "url": "https://withjoy.com",
-      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/0uplu60ibivoycqw43kv.png",
-      "date": "08/25"
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/0mbgwro2f2njnuc9gjot.webp",
+      "date": "06/24"
     },
     {
-      "title": "Optimize frontend for Procore ERP",
+      "title": "Procore ERP",
       "url": "https://www.procore.com/en-sg/resource-management",
       "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/dlk2iah656okvcsbnnbk.png",
       "date": "08/25"
+    },
+    {
+      "title": "Procore website",
+      "url": "https://procore.com",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/mxtlicwqivaj45a07uev.webp",
+      "date": "02/25"
+    },
+    {
+      "title": "Joy website",
+      "url": "https://withjoy.com",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/ym10ztve624wff3606ki.webp",
+      "date": "08/24"
     }
   ]
 }
