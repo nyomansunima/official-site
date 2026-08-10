@@ -1,15 +1,5 @@
-import React, { Activity } from "react";
-import { cx } from "tailwind-variants/lite";
 import sources from "~/data/works.json";
 import { Dialog, DialogContent, DialogTrigger } from "./dialog";
-
-const spotlights = sources.list.filter((f) => f.type === "SPOTLIGHT");
-const casestudies = sources.list.filter((f) => f.type === "CASE_STUDY");
-
-const TABS = {
-  CASE_STUDIES: "CASE_STUDIES",
-  SPOTLIGHTS: "SPOTLIGHTSS",
-} as const;
 
 interface WorkProps {
   work: {
@@ -17,14 +7,13 @@ interface WorkProps {
     url: string;
     img: string;
     title: string;
-    type: string;
   };
 }
 
 function Work({ work }: WorkProps) {
   return (
     <a
-      className="group/item relative flex cursor-pointer flex-col transition-all duration-300"
+      className="group/item flex cursor-pointer flex-col outline-none transition-all duration-300"
       href={work.url}
       rel="noopener"
       target="_blank"
@@ -34,44 +23,17 @@ function Work({ work }: WorkProps) {
         className="aspect-4/3 w-full overflow-hidden rounded-lg object-cover object-top"
         src={work.img}
       />
-      <div className="absolute inset-x-3 top-3 flex items-end justify-between">
-        <span className="text-white leading-none tracking-tight mix-blend-difference transition-all duration-300">
+      <div className="mt-3 flex justify-between text-center">
+        <span className="text-foreground/40 tracking-tight transition-all duration-300 group-hover/item:text-foreground">
           {work.title}
         </span>
-        <span className="text-white/40 leading-none tracking-tight mix-blend-difference">
-          {work.date}
-        </span>
+        <span className="text-foreground/20 tracking-tight">{work.date}</span>
       </div>
     </a>
   );
 }
 
-interface TabProps {
-  children: React.ReactNode;
-  isActive: boolean;
-  onClick: () => void;
-}
-
-function Tab({ onClick, isActive, children }: TabProps) {
-  return (
-    <button
-      className={cx(
-        "flex cursor-pointer items-center gap-1 text-foreground/30 text-sm leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground",
-        isActive && "text-foreground!"
-      )}
-      data-cuelume-press
-      data-cuelume-release
-      onClick={onClick}
-      type="button"
-    >
-      {children}
-    </button>
-  );
-}
-
 function MoreWorksModal() {
-  const [activeTab, setActiveTab] = React.useState<string>(TABS.SPOTLIGHTS);
-
   return (
     <Dialog>
       <DialogTrigger
@@ -103,38 +65,10 @@ function MoreWorksModal() {
         }
       />
       <DialogContent>
-        <div className="flex select-none items-center gap-2 text-foreground/20">
-          <Tab
-            isActive={activeTab === TABS.SPOTLIGHTS}
-            onClick={() => {
-              setActiveTab(TABS.SPOTLIGHTS);
-            }}
-          >
-            SPOTLIGHTS
-          </Tab>
-          /
-          <Tab
-            isActive={activeTab === TABS.CASE_STUDIES}
-            onClick={() => {
-              setActiveTab(TABS.CASE_STUDIES);
-            }}
-          >
-            CASE STUDIES
-          </Tab>
-        </div>
-        <div className="mt-6 flex flex-col gap-3">
-          <Activity mode={activeTab === TABS.SPOTLIGHTS ? "visible" : "hidden"}>
-            {spotlights.map((work, i) => (
-              <Work key={i} work={work} />
-            ))}
-          </Activity>
-          <Activity
-            mode={activeTab === TABS.CASE_STUDIES ? "visible" : "hidden"}
-          >
-            {casestudies.map((work, i) => (
-              <Work key={i} work={work} />
-            ))}
-          </Activity>
+        <div className="flex flex-col gap-10">
+          {sources.list.map((work, i) => (
+            <Work key={i} work={work} />
+          ))}
         </div>
       </DialogContent>
     </Dialog>
@@ -151,7 +85,7 @@ export function WorksSection() {
         <MoreWorksModal />
       </div>
 
-      <div className="group/list mt-6 flex w-full flex-col gap-3">
+      <div className="group/list mt-6 flex w-full flex-col gap-10">
         {sources.featureds.map((work, i) => (
           <Work key={i} work={work} />
         ))}

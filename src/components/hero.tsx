@@ -50,19 +50,17 @@ function Experience({ exp }: ExperienceProps) {
 function AboutMe() {
   return (
     <div className="flex flex-col">
-      <div className="prose flex flex-col">
+      <div className="prose">
         <img
           alt="Activity"
           src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709241070/2aa95ebc-0bfd-4362-90cb-3b238cc4ef46.jpeg"
         />
-
         <p>
           Hello, my name is Nyoman Sunima, a product designer, software engineer
           & creator with a passion for solving problems. Located in Bali,
           Indonesia and work with remotely teams around the world. I loved to
           shipping products, apps, sites and also exploring the technology.
         </p>
-
         <p>
           It's all start when i'am in a vocational high school (2016) at{" "}
           <a href="https://smknbalimandara.sch.id">Bali Mandara</a>, i'am had a
@@ -71,12 +69,10 @@ function AboutMe() {
           with the tutorials. It's bring me a big impact and also guide my life
           into tech industries.
         </p>
-
         <img
           alt="Research"
           src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709277676/dd474a4c-a2fd-4b98-bcf2-3002c6c4aab5.jpeg"
         />
-
         <p>
           I spare my time to educate and grow my knowledge into become better
           one and understand the problem really well. I like to read books,
@@ -86,7 +82,6 @@ function AboutMe() {
           do it corectly. So i can see the bigger picture and find the best
           solutions for it.
         </p>
-
         <img
           alt="Read, write and share"
           src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729709291876/a59a6504-a98b-4818-955f-efba3364d5b6.jpeg"

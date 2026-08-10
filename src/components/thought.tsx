@@ -1,17 +1,5 @@
-import * as React from "react";
-import { cx } from "tailwind-variants/lite";
 import sources from "~/data/thoughts.json";
 import { Dialog, DialogContent, DialogTrigger } from "./dialog";
-
-const writings = sources.list.filter((f) => f.type === "WRITING");
-const videos = sources.list.filter((f) => f.type === "VIDEO");
-const speaks = sources.list.filter((f) => f.type === "SPEAK");
-
-const TABS = {
-  SPEAKS: "SPEAKS",
-  VIDEOS: "VIDEOS",
-  WRITINGS: "WRITINGS",
-} as const;
 
 interface ThoughtProps {
   thought: {
@@ -39,32 +27,7 @@ function Thought({ thought }: ThoughtProps) {
   );
 }
 
-interface TabProps {
-  children: React.ReactNode;
-  isActive: boolean;
-  onClick: () => void;
-}
-
-function Tab({ onClick, isActive, children }: TabProps) {
-  return (
-    <button
-      className={cx(
-        "flex cursor-pointer items-center gap-1 text-foreground/30 text-sm leading-tight tracking-tight outline-none transition-all duration-300 hover:text-foreground",
-        isActive && "text-foreground!"
-      )}
-      data-cuelume-press
-      data-cuelume-release
-      onClick={onClick}
-      type="button"
-    >
-      {children}
-    </button>
-  );
-}
-
 function MoreThoughtsModal() {
-  const [activeTab, setActiveTab] = React.useState<string>(TABS.WRITINGS);
-
   return (
     <Dialog>
       <DialogTrigger
@@ -96,57 +59,10 @@ function MoreThoughtsModal() {
         }
       />
       <DialogContent>
-        <div className="flex select-none items-center gap-2 text-foreground/20">
-          <Tab
-            isActive={activeTab === TABS.WRITINGS}
-            onClick={() => {
-              setActiveTab(TABS.WRITINGS);
-            }}
-          >
-            WRITINGS
-          </Tab>{" "}
-          /
-          <Tab
-            isActive={activeTab === TABS.VIDEOS}
-            onClick={() => {
-              setActiveTab(TABS.VIDEOS);
-            }}
-          >
-            VIDEOS
-          </Tab>{" "}
-          /
-          <Tab
-            isActive={activeTab === TABS.SPEAKS}
-            onClick={() => {
-              setActiveTab(TABS.SPEAKS);
-            }}
-          >
-            SPEAKS
-          </Tab>
-        </div>
-
-        <div className="group/list mt-5 flex flex-col gap-1">
-          <React.Activity
-            mode={activeTab === TABS.WRITINGS ? "visible" : "hidden"}
-          >
-            {writings.map((thought, i) => (
-              <Thought key={i} thought={thought} />
-            ))}
-          </React.Activity>
-          <React.Activity
-            mode={activeTab === TABS.VIDEOS ? "visible" : "hidden"}
-          >
-            {videos.map((thought, i) => (
-              <Thought key={i} thought={thought} />
-            ))}
-          </React.Activity>
-          <React.Activity
-            mode={activeTab === TABS.SPEAKS ? "visible" : "hidden"}
-          >
-            {speaks.map((thought, i) => (
-              <Thought key={i} thought={thought} />
-            ))}
-          </React.Activity>
+        <div className="group/list flex flex-col gap-1">
+          {sources.list.map((thought, i) => (
+            <Thought key={i} thought={thought} />
+          ))}
         </div>
       </DialogContent>
     </Dialog>

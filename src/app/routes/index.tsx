@@ -40,9 +40,9 @@ function RouteComponent() {
   return (
     <main className="flex flex-col">
       <HeroSection />
+      <ThoughtsSection />
       <WorksSection />
       <ProjectSection />
-      <ThoughtsSection />
       <ContactSection />
     </main>
   );
