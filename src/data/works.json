@@ -33,10 +33,22 @@
       "date": "12/25"
     },
     {
-      "title": "RIM Logistics Concepts",
-      "url": "https://www.rimlogistics.com",
-      "img": "https://cdn.dribbble.com/userupload/47153260/file/87a3e2ac3e9e8c1326e59250b25d42c6.png",
-      "date": "08/25"
+      "title": "Procore Mobile",
+      "url": "https://play.google.com/store/apps/details?id=com.procore.activities&pcampaignid=web_share",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/cfcfitahvrw4eddr9xyo.webp",
+      "date": "08/22"
+    },
+    {
+      "title": "Procore ERP",
+      "url": "https://www.procore.com/en-sg/resource-management",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/lel1ugk30u3s5i1qcivu.webp",
+      "date": "05/22"
+    },
+    {
+      "title": "Procore Website",
+      "url": "https://procore.com",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/b8k1djnf047y9drkydpq.webp",
+      "date": "02/21"
     },
     {
       "title": "Joy RSVP",
@@ -45,22 +57,28 @@
       "date": "06/24"
     },
     {
-      "title": "Procore ERP",
-      "url": "https://www.procore.com/en-sg/resource-management",
-      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/dlk2iah656okvcsbnnbk.png",
-      "date": "08/25"
-    },
-    {
-      "title": "Procore website",
-      "url": "https://procore.com",
-      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/mxtlicwqivaj45a07uev.webp",
-      "date": "02/25"
-    },
-    {
-      "title": "Joy website",
+      "title": "Joy Website",
       "url": "https://withjoy.com",
       "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/ym10ztve624wff3606ki.webp",
       "date": "08/24"
+    },
+    {
+      "title": "RIM Logistics Concepts",
+      "url": "https://www.rimlogistics.com",
+      "img": "https://cdn.dribbble.com/userupload/47153260/file/87a3e2ac3e9e8c1326e59250b25d42c6.png",
+      "date": "03/25"
+    },
+    {
+      "title": "RIM Logistics",
+      "url": "https://www.rimlogistics.com",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/tfnkwi6qyrngehoeqre7.webp",
+      "date": "02/25"
+    },
+    {
+      "title": "Holixora Website",
+      "url": "https://holixora.com",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/3rr9bwtsb7cw9s8mi0tr.webp",
+      "date": "06/25"
     },
     {
       "title": "Coined",
