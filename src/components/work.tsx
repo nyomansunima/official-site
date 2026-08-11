@@ -17,6 +17,7 @@ function Work({ work }: WorkProps) {
   return (
     <a
       className="group/item relative flex cursor-pointer flex-col outline-none transition-all duration-300"
+      data-cuelume-hover="press"
       href={work.url}
       rel="noopener"
       target="_blank"
@@ -27,10 +28,10 @@ function Work({ work }: WorkProps) {
         src={work.img}
       />
       <div className="absolute inset-x-4 top-3 flex justify-between text-center">
-        <span className="text-white/60 tracking-tight mix-blend-difference transition-all duration-300 group-hover/item:text-white">
+        <span className="text-white/0 tracking-tight mix-blend-difference transition-all duration-300 group-hover/item:text-white">
           {work.title}
         </span>
-        <span className="text-white/20 tracking-tight mix-blend-difference">
+        <span className="text-white/0 tracking-tight mix-blend-difference group-hover/item:text-white/40">
           {work.date}
         </span>
       </div>
