@@ -129,47 +129,26 @@ export function HeroSection() {
     <section className="flex flex-col">
       <h1 className="font-medium">Nyoman Sunima</h1>
 
-      <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
-        Software engineer based in{" "}
-        <span className="text-foreground">Bali, Indonesia</span>. Generated over
-        $207M ARR and reduced $1.5M dev costs.
+      <p className="mt-3 text-pretty leading-relaxed">
+        Software engineer based in Bali, Indonesia. Generated over $207M ARR and
+        reduced $1.5M dev costs.
       </p>
 
-      <p className="mt-3 text-pretty text-foreground/60 leading-relaxed">
+      <p className="mt-3 text-pretty leading-relaxed">
         Previously worked at{" "}
-        <a
-          className="text-foreground"
-          href="https://www.rimlogistics.com"
-          rel="noopener"
-          target="_blank"
-        >
+        <a href="https://www.rimlogistics.com" rel="noopener" target="_blank">
           RIM
         </a>
         ,{" "}
-        <a
-          className="text-foreground"
-          href="https://www.withjoy.com"
-          rel="noopener"
-          target="_blank"
-        >
+        <a href="https://www.withjoy.com" rel="noopener" target="_blank">
           Joy
         </a>
         ,{" "}
-        <a
-          className="text-foreground"
-          href="https://www.procore.com"
-          rel="noopener"
-          target="_blank"
-        >
+        <a href="https://www.procore.com" rel="noopener" target="_blank">
           Procore
         </a>{" "}
         and{" "}
-        <a
-          className="text-foreground"
-          href="https://dimata.com"
-          rel="noopener"
-          target="_blank"
-        >
+        <a href="https://dimata.com" rel="noopener" target="_blank">
           Dimata
         </a>
         .

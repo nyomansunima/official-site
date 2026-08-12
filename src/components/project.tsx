@@ -24,7 +24,7 @@ function Project({ project }: ProjectProps) {
         {project.title}
       </span>
       <svg
-        className="text-foreground/20 transition-all duration-300 group-hover/item:text-foreground"
+        className="transition-all duration-300 group-hover/item:text-foreground"
         fill="none"
         height={14}
         stroke="currentColor"
@@ -36,9 +36,11 @@ function Project({ project }: ProjectProps) {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-        <path d="M3 12a6 6 0 0 1 6 -6h6a6 6 0 0 1 6 6a6 6 0 0 1 -6 6h-6a6 6 0 0 1 -6 -6" />
+        <path d="M12 16l4 -4l-4 -4" />
+        <path d="M8 12h8" />
+        <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
       </svg>
-      <span className="grow text-foreground/40 transition-all duration-300 group-hover/item:text-foreground">
+      <span className="grow transition-all duration-300 group-hover/item:text-foreground">
         {project.desc}
       </span>
       <span className="text-foreground/20 tracking-tight">{project.date}</span>
