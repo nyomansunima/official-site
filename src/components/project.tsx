@@ -43,7 +43,9 @@ function Project({ project }: ProjectProps) {
       <span className="grow transition-all duration-300 group-hover/item:text-foreground">
         {project.desc}
       </span>
-      <span className="text-foreground/20 tracking-tight">{project.date}</span>
+      <span className="text-foreground/20 tracking-tight transition-all duration-300 group-hover/item:text-foreground">
+        {project.date}
+      </span>
     </a>
   );
 }

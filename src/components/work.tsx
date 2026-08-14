@@ -31,7 +31,7 @@ function Work({ work }: WorkProps) {
         <span className="text-white/0 tracking-tight mix-blend-difference transition-all duration-300 group-hover/item:text-white">
           {work.title}
         </span>
-        <span className="text-white/0 tracking-tight mix-blend-difference group-hover/item:text-white/40">
+        <span className="text-white/0 tracking-tight mix-blend-difference transition-all duration-300 group-hover/item:text-white">
           {work.date}
         </span>
       </div>

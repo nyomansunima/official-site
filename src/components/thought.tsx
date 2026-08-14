@@ -22,7 +22,9 @@ function Thought({ thought }: ThoughtProps) {
       <span className="flex grow transition-all duration-300 group-hover/item:text-foreground">
         {thought.title}
       </span>
-      <span className="text-foreground/20 tracking-tight">{thought.date}</span>
+      <span className="text-foreground/20 tracking-tight transition-all duration-300 group-hover/item:text-foreground">
+        {thought.date}
+      </span>
     </a>
   );
 }
