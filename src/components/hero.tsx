@@ -41,8 +41,12 @@ function Experience({ exp }: ExperienceProps) {
         <path d="M13 9l3 3l-3 3" />
         <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
       </svg>
-      <span className="flex grow text-foreground/40">{exp.role}</span>
-      <span className="text-foreground/20 tracking-tight">{exp.date}</span>
+      <span className="flex grow text-foreground/40 transition-all duration-300 group-hover/item:text-foreground">
+        {exp.role}
+      </span>
+      <span className="text-foreground/20 tracking-tight transition-all duration-300 group-hover/item:text-foreground">
+        {exp.date}
+      </span>
     </a>
   );
 }
