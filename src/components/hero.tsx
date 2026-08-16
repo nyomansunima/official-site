@@ -134,28 +134,9 @@ export function HeroSection() {
       <h1 className="font-medium">Nyoman Sunima</h1>
 
       <p className="mt-5 text-pretty leading-relaxed">
-        Software engineer based in Bali, Indonesia. Crafting businesses products globally. Generated over $207M ARR and
-        reduced $1.5M dev costs.
-      </p>
-
-      <p className="mt-3 text-pretty leading-relaxed">
-        Previously worked at{" "}
-        <a href="https://www.rimlogistics.com" rel="noopener" target="_blank">
-          RIM
-        </a>
-        ,{" "}
-        <a href="https://www.withjoy.com" rel="noopener" target="_blank">
-          Joy
-        </a>
-        ,{" "}
-        <a href="https://www.procore.com" rel="noopener" target="_blank">
-          Procore
-        </a>{" "}
-        and{" "}
-        <a href="https://dimata.com" rel="noopener" target="_blank">
-          Dimata
-        </a>
-        .
+        Software engineer based in Bali, Indonesia. Crafting consumer products
+        for a global market. Driven over $207M in ARR and cut $1.5M in
+        production costs.
       </p>
 
       <div className="mt-6 flex select-none items-center gap-2 text-foreground/10">

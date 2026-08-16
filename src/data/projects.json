@@ -1,21 +1,21 @@
 {
   "featureds": [
     {
-      "desc": "growth agencies",
+      "desc": "Growth agencies",
       "href": "https://www.thecoined.site",
       "icon": "https://coined.vercel.app/favicon.ico",
       "title": "Coined",
       "date": "05/26"
     },
     {
-      "desc": "personal finances tool",
+      "desc": "Personal finances tool",
       "href": "https://www.poockey.site",
       "icon": "https://www.poockey.site/favicon.ico",
       "title": "Poockey",
       "date": "06/26"
     },
     {
-      "desc": "sign any documents",
+      "desc": "Sign any documents",
       "href": "https://signa.moono.site",
       "icon": "https://signa.moono.site/favicon.ico",
       "title": "Signa",
@@ -24,14 +24,14 @@
   ],
   "list": [
     {
-      "desc": "growth agencies",
+      "desc": "Growth agencies",
       "href": "https://www.thecoined.site",
       "icon": "https://coined.vercel.app/favicon.ico",
       "title": "Coined",
       "date": "05/26"
     },
     {
-      "desc": "personal finances tool",
+      "desc": "Personal finances tool",
       "href": "https://www.poockey.site",
       "icon": "https://www.poockey.site/favicon.ico",
       "title": "Poockey",
@@ -45,56 +45,56 @@
       "date": "07/26"
     },
     {
-      "desc": "testimonials for business",
+      "desc": "Testimonials for business",
       "href": "https://www.tryhaloo.site",
       "icon": "https://www.tryhaloo.site/favicon.ico",
       "title": "Haloo",
       "date": "07/26"
     },
     {
-      "desc": "business transactions tool",
+      "desc": "Business transactions tool",
       "href": "https://getokay.site",
       "icon": "https://getokay.site/favicon.ico",
       "title": "Okay",
       "date": "07/26"
     },
     {
-      "desc": "tools collections",
+      "desc": "Tools collections",
       "href": "https://thegoodie.site",
       "icon": "https://thegoodie.site/favicon.ico",
       "title": "Goodie",
       "date": "07/26"
     },
     {
-      "desc": "websites templates",
+      "desc": "Websites templates",
       "href": "https://www.creevoo.store",
       "icon": "https://s3-new.macosicons.com/macosicons/parse/macOSicons_lfznh2ZAJq_lowResPng-aeeddac5ba.png",
       "title": "Creevoo",
       "date": "07/26"
     },
     {
-      "desc": "design inspirations",
+      "desc": "Design inspirations",
       "href": "https://heroico.site",
       "icon": "https://heroico.site/favicon.ico",
       "title": "Heroico",
       "date": "07/26"
     },
     {
-      "desc": "website blocks collections",
+      "desc": "Website blocks collections",
       "href": "https://oneday.moono.site",
       "icon": "https://oneday.moono.site/favicon.ico",
       "title": "Oneday",
       "date": "07/26"
     },
     {
-      "desc": "rapid ui for apps",
+      "desc": "Rapid ui for apps",
       "href": "https://picosecond.moono.site",
       "icon": "https://picosecond.moono.site/favicon.ico",
       "title": "Picosecond",
       "date": "07/26"
     },
     {
-      "desc": "react email blocks",
+      "desc": "React email blocks",
       "href": "https://mailo.moono.site",
       "icon": "https://mailo.moono.site/favicon.ico",
       "title": "Mailo",
