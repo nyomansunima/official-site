@@ -40,7 +40,7 @@ function Project({ project }: ProjectProps) {
         <path d="M8 12h8" />
         <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
       </svg>
-      <span className="grow transition-all duration-300 group-hover/item:text-foreground">
+      <span className="grow text-foreground/40 transition-all duration-300 group-hover/item:text-foreground">
         {project.desc}
       </span>
       <span className="text-foreground/20 tracking-tight transition-all duration-300 group-hover/item:text-foreground">

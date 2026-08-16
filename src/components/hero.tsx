@@ -133,8 +133,8 @@ export function HeroSection() {
     <section className="flex flex-col">
       <h1 className="font-medium">Nyoman Sunima</h1>
 
-      <p className="mt-3 text-pretty leading-relaxed">
-        Software engineer based in Bali, Indonesia. Generated over $207M ARR and
+      <p className="mt-5 text-pretty leading-relaxed">
+        Software engineer based in Bali, Indonesia. Crafting businesses products globally. Generated over $207M ARR and
         reduced $1.5M dev costs.
       </p>
 
