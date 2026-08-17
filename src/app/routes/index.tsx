@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     links: [
       {
-        href: "https://nyomansunima.com",
+        href: "https://nyomansunima.fyi",
         rel: "canonical",
       },
     ],
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
           "@type": "WebPage",
           description:
             "Helped businesses to create their software, websites, automations and workflows that lift the profits, increase efficiencies and reduce the costs",
-          image: "https://nyomansunima.com/images/meta-image.png",
+          image: "https://nyomansunima.fyi/images/meta-image.png",
           name: "Nyoman Sunima - Software Engineer, Creator, Writer",
         }),
         type: "application/ld+json",
