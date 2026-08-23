@@ -75,9 +75,7 @@ export function ThoughtsSection() {
   return (
     <section className="mt-20 flex flex-col">
       <div className="flex select-none items-center justify-between">
-        <span className="text-foreground/40 leading-tight tracking-tight">
-          Thoughts.
-        </span>
+        <span className="leading-tight tracking-tight">Thoughts.</span>
         <MoreThoughtsModal />
       </div>
 

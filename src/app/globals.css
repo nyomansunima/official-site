@@ -10,11 +10,11 @@
   --font-default: "IBM Plex Serif", serif;
 
   --text-sm: 0.83rem;
-  --text-base: 0.9rem;
+  --text-base: 0.94rem;
 
   --leading-tight: 1.1;
 
-  --color-background: oklch(98% 0 0);
+  --color-background: oklch(100% 0 0);
   --color-foreground: oklch(0 0 0);
   --color-surface: oklch(100% 0 0);
   --color-border: oklch(93% 0 0);
@@ -24,7 +24,7 @@
   --color-secondary: oklch(94% 0 0);
   --color-secondary-foreground: oklch(0% 0 0);
   --color-accent: oklch(0.627306 0.233484 32.6704);
-  --color-selection: oklch(98% 0 0);
+  --color-selection: oklch(100% 0 0);
   --color-selection-foreground: oklch(0.627306 0.233484 32.6704);
 }
 

@@ -95,9 +95,7 @@ export function ProjectSection() {
   return (
     <div className="mt-20 flex flex-col">
       <div className="flex select-none items-center justify-between">
-        <span className="text-foreground/40 leading-tight tracking-tight">
-          Projects.
-        </span>
+        <span className="leading-tight tracking-tight">Projects.</span>
         <MoreProjectsModal />
       </div>
 

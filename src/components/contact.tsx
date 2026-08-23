@@ -40,9 +40,7 @@ export function ContactSection() {
   return (
     <section className="mt-20 flex flex-col">
       <div className="flex select-none items-center justify-between">
-        <span className="text-foreground/40 leading-tight tracking-tight">
-          Connects.
-        </span>
+        <span className="leading-tight tracking-tight">Connects.</span>
       </div>
 
       <div className="mt-6 flex flex-wrap gap-2 text-foreground/20">

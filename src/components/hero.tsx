@@ -139,6 +139,34 @@ export function HeroSection() {
         production costs.
       </p>
 
+      <p className="mt-3 text-pretty leading-relaxed">
+        Currently contributed at{" "}
+        <a
+          href="https://balimmo-construction.com"
+          rel="noopener"
+          target="_blank"
+        >
+          Balimmo
+        </a>{" "}
+        to build saas for property. Previously working at{" "}
+        <a href="https://www.rimlogistics.com" rel="noopener" target="_blank">
+          RIM
+        </a>
+        ,{" "}
+        <a href="https://www.withjoy.com" rel="noopener" target="_blank">
+          Joy
+        </a>
+        ,{" "}
+        <a href="https://www.procore.com" rel="noopener" target="_blank">
+          Procore
+        </a>{" "}
+        and{" "}
+        <a href="https://www.dimata.com" rel="noopener" target="_blank">
+          Dimata
+        </a>
+        .
+      </p>
+
       <div className="mt-6 flex select-none items-center gap-2 text-foreground/10">
         <a
           className="flex select-none items-center text-foreground/40 text-sm tracking-tight transition-all duration-300 hover:text-foreground"
