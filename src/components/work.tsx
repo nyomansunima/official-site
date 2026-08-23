@@ -89,7 +89,7 @@ export function WorksSection() {
         <MoreWorksModal />
       </div>
 
-      <div className="group/list mt-6 flex w-full flex-col gap-2">
+      <div className="group/list mt-7 flex w-full flex-col gap-2">
         {reversedFeaturedWorks.map((work, i) => (
           <Work key={i} work={work} />
         ))}

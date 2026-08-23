@@ -79,7 +79,7 @@ export function ThoughtsSection() {
         <MoreThoughtsModal />
       </div>
 
-      <div className="group/list mt-5 flex w-full flex-col gap-2">
+      <div className="group/list mt-5 flex w-full flex-col gap-1">
         {sources.featureds.map((thought, index) => (
           <Thought key={index} thought={thought} />
         ))}

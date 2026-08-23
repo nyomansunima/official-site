@@ -6,7 +6,7 @@
     "build": "vite build",
     "check": "ultracite fix --unsafe && tsc",
     "clean": "rm -rf .tanstack .nitro .output build dist",
-    "deploy": "wrangler deploy",
+    "deploy": "vite build && wrangler deploy",
     "dev": "vite dev",
     "preview": "vite preview"
   },

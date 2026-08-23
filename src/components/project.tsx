@@ -21,7 +21,7 @@ function Project({ project }: ProjectProps) {
       target="_blank"
     >
       <span className="transition-all duration-300 group-hover/item:text-foreground">
-        {project.title}
+        {project.desc}
       </span>
       <svg
         className="transition-all duration-300 group-hover/item:text-foreground"
@@ -41,7 +41,7 @@ function Project({ project }: ProjectProps) {
         <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
       </svg>
       <span className="grow text-foreground/40 transition-all duration-300 group-hover/item:text-foreground">
-        {project.desc}
+        {project.title}
       </span>
       <span className="text-foreground/20 tracking-tight transition-all duration-300 group-hover/item:text-foreground">
         {project.date}
@@ -81,7 +81,7 @@ function MoreProjectsModal() {
         }
       />
       <DialogContent>
-        <div className="group/list flex w-full flex-col gap-2">
+        <div className="group/list flex w-full flex-col gap-1">
           {sources.list.map((project, i) => (
             <Project key={i} project={project} />
           ))}
@@ -99,7 +99,7 @@ export function ProjectSection() {
         <MoreProjectsModal />
       </div>
 
-      <div className="group/list mt-5 flex w-full flex-col gap-2">
+      <div className="group/list mt-5 flex w-full flex-col gap-1">
         {sources.featureds.map((project, i) => (
           <Project key={i} project={project} />
         ))}
