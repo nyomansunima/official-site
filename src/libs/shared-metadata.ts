@@ -10,12 +10,12 @@ export function generatedMetadata({
   image,
 }: GeneratedMetadataInput):
   | (
-      | React.DetailedHTMLProps<
-          React.MetaHTMLAttributes<HTMLMetaElement>,
-          HTMLMetaElement
-        >
-      | undefined
-    )[]
+    | React.DetailedHTMLProps<
+      React.MetaHTMLAttributes<HTMLMetaElement>,
+      HTMLMetaElement
+    >
+    | undefined
+  )[]
   | undefined {
   return [
     { title },
@@ -32,7 +32,7 @@ export function generatedMetadata({
     { content: "nyomansunima", name: "publisher" },
     { content: "Nyoman Sunima", name: "application-name" },
     {
-      content: "YbWaUzcbw5swUBX5q_CTy2_zSMu1ou9ZOPWxiXjh97o",
+      content: "_v8utReC_9uPANWbihoPVl3h26A1-egyyAqBfVDqivk",
       name: "google-site-verification",
     },
     { content: "Websites", name: "category" },
