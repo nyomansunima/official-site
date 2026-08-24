@@ -10,12 +10,12 @@ export function generatedMetadata({
   image,
 }: GeneratedMetadataInput):
   | (
-    | React.DetailedHTMLProps<
-      React.MetaHTMLAttributes<HTMLMetaElement>,
-      HTMLMetaElement
-    >
-    | undefined
-  )[]
+      | React.DetailedHTMLProps<
+          React.MetaHTMLAttributes<HTMLMetaElement>,
+          HTMLMetaElement
+        >
+      | undefined
+    )[]
   | undefined {
   return [
     { title },
