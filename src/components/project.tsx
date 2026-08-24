@@ -20,28 +20,8 @@ function Project({ project }: ProjectProps) {
       rel="noopener"
       target="_blank"
     >
-      <span className="transition-all duration-300 group-hover/item:text-foreground">
-        {project.desc}
-      </span>
-      <svg
-        className="transition-all duration-300 group-hover/item:text-foreground"
-        fill="none"
-        height={14}
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        viewBox="0 0 24 24"
-        width={14}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-        <path d="M12 16l4 -4l-4 -4" />
-        <path d="M8 12h8" />
-        <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
-      </svg>
-      <span className="grow text-foreground/40 transition-all duration-300 group-hover/item:text-foreground">
-        {project.title}
+      <span className="grow transition-all duration-300 group-hover/item:text-foreground">
+        {project.desc} ( {project.title} )
       </span>
       <span className="text-foreground/20 tracking-tight transition-all duration-300 group-hover/item:text-foreground">
         {project.date}
