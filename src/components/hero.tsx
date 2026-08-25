@@ -131,9 +131,9 @@ function DetailsModal() {
 export function HeroSection() {
   return (
     <section className="flex flex-col">
-      <h1 className="font-medium">Nyoman Sunima</h1>
+      <h1>Nyoman Sunima</h1>
 
-      <p className="mt-5 text-pretty leading-relaxed">
+      <p className="mt-6 text-pretty leading-relaxed">
         Software engineer based in Bali, Indonesia. Crafting consumer products
         for a global market. Driven over $207M in ARR and cut $1.5M in
         production costs.
