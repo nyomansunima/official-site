@@ -1,6 +1,12 @@
 {
   "featureds": [
     {
+      "title": "RIM Logistics",
+      "url": "https://www.rimlogistics.com",
+      "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/tfnkwi6qyrngehoeqre7.webp",
+      "date": "02/25"
+    },
+    {
       "title": "Joy Website",
       "url": "https://withjoy.com",
       "img": "https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/ym10ztve624wff3606ki.webp",

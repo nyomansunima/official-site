@@ -20,6 +20,20 @@
       "icon": "https://signa.moono.site/favicon.ico",
       "title": "Signa",
       "date": "07/26"
+    },
+    {
+      "desc": "Business transactions tool",
+      "href": "https://getokay.site",
+      "icon": "https://getokay.site/favicon.ico",
+      "title": "Okay",
+      "date": "07/26"
+    },
+    {
+      "desc": "Rapid ui for apps",
+      "href": "https://picosecond.moono.site",
+      "icon": "https://picosecond.moono.site/favicon.ico",
+      "title": "Picosecond",
+      "date": "07/26"
     }
   ],
   "list": [
