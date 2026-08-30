@@ -1,25 +1,11 @@
 {
   "featureds": [
     {
-      "desc": "Growth agencies",
-      "href": "https://www.thecoined.site",
-      "icon": "https://coined.vercel.app/favicon.ico",
-      "title": "Coined",
-      "date": "05/26"
-    },
-    {
       "desc": "Business finances tool",
       "href": "https://www.poockey.site",
       "icon": "https://www.poockey.site/favicon.ico",
       "title": "Poockey",
       "date": "06/26"
-    },
-    {
-      "desc": "Sign any documents",
-      "href": "https://signa.moono.site",
-      "icon": "https://signa.moono.site/favicon.ico",
-      "title": "Signa",
-      "date": "07/26"
     },
     {
       "desc": "Business transactions tool",
