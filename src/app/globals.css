@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Tailwindcss */
 @import "tailwindcss";
@@ -7,7 +7,7 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-default: "Geist Pixel", sans-serif;
+  --font-default: "Inter", sans-serif;
 
   --text-sm: 0.83rem;
   --text-base: 0.9rem;
