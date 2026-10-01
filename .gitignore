@@ -29,6 +29,7 @@ dist
 
 # CLoudflare
 .wrangler
+.cloudflare
 
 # content collections
 .content-collections
