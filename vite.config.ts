@@ -11,10 +11,10 @@ export default defineConfig({
       prerender: {
         autoStaticPathsDiscovery: true,
         crawlLinks: true,
-        enabled: true,
+        enabled: false,
       },
       sitemap: {
-        enabled: true,
+        enabled: false,
         host: "https://nyomansunima.fyi",
       },
       srcDirectory: "src/app",
