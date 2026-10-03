@@ -22,12 +22,8 @@ export function WorkItem({ work }: WorkItemProps) {
         src={work.img}
       />
       <div className="absolute inset-x-4 top-3 flex justify-between text-center">
-        <span className="text-white tracking-tight mix-blend-difference transition-all duration-300 group-hover/item:text-white sm:text-white/0">
-          {work.title}
-        </span>
-        <span className="text-white tracking-tight mix-blend-difference transition-all duration-300 group-hover/item:text-white sm:text-white/0">
-          {work.date}
-        </span>
+        <span className="text-sm">{work.title}</span>
+        <span className="text-sm">{work.date}</span>
       </div>
     </a>
   );
