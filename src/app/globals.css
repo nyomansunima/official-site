@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
 
 /* Tailwindcss */
 @import "tailwindcss";
@@ -7,7 +7,7 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-default: "Geist Pixel", sans-serif;
+  --font-default: "Schibsted Grotesk", sans-serif;
 
   --text-sm: 0.83rem;
   --text-base: 0.9rem;
@@ -15,7 +15,7 @@
   --leading-tight: 1.1;
 
   --color-background: oklch(100% 0 0);
-  --color-foreground: oklch(0% 0 0);
+  --color-foreground: oklch(30% 0 0);
   --color-surface: oklch(100% 0 0);
   --color-border: oklch(93% 0 0);
   --color-input: oklch(96% 0 0);

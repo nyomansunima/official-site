@@ -1,5 +1,5 @@
 import { Button as ButtonPrimitive } from "@base-ui/react/button";
-import { cn, tv, type VariantProps } from "tailwind-variants/lite";
+import { cx, tv, type VariantProps } from "tailwind-variants/lite";
 
 const buttonVariants = tv({
   base: "flex shrink-0 cursor-pointer select-none items-center gap-1 whitespace-nowrap rounded-2xl border border-transparent font-medium text-sm leading-none tracking-tight outline-none",
@@ -34,7 +34,12 @@ function Button({
 }: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
   return (
     <ButtonPrimitive
-      className={cn(buttonVariants({ className, size, variant }))}
+      className={(state) =>
+        cx(
+          buttonVariants({ size, variant }),
+          typeof className === "function" ? className(state) : className
+        )
+      }
       data-slot="button"
       {...props}
     />
