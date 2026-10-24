@@ -57,7 +57,7 @@ function DialogContent({
             data-slot="dialog-close"
             render={
               <Button
-                className="absolute top-3 right-3 transition-all duration-300 hover:scale-95 sm:top-5 sm:right-5 [&>svg]:text-foreground/60 hover:[&>svg]:text-foreground"
+                className="absolute top-3 right-3 transition-all duration-300 hover:scale-95 sm:top-5 sm:right-5 [&>svg]:text-foreground"
                 data-cuelume-hover="pulse"
                 size="icon"
                 variant="secondary"

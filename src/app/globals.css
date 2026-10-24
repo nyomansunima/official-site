@@ -15,7 +15,7 @@
   --leading-tight: 1.1;
 
   --color-background: oklch(100% 0 0);
-  --color-foreground: oklch(45% 0 0);
+  --color-foreground: oklch(0% 0 0);
   --color-surface: oklch(100% 0 0);
   --color-border: oklch(93% 0 0);
   --color-input: oklch(96% 0 0);
@@ -47,7 +47,7 @@
   }
 
   body {
-    @apply text-base font-normal leading-normal text-foreground bg-background font-default tracking-normal selection:bg-selection selection:text-selection-foreground;
+    @apply text-base font-normal leading-normal text-foreground bg-background font-default tracking-normal selection:bg-selection selection:text-selection-foreground antialiased;
   }
 }
 
