@@ -7,7 +7,7 @@ const reversedFeaturedWorks = [...sources.featureds].reverse();
 export function WorksSection() {
   return (
     <section className="mt-20 flex flex-col">
-      <div className="flex select-none items-center justify-between">
+      <div className="flex items-center justify-between select-none">
         <span className="leading-tight tracking-tight">Works.</span>
         <MoreWorksDialog />
       </div>

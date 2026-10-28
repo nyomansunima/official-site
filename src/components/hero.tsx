@@ -3,17 +3,34 @@ import { AboutDialog } from "./about-dialog";
 export function HeroSection() {
   return (
     <section className="flex flex-col">
-      <h1 className="font-medium">Nyoman Sunima</h1>
+      <img
+        alt="Nyoman Sunima"
+        className="squircle size-10 rounded-full"
+        src="/images/avatar.png"
+      />
+      <h1 className="mt-4 flex items-center gap-1.5 font-medium">
+        Nyoman Sunima
+        <svg
+          className="size-4 text-blue-500"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+          <path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+        </svg>
+      </h1>
 
-      <p className="mt-6 text-pretty leading-relaxed">
+      <p className="mt-6 leading-relaxed text-pretty">
         Software engineer based in Bali, Indonesia. Crafting consumer products
         for a global market. Driven over $207M in ARR and cut $1.5M in
         production costs.
       </p>
 
-      <p className="mt-3 text-pretty leading-relaxed">
+      <p className="mt-3 leading-relaxed text-pretty">
         Currently contributed at{" "}
         <a
+          className="hover:underline"
           href="https://balimmo-construction.com"
           rel="noopener"
           target="_blank"
@@ -21,27 +38,51 @@ export function HeroSection() {
           Balimmo
         </a>{" "}
         to build saas for property. Previously working at{" "}
-        <a href="https://www.rimlogistics.com" rel="noopener" target="_blank">
+        <a
+          className="hover:underline"
+          href="https://www.rimlogistics.com"
+          rel="noopener"
+          target="_blank"
+        >
           RIM
         </a>
         ,{" "}
-        <a href="https://www.withjoy.com" rel="noopener" target="_blank">
+        <a
+          className="hover:underline"
+          href="https://www.withjoy.com"
+          rel="noopener"
+          target="_blank"
+        >
           Joy
         </a>
         ,{" "}
-        <a href="https://www.procore.com" rel="noopener" target="_blank">
+        <a
+          className="hover:underline"
+          href="https://www.procore.com"
+          rel="noopener"
+          target="_blank"
+        >
           Procore
         </a>{" "}
         and{" "}
-        <a href="https://www.dimata.com" rel="noopener" target="_blank">
+        <a
+          className="hover:underline"
+          href="https://www.dimata.com"
+          rel="noopener"
+          target="_blank"
+        >
           Dimata
         </a>
         .
       </p>
 
-      <div className="mt-6 flex select-none items-center gap-1.5 text-foreground/10">
+      <div className="mt-3">
+        <AboutDialog />
+      </div>
+
+      <div className="text-foreground/10 mt-6 flex items-center gap-1.5 select-none">
         <a
-          className="flex select-none items-center gap-1 rounded-full bg-primary px-3 py-2 text-primary-foreground text-sm leading-none tracking-tight transition-all duration-300 [&>svg]:size-3.5"
+          className="bg-primary text-primary-foreground flex items-center gap-1 rounded-full px-3 py-2 text-sm leading-none font-medium tracking-tight transition-all duration-300 select-none hover:-translate-y-0.5 [&>svg]:size-3.5"
           data-cuelume-hover="press"
           href="https://cal.com/nyomansunima/connects?duration=15"
           rel="noopener"
@@ -62,7 +103,7 @@ export function HeroSection() {
           Book a call
         </a>{" "}
         <a
-          className="flex select-none items-center gap-1 rounded-full bg-secondary px-3 py-2 text-secondary-foreground text-sm leading-none tracking-tight transition-all duration-300 hover:text-foreground [&>svg]:size-3.5"
+          className="bg-secondary text-secondary-foreground hover:text-foreground flex items-center gap-1 rounded-full px-3 py-2 text-sm leading-none font-medium tracking-tight transition-all duration-300 select-none hover:-translate-y-0.5 [&>svg]:size-3.5"
           data-cuelume-hover="press"
           href="https://t.me/nyomansunima"
           rel="noopener"
@@ -79,7 +120,6 @@ export function HeroSection() {
           </svg>
           Chat now
         </a>
-        <AboutDialog />
       </div>
     </section>
   );

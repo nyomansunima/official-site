@@ -41,7 +41,7 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
       <head>
         <HeadContent />
       </head>
-      <body className="container relative mx-auto px-5 sm:px-0">
+      <body className="relative container mx-auto px-5 sm:px-0">
         <div className="relative mx-auto flex w-full flex-col gap-14 pt-10 pb-28 sm:w-10/12 sm:px-10 sm:pt-28 md:w-9/12 lg:w-6/12 xl:w-5/12">
           {children}
         </div>
@@ -59,11 +59,11 @@ function NotFondComponent(): React.ReactElement {
           <span className="text-foreground/40 text-sm tracking-tighter">
             404.
           </span>
-          <h2 className="mt-2 font-medium text-xl tracking-tighter">
+          <h2 className="mt-2 text-xl font-medium tracking-tighter">
             Not found.
           </h2>
 
-          <p className="mt-6 text-pretty leading-7">
+          <p className="mt-6 leading-7 text-pretty">
             Sorry, we couldn’t find the page you’re looking for. It might have
             been moved or deleted.
           </p>
@@ -71,7 +71,7 @@ function NotFondComponent(): React.ReactElement {
 
         <div className="mt-10 flex">
           <a
-            className="flex h-10 items-center gap-3 rounded-full bg-secondary px-4 text-secondary-foreground"
+            className="bg-secondary text-secondary-foreground flex h-10 items-center gap-3 rounded-full px-4"
             href="/"
           >
             <svg
@@ -104,11 +104,11 @@ function ErrorComponent(): React.ReactElement {
           <span className="text-foreground/40 text-sm tracking-tighter">
             500.
           </span>
-          <h2 className="mt-2 font-medium text-xl tracking-tighter">
+          <h2 className="mt-2 text-xl font-medium tracking-tighter">
             Error found.
           </h2>
 
-          <p className="mt-6 text-pretty leading-7">
+          <p className="mt-6 leading-7 text-pretty">
             It seems like something went wrong on our end. Please try again
             later, or contact support if the problem persists.
           </p>
@@ -116,7 +116,7 @@ function ErrorComponent(): React.ReactElement {
 
         <div className="mt-10 flex">
           <a
-            className="flex h-10 items-center gap-3 rounded-full bg-secondary px-4 text-secondary-foreground"
+            className="bg-secondary text-secondary-foreground flex h-10 items-center gap-3 rounded-full px-4"
             href="/"
           >
             <svg
