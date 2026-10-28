@@ -52,7 +52,9 @@
 }
 
 @utility squircle {
-  corner-shape: squircle;
+  @supports (corner-shape: squircle) {
+    corner-shape: squircle;
+  }
 }
 
 @utility prose {

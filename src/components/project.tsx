@@ -5,7 +5,7 @@ import { ProjectItem } from "./project-item";
 export function ProjectSection() {
   return (
     <div className="mt-20 flex flex-col">
-      <div className="flex select-none items-center justify-between">
+      <div className="flex items-center justify-between select-none">
         <span className="leading-tight tracking-tight">Projects.</span>
         <MoreProjectsDialog />
       </div>

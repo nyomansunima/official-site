@@ -47,7 +47,7 @@ function DialogContent({
         data-slot="dialog-content"
         {...props}
       >
-        <div className="scrollbar-none container relative mx-auto max-h-full overflow-y-auto px-5 sm:px-0">
+        <div className="relative container mx-auto max-h-full scrollbar-none overflow-y-auto px-5 sm:px-0">
           <div className="relative mx-auto flex w-full flex-col pt-10 pb-28 sm:w-10/12 sm:px-10 sm:pt-28 md:w-9/12 lg:w-6/12 xl:w-5/12">
             {children}
           </div>
@@ -57,7 +57,7 @@ function DialogContent({
             data-slot="dialog-close"
             render={
               <Button
-                className="absolute top-3 right-3 transition-all duration-300 hover:scale-95 sm:top-5 sm:right-5 [&>svg]:text-foreground"
+                className="[&>svg]:text-foreground absolute top-3 right-3 transition-all duration-300 hover:scale-95 sm:top-5 sm:right-5"
                 data-cuelume-hover="pulse"
                 size="icon"
                 variant="secondary"

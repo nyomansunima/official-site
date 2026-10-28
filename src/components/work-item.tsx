@@ -10,7 +10,7 @@ interface WorkItemProps {
 export function WorkItem({ work }: WorkItemProps) {
   return (
     <a
-      className="group/item relative flex cursor-pointer flex-col outline-none transition-all duration-300"
+      className="group/item relative flex cursor-pointer flex-col transition-all duration-300 outline-none"
       data-cuelume-hover="press"
       href={work.url}
       rel="noopener"

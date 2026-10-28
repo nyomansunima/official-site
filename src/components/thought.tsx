@@ -5,7 +5,7 @@ import { ThoughtItem } from "./thought-item";
 export function ThoughtsSection() {
   return (
     <section className="mt-20 flex flex-col">
-      <div className="flex select-none items-center justify-between">
+      <div className="flex items-center justify-between select-none">
         <span className="leading-tight tracking-tight">Thoughts.</span>
         <MoreThoughtsDialog />
       </div>
