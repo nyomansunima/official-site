@@ -31,7 +31,7 @@ export function HeroSection() {
         Currently contributed at{" "}
         <a
           className="hover:underline"
-          href="https://balimmo-construction.com"
+          href="https://balimmo.online"
           rel="noopener"
           target="_blank"
         >
